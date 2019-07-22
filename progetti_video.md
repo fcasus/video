@@ -3,9 +3,9 @@ Di seguito un elenco di possibili video da realizzare.
 
 ## Tutorial extra
 * Come iniziare, 3 semplici passi
-  * pubblicato su Youtube: italiano, inglese
+  * pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=LsAOE54hyWw&t=6s), [inglese](https://www.youtube.com/watch?v=eq5wnmA6nWo&t=17s)
 * Come fare un budget familiare con il libro cassa
-  * pubblicato su Youtube: italiano, inglese
+  * pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=y0e9ccijvVs&t=12s), [inglese](https://www.youtube.com/watch?v=nrlfUI30YL0)
 * Come fare un cash flow forecast
 * Come fare il foglio ore
 * Come creare e gestire fatture
