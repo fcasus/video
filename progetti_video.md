@@ -23,3 +23,6 @@ Di seguito un elenco di possibili video da realizzare.
 * Come importare ed esportare dati (bancari)
 * Come inserire una registrazione ricorrente
 * Come gestire la contabilità multimoneta (cambi, registrazioni, ...)
+
+## Diversi
+* Video "Scarica Banana Gratis" che mostra come scaricare gratuitamente Banana, spiega che è possibile usare tutte le funzionalità gratuitamente per provarle, e poi se si è interessati acquistare il programma (mostrando come fare). Spiegare bene che l'acquisto è fatto una sola volta e che il programma resta per sempre. Futuri aggiornamenti della stessa versione sono gratuiti. Far vedere come inserire la chiave di licenza per attivare il programma (mostrare dove si trova la chiave licenza). Spiegare che ora è possibile continuare ad usare Banana da dove si era finito senza nessun limite di registrazioni. 
