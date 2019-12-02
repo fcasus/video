@@ -3,9 +3,9 @@ Di seguito un elenco di possibili video da realizzare.
 
 ## Tutorial extra
 * Come iniziare, 3 semplici passi
-  * pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=LsAOE54hyWw&t=6s), [inglese](https://www.youtube.com/watch?v=eq5wnmA6nWo&t=17s)
+  * pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=LsAOE54hyWw&t=6s), [inglese](https://www.youtube.com/watch?v=eq5wnmA6nWo&t=17s), tedesco, cinese
 * Come fare un budget familiare con il libro cassa
-  * pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=y0e9ccijvVs&t=12s), [inglese](https://www.youtube.com/watch?v=nrlfUI30YL0)
+  * pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=y0e9ccijvVs&t=12s), [inglese](https://www.youtube.com/watch?v=nrlfUI30YL0), tedesco
 * Come fare il foglio ore
 * Come fare un cash flow forecast
 * Come creare e gestire fatture
@@ -27,3 +27,6 @@ Di seguito un elenco di possibili video da realizzare.
 
 ## Diversi
 * Video "Scarica Banana Gratis" che mostra come scaricare gratuitamente Banana, spiega che è possibile usare tutte le funzionalità gratuitamente per provarle, e poi se si è interessati acquistare il programma (mostrando come fare). Spiegare bene che l'acquisto è fatto una sola volta e che il programma resta per sempre. Futuri aggiornamenti della stessa versione sono gratuiti. Far vedere come inserire la chiave di licenza per attivare il programma (mostrare dove si trova la chiave licenza). Spiegare che ora è possibile continuare ad usare Banana da dove si era finito senza nessun limite di registrazioni. 
+
+## Common questions (solo in cinese)
+Video brevissimi per rispondere alle domande degli utenti.
