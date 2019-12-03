@@ -10,7 +10,18 @@ Di seguito un elenco di possibili video da realizzare o che sono già stati real
 | Contabilità entrate/uscite con budget                                                 | T.               |                |
 | Contabilità doppia con budget                                                 | T.               |                |
 | Contabilità multimoneta                                                 | T.               |                |
-
+| Creare in 10 minuti un Piano finanziario professionale |                 | it, de, fr, en  |
+| Business Planning: lo strumento di Banana per creare attività di successo |                | it, de, fr, en |
+|                                                  |                 |                |
+|                                                  |                 |                |
+|                                                  |                 |                |
+|                                                  |                 |                |
+|                                                  |                 |                |
+|                                                  |                 |                |
+|                                                  |                 |                |
+|                                                  |                 |                |
+|                                                  |                 |                |
+|                                                  |                 |                |
 
 
 ## Tutorial extra
