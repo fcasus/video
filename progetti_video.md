@@ -19,7 +19,7 @@ Di seguito un elenco di possibili video da realizzare o che sono già stati real
 * Come fare il foglio ore (in lavorazione italiano...)
 * Come fare un cash flow forecast
 * Come creare e gestire fatture
-* Cash manager
+* Come fare il Cash manager
 * Come fare una contabilità entrate/uscite con budget
 * Come fare una contabilità doppia con budget
 * Come gestire la contabilità multimoneta (tab conti, cambi, registrazioni, ...)
