@@ -2,14 +2,13 @@
 Di seguito un elenco di possibili video da realizzare.
 
 ## Tutorial extra
-* Come iniziare, 3 semplici passi
-  * pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=LsAOE54hyWw&t=6s), [inglese](https://www.youtube.com/watch?v=eq5wnmA6nWo&t=17s), tedesco, cinese
+* Come iniziare (3 passi)
+  * pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=LsAOE54hyWw&t=6s), [inglese](https://www.youtube.com/watch?v=eq5wnmA6nWo&t=17s), [tedesco](https://www.youtube.com/watch?v=zw2xeNKICqg), [cinese](https://www.youtube.com/watch?v=d5yXEEjUA7w)
 * Come fare un budget familiare con il libro cassa
-  * pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=y0e9ccijvVs&t=12s), [inglese](https://www.youtube.com/watch?v=nrlfUI30YL0), tedesco
-* Come fare il foglio ore (in lavorazione...)
+  * pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=y0e9ccijvVs&t=12s), [inglese](https://www.youtube.com/watch?v=nrlfUI30YL0), [tedesco](https://www.youtube.com/watch?v=GQ35cQRRxjw)
+* Come fare il foglio ore (in lavorazione italiano...)
 * Come fare un cash flow forecast
 * Come creare e gestire fatture
-* Come gestire una contabilità Multimoneta
 
 ## Tutorial base
 * Come impostare la tabella conti
@@ -19,11 +18,11 @@ Di seguito un elenco di possibili video da realizzare.
 * Come aprire un nuovo anno contabile
 
 ## Tutorial avanzati
+* Come gestire la contabilità multimoneta (tab conti, cambi, registrazioni, ...)
 * Come usare i centri di costo e di profitto
 * Come usare il partitario (clienti e fornitori)
 * Come importare ed esportare dati (bancari)
 * Come inserire una registrazione ricorrente
-* Come gestire la contabilità multimoneta (cambi, registrazioni, ...)
 
 ## Diversi
 * Video "Scarica Banana Gratis" che mostra come scaricare gratuitamente Banana, spiega che è possibile usare tutte le funzionalità gratuitamente per provarle, e poi se si è interessati acquistare il programma (mostrando come fare). Spiegare bene che l'acquisto è fatto una sola volta e che il programma resta per sempre. Futuri aggiornamenti della stessa versione sono gratuiti. Far vedere come inserire la chiave di licenza per attivare il programma (mostrare dove si trova la chiave licenza). Spiegare che ora è possibile continuare ad usare Banana da dove si era finito senza nessun limite di registrazioni. 
