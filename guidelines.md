@@ -49,5 +49,5 @@ A questo punto è tutto installato e pronto per l’utilizzo. Avviare uno degli 
 
 
 # Link utili
-https://cloud.google.com/text-to-speech/docs/ssml
-https://docs.microsoft.com/en-us/cortana/skills/speech-synthesis-markup-language#prosody-element
+[Google](https://cloud.google.com/text-to-speech/docs/ssml)
+[Microsoft](https://docs.microsoft.com/en-us/cortana/skills/speech-synthesis-markup-language#prosody-element)
