@@ -28,6 +28,7 @@ Di seguito un elenco di possibili video da realizzare o che sono già stati real
 * Come aprire un nuovo anno contabile
 
 ## Tutorial avanzati
+* Come gestire una contabilità doppia
 * Come gestire la contabilità multimoneta (tab conti, cambi, registrazioni, ...)
 * Come usare i centri di costo e di profitto
 * Come usare il partitario (clienti e fornitori)
