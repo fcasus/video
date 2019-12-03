@@ -19,6 +19,10 @@ Di seguito un elenco di possibili video da realizzare o che sono già stati real
 * Come fare il foglio ore (in lavorazione italiano...)
 * Come fare un cash flow forecast
 * Come creare e gestire fatture
+* Cash manager
+* Come fare una contabilità entrate/uscite con budget
+* Come fare una contabilità doppia con budget
+* Come gestire la contabilità multimoneta (tab conti, cambi, registrazioni, ...)
 
 ## Tutorial base
 * Come impostare la tabella conti
@@ -28,8 +32,6 @@ Di seguito un elenco di possibili video da realizzare o che sono già stati real
 * Come aprire un nuovo anno contabile
 
 ## Tutorial avanzati
-* Come gestire una contabilità doppia
-* Come gestire la contabilità multimoneta (tab conti, cambi, registrazioni, ...)
 * Come usare i centri di costo e di profitto
 * Come usare il partitario (clienti e fornitori)
 * Come importare ed esportare dati (bancari)
