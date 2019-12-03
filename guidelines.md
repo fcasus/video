@@ -46,3 +46,8 @@ Quando si creano video e viene registrato quello che succede a schermo in Banana
 
 A questo punto è tutto installato e pronto per l’utilizzo. Avviare uno degli scripts tts1.js, tts2.js, tts3.js per generare il file audio partendo da un testo.
 
+
+
+# Link utili
+https://cloud.google.com/text-to-speech/docs/ssml
+https://docs.microsoft.com/en-us/cortana/skills/speech-synthesis-markup-language#prosody-element
