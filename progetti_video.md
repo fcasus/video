@@ -1,5 +1,5 @@
 # Progetti video
-Di seguito un elenco di possibili video da realizzare.
+Di seguito un elenco di possibili video da realizzare o che sono già stati realizzati e pubblicati.
 
 ## Tutorial extra
 * Come iniziare (3 passi)
