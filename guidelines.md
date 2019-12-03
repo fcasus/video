@@ -30,19 +30,19 @@ Quando si creano video e viene registrato quello che succede a schermo in Banana
 * Installare Node.js (versione 8.12.x o successiva): https://nodejs.org/en/
 * Installare il pacchetto per Javascript
   * Avviare Visual Studio Code
-  * Sulla pagina di Welcome, a destra dovrebbe apparire Tools and languages: Install support for Javascript, Python,…
+  * Sulla pagina di Welcome, a destra dovrebbe apparire **Tools and languages: Install support for Javascript, Python,…**
   * Cliccare su Javascript (in blu)
   * Dovrebbe installare e riavviare.
 * Installare il paccheto “npm”
   * Avviare Visual Studio Code
   * CTRL+P
-  * Inserire il testo ext install npm script runner e premere ENTER
+  * Inserire il testo **ext install npm script runner e premere ENTER**
   * Dal menu a sinistra selezionare “npm, npm support for VS Code (egamma)” e cliccare sul bottone verde INSTALL
   * Riavviare VS Code
 * Installare i moduli necessari per l’applicativo tts
   * Avviare Visual Studio Code
   * Avviare il TERMINALE di VS Code
-  * Inserire e lanciare il comando npm install request request-promise xmlbuilder readline-sync
+  * Inserire e lanciare il comando **npm install request request-promise xmlbuilder readline-sync**
 
 A questo punto è tutto installato e pronto per l’utilizzo. Avviare uno degli scripts tts1.js, tts2.js, tts3.js per generare il file audio partendo da un testo.
 
