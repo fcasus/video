@@ -7,9 +7,9 @@ Di seguito un elenco di possibili video da realizzare o che sono già stati real
 | Come iniziare (3 passi)                          |                | [it](https://www.youtube.com/watch?v=LsAOE54hyWw&t=6s), [en](https://www.youtube.com/watch?v=eq5wnmA6nWo&t=17s), [de](https://www.youtube.com/watch?v=zw2xeNKICqg), [zh](https://www.youtube.com/watch?v=d5yXEEjUA7w) |
 | Come fare un budget familiare con il libro cassa |                | [it](https://www.youtube.com/watch?v=y0e9ccijvVs&t=12s), [en](https://www.youtube.com/watch?v=nrlfUI30YL0), [de](https://www.youtube.com/watch?v=GQ35cQRRxjw)     |
 | Come fare il foglio ore                          | it             |                |
-|                                                  |                |                |
-|                                                  |                |                |
-|                                                  |                |                |
+| Contabilità entrate/uscite con budget                                                 | T.               |                |
+| Contabilità doppia con budget                                                 | T.               |                |
+| Contabilità multimoneta                                                 | T.               |                |
 
 
 
