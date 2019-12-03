@@ -1,11 +1,20 @@
 # Progetti video
-Di seguito un elenco di possibili video da realizzare o che sono già stati realizzati e pubblicati.
+Di seguito un elenco di possibili video da realizzare o che sono già stati realizzati e pubblicati su Youtube.
+
+
+|                      Titolo                      | in lavorazione |   pubblicato   |
+|:------------------------------------------------:|:--------------:|:--------------:|
+| Come iniziare (3 passi)                          |                | [it](https://www.youtube.com/watch?v=LsAOE54hyWw&t=6s), [en](https://www.youtube.com/watch?v=eq5wnmA6nWo&t=17s), [de](https://www.youtube.com/watch?v=zw2xeNKICqg), [zh](https://www.youtube.com/watch?v=d5yXEEjUA7w) |
+| Come fare un budget familiare con il libro cassa |                | [it](https://www.youtube.com/watch?v=y0e9ccijvVs&t=12s), [en](https://www.youtube.com/watch?v=nrlfUI30YL0), [de](https://www.youtube.com/watch?v=GQ35cQRRxjw)     |
+| Come fare il foglio ore                          | it             |                |
+|                                                  |                |                |
+|                                                  |                |                |
+|                                                  |                |                |
+
 
 ## Tutorial extra
-* Come iniziare (3 passi)
-  * pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=LsAOE54hyWw&t=6s), [inglese](https://www.youtube.com/watch?v=eq5wnmA6nWo&t=17s), [tedesco](https://www.youtube.com/watch?v=zw2xeNKICqg), [cinese](https://www.youtube.com/watch?v=d5yXEEjUA7w)
-* Come fare un budget familiare con il libro cassa
-  * pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=y0e9ccijvVs&t=12s), [inglese](https://www.youtube.com/watch?v=nrlfUI30YL0), [tedesco](https://www.youtube.com/watch?v=GQ35cQRRxjw)
+* Come iniziare (3 passi) => pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=LsAOE54hyWw&t=6s), [inglese](https://www.youtube.com/watch?v=eq5wnmA6nWo&t=17s), [tedesco](https://www.youtube.com/watch?v=zw2xeNKICqg), [cinese](https://www.youtube.com/watch?v=d5yXEEjUA7w)
+* Come fare un budget familiare con il libro cassa => pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=y0e9ccijvVs&t=12s), [inglese](https://www.youtube.com/watch?v=nrlfUI30YL0), [tedesco](https://www.youtube.com/watch?v=GQ35cQRRxjw)
 * Come fare il foglio ore (in lavorazione italiano...)
 * Come fare un cash flow forecast
 * Come creare e gestire fatture
