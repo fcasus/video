@@ -24,8 +24,8 @@ Quando si creano video e viene registrato quello che succede a schermo in Banana
 
 
 
-# Microsoft Azure TTS
-
+# Conversione testo in file audio con Microsoft Azure TTS
+## Installazione
 * Installare Visual Studio Code: https://code.visualstudio.com/
 * Installare Node.js (versione 8.12.x o successiva): https://nodejs.org/en/
 * Installare il pacchetto per Javascript
@@ -46,8 +46,19 @@ Quando si creano video e viene registrato quello che succede a schermo in Banana
 
 A questo punto è tutto installato e pronto per l’utilizzo. Avviare uno degli scripts tts1.js, tts2.js, tts3.js per generare il file audio partendo da un testo.
 
+## Come si usa
+* Creare una cartella nella quale inserire:
+  * lo script **tts.js**
+  * i files XML che contengono il testo da convertire
+* Aprire il terminale in Visual Studio Code
+* Spostarsi nella cartella (es. cd Desktop/nomecartella)
+* Avviare lo script con il comando **node tts.js**
+* Digitare il nome del file XML (es. text_it.xml)
+* Aspettare che termini
+* Nella cartella verrà generato il file audio.
 
 
 # Link utili
 [Google](https://cloud.google.com/text-to-speech/docs/ssml)
+
 [Microsoft](https://docs.microsoft.com/en-us/cortana/skills/speech-synthesis-markup-language#prosody-element)
