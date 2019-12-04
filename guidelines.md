@@ -57,6 +57,8 @@ A questo punto è tutto installato e pronto per l’utilizzo. Avviare uno degli 
 * Aspettare che termini
 * Nella cartella verrà generato il file audio.
 
+![A test image](/images/img005.png)
+
 
 # Link utili
 [Google](https://cloud.google.com/text-to-speech/docs/ssml)
