@@ -47,6 +47,13 @@ Di seguito un elenco di possibili video da realizzare o che sono già stati real
 * Come usare il partitario (clienti e fornitori)
 * Come importare ed esportare dati (bancari)
 * Come inserire una registrazione ricorrente
+* Come utilizzare il blockchain (bloccare e sbloccare registrazioni)
+
+## Funzionalità software
+* Trova e sostituisci testi
+* Convertire in nuovo file (es. da contabilità semplice a doppia)
+* Controllare la contabilità (mostrare dove vengono visualizzati gli errori e come risolvere i problemi (cliccando sul ?))
+
 
 ## Diversi
 * Video "Scarica Banana Gratis" che mostra come scaricare gratuitamente Banana, spiega che è possibile usare tutte le funzionalità gratuitamente per provarle, e poi se si è interessati acquistare il programma (mostrando come fare). Spiegare bene che l'acquisto è fatto una sola volta e che il programma resta per sempre. Futuri aggiornamenti della stessa versione sono gratuiti. Far vedere come inserire la chiave di licenza per attivare il programma (mostrare dove si trova la chiave licenza). Spiegare che ora è possibile continuare ad usare Banana da dove si era finito senza nessun limite di registrazioni. 
