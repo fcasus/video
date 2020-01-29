@@ -4,34 +4,29 @@ Di seguito un elenco di possibili video da realizzare o che sono già stati real
 
 |                      Titolo                      | in lavorazione |   pubblicato   |
 |:------------------------------------------------:|:--------------:|:--------------:|
-| Come iniziare (3 passi)                          |                | [it](https://www.youtube.com/watch?v=LsAOE54hyWw&t=6s), [en](https://www.youtube.com/watch?v=eq5wnmA6nWo&t=17s), [de](https://www.youtube.com/watch?v=zw2xeNKICqg), [zh](https://www.youtube.com/watch?v=d5yXEEjUA7w) |
-| Come fare un budget familiare con il libro cassa |                | [it](https://www.youtube.com/watch?v=y0e9ccijvVs&t=12s), [en](https://www.youtube.com/watch?v=nrlfUI30YL0), [de](https://www.youtube.com/watch?v=GQ35cQRRxjw)     |
-| Come fare il foglio ore                          | it             |                |
-| Contabilità entrate/uscite con budget                                                 | T.               |                |
-| Contabilità doppia con budget                                                 | T.               |                |
-| Contabilità multimoneta                                                 | T.               |                |
-| Creare in 10 minuti un Piano finanziario professionale |                 | it, de, fr, en  |
-| Business Planning: lo strumento di Banana per creare attività di successo |                | it, de, fr, en |
-|                                                  |                 |                |
-|                                                  |                 |                |
-|                                                  |                 |                |
-|                                                  |                 |                |
-|                                                  |                 |                |
-|                                                  |                 |                |
-|                                                  |                 |                |
-|                                                  |                 |                |
-|                                                  |                 |                |
-|                                                  |                 |                |
+| Come iniziare (3 passi)                          |                | it,en,de,zh    |
+| Come fare un budget familiare con il libro cassa |                | it,en,de       |
+| Come fare il foglio ore                          |                | it,en,de       |
+| Contabilità entrate/uscite con budget            | T.             | it             |
+| Contabilità doppia con budget                    | T.             |                |
+| Contabilità multimoneta                          | T.             |                |
+| Previsioni Finanziarie (tutorial)                |                | it,de,fr,en    |
+| Previsioni Finanziarie (introduzione)            |                | it,en,de       |
+|                                                  |                |                |
+
+
+
+**IMPORTANTE**: Tutti i video devono essere fatti con la contabilità doppia.
 
 
 ## Tutorial extra
-* Come iniziare (3 passi) => pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=LsAOE54hyWw&t=6s), [inglese](https://www.youtube.com/watch?v=eq5wnmA6nWo&t=17s), [tedesco](https://www.youtube.com/watch?v=zw2xeNKICqg), [cinese](https://www.youtube.com/watch?v=d5yXEEjUA7w)
-* Come fare un budget familiare con il libro cassa => pubblicato su Youtube: [italiano](https://www.youtube.com/watch?v=y0e9ccijvVs&t=12s), [inglese](https://www.youtube.com/watch?v=nrlfUI30YL0), [tedesco](https://www.youtube.com/watch?v=GQ35cQRRxjw)
-* Come fare il foglio ore (in lavorazione italiano...)
+* Come iniziare (3 passi) => pubblicato su Youtube: italiano, inglese, tedesco e cinese.
+* Come fare un budget familiare con il libro cassa => pubblicato su Youtube: italiano, inglese e tedesco
+* Come fare il foglio ore => pubblicato su Youtube => pubblicato su Youtube: italiano, inglese e tedesco
 * Come fare un cash flow forecast
 * Come creare e gestire fatture
 * Come fare il Cash manager
-* Come fare una contabilità entrate/uscite con budget
+* Come fare una contabilità entrate/uscite con budget => pubblicato su Youtube: italiano
 * Come fare una contabilità doppia con budget
 * Come gestire la contabilità multimoneta (tab conti, cambi, registrazioni, ...)
 
@@ -42,12 +37,18 @@ Di seguito un elenco di possibili video da realizzare o che sono già stati real
 * Come gestire l'IVA
 * Come aprire un nuovo anno contabile
 
-## Tutorial avanzati
+## Approfondimenti
+* Come allegare documenti digitali/giustificativi
+* Come organizzare i files (?)
+* Come stampare report contabili pianificazione finanziaria
 * Come usare i centri di costo e di profitto
+* Come usare i segmenti
 * Come usare il partitario (clienti e fornitori)
-* Come importare ed esportare dati (bancari)
+* Come importare dati bancari
+* Come esportare dati della contabilità
 * Come inserire una registrazione ricorrente
 * Come utilizzare il blockchain (bloccare e sbloccare registrazioni)
+* Come usare i progetti del foglio ore
 
 ## Funzionalità software
 * Trova e sostituisci testi
