@@ -1,10 +1,19 @@
 # Linee guida per la creazione di video
 
+Fare un video per argomento: ogni video tratta solo un unico argomento. Evitare se possibile di "complicare" il video iserendo informazioni superflue e non inerenti al tema trattato. Questo allunga inutilmente il video e distrae dall'obiettivo finale.
+
+I video devono, se possibile, essere basati sulla contabilità doppia, sempre.
+
+I video devono seguire un flow "naturale": es. creazione file, adattamento tabelle conti/categorie, inserimento budget, inserimento registrazioni, mostrare come i saldi dei conti/categorie vengono automaticamente aggiornati, mostrare le stampe.
+
+
+## Registrazione schermo
+
 Quando si creano video e viene registrato quello che succede a schermo in Banana, bisognerebbe tenere in considerazione alcuni accorgimenti per avere una certa coerenza tra un video e l’altro e migliorare il risultato finale:
 
 1. Utilizzare Banana su Windows. La maggior parte degli utenti utilizza Banana per Windows e quindi si è scelto di andare sempre in quella direzione.
 
-2. Utilizzare l’ultima versione utenti di Banana, attivata correttamente con un codice di licenza. Non utilizzare la Free Version o la versione Experimental. Questo per evitare che venga mostrato il limite delle 70 registrazioni e la dicitura Experimental.
+2. Utilizzare l’ultima versione utenti di Banana, attivata correttamente con un codice di licenza. Non utilizzare la Free Version o la versione Experimental. Questo per evitare che venga mostrato il messaggio limite delle 70 registrazioni e la dicitura Experimental.
 
 ![A test image](/images/img002.png)
 
