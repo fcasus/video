@@ -7,9 +7,9 @@ Di seguito un elenco di possibili video da realizzare o che sono già stati real
 | Come iniziare (3 passi)                          |                | it,en,de,zh    |
 | Come fare un budget familiare con il libro cassa |                | it,en,de       |
 | Come fare il foglio ore                          |                | it,en,de       |
-| Contabilità entrate/uscite con budget            | T.             | it             |
-| Contabilità doppia con budget                    | T.             |                |
-| Contabilità multimoneta                          | T.             |                |
+| Contabilità entrate/uscite con budget            |                | it,en,de       |
+| Contabilità doppia con budget                    | T              |                |
+| Contabilità multimoneta                          | T              |                |
 | Previsioni Finanziarie (tutorial)                |                | it,de,fr,en    |
 | Previsioni Finanziarie (introduzione)            |                | it,en,de       |
 |                                                  |                |                |
