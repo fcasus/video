@@ -16,7 +16,7 @@ Di seguito un elenco di possibili video da realizzare o che sono già stati real
 
 
 
-**IMPORTANTE**: Tutti i video devono essere fatti con la contabilità doppia.
+**IMPORTANTE**: Tutti i video devono essere fatti con la contabilità doppia e per iniziare in lingua inglese.
 
 
 ## Tutorial extra
