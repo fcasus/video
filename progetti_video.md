@@ -12,11 +12,19 @@ Di seguito un elenco di possibili video da realizzare o che sono già stati real
 | Contabilità multimoneta                          | T              |                |
 | Previsioni Finanziarie (tutorial)                |                | it,de,fr,en    |
 | Previsioni Finanziarie (introduzione)            |                | it,en,de       |
-|                                                  |                |                |
+| Come creare e gestire fatture                    | I              |                |
+| Come importare dati bancari                      | I              |                |
 
 
 
-**IMPORTANTE**: Tutti i video devono essere fatti con la contabilità doppia e per iniziare in lingua inglese.
+**IMPORTANTE**: Tutti i video devono essere fatti con la contabilità doppia, e per iniziare in lingua inglese.
+
+## Pianificazione video
+* Come creare e gestire fatture
+* Come importare dati bancari
+
+La priorità per questi due temi è dovuta al fatto dell'adozione delle fatture QR code in CH a partire da luglio e perché tanti utenti chiedono spesso supporto sulle fatture. È importante avere già proprio un tutorial per luglio e per inserirlo nella promozione delle fatture QR code con Banana.
+L'importazione dei dati è una parte importante per velocizzare l'inserimento dei dati in Banana e si ricollega agli scorsi video di come iniziare le varie contabilità.
 
 
 ## Tutorial extra
