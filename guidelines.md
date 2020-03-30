@@ -1,75 +1,61 @@
 # Linee guida per la creazione di video
 
-Fare un video per argomento: ogni video tratta solo un unico argomento. Evitare se possibile di "complicare" il video iserendo informazioni superflue e non inerenti al tema trattato. Questo allunga inutilmente il video e distrae dall'obiettivo finale.
+* I video servono per dare una visione d'insieme di una funzione, che è molto difficile dare con la documentazione.
+  Per esempio per i centri di costo, fanno vedere l'impostazione nella tabella conti, poi la tabella registrazione, inserimento con il meno, la scheda conto. 
+* Fare un video per argomento. 
+  Ogni video tratta solo un unico argomento. Evitare se possibile di "complicare" il video iserendo informazioni superflue e non inerenti al tema trattato. Questo allunga inutilmente il video e distrae dall'obiettivo finale.
+* I video devono, se possibile, essere basati sulla contabilità doppia, sempre.
+  Centri di costo, importazione e altro usano la doppia.
+* I video devono seguire un flow "naturale". 
+  Es. creazione file, adattamento tabelle conti/categorie, inserimento budget, inserimento registrazioni, mostrare come i saldi dei conti/categorie vengono automaticamente aggiornati, mostrare le stampe.
 
-I video devono, se possibile, essere basati sulla contabilità doppia, sempre.
+## Files
 
-I video devono seguire un flow "naturale": es. creazione file, adattamento tabelle conti/categorie, inserimento budget, inserimento registrazioni, mostrare come i saldi dei conti/categorie vengono automaticamente aggiornati, mostrare le stampe.
-
+Sotto la directory files:
+* Creiamo una directory per ogni video. 
+  * Nome in inglese, senza spazi e minuscolo. 
+* Creaiamo una sottodirectory per lingua (it, en, ).
+  *  Viene salvato il file ac2 che è stato usato come esempio.
+  *  Viene salvato il file usato per il commento.
 
 ## Registrazione schermo
 
 Quando si creano video e viene registrato quello che succede a schermo in Banana, bisognerebbe tenere in considerazione alcuni accorgimenti per avere una certa coerenza tra un video e l’altro e migliorare il risultato finale:
 
-1. Utilizzare Banana su Windows. La maggior parte degli utenti utilizza Banana per Windows e quindi si è scelto di andare sempre in quella direzione.
+* Utilizzare Banana su Windows. La maggior parte degli utenti utilizza Banana per Windows e quindi si è scelto di andare sempre in quella direzione.
 
-2. Utilizzare l’ultima versione utenti di Banana, attivata correttamente con un codice di licenza. Non utilizzare la Free Version o la versione Experimental. Questo per evitare che venga mostrato il messaggio limite delle 70 registrazioni e la dicitura Experimental.
+* Utilizzare l’ultima versione utenti di Banana, attivata correttamente con un codice di licenza. Non utilizzare la Free Version o la versione Experimental. Questo per evitare che venga mostrato il messaggio limite delle 70 registrazioni e la dicitura Experimental.
 
 ![A test image](/images/img002.png)
 
-3. Evitare spazi vuoti/bianchi sulla destra dello schermo quando si mostrano le tabelle. È brutto da vedere. 
+* Evitare spazi vuoti/bianchi sulla destra dello schermo quando si mostrano le tabelle. È brutto da vedere. 
 
 ![A test image](/images/img003.png)
 
-4. Fare in modo che la tabella in questione occupi tutta la larghezza della finestra. Allargare quindi le varie colonne ed eventualmente aumentare anche lo zoom. Lo zoom sarebbe sempre meglio aumentarlo un po’ (ad es. a 160%) in modo da facilitare poi la visione su tablet e smartphone.
+* Fare in modo che la tabella in questione occupi tutta la larghezza della finestra. Allargare quindi le varie colonne ed   eventualmente aumentare anche lo zoom. Lo zoom sarebbe sempre meglio aumentarlo un po’ (ad es. a 160%) in modo da facilitare poi la visione su tablet e smartphone.
 
 ![A test image](/images/img004.png)
 
+* Quando si registra un dialogo, possibilmente ingrandire in modo che il dialogo si veda bene.
+  Specialmente il dialogo impostazioni iniziale. Fare in modo che non risulti troppo piccolo.
 
 
+# Text to speach
 
+[Text to speach](text-to-speach.md)
 
+# Multi-lingue
 
+1. Si comincia a fare i video in inglese.
+2. Si fa il video in un'altra lingua, traducendo solo la spiegazione (parlato e sottotitoli). 
+3. Eventualmente si registra la sequenza video anche in un'altra lingua. 
+   Ma solo per le lingue e le funzioni più importanti.
 
+# Aggiunta video a Youtube
 
+* Appena fatto il video inserirlo su youtube, salvo che si abbiano seri dubbi che non funziona.
+* Nella spiegazione mettere il link alla pagina di documentazione specifica.
+  Contabilità doppia -> Come iniziare. 
+* Nella pagina di spiegazione, mettere il link.
+* Se si fa una versione aggiornata del  video, usare la funzione di ricerca 
 
-# Conversione testo in file audio con Microsoft Azure TTS
-## Installazione
-* Installare Visual Studio Code: https://code.visualstudio.com/
-* Installare Node.js (versione 8.12.x o successiva): https://nodejs.org/en/
-* Installare il pacchetto per Javascript
-  * Avviare Visual Studio Code
-  * Sulla pagina di Welcome, a destra dovrebbe apparire **Tools and languages: Install support for Javascript, Python,…**
-  * Cliccare su Javascript (in blu)
-  * Dovrebbe installare e riavviare.
-* Installare il paccheto “npm”
-  * Avviare Visual Studio Code
-  * CTRL+P
-  * Inserire il testo **ext install npm script runner e premere ENTER**
-  * Dal menu a sinistra selezionare “npm, npm support for VS Code (egamma)” e cliccare sul bottone verde INSTALL
-  * Riavviare VS Code
-* Installare i moduli necessari per l’applicativo tts
-  * Avviare Visual Studio Code
-  * Avviare il TERMINALE di VS Code
-  * Inserire e lanciare il comando **npm install request request-promise xmlbuilder readline-sync**
-
-A questo punto è tutto installato e pronto per l’utilizzo. Avviare uno degli scripts tts1.js, tts2.js, tts3.js per generare il file audio partendo da un testo.
-
-## Come si usa
-* Creare una cartella nella quale inserire:
-  * lo script **tts.js**
-  * i files XML che contengono il testo da convertire
-* Aprire il terminale in Visual Studio Code
-* Spostarsi nella cartella (es. cd Desktop/nomecartella)
-* Avviare lo script con il comando **node tts.js**
-* Digitare il nome del file XML (es. text_it.xml)
-* Aspettare che termini
-* Nella cartella verrà generato il file audio.
-
-![A test image](/images/img005.png)
-
-
-# Link utili
-[Google](https://cloud.google.com/text-to-speech/docs/ssml)
-
-[Microsoft](https://docs.microsoft.com/en-us/cortana/skills/speech-synthesis-markup-language#prosody-element)
