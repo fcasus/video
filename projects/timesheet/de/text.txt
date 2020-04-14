@@ -2,40 +2,40 @@ VOCE DEL VIDEO
 ==============
 
 Willkommen bei Banana Buchhaltung.
-Dieses Video erklärt Ihnen, wie Sie die kostenlose Zeiterfassungs-Applikation nutzen können.
+Dieses Video erkl√§rt Ihnen, wie Sie die kostenlose Zeiterfassungs-Applikation nutzen k√∂nnen.
 
-Sie können damit ganz einfach für sich und Ihren Arbeitgeber Monatsberichte Ihrer Arbeitszeiten erstellen.
+Sie k√∂nnen damit ganz einfach f√ºr sich und Ihren Arbeitgeber Monatsberichte Ihrer Arbeitszeiten erstellen.
 
 Beginnen Sie mit der Erstellung einer neuen Zeiterfassungs-Datei.
-Führen Sie aus Menü Datei den Befehl Neu aus.
-Wählen Sie die Region Universell-Deutsch, die Kategorie Alles und den Dateityp Arbeitszeiterfassung aus.
-Wählen Sie zum Schluss auf der rechten Seite die gewünschte Vorlage aus und klicken Sie auf die Schaltfläche Erstellen.
+F√ºhren Sie aus Men√º Datei den Befehl Neu aus.
+W√§hlen Sie die Region Universell-Deutsch, die Kategorie Alles und den Dateityp Arbeitszeiterfassung aus.
+W√§hlen Sie zum Schluss auf der rechten Seite die gew√ºnschte Vorlage aus und klicken Sie auf die Schaltfl√§che Erstellen.
 
-Erfassen Sie jetzt einige Informationen für die Zeiterfassungs-Datei:
-Geben Sie den Vornamen und den Namen sowie den Namen der Firma, für welche Sie arbeiten, ein.
+Erfassen Sie jetzt einige Informationen f√ºr die Zeiterfassungs-Datei:
+Geben Sie den Vornamen und den Namen sowie den Namen der Firma, f√ºr welche Sie arbeiten, ein.
 Bestimmen Sie das Anfangsdatum und Enddatum der Arbeitsperiode.
 Geben Sie dann den Arbeitsprozentsatz ein.
 
 Begeben Sie sich jetzt in die Registerkarte Anfang:
-Hier können Sie Ihren Arbeitszeitplan definieren.
-Tragen Sie allfällige vom Vorjahr verbleibende unbezahlte Arbeitsstunden und Ferienstunden ein.
+Hier k√∂nnen Sie Ihren Arbeitszeitplan definieren.
+Tragen Sie allf√§llige vom Vorjahr verbleibende unbezahlte Arbeitsstunden und Ferienstunden ein.
 Definieren Sie nun die zu leistenden Arbeitsstunden:
-Sie können beispielsweise die ersten drei Tage der Woche als 8-Stunden-Arbeitstage festlegen.
+Sie k√∂nnen beispielsweise die ersten drei Tage der Woche als 8-Stunden-Arbeitstage festlegen.
 Donnerstag und Samstag sind arbeitsfreie Tage und der Sonntag ist ein gesetzlicher Feiertag.
-Klicken Sie auf OK und bestätigen Sie den ausgewählten Zeitraum, um Ihre Zeiterfassungs-Datei zu erstellen.
+Klicken Sie auf OK und best√§tigen Sie den ausgew√§hlten Zeitraum, um Ihre Zeiterfassungs-Datei zu erstellen.
 
 Personalisieren Sie die Journal-Tabelle.
-In der Journal-Tabelle müssen Sie die täglichen Daten für die Zeiterfassung eingeben.
+In der Journal-Tabelle m√ºssen Sie die t√§glichen Daten f√ºr die Zeiterfassung eingeben.
 Die Tabellenzeilen werden vom Programm automatisch erstellt
 Feiertage und arbeitsfreie Tage werden in Rot beziehungsweise Blau angezeigt.
 
 Geben Sie Feiertage ein oder passen Sie diese an.
-Wählen Sie beispielsweise den ersten Januar.
-Doppelklicken Sie in die Zelle der Feiertag-Spalte und wählen Sie den Wert 0 aus der Liste aus.
-Jetzt ist dieser Tag für die Applikation ein Feiertag.
-Sie können auch den Text der Zelle der Spalte Beschreibung Tag anpassen.
-Doppelklicken Sie auf die Zelle und fügen Sie das Gartenhagzeichen gefolgt vom Text ein.
-Auf diese Weise können Sie alle Feiertage definieren und anpassen.
+W√§hlen Sie beispielsweise den ersten Januar.
+Doppelklicken Sie in die Zelle der Feiertag-Spalte und w√§hlen Sie den Wert 0 aus der Liste aus.
+Jetzt ist dieser Tag f√ºr die Applikation ein Feiertag.
+Sie k√∂nnen auch den Text der Zelle der Spalte Beschreibung Tag anpassen.
+Doppelklicken Sie auf die Zelle und f√ºgen Sie das Gartenhagzeichen gefolgt vom Text ein.
+Auf diese Weise k√∂nnen Sie alle Feiertage definieren und anpassen.
 
 Erfassen Sie Ihre Arbeitszeiten.
 Sie sind jetzt bereit, die Zeiterfassungs-Datei effektiv zu nutzen.
@@ -43,21 +43,21 @@ Die Applikation zeigt die Zeile des aktuellen Tages gelb markiert an.
 Geben Sie in den Spalten Anfang1 und Ende1 die Startzeit und Endzeit Ihrer Arbeit am Vormittag ein.
 In den Spalten Anfang2 und Anfang 2 hingegen, geben Sie die Startzeit und Endzeit Ihrer Arbeit am Nachmittag ein.
 In der Spalte Total werden automatisch die geleisteten Arbeitsstunden pro Tag angezeigt.
-Abwesenheitsstunden infolge Krankheit sowie Ferienstunden (auch für die Planung) werden in den entsprechenden Spalten erfasst.
+Abwesenheitsstunden infolge Krankheit sowie Ferienstunden (auch f√ºr die Planung) werden in den entsprechenden Spalten erfasst.
 
-Überprüfen Sie Ihre Daten.
+√úberpr√ºfen Sie Ihre Daten.
 Fahren Sie mit der Eingabe Ihrer Arbeitsstunden weiter. Die App aktualisiert automatisch die Werte der Spalten Differenz und Progressiv.
-Die Differenz-Spalte zeigt die tägliche Differenz zwischen der Sollzeit und den geleisteten Arbeitsstunden an.
-Die Spalte Progressiv berücksichtigt all diese täglichen Differenzen und addiert sie.
+Die Differenz-Spalte zeigt die t√§gliche Differenz zwischen der Sollzeit und den geleisteten Arbeitsstunden an.
+Die Spalte Progressiv ber√ºcksichtigt all diese t√§glichen Differenzen und addiert sie.
 Am Monatsende werden die Summen der geleisteten Arbeitsstunden, der Sollstunden und die Differenz ausgewiesen.
 
 Erstellen Sie Monatsberichte.
-Erstellen Sie für sich selbst oder Ihren Arbeitgeber monatliche Berichte.
-Wählen Sie aus Menü Verschiedene1 den Befehl Monatsbericht aus.
-Geben Sie den Zeitraum ein und bestätigen Sie mit OK.
-Die Applikation erstellt einen zusammenfassenden Ausdruck des gewählten Zeitraums mit den meistbenutzten Spalten.
+Erstellen Sie f√ºr sich selbst oder Ihren Arbeitgeber monatliche Berichte.
+W√§hlen Sie aus Men√º Verschiedene1 den Befehl Monatsbericht aus.
+Geben Sie den Zeitraum ein und best√§tigen Sie mit OK.
+Die Applikation erstellt einen zusammenfassenden Ausdruck des gew√§hlten Zeitraums mit den meistbenutzten Spalten.
 
-Laden Sie Banana Buchhaltung jetzt herunter und probieren Sie die kostenlose App für die Zeiterfassung!
+Laden Sie Banana Buchhaltung jetzt herunter und probieren Sie die kostenlose App f√ºr die Zeiterfassung!
 
 Weitere Informationen finden Sie unter www.banana.ch.
 
@@ -66,11 +66,11 @@ SLIDES NEL VIDEO
 ================
 
 Zeiterfassung
-Monatsberichte für Sie und Ihren Arbeitgeber
+Monatsberichte f√ºr Sie und Ihren Arbeitgeber
 Datei erstellen und einrichten
 Personalisieren Sie die Journal-Tabelle
 Erfassen Sie Ihre Arbeitszeiten
-Überprüfen Sie Ihre Daten
+√úberpr√ºfen Sie Ihre Daten
 Erstellen Sie Monatsberichte
 Weitere Informationen finden Sie unter www.banana.ch
 

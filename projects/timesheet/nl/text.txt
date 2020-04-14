@@ -1,4 +1,4 @@
-TIME SHEET Ð VOICE
+TIME SHEET â€“ VOICE
 ==================
 
 Welkom bij Banana Boekhouding.
@@ -8,7 +8,7 @@ U kunt eenvoudig maandoverzichten maken van uw werktijden voor uzelf en uw werkg
 
 Begin met het maken van een nieuw Time Sheet bestand.
 Kies Nieuw in het menu.
-Kies het Nederland-Nederlands gebied, Alle Categorie‘n, en het Time Sheet type.
+Kies het Nederland-Nederlands gebied, Alle CategorieÃ«n, en het Time Sheet type.
 Kies tenslotte het model aan de rechterkant en klik op Aanmaken.
 
 Vul nu uw informatie in het Time Sheet in:
@@ -53,7 +53,7 @@ Aan het eind van de maand ziet u het totaal van de werkelijk gewerkte uren, de v
 
 Maandoverzichten maken.
 Maak maandoverzichten voor uzelf en voor uw werkgever.
-Kies van menu HulpprogrammaÕs het commando Maandelijks rapport.
+Kies van menu Hulpprogrammaâ€™s het commando Maandelijks rapport.
 Voer de periode in en klik op OK.
 Het programma maakt een overzichtsrapport van de geselecteerde periode.
 
@@ -63,7 +63,7 @@ Bezoek banana.ch voor meer informatie.
 
 
 
-TIME SHEET Ð SLIDES
+TIME SHEET â€“ SLIDES
 ===================
 
 Time Sheet
