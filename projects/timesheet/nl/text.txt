@@ -1,0 +1,76 @@
+TIME SHEET – VOICE
+==================
+
+Welkom bij Banana Boekhouding.
+Deze video laat u zien hoe u de gratis Time Sheet applicatie gebruikt.
+
+U kunt eenvoudig maandoverzichten maken van uw werktijden voor uzelf en uw werkgever.
+
+Begin met het maken van een nieuw Time Sheet bestand.
+Kies Nieuw in het menu.
+Kies het Nederland-Nederlands gebied, Alle Categorieën, en het Time Sheet type.
+Kies tenslotte het model aan de rechterkant en klik op Aanmaken.
+
+Vul nu uw informatie in het Time Sheet in:
+Voer u voor- en achternaam in en het bedrijf waarvoor u werkt.
+Geef de begin- en einddatum van uw werkperiode aan.
+En voer dan uw werkpercentage in.
+
+Ga nu naar tabblad Begin.
+Hier kunt u uw werktijden plannen.
+Vul onbetaalde werkuren en vakantiedagen van het voorgaande jaar in.
+Geef dan de verplichte uren op.
+Bijvoorbeeld, u kunt de eerste drie dagen van de week instellen als werkdagen, 8 uur per dag.
+Donderdag en zaterdag zijn niet-werk dagen en zondag is een feestdag.
+Klik op Ok en bevestig de geselecteerde periode om uw time sheet instelling te voltooien.
+
+De Journaal tabel aanpassen.
+In de Journaal tabel moet u de dagelijkse gegevens van het time sheet invoeren.
+De rijen van de tabel worden automatisch door het programma aangemaakt.
+Feestdagen en niet-werkdagen worden weergegeven in rood en blauw.
+
+Stel de feestdagen in en pas ze aan.
+Bijvoorbeeld, kies de eerste dag van januari;
+Dubbelklik in de cel Feestdag en kies 0 uit de lijst.
+Voor het programma is dit nu een feestdag.
+U kunt ook de tekst in de kolom Dag beschrijving aanpassen:
+Dubbelklik en de cel en voer het hekje in met een tekst.
+Op deze manier kunt u alle vrije dagen aanpassen.
+
+De werktijden invoeren.
+Nu bent u klaar om het time sheet echt te gaan gebruiken.
+Het programma geeft de huidige dag aan met een gele rij.
+Voer in de Start 1 en Stop 1 kolommen de begin- en eindtijd van het werk in de morgen in.
+Voer in de Start 2 en Stop 2 kolommen de begin- en eindtijd van het werk in de middag in.
+De kolom Totaal laat automatisch de gewerkte tijd per dag zien.
+Voer de uren ziekteverlof in en plan uw vakantie door de uren in de overeenkomstige kolommen aan te geven.
+
+Uw gegevens controleren
+Ga door met het invoeren van uw gewerkte uren en het programma werkt automatisch de waardes bij in de kolommen Verschil en Progressief.
+De kolom Verschil geeft het dagelijkse verschil aan tussen de verschuldigde en de werkelijk gewerkte uren.
+De kolom Progressief telt al deze dagelijkse verschillen op.
+Aan het eind van de maand ziet u het totaal van de werkelijk gewerkte uren, de verschuldigde uren en het verschil.
+
+Maandoverzichten maken.
+Maak maandoverzichten voor uzelf en voor uw werkgever.
+Kies van menu Hulpprogramma’s het commando Maandelijks rapport.
+Voer de periode in en klik op OK.
+Het programma maakt een overzichtsrapport van de geselecteerde periode.
+
+Download Banana Boekhouding nu, en probeer de time sheet applicatie gratis!
+
+Bezoek banana.ch voor meer informatie.
+
+
+
+TIME SHEET – SLIDES
+===================
+
+Time Sheet
+Maandoverzichten voor uzelf en uw werkgever
+Het maken en instellen van het bestand
+De Journaal tabel aanpassen
+De werktijden invoeren
+Uw gegevens controleren
+Maandoverzichten maken
+Bezoek www.banana.ch voor meer informatie
