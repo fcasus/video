@@ -1,0 +1,44 @@
+Cover and titles
+================
+•	How to get started
+•	Create the accounting file
+•	Customize the accounting plan
+•	Enter transactions
+•	… and your accounting is ready!
+•	Congratulations! You have created your first Banana Accounting file
+•	For more information visit our website
+
+Voice
+=====
+Welcome to Banana Accounting!
+This short video will explain you how to start a new accounting.
+
+First step: create the accounting file.
+Click on the New icon in the toolbar.
+Choose a region and a language, like for example Universal-English.
+Continue by choosing the category Business.
+Select the accounting type Double-entry. 
+And finally, from the list of the models select the one that best suits your needs.
+
+In the following window, enter some property of the accounting file.
+Change the name, the opening date, the closing date and the base currency.
+
+Second step: adapt the accounting plan.
+Edit the existing rows of the table: change accounts numbers, descriptions, groups and more.
+Or simply add new accounts according to your personal needs.
+
+Third step: enter the accounting transactions.
+Add your own transactions and keep your accounting movements under control.
+
+..and your accounting is ready!
+
+Professional results with one click!
+Reports such as balance sheet, profit and loss statement, account cards, cash book, summary and VAT report only need a moment to get generated.
+
+Congratulations!
+You have created your first Banana Accounting file.
+
+For more information, visit banana.ch.
+
+
+

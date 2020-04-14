@@ -1,0 +1,49 @@
+Einnahmen-Ausgaben-Rechnung  
+Willkommen bei Banana Buchhaltung.
+Dieses Kurz-Video erklärt Ihnen, wie Sie eine Buchhaltung mit Datei-Typ Einnahmen-Ausgaben-Rechnung erstellen.
+Es ist die einfachste und intuitivste Methode im Gegensatz zur doppelten Buchhaltung, liefert jedoch auf jeden Fall vollständige und professionelle Ergebnisse.
+
+Beginnen Sie mit der Erstellung einer neuen Datei 
+Klicken Sie in der Werkzeugleiste auf die Ikone "Neu".
+Wählen Sie unter Region das gewünschte Land und die gewünschte Sprache aus.
+Überprüfen Sie, ob das Feld "Universelle Vorlagen einschliessen" mit Visum versehen ist.
+Wählen Sie die Kategorie "Alles" aus.
+Wählen Sie den gewünschten Datei-Typ "Einnahmen-Ausgaben-Rechnung" oder "Einnahmen-Ausgaben-Rechnung mit MwSt/USt" aus.
+Wählen Sie die Vorlage aus, die am Besten zu Ihrer Aktivität passt und klicken danach auf die Schaltfläche "Erstellen".
+Ändern Sie im darauffolgenden Dialogfenster den Namen, das Eröffnungsdatum, das Abschlussdatum und die Basiswährung.
+ 
+Passen Sie die Konten-Tabelle an 
+In der Konten-Tabelle sind die Vermögenskonten aufgeführt, die an Ihre Bedürfnisse angepasst werden können.
+Sie können beispielsweise die Kontonummer oder die Beschreibung ändern.
+Bei Bedarf können Sie den Eröffnungssaldo in die Spalte "Eröffnung" eingeben.
+Es können neue Konten hinzugefügt werden.
+Oder bestehende, die Sie nicht benötigen, löschen.
+ 
+Passen Sie die Kategorien-Tabelle an 
+In der Kategorien-Tabelle sind die Einnahmen- und Ausgabenposten enthalten. 
+Auch hier können Sie die Kontonummern oder die Beschreibungen der Kategorien ändern.
+Sie können neue Konten hinzufügen, die für Ihr Unternehmen relevant sind.
+Oder bestehende löschen, die Sie nicht benötigen.
+ 
+Passen Sie die Budget-Tabelle an
+In der Budget-Tabelle können Sie für das angegebene Jahr die voraussichtlichen Einnahmen- und Ausgabenposten erfassen.
+Beginnen Sie mit der Eingabe der monatlichen Ausgaben:
+Geben Sie unter den Fixkosten zum Beispiel die Büromiete ein, indem Sie das Anfangsdatum- und eventuell Enddatum, den Wiederholungscode, die Beschreibung, den Betrag und die Kategorie-Nummer eingeben.
+Genauso ist zum Beispiel für Gehälter Ihrer Mitarbeiter vorzugehen.
+Das gleiche Verfahren kann für geschätzte monatliche Einnahmen angewendet werden, zum Beispiel für Dienstleistungsverkauf an Kunden, indem die erwarteten Beträge erfasst werden.
+ 
+Geben Sie die Bewegungen ein
+Geben Sie in der Tabelle Buchungen die tatsächlichen Buchhaltungsbewegungen ein.
+Das Eingabeverfahren ist sehr ähnlich wie das der Budget-Tabelle:
+Geben Sie das Datum, die Beschreibung, den eingehenden oder ausgehenden Betrag, das Konto, auf dem die Bewegung ausgeführt wurde und die Kategorie ein, welche der Einnahme oder Ausgabe zugeordnet wird.
+Wiederholen Sie diesen Vorgang für alle Bewegungen.
+ 
+Sie können in der Tabelle Buchungen auch die Bankdaten importieren und die Buchungen mit digitalen Belegen verknüpfen. Wählen Sie hierzu unter Menü Buch1 -> In Buchhaltung importieren aus.
+Nachdem Sie alle Buchungen eingegeben haben, werden Sie sehen, dass das Programm automatisch die Konto- und Kategoriebeträgenaktualisiert, die Sie mit den Budgetbeträgen vergleichen können.
+ 
+Jährlicher Ausdruck mit Budgetvergleich
+Drucken Sie Ihre Berichte einschliesslich Vorjahressaldi, aktuellen Saldi und aufgrund der Budgetbuchungen für die Zukunft berechneten Saldi aus.
+Sie können Ihr Budget jederzeit mit Ihren effektiven Daten vergleichen:
+Erzeugen Sie einen Kontrollausdruck, indem Sie aus Menü Buch1 den Befehl Formatierter Ausdruck nach Gruppen - Jährlicher Ausdruck mit Budgetvergleich ausführen.
+Somit können Sie sehen, ob Sie die erhofften Ersparnisse erzielt haben. 
+Für weitere Informationen besuchen Sie bitte unsere Webseite banana.ch.

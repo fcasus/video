@@ -1,0 +1,67 @@
+Previsione finanziaria contabilità partita doppia
+
+Benvenuti in Banana Contabilità!
+Questo video ti mostra come creare una previsione finanziaria con la contabilità in partita doppia.
+
+
+Inizia con la creazione di un nuovo file
+
+Clicca sull'icona "Nuovo"
+Seleziona la regione e la lingua
+La categoria e il tipo di contabilità
+Scegli infine il modello che meglio si addice alla tua attività
+Nella schermata seguente modifica il nome, la data di apertura e di chiusura, e la moneta di base
+
+
+Adatta la tabella conti
+
+Nella tabella Conti sono elencati i conti del Bilancio e del Conto Economico
+Questi conti possono essere personalizzati a seconda delle tue esigenze:
+Puoi per esempio cambiare i numeri di conto e le descrizioni
+Puoi inserire nella colonna Apertura il saldo iniziale
+Puoi aggiungere dei conti ed eliminare quelli che non ti servono
+
+
+Crea la tua previsione
+
+Nella tabella preventivo puoi ora cominciare a creare la tua previsione finanziaria inserendo le registrazioni previste.
+Comincia dapprima con le “operazioni iniziali”.
+inserisci il versamento del capitale sul conto bancario indicando la data, la descrizione, il conto dare (cioè il conto che viene addebitato), il conto avere (cioè il conto che viene accreditato) e infine l’importo
+ripeti la stessa operazione per il prestito ricevuto
+per il pagamento dei macchinari
+e per il pagamento del mobilio
+
+Inserisci successivamente le “uscite mensili”, specificando quindi nella colonna ripeti la ripetizione desiderata, in questo caso M per la frequenza mensile.
+Inserisci l’affitto dell’ufficio
+l’acquisto di materiale
+e lo stipendio dei tuoi collaboratori
+
+Puoi adottare lo stesso procedimento per le entrate mensili inserendo la vendita dei tuoi prodotti con i relativi importi in entrata.
+
+Come vedi, nella colonna “Totale” ti viene mostrato il totale annuale dei rispettivi movimenti.
+Se clicchi sull’icona del conto bancario puoi vedere tutte le registrazioni ricorrenti che sono state generate automaticamente dal sistema.
+Grazie al saldo progressivo, puoi inoltre vedere l’evoluzione esatta della liquidità.
+
+
+Inserisci le registrazioni contabili
+
+Nella tabella Registrazioni inserisci i movimenti effettivi della tua contabilità.
+Puoi importare le transazioni bancarie oppure puoi inserire i dati manualmente.
+Dopo aver inserito tutte le registrazioni puoi verificare i saldi aggiornati dei tuoi conti e puoi immediatamente fare un confronto con il tuo preventivo.
+
+
+Rendiconto annuale e confronto preventivo
+
+La cosa più importante per ogni attività è che questa sia redditizia e che disponga di sufficiente liquidità per far fronte ai costi e per pagare i salari a fine mese.
+Per controllare questi aspetti seleziona dal menu Conta1, bilancio abbellito per gruppi, Preventivo mensile 1° anno
+Sotto Bilancio puoi vedere la previsione degli attivi e dei passivi, mentre sotto Conto economico puoi trovare la previsione dei tuoi ricavi e dei tuoi costi.
+E nell’ultima riga in fondo puoi verificare se la tua attività sia redditizia, quindi se sta generando degli utili oppure se è in perdita.
+Naturalmente puoi generare altri rendiconti su più anni e scegliere la suddivisione che preferisci.
+Puoi anche controllare la liquidità e l’evolversi del tuo cash flow visualizzando la tabella del conto bancario.
+Con l’aiuto del saldo progressivo potrai prevedere facilmente in che periodo potresti avere dei problemi di liquidità.
+Se invece preferisci un rappresentazione visuale, puoi generare il grafico associato alla tabella.
+Ovviamente puoi anche fare un confronto tra la tua previsione e la tua contabilità effettiva. Seleziona per questo Conta1, Rendiconto abbellito con gruppi, Bilancio effettivo e budget.
+Facendo così potrai sempre verificare che la tua attività stia andando secondo i tuoi piani.
+
+Per ulteriori informazioni visita banana.ch
+

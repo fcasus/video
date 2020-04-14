@@ -1,0 +1,45 @@
+
+Benvenuti in Banana Contabilità.
+Questo breve video ti spiegherà come fare a creare un budget familiare con il libro cassa.
+
+Inizia con la creazione di un nuovo fail.
+Clicca sull'icona Nuovo nella barra degli strumenti.
+Nella schermata Crea nuovo fail, scegli una regione selezionando la nazione e la lingua desiderata.
+Controlla che ci sia la spunta sulla casella "Includi i modelli universali".
+Prosegui scegliendo la categoria Privato.
+Seleziona il tipo Libro cassa.
+Nell'elenco a destra seleziona il modello Budget familiare e Conti di casa.
+
+Nella schermata che segue, inserisci alcuni parametri del fail contabile.
+Modifica il nome la data di apertura la data di chiusura e la moneta di base.
+
+Adatta la tabella Conti.
+Nella tabella Conti è presente il conto per gestire la cassa.
+Puoi personalizzarlo cambiando la descrizione e il numero di conto.
+
+Adatta la tabella Categorie.
+Nella tabella Categorie sono presenti le categorie d'entrata e d'uscita.
+Esse si dividono in entrate uscite fisse uscite variabili e centri di costo.
+Anche quì, puoi personalizzare la tabella cambiando descrizioni e numeri di conto.
+
+Adatta la tabella preventivo.
+Nella tabella preventivo sono presenti le varie uscite ed entrate che è possibile preventivare.
+Esse si dividono in entrate uscite fisse ed uscite variabili.
+Potrai modificare le voci già esistenti, eliminare quelle che non ti servono, ed aggiungere nuove voci.
+
+Confronta le uscite e le entrate preventivate.
+Per completare il tuo budget, rimane solo un ultimo passaggio: confronta le entrate e le uscite preventivate mediante la stampa del "Preventivo annuale".
+È importante che il risultato finale sia positivo.
+In caso contrario significa che stai gestendo male i tuoi soldi.
+
+Inserisci le registrazioni.
+Cancella innanzitutto tutte le righe che non ti servono.
+Una volta fatto, aggiungi le tue registrazioni per avere tutti i movimenti sotto controllo.
+
+Confronta e ripeti per un nuovo obiettivo.
+Alla fine dell'anno, potrai fare il confronto finale tra il resoconto reale e il preventivo d'inizio anno.
+Con la stampa del "Rendiconto annuale e confronto preventivo" potrai vedere se sei riuscito ad ottenere il risparmio desiderato.
+
+Congratulazioni, hai creato il tuo primo budget in Banana Contabilità.
+Per ulteriori informazioni, visita il nostro sito.
+

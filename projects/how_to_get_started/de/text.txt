@@ -1,0 +1,28 @@
+
+Willkommen bei Banana Buchhaltung.
+Dieses Kurz-Video erklärt Ihnen, wie Sie in nur drei einfachen Schritten beginnen
+
+Schritt 1: Erstellen Sie eine neue Datei.
+Klicken Sie in der Werkzeugleiste auf die Ikone Neu.
+Wählen Sie unter Region das gewünschte Land und die gewünschte Sprache aus.
+Wählen Sie die Kategorie zum Beispiel Private aus.
+Jetzt wählen Sie den Dateityp zum Beispiel Doppelte Buchhaltung aus.
+Nun wählen Sie die für Sie passende Vorlage aus.
+
+Geben Sie im darauffolgenden Dialogfenster einige Einstellungen der Buchhaltungsdatei ein.
+Ändern Sie den Namen, das Anfangs- und Enddatum und das Währungskennzeichen Ihrer Basiswährung.
+
+Schritt 2: Passen Sie die Konten-Tabelle an.
+Bearbeiten Sie die in dieser Tabelle schon vorhandenen Zeilen, indem Sie Kontonummern, Beschreibungen, Eröffnungssaldi und so weiter ändern.
+Oder fügen Sie bei Bedarf neue Konten hinzu.
+
+Schritt 3: Geben Sie die Bewegungen ein.
+Geben Sie Ihre persönlichen Buchungen ein und halten Sie diese stets unter Kontrolle.
+
+Und schon ist die Buchhaltung erledigt!
+
+Ausdrücke wie die Bilanz, die Erfolgsrechnung, das Buchungsjournal, die Kontoauszüge, die Mehrwertsteuer/Umsatzsteuer-Zusammenfassung und das Mehrwertsteuer/Umsatzsteuer-Abrechnungsformular sind nur einen einzigen Klick entfernt.
+
+Für weitere Informationen besuchen Sie bitte unsere Webseite banana.ch.
+
+

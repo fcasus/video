@@ -1,0 +1,64 @@
+Cover and titles
+================
+Learn how to easily set a family budget to better manage your money, get valuable savings, and reduce debt.
+•	Create a new accounting file
+•	Adapt the Accounts table
+•	Adapt the Categories table
+•	Create your budget
+•	Compare budgeted expenditure and revenue
+•	Enter transactions
+•	Compare the yearly report to the budget
+
+Voice
+=====
+Welcome to Banana Accounting.
+This short video, will explain you how to create a family budget using the cash book.
+
+Start with the creation of a new file.
+Click on the New icon in the toolbar.
+Choose a region and a language, Universal-English.
+Continue by choosing the category Private.
+Select the type Cash Manager.
+Finally, select the model " Family budget and Household accounts".
+
+In the following window, enter some property of the accounting file.
+Change the name, the opening date, the closing date and the base currency.
+
+Adapt the Accounts table.
+The account for liquidity management is entered in the Accounts table.
+You can enter one account only.
+Change the account number, the description and the opening balance according to your needs.
+
+Adapt the Categories table.
+The Revenue and Expenses accounts are entered in the Categories table.
+Generally, they are divided into Revenue, Fixed Costs, Variable Costs and Cost Centers.
+
+Create your budget.
+In this table are entered the various revenues and expenses that you will have to incur during the year.
+Start with the revenues.
+Under the heading fixed revenues, enter for example your monthly salary.
+Switch now to the expenses.
+Under the heading fixed costs, enter for example the monthly rent.
+Do the same for extra expenses.
+Under the heading extra costs, enter for example the monthly expense for restaurants.
+
+Compare budgeted expenditure and revenue.
+To complete the budget, now you need to compare estimated revenue and expenditure by printing the Yearly Budget.
+From the menu, select Account1, Enhanced statement with groups, and Yearly budget.
+Check the final result to make sure it is positive, which means that you are handling your money well.
+
+Enter the accounting transactions.
+You can now start to register the real movements of your liquidity, and compare them from time to time with the budget's values.
+
+Yearly report and budget comparison.
+At the end of the year you can make the final comparison between the actual report and the starting budget.
+In this way you will have the opportunity to see if you have managed to get the savings that you had budgeted.
+Generate the control report from the menu Account1, Enhanced statement with groups, Yearly report compared to budget.
+Also here, check the final result to make sure it is positive.
+
+Congratulations!
+You created your family budget with the cash book.
+
+For more information, visit banana.ch.
+
+

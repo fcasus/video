@@ -1,0 +1,39 @@
+Couverture et titres
+====================
+•	Comment démarrer
+•	Créez votre fichier de comptabilité
+•	Personnalisez un plan comptable
+•	Saisissez des écritures
+•	... et votre comptabilité est prête !
+•	Félicitations ! Vous avez créé votre premier fichier Banana Comptabilité
+•	Pour plus d'informations, visitez notre site web
+
+VOIX
+====
+Bienvenue sur Banana Comptabilité !
+Cette courte vidéo vous expliquera comment commencer une nouvelle comptabilité.
+
+Première étape: Créez votre fichier de comptabilité.
+Cliquez sur l'icône Nouveau dans la barre d'outils.
+Choisissez une région et une langue, comme par exemple Universel-Français.
+Continuez en choisissant la catégorie Entreprise.
+Sélectionnez le type de comptabilité en partie double.
+Et enfin, dans la liste des modèles, sélectionnez celui qui vous convient le mieux.
+Dans la fenêtre suivante, saisissez quelques propriétés du fichier de comptabilité. Modifiez le nom, la date d'ouverture, la date de clôture et la devise de base.
+
+Deuxième étape : adaptez le plan comptable.
+Modifiez les lignes existantes du tableau : changez les numéros de comptes, les descriptions, les groupes et plus encore.
+Ou ajoutez tout simplement de nouveaux comptes selon vos besoins personnels.
+
+Troisième étape : saisissez les écritures comptables.
+Ajoutez vos propres écritures et gardez le contrôle de vos mouvements comptables.
+..et votre comptabilité est prête !
+
+Des résultats professionnels en un clic !
+Les rapports tels que Bilan, Compte de Résultat, fiches de compte, Livre de caisse, Résumé et Rapport TVA n'auront besoin que d'un instant pour être générés.
+
+Félicitations!
+Vous avez créé votre premier fichier Banana Comptabilité.
+Pour plus d'informations, visitez le site banana.ch.
+
+

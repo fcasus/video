@@ -1,0 +1,66 @@
+Couverture et titres
+====================
+Apprenez à établir facilement un budget familial pour mieux gérer votre argent, obtenir des économies précieuses et réduire vos dettes.
+•	Créez un nouveau fichier comptable
+•	Adaptez le tableau Comptes
+•	Adaptez le tableau Catégories
+•	Créez votre budget
+•	Comparez les dépenses et les recettes budgétisées
+•	Saisissez vos écritures
+•	Comparez le rapport annuel par rapport à votre budget
+
+Voix
+====
+Bienvenue à Banana Comptabilité.
+Cette courte vidéo, vous expliquera comment créer un budget familial en utilisant le livre de caisse.
+
+Commencez par la création d'un nouveau fichier.
+Cliquez sur l'icône Nouveau dans la barre d'outils.
+Choisissez une région et une langue, France-Français.
+Continuez en choisissant la catégorie Privé.
+Sélectionnez le type Cash Manager.
+Enfin, sélectionnez le modèle "Budget familial et comptes du ménage (Livre de caisse)".
+Dans la fenêtre suivante, saisissez quelques propriétés du fichier comptable. Modifiez le nom, la date d'ouverture, la date de clôture et la devise de base.
+
+Adaptez le tableau des comptes.
+Le compte pour la gestion des liquidités est inscrit dans le tableau Comptes. 
+Vous ne pouvez saisir qu'un seul compte.
+Modifiez le numéro de compte, la description et le solde d'ouverture en fonction de vos besoins.
+
+Adaptez le tableau Catégories.
+Les comptes de recettes et de dépenses sont saisis dans le tableau Catégories.
+En général, ils sont divisés en Recettes, Dépenses fixes, Dépenses optionnelles et Centres de coûts.
+
+Créez votre budget.
+Dans ce tableau, écrivez les différentes recettes et dépenses que vous envisagez pour l'année.
+Commencez par les recettes.
+Sous la rubrique des recettes, saisissez par exemple votre salaire mensuel.
+Passez maintenant aux dépenses.
+Sous la rubrique dépenses fixes, saisissez par exemple le loyer mensuel.
+Faites de même pour les dépenses extra.
+Sous la rubrique Variables Optionnelles, entrez par exemple la dépense mensuelle pour les restaurants.
+
+Comparez les dépenses et les recettes budgétisées.
+Pour compléter le budget, vous devez maintenant comparer les recettes et les dépenses prévues en imprimant le budget annuel.
+Dans le menu, sélectionnez Compta1, Rapport formaté par groupes, et Budget annuel.
+Vérifiez le résultat final pour vous assurer qu'il soit positif, ce qui signifie que vous gérez bien votre argent.
+
+
+Saisissez les écritures comptables.
+Vous pouvez maintenant commencer à écrire les mouvements réels de vos liquidités et les comparer de temps en temps avec les valeurs du budget.
+
+Rapport annuel et comparaison avec le budget.
+À la fin de l'année, vous pouvez effectuer la comparaison finale entre le rapport réel et le budget de départ.
+Vous aurez ainsi l'occasion de voir si vous avez réussi à réaliser les économies comme prévu dans votre budget.
+Générez le rapport de contrôle à partir du menu Compta1, Rapport formaté par groupes, Rapport annuel comparé au budget.
+Ici aussi, vérifiez le résultat final pour vous assurer qu'il soit positif.
+
+Félicitations !
+Vous avez créé votre budget familial avec livre de caisse.
+
+Pour plus d'informations, visitez le site banana.ch.
+
+
+
+
+

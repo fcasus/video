@@ -1,0 +1,61 @@
+Contabilità Entrate/Uscite 
+
+Benvenuti in Banana Contabilità! 
+Questo video ti mostra come creare una contabilità Entrate/Uscite.
+È il metodo più facile e intuitivo da usare rispetto alla contabilità in partita doppia, ma fornisce in ogni caso dei risultati completi e professionali.
+
+Inizia con la creazione di un nuovo file
+
+Clicca nella barra degli strumenti sull'icona "Nuovo" 
+Seleziona la Regione
+la categoria Tutto
+e il tipo di contabilità desiderata, “Contabilità Entrate/Uscite” oppure “Contabilità Entrate/Uscite con IVA”
+Scegli infine il modello che meglio si addice alla tua attività
+Nella schermata seguente modifica il nome, la data di apertura e di chiusura, e la moneta di base 
+
+Adatta la tabella conti 
+
+Nella tabella Conti sono elencati i conti patrimoniali, che possono essere personalizzati a seconda delle tue esigenze. 
+Puoi per esempio cambiare i numeri di conto, oppure la descrizione 
+Puoi inserire nella colonna “Apertura” il saldo iniziale 
+Puoi aggiungere dei conti
+ed eliminare quelli che non ti servono
+
+Adatta la tabella categorie 
+
+Nella tabella Categorie sono presenti i conti relativi alle entrate e alle uscite 
+Anche in questo caso puoi cambiare i numeri e le descrizioni delle categoria 
+puoi aggiungere quelle che sono rilevanti per la tua attività
+ed eliminare quelle che non ti servono
+
+Crea il tuo preventivo 
+
+Nella tabella preventivo puoi inserire le entrate e le uscite che prevedi per l’anno indicato.
+Inizia elencando le uscite mensili:
+Inserisci ad esempio l’affitto dell’ufficio indicando la data, la ripetizione, la descrizione, l’importo in uscita, il conto e la categoria
+Fai la stessa cosa per lo stipendio dei tuoi collaboratori
+
+Lo stesso procedimento lo puoi adottare per le entrate mensili, inserisci ad esempio la vendita di un servizio ai tuoi clienti registrando gli importi in entrata
+
+Inserisci le registrazioni
+
+Nella tabella Registrazioni inserisci i movimenti contabili effettivi.
+Il procedimento è immediato e molto simile alla tabella preventivo:
+Inserisci la data, la descrizione, l’importo in entrata o in uscita, il conto sul quale è stato effettuato il movimento, e la categoria a cui è attribuita l’entrata o l’uscita
+Ripeti in seguito questa operazione per tutti i movimenti
+
+Nella tabella delle registrazioni puoi anche importare i dati dei movimenti bancari e collegare le registrazioni alle ricevute digitali. Seleziona menu Conta1 -> Importa in contabilità.
+Dopo che hai inserito le registrazioni, vedrai che il programma aggiornerà automaticamente i saldi di conti e categorie che puoi confrontare con i saldi del preventivo.
+
+Report e confronto preventivo
+
+Stampa i tuoi reports includendo i dati contabili del passato, presente e futuro.
+Puoi confrontare il tuo preventivo con i tuoi dati reali in ogni momento: 
+Dal menu seleziona Conta1 -> Rendiconto abbellito con gruppi -> Rendiconto annuale e confronto preventivo
+Facendo così potrai sempre verificare che la tua attività stia andando secondo i tuoi piani. 
+
+Per ulteriori informazioni visita banana.ch 
+
+
+
+

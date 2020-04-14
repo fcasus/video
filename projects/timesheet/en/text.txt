@@ -1,4 +1,4 @@
-TIME SHEET Ð VOICE
+TIME SHEET â€“ VOICE
 ==================
 
 Welcome to Banana Accounting.
@@ -63,7 +63,7 @@ For more information, please visit banana.ch.
 
 
 
-TIME SHEET Ð SLIDES
+TIME SHEET â€“ SLIDES
 ===================
 
 Time Sheet

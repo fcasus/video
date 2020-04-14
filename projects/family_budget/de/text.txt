@@ -1,0 +1,64 @@
+
+Willkommen bei Banana Buchhaltung.
+Dieses Kurz-Video erklärt Ihnen, wie Sie ein Familienbudget mit Kassenbuch erstellen.
+
+Beginnen Sie mit der Erstellung einer neuen Datei.
+Klicken Sie in der Werkzeugleiste auf die Ikone Neu.
+Wählen Sie unter Region das gewünschte Land und die gewünschte Sprache aus.
+Überprüfen Sie, ob das Feld "Universelle Vorlagen einschliessen" mit Visum versehen ist.
+Wählen Sie die Kategorie Private aus.
+Wählen Sie den Datei-Typ Kassenbuch aus.
+Wählen Sie die Vorlage Familienbudget und Haushaltskonten aus.
+
+Geben Sie im darauffolgenden Dialogfenster einige Einstellungen der Buchhaltungsdatei ein.
+Ändern Sie den Namen, das Eröffnungsdatum, das Abschlussdatum und die Basiswährung.
+
+Passen Sie die Konten-Tabelle an.
+In der Konten-Tabelle wird das Liquiditätskonto eingegeben.
+Sie können nur ein einziges Konto angeben.
+Passen Sie die Kontonummer und Beschreibung nach Ihren Bedürfnissen an.
+
+Passen Sie die Kategorien-Tabelle an.
+In der Kategorien-Tabelle sind die Einnahmen- und Ausgabenposten enthalten. 
+In der Regel werden sie in Einnahmen, Ausgaben, Variable Kosten und Kostenstellen unterteilt.
+
+Passen Sie die Budget-Tabelle an.
+In der Budget-Tabelle werden die voraussichtlichen Einnahmen- und Ausgabenposten erfasst.
+
+Beginnen Sie mit der Eingabe der Einnahmen.
+Geben Sie unter den fixen Einnahmen das Monatsgehalt ein.
+Geben Sie das Anfangs- und eventuell Enddatum, den Wiederholungscode, die Beschreibung, den Betrag und die Kategorie-Nummer ein.
+
+Erfassen Sie jetzt die Ausgaben.
+Geben Sie unter den Fixkosten zum Beispiel die Monatsmiete ein.
+Geben Sie das Anfangsdatum- und eventuell Enddatum, den Wiederholungscode, die Beschreibung, den Betrag und die Kategorie-Nummer ein.
+
+Gehen Sie für die Zusatzkosten (Extras) gleich vor.
+Geben Sie unter den variablen Kosten zum Beispiel halbjährlich anfallenden Autokosten ein.
+Geben Sie das Anfangs- und eventuell Enddatum, den Wiederholungscode, die Beschreibung, den Betrag und die Kategorie-Nummer ein.
+
+Vergleichen Sie die Ausgaben- und Einnahmenbeträge mit den Budgetbeträgen.
+Um das Budget abzuschliessen, fehlt nur noch ein letzter Schritt.
+Vergleichen Sie die budgetierten Ausgaben- und Einnahmenbeträge, indem Sie das "Jahresbudget" ausdrucken.
+Wählen Sie aus Menü Buch1 den Befehl Formatierter Ausdruck nach Gruppen - Jahresbudget aus.
+Überprüfen Sie das Ergebnis und stellen Sie sicher, dass Ihre Einnahmen höher als Ihre Ausgaben sind.
+Dies bedeutet, dass Sie Ihr Geld gut verwalten.
+Für eine noch detailliertere Kontrolle können Sie vierteljährliche- oder monatliche Berichte erstellen.
+
+Geben Sie die buchhalterischen Bewegungen ein.
+
+Jetzt können Sie die verschiedenen realen Bewegungen buchen und von Zeit zu Zeit mit den budgetierten Werten vergleichen.
+
+Jährlicher Ausdruck mit Budgetvergleich.
+
+Ende Jahr können Sie den endgültigen Vergleich zwischen dem effektiven Bericht und dem ursprünglichen Budget durchführen.
+Somit können Sie sehen, ob Sie die erhofften Ersparnisse erzielt haben.
+Erzeugen Sie einen Kontrollausdruck, indem Sie aus Menü Buch1 den Befehl Formatierter Ausdruck nach Gruppen - Jährlicher Ausdruck mit Budgetvergleich ausführen.
+Überprüfen Sie auch hier das Endergebnis und stellen Sie sicher, dass Ihre Einnahmen höher als Ihre Ausgaben sind.
+
+Herzlichen Glückwunsch! Sie haben Ihr Familienbudget mit dem Kassenbuch erstellt
+
+Für weitere Informationen besuchen Sie bitte unsere Webseite www.banana.ch.
+
+
+
