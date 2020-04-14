@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<speak xmlns="https://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="de-DE">
+  <voice name="Microsoft Server Speech Text to Speech Voice (de-DE, KatjaNeural)">
+    
+    <!-- ENTER GERMAN TEXT HERE -->
+    
+    Willkommen bei Banana Buchhaltung.
+    Dieses Video erklärt Ihnen wie Sie die kostenlose Zeiterfassungs-Applikation nutzen können.
+
+  </voice>
+</speak>
