@@ -42,7 +42,7 @@ Quando si creano video e viene registrato quello che succede a schermo in Banana
 
 # Text to speach
 
-[Text to speach](text-to-speach.md)
+[Text to speach](https://github.com/BananaInternal/video/blob/master/text_to_speech/text-to-speech.md)
 
 # Multi-lingue
 
