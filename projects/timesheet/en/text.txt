@@ -1,0 +1,78 @@
+TIME SHEET Ð VOICE
+==================
+
+Welcome to Banana Accounting.
+This video will show you how to use the Free Time Sheet application.
+
+You can comfortably create monthly reports of working hours for you and your employer.
+
+Start by creating a new Time Sheet file.
+From the Menu, select New.
+Choose the Universal English Region, the All Category, and the Time Sheet type.
+Finally, select the template on the right and click on create.
+
+Now set up some of the information on the Time sheet:
+Enter your first and last name, and the company name you are working for.
+Define the start date and end date of your work period.
+And then enter your work percentage.
+
+Now go to the Start section.
+Here you can plan your working hours.
+Carry forward any unpaid working hours and holidays remaining from the previous year.
+Then define the due work hours.
+For example, you could set the first three days of the week as working days, 8 hours per day.
+Thursday and Saturday are non-working days, and Sunday is a festive.
+Click Ok and confirm the selected period to complete your time sheet setting.
+
+Customize the Journal table.
+In the Journal table you will have to enter the daily data of the time sheet.
+The rows of the table are automatically created by the program.
+Festive and non-working days are displayed in red and blue.
+
+Set and customize the festive days.
+For example, select the first day of January;
+Double-click in the Festive cell and select the value 0 from the list.
+For the program this is now a Festive.
+You can also customize the text in the Day Description column:
+Double-click in the cell and enter the hashtag with the text.
+This way you can define and customize all the holidays.
+
+Enter the working hours.
+Now you are ready to start using the time sheet effectively.
+The program will indicate the current day in a yellow row.
+In the Start 1 and Stop 1 columns, enter the start and stop time of the morning work.
+In the Start 2 and Stop 2 columns, enter the start and stop time of the afternoon work.
+The total column automatically shows the working hours per day.
+Insert the hours of sick absence, and plan your holidays by indicating the hours in the related columns.
+
+Check your data
+Continue to enter your working hours and the program will automatically update the values in the Difference and Progressive columns.
+The Difference column indicates the daily difference between the due hours and the actual hours worked.
+The Progressive column take into consideration all these daily differences and sums them up.
+At the end of the month, you can see the total of the actual hours worked, due hours and the difference.
+
+Create monthly reports.
+Generate monthly reports for yourself and for your employer.
+From the Utilities 1 menu, select the Monthly report command.
+Enter the period and click OK.
+The program creates a summary report of the selected period.
+
+Download Banana Accounting now, and try the time sheet application for free!
+
+For more information, please visit banana.ch.
+
+
+
+TIME SHEET Ð SLIDES
+===================
+
+Time Sheet
+Monthly reports for yourself and your employer
+Create and set up the file
+Customize the Journal table
+Enter the working hours
+Check your data
+Create monthly reports
+For more information visit www.banana.ch
+
+

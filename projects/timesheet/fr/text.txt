@@ -1,0 +1,74 @@
+VOCE DEL VIDEO
+==============
+
+Bienvenue à Banana Comptabilité.
+Cette vidéo vous montrera comment utiliser gratuitement l'application Time Sheet.
+
+Vous pouvez facilement créer des impressions mensuelles de vos heures de travail pour vous et votre employeur.
+
+Commencez par créer un nouveau fichier de Time Sheet.
+Dans le menu, sélectionnez Nouveau.
+Choisissez la région Universel-français, la catégorie Tous, et le type de Time Sheet.
+Enfin, sélectionnez le modèle à droite et cliquez sur Créer.
+
+Définissez maintenant quelques informations dans la Time Sheet :
+Indiquez vos nom et prénom, ainsi que le nom de l'entreprise pour laquelle vous travaillez.
+Définir la date de début et la date de fin de la période de travail.
+Et enfin, entrez le pourcentage de travail.
+
+Passez maintenant à la section "Début".
+Vous pouvez ici planifier vos heures de travail.
+Déclarez les éventuelles heures de travail non rémunérées et les vacances restantes de l'année précédente.
+Ensuite, définissez les heures de travail dues :
+Par exemple, vous pourriez fixer les trois premiers jours de la semaine comme des journées de travail de 8 heures.
+Le jeudi et le samedi sont des jours où vous ne travaillez pas, et le dimanche est un jour férié.
+Cliquez sur Ok, et confirmez la période sélectionnée pour générer votre feuille de temps.
+
+Personnalisez le tableau du journal.
+Dans le tableau Journal, vous devrez saisir les données quotidiennes de la Time Sheet.
+Les lignes du tableau sont automatiquement créées par le programme.
+Les jours fériés et les jours non ouvrables sont affichés respectivement en rouge et en bleu.
+
+Fixez et personnalisez les vacances.
+Par exemple, sélectionnez le 1er janvier.
+Double-cliquez dans la cellule Vacances et sélectionnez la valeur 0 dans la liste.
+Ce jour est désormais un jour férié pour le programme.
+Vous pouvez également personnaliser le texte dans la cellule Description du jour.
+Double-cliquez dans la cellule et insérez le signe dièse suivi du texte.
+Ainsi, vous pouvez définir et personnaliser tous les jours fériés.
+
+Entrez les heures de travail.
+A ce stade, vous êtes prêt à commencer à utiliser efficacement la Time Sheet.
+Le programme indiquera le jour en cours par une ligne jaune.
+Dans les colonnes Start1 et Stop1, saisissez les heures de début et de fin de la matinée.
+Dans les colonnes Start2 et Stop2, indiquez respectivement l'heure de début et de fin de l'après-midi.
+La colonne "total" indique automatiquement les heures travaillées par jour.
+Saisissez les heures de congé de maladie et planifiez les jours de vacances en saisissant les heures dans les colonnes correspondantes.
+
+Vérifiez vos données.
+Continuez à saisir vos heures de travail et le programme mettra automatiquement à jour les valeurs dans les colonnes Différence et Progressif.
+La colonne Différence indique la différence quotidienne entre les heures dues et les heures travaillées.
+La colonne Progressive prend en compte toutes ces différences quotidiennes et les additionne.
+À la fin du mois, les totaux des heures travaillées, des heures dues et de la différence sont indiqués.
+
+Créer des impressions mensuelles.
+Produisez des impressions mensuelles pour vous ou votre employeur.
+Dans le menu Divers1, sélectionnez la commande Rapport mensuel.
+Saisissez la période et confirmez par Ok.
+Le programme crée une impression sommaire de la période sélectionnée avec les principales colonnes utilisées.
+
+Téléchargez Banana Comptabilité maintenant et essayez gratuitement l'application Time Sheet !
+
+Pour plus d'informations, visitez le site www.banana.ch.
+
+SLIDES NEL VIDEO
+================
+
+Time Sheet
+Impressions mensuelles pour vous et votre employeur
+Créez et configurez le fichier
+Personnalisez le tableau du journal
+Saisissez les heures de travail
+Vérifiez vos données
+Créez des rapports mensuels
+Pour plus d'informations, visitez le site www.banana.ch
