@@ -1,7 +1,7 @@
 Contabilità doppia
 
 
-Benvenuti in Banana Contabilità!
+Benvenuti in Banana contabilità
 Questo video ti mostra come creare una contabilità in partita doppia e come preparare il Bilancio e il Conto Economico.
 
 
@@ -69,6 +69,3 @@ Facendo così potrai sempre verificare che la tua attività stia andando secondo
 
 
 Per ulteriori informazioni visita banana.ch
-
-
-
