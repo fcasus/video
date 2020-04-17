@@ -29,13 +29,13 @@ L'importazione dei dati è una parte importante per velocizzare l'inserimento de
 
 
 ## Tutorial extra
-* Come iniziare (3 passi) => PUBBLICATO
-* Come fare un budget familiare con il libro cassa => PUBBLICATO
-* Come fare il foglio ore => PUBBLICATO
+* Come iniziare (3 passi)
+* Come fare un budget familiare con il libro cassa
+* Come fare il foglio ore
 * Come fare un cash flow forecast
 * Come creare e gestire fatture
 * Come fare il Cash manager
-* Come fare una contabilità entrate/uscite con budget => pubblicato su Youtube: italiano
+* Come fare una contabilità entrate/uscite con budget
 * Come fare una contabilità doppia con budget
 * Come gestire la contabilità multimoneta (tab conti, cambi, registrazioni, ...)
 
