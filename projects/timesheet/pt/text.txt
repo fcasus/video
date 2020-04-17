@@ -1,0 +1,78 @@
+VOCE DEL VIDEO
+==============
+
+Benvenuti in Banana Contabilità.
+Questo video ti mostrerà come utilizzare gratuitamente l’applicativo Foglio ore.
+
+Potrai creare comodamente delle stampe mensili delle tue ore lavorative, per te e il tuo datore di lavoro.
+
+Inizia con la creazione di un nuovo file Foglio ore.
+Dal Menu, seleziona Nuovo.
+Scegli la Regione Universale Italiano, la Categoria Tutto, e il tipo Foglio ore.
+Infine, seleziona il modello sulla destra e clicca su crea.
+
+Imposta ora alcune informazioni del foglio ore:
+Inserisci nome e cognome, e il nome dell’azienda per cui lavori.
+Definisci la data iniziale e la data finale del periodo lavorativo.
+Ed infine inserisci la percentuale di lavoro.
+
+Vai ora nella sezione Inizio.
+Quì puoi pianificare il tuo orario di lavoro.
+Riporta eventuali ore di lavoro non pagate e vacanze rimaste dall’anno precedente.
+Definisci quindi le ore di lavoro dovute:
+Ad esempio potresti impostare i primi tre giorni della settimana come giorni lavorativi da 8 ore.
+Il giovedì e il sabato sono giorni non lavorativi, e la domenica è un giorno festivo.
+Clicca su Ok, e conferma il periodo selezionato per generare il tuo foglio ore.
+
+Personalizza la tabella Giornale.
+Nella tabella Giornale dovrai inserire i dati giornalieri del foglio ore.
+Le righe della tabella sono create in automatico dal programma.
+I giorni festivi e non lavorativi sono visualizzati rispettivamente in rosso e in blu.
+
+Imposta e personalizza le festività.
+Seleziona ad esempio il primo di gennaio.
+Fai doppio click nella cella Festivo e seleziona dalla lista il valore 0.
+Per il programma ora questo è un giorno festivo.
+Puoi anche personalizzare il testo della cella Descrizione Giorno.
+Fai doppio click nella cella ed inserisci cancelletto seguito dal testo.
+In questo modo puoi definire e personalizzare tutte le festività.
+
+Inserisci le ore di lavoro.
+A questo punto sei pronto per iniziare ad utilizzare efficacemente il foglio ore.
+Il programma ti indicherà con una riga in giallo il giorno attuale.
+Nelle colonne Inizio1 e Fine1, inserisci l'orario di inizio e fine lavoro della mattina.
+Rispettivamente, nelle colonne Inizio2 e Fine2, inserisci l'orario di inizio e fine lavoro del pomeriggio.
+La colonna totale riporta in automatico le ore lavorate per giorno.
+Indica le ore di assenza per malattia, e pianifica le vacanze indicando le ore nelle relative colonne.
+
+Controlla i tuoi dati.
+Continua ad inserire le tue ore lavorative e il programma aggiornerà in automatico i valori delle colonne Differenza e Progressivo.
+La colonna Differenza indica la differenza giornaliera tra le ore dovute e quelle lavorate.
+La colonna Progressivo tiene conto di tutte queste differenze giornaliere e le somma assieme.
+Alla fine del mese vengono riportati i totali di ore lavorate, di ore dovute e differenza.
+
+Crea stampe mensili.
+Genera delle stampe mensili per te o per il tuo datore di lavoro.
+Dal menu Utilità 1, seleziona il comando Report Mensile.
+Indica il periodo e conferma con Ok.
+Il programma crea una stampa riassuntiva del periodo selezionato con le colonne principali utilizzate.
+
+Scarica adesso Banana Contabilità, e prova gratuitamente l'applicativo Foglio ore!
+
+Per maggiori informazioni, visita www.banana.ch.
+
+
+SLIDES NEL VIDEO
+================
+
+Foglio Ore
+Stampe mensili per te e il tuo datore di lavoro
+Crea e imposta il file
+Personalizza la tabella Giornale
+Inserisci le ore di lavoro
+Controlla i tuoi dati
+Crea report mensili
+Per ulteriori informazioni visita www.banana.ch
+
+
+
