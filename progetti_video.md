@@ -2,18 +2,19 @@
 Di seguito un elenco di possibili video da realizzare o che sono già stati realizzati e pubblicati su Youtube.
 
 
-|                      Titolo                      | in lavorazione |   pubblicato   |
-|:------------------------------------------------:|:--------------:|:--------------:|
-| Come iniziare (3 passi)                          |                | it,en,de,zh    |
-| Come fare un budget familiare con il libro cassa |                | it,en,de       |
-| Come fare il foglio ore                          |                | it,en,de       |
-| Contabilità entrate/uscite con budget            |                | it,en,de       |
-| Contabilità doppia con budget                    | T              |                |
-| Contabilità multimoneta                          | T              |                |
-| Previsioni Finanziarie (tutorial)                |                | it,de,fr,en    |
-| Previsioni Finanziarie (introduzione)            |                | it,en,de       |
-| Come creare e gestire fatture                    | I              |                |
-| Come importare dati bancari                      | I              |                |
+|                      Titolo                      | in lavorazione |   pubblicato   |    previsto    | 
+|:------------------------------------------------:|:--------------:|:--------------:|:--------------:|
+| Come iniziare (3 passi)                          |                | it,en,de,zh,fr |                |
+| Come fare un budget familiare con il libro cassa | zh             | it,en,de,fr    |                |
+| Come fare il foglio ore                          | nl             | it,en,de,fr,zh |                |
+| Contabilità entrate/uscite con budget            |                | it,en,de       | fr             |
+| Contabilità in partita doppia con budget         |                | it,en          | de,fr          |
+| Previsioni Finanziarie, entrate/uscite (tutorial)|                | it,de,fr,en    |                |
+| Previsioni Finanziarie, entrate/uscite (intro)   |                | it,en,de       |                |
+| Previsioni Finanziarie, partita doppia           | fr,de          | en             |                |
+| Fatturazione                                     | en             |                |                |
+| Contabilità multimoneta                          | en             |                |                |
+| Importazione dati bancari                        |                |                | en             |
 
 
 
