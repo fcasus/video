@@ -28,18 +28,18 @@ La priorità per questi due temi è dovuta al fatto dell'adozione delle fatture 
 L'importazione dei dati è una parte importante per velocizzare l'inserimento dei dati in Banana e si ricollega agli scorsi video di come iniziare le varie contabilità.
 
 
-## Tutorial extra
-* Come iniziare (3 passi)
-* Come fare un budget familiare con il libro cassa
-* Come fare il foglio ore
+## Generale
+* ~~Come iniziare (3 passi)~~
+* ~~Come fare un budget familiare con il libro cassa~~
+* ~~Come fare il foglio ore~~
 * Come fare un cash flow forecast
 * Come creare e gestire fatture
 * Come fare il Cash manager
-* Come fare una contabilità entrate/uscite con budget
-* Come fare una contabilità doppia con budget
+* ~~Come fare una contabilità entrate/uscite con budget~~
+* ~~Come fare una contabilità doppia con budget~~
 * Come gestire la contabilità multimoneta (tab conti, cambi, registrazioni, ...)
 
-## Tutorial base
+## Base
 * Come impostare la tabella conti
 * Come inserire una registrazione (singola, multipla, ... )
 * Come creare e stampare un report contabile (bilancio, CE) 
