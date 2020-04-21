@@ -1,0 +1,79 @@
+Double-entry accounting
+
+
+Welcome to Banana Accounting!
+This video shows you how to create a Double-entry accounting and how to obtain a Balance Sheet and a Profit/loss Statement.
+
+
+Start with the creation of a new file
+
+Click on the "New" icon in the toolbar,
+Choose a region and a language, 
+The category “All”,
+and the desired type of accounting "Double-entry" or "Double-entry with Value Added Tax"
+Finally, choose the template that best suits your activity 
+In the popped out window change the name, the opening and closing date, and the basic currency
+
+
+Adapt the accounts table
+
+The Accounts table shows the Balance sheet accounts and the Profit & Loss statement accounts. 
+
+The Balance sheet shows you the balances of all the estate accounts, that is, Assets & Liabilities
+The difference between the Assets and the Liabilities determines the personal capital. 
+
+The Profit & Loss statement shows you all the Revenue & Expense accounts, and their difference  determines the Profit or Loss of the Accounting year.
+
+All these accounts  can be customized according to your needs.
+
+For example, you can change the account numbers, or the description,
+You can enter the initial balance in the "Opening" column,
+You can add accounts,
+And eliminate the ones you don't need
+
+
+
+Create your budget
+
+In the Budget table, you can insert the estimated income and expenses for the indicated year. 
+Start by listing your monthly expenses: 
+
+For example, insert the office rent with date, the repetition, the description, the expenses, the debit account (the one that will be charged), the credit account (the one that will be credited) and the amount. 
+Repeat the operation for your employees' salaries.
+
+
+You can apply the same procedure for the monthly revenue and enter the estimated incomes. 
+
+
+Enter the transactions
+
+In the Transactions table enter the actual accounting movements, which compose the Journal.
+
+In the appropriate columns:
+
+Enter the date,
+the description, 
+In the Debit account column enter the account that will be charged,
+In the Credit account column enter the account that will be credited,
+and the amount
+
+
+Repeat this operation for all movements.
+
+To speed up these operations, it’s also possible to import bank transactions data and link them to digital receipts. To do this, select Account1 -> Import to accounting.
+
+After entering the accounting transactions, the program will automatically update the accounts balances, and you can immediately make a comparison to the budget balances.
+
+
+Reports and budget comparison
+
+You can review and compare your past, present and future data of your accounting at any time. 
+
+You can create your report by selecting from the Account1 menu,  Enhanced balance sheet with groups > Comparison Effective and Budget.
+
+To have a better overview of your cash flow and to make sure you have enough liquidity to pay your salaries at the end of the month, you can create a report with a monthly subdivision, or you can view the charts of your bank account.
+
+By following this step, you can control if the actual business is in line with your budget plan.
+
+
+For more information please visit www.banana.ch

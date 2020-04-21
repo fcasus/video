@@ -1,0 +1,89 @@
+Financial planning with double-entry accounting
+
+
+Welcome to Banana Accounting!
+This video shows you how to create a financial planning with a Double-entry accounting.
+
+
+Start with the creation of a new file
+
+Click on the "New" icon
+Choose a region and a language, 
+The category,
+and the desired type of accounting
+Finally, choose the template that best suits your activity 
+In the popped out window change the name, the opening and closing date, and the basic currency
+
+
+Adapt the accounts table
+
+The Accounts table shows the Balance sheet accounts and the Profit & Loss statement accounts. 
+
+All these accounts  can be customized according to your needs.
+
+For example, you can change the account numbers and the descriptions,
+You can enter the initial balance in the "Opening" column,
+You can add accounts,
+And eliminate the ones you don't need
+
+
+Create your budget
+
+In the budget table, you can now start creating your financial planning by inserting your budget transactions.
+
+First, enter the starting transactions under “start activity”.
+
+insert the foundation capital deposit on the bank account, specifying the date, the description, the debit account (the one that will be charged), the credit account (the one that will be credited) and the amount. 
+repeat the same operation for the received loan
+the machinery payment
+and the furniture payment
+
+
+Next you can enter the “monthly expenses”, specifying in the repeat column the desired repetition, in this case M.
+
+insert the office rent
+the purchase of raw material 
+and the employees’ salaries
+
+You can apply the same procedure for the “monthly revenues” and enter the estimated incomes.
+
+As you can see, in the total column the annual total is automatically calculated and displayed.
+If you click on the bank account icon, you can view all the automatically generated recurring movements, and thanks to the progressive balance you can also see the exact liquidity evolution.
+
+
+
+
+Enter the transactions
+
+In the Transactions table enter your actual accounting movements.
+
+You can do this by importing the bank transactions datas or by entering them manually.
+
+After entering the accounting transactions, you can check the updated accounts balances, and you can immediately make a comparison to the budget balances.
+
+
+Reports and budget comparison
+
+The most important thing for any business is that it is profitable and that it has enough liquidity to meet the costs and to pay the salaries at the end of the month.
+
+You can check this by selecting from the Account1 menu, Enhanced balance sheet with groups > Monthly budget 1st year
+
+Under Balance sheet, you can see the assets forecast and the liabilities forecast, 
+Under Profit and loss statement, you can find the forecast of your incomes, as well as the evolution of your expenses.
+
+And in this row below you can check if your business is profitable, namely if you’re generating profit or loss.
+
+Of course you can also create reports for more years and divide them by the period you prefer.
+
+
+You can also check the liquidity and the evolution of your cash flow by viewing the bank account table.
+With the help of the progressive balance, you can easily predict in which period you might have some liquidity problems.
+
+If you prefer a visual help, you can generate the related chart instead.
+
+Of course you can also compare your financial planning with your actual accounting by selecting from the Account1 menu,  Enhanced balance sheet with groups > Comparison Effective and Budget.
+
+By following this step, you can check anytime, if the actual business is in line with your budget plan.
+
+
+For more information please visit banana.ch
