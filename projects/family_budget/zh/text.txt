@@ -1,0 +1,112 @@
+Family Budget
+家庭预算
+
+
+Cover and titles
+================
+Learn how to easily set a family budget to better manage your money, get valuable savings, and reduce debt.
+了解如何轻松设定家庭预算，更好地管理您的资金，用来获得可观的储蓄并减少债务。
+•	Create a new accounting file
+创建一个新的会计文件
+•	Adapt the Accounts table
+客制化账户表格
+•	Adapt the Categories table
+客制化科目表格
+•	Create your budget
+创建您的预算
+•	Compare budgeted expenditure and revenue
+比较预算的收入和费用
+•	Enter transactions
+输入发生业务
+•	Compare the yearly report to the budget
+将年度报告与预算进行比较
+
+Voice
+=====
+Welcome to Banana Accounting.
+欢迎使用Banana财务会计软件。
+This short video, will explain you how to create a family budget using the cash book.
+在这个短视频中，将为您解释如何使用现金日记账来创建家庭预算。
+
+Start with the creation of a new file.
+从创建一个新的会计文件开始。
+Click on the New icon in the toolbar.
+点击工具栏内的新建图标，
+Choose a region and a language, Universal-English.
+选择地区及语言，
+Continue by choosing the category Private.
+在类别内选择：私人，
+Select the type Cash Manager.
+在类型下选择：现金日记账。
+Finally, select the model " Family budget and Household accounts".
+然后在软件右侧选择适合您的模板。
+In the following window, enter some property of the accounting file.
+在跳出的：文件和账户属性窗口中输入一些基本的设置。
+Change the name, the opening date, the closing date and the base currency.
+更改名称，开账日期和结账日期，以及记账本位币。
+
+Adapt the Accounts table.
+客制化账户表格。
+The account for liquidity management is entered in the Accounts table.
+在账户表格中输入用于流动性管理的帐户。
+You can enter one account only.
+您只能输入一个账号。
+Change the account number, the description and the opening balance according to your needs.
+并根据您的需要更改账号，摘要和初期余额。
+
+Adapt the Categories table.
+客制化科目表格。
+The Revenue and Expenses accounts are entered in the Categories table.
+在科目表格中输入收入和费用的帐户
+Generally, they are divided into Revenue, Fixed Costs, Variable Costs and Cost Centers.
+通常，我们将其分为收入，固定费用，各种其它费用和成本中心。
+
+Create your budget.
+创建您的预算。
+In this table are entered the various revenues and expenses that you will have to incur during the year.
+在此表格中，输入您在一年中必须产生的各种收入和费用。
+Start with the revenues.
+从收入开始。
+Under the heading fixed revenues, enter for example your monthly salary.
+在固定收入下，输入例如：您的月薪。
+Switch now to the expenses.
+现在切换到费用。
+Under the heading fixed costs, enter for example the monthly rent.
+在固定费用下，输入例如：每月的租金。
+Do the same for extra expenses.
+对于额外费用使用相同的操作。
+Under the heading extra costs, enter for example the monthly expense for restaurants.
+在额外费用下，输入例如：饭店的每月费用。
+
+Compare budgeted expenditure and revenue.
+比较预算的收入和费用。
+To complete the budget, now you need to compare estimated revenue and expenditure by printing the Yearly Budget.
+要完成预算，现在您需要通过打印年度预算来比较预估的收入和费用。
+From the menu, select Account1, Enhanced statement with groups, and Yearly budget.
+从报表(1)菜单中，选择按组生成报表的命令，再从中选择年度预算。
+Check the final result to make sure it is positive, which means that you are handling your money well.
+检查最终结果以确保结果是正的值，这意味着您对金钱有不错的管理。
+
+Enter the accounting transactions.
+输入发生业务。
+You can now start to register the real movements of your liquidity, and compare them from time to time with the budget's values.
+现在，您可以开始记录流动性业务的实际变动情况，并可随时将其与预算值进行比较。
+
+Yearly report and budget comparison.
+年度报告和预算的比较。
+At the end of the year you can make the final comparison between the actual report and the starting budget.
+在年底时，您可以把实际情况的报告和起始预算值进行一个最终的比较。
+In this way you will have the opportunity to see if you have managed to get the savings that you had budgeted.
+这样，您将有机会查看是否已获得在预算中计划节省的金额。
+Generate the control report from the menu Account1, Enhanced statement with groups, Yearly report compared to budget.
+从报表(1)菜单中，选择按组生成报表的命令，再从中选择年度预算与报告比较。
+Also here, check the final result to make sure it is positive.
+在这里，请检查最终结果，以确保其值为正数。
+
+Congratulations!
+恭喜！
+You created your family budget with the cash book.
+您已成功使用现金日记账创建了家庭预算。
+
+For more information, visit banana.ch.
+了解更多的信息，请访问 banana.ch。

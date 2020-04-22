@@ -1,0 +1,106 @@
+Double-entry accounting
+复式记账
+
+Welcome to Banana Accounting!
+欢迎使用Banana财务会计软件！
+This video shows you how to create a Double-entry accounting and how to obtain a Balance Sheet and a Profit/loss Statement.
+该视频会向您展示如何创建复式记账文件，以及如何生成资产负债表及损益表。
+
+Start with the creation of a new file
+从创建一个新的会计文件开始
+
+Click on the "New" icon in the toolbar,
+点击工具栏内的新建图标，
+Choose a region and a language, 
+选择地区及语言，
+
+The category “All”,
+类别：全选，
+and the desired type of accounting "Double-entry" or "Double-entry with Value Added Tax"
+在类型中选择：复式记账，或者复式记账含增值税
+
+Finally, choose the template that best suits your activity 
+最后，选择适合您的模板。
+In the popped out window change the name, the opening and closing date, and the basic currency
+在跳出的窗口中编辑名称，开账日期和结账日期，以及记账本位币。
+
+Adapt the accounts table
+编辑账户表
+The Accounts table shows the Balance sheet accounts and the Profit & Loss statement accounts. 
+账户表格内显示有资产负债表及损益表的账户。
+
+The Balance sheet shows you the balances of all the estate accounts, that is, Assets & Liabilities
+资产负债表会为您显示所有资产账户的余额，即资产和负债。
+The difference between the Assets and the Liabilities determines the personal capital. 
+资产与负债之间的差额决定了个人资本。
+
+The Profit & Loss statement shows you all the Revenue & Expense accounts, and their difference  determines the Profit or Loss of the Accounting year.
+损益表会向您显示所有收入和费用的帐户，它们的差额决定会计年度的损益状况。
+
+All these accounts can be customized according to your needs.
+所有的账户都可以根据您的需求进行客制化的编辑。
+
+For example, you can change the account numbers, or the description,
+例如，您可以更改账号，或摘要，
+You can enter the initial balance in the "Opening" column,
+可以在初期列内输入初始的余额，
+You can add accounts,
+可以添加账户，
+And eliminate the ones you don't need
+并且删除那些您不需要的账户。
+
+Create your budget
+创建您的预算
+
+In the Budget table, you can insert the estimated income and expenses for the indicated year.
+在预算表格内，您可以输入指定年份的预估收入和费用。
+Start by listing your monthly expenses: 
+首先列出您的每月费用：
+For example, insert the office rent with date, the repetition, the description, the expenses, the debit account (the one that will be charged), the credit account (the one that will be credited) and the amount. 
+例如，在办公室的租金中输入日期，重复，摘要，费用，借方帐户，贷方帐户和金额。
+Repeat the operation for your employees' salaries.
+对员工工资重复同样的操作。
+You can apply the same procedure for the monthly revenue and enter the estimated incomes. 
+您可以对月收入执行相同的操作，并输入预估的收入。
+
+
+Enter the transactions
+输入发生业务
+In the Transactions table enter the actual accounting movements, which compose the Journal.
+在发生业务表格中，输入实际的会计业务。
+In the appropriate columns:
+在对应的列中：
+Enter the date,
+输入日期，
+the description, 
+及摘要，
+In the Debit account column enter the account that will be charged,
+在借方账户列内输入相对应的账户，
+In the Credit account column enter the account that will be credited,
+在贷方账户列内输入相对应的账户，
+and the amount
+以及金额。
+
+Repeat this operation for all movements.
+对所有的会计业务执行同样的操作。
+
+To speed up these operations, it’s also possible to import bank transactions data and link them to digital receipts. To do this, select Account1 -> Import to accounting.
+为了加快这些操作的进程，您可以导入银行对账单的数据并将其链接到数字收据。请使用报表(1)菜单中导入到账套的命令。
+
+After entering the accounting transactions, the program will automatically update the accounts balances, and you can immediately make a comparison to the budget balances.
+在输入会计发生业务后，程序将自动更新帐户余额，您可以立即将其与预算余额进行比较。
+
+Reports and budget comparison
+报告和预算的比较
+You can review and compare your past, present and future data of your accounting at any time. 
+您可以随时查看并比较：过去，现在和未来的会计数据。
+You can create your report by selecting from the Account1 menu,  Enhanced balance sheet with groups > Comparison Effective and Budget.
+点击报表(1)菜单中的按组生成报表的命令，选择其中的年度报告与预算比较，便可创建属于自己的报告。
+To have a better overview of your cash flow and to make sure you have enough liquidity to pay your salaries at the end of the month, you can create a report with a monthly subdivision, or you can view the charts of your bank account.
+为了更好地了解现金流量并确保您有足够的流动性资金来支付月底的工资，您可以创建带有月度细分的报告，也可以查看银行帐户的图表。
+
+By following this step, you can control if the actual business is in line with your budget plan.
+通过执行此步骤，您可以控制实际业务是否符合预算计划。
+
+For more information please visit www.banana.ch
+了解更多的信息，请访问：www.banana.ch

@@ -1,0 +1,96 @@
+Income & Expense Accounting 
+收益 & 费用核算
+
+Welcome to Banana Accounting!
+欢迎使用Banana财务会计软件！
+This video shows you how to create an Income and Expense Accounting.
+该视频将向您展示如何创建一个收益 &费用核算文件。
+Compared to double-entry accounting, it is the easiest and most intuitive method to use, which also provides complete and professional results.
+与复式记账相比，它是最简单，最直观的记账方法，并可提供完整专业的结果。
+
+Start with the creation of a new file 
+从创建新文件开始
+Click on the "New" icon in the toolbar 
+点击工具栏内的新建图标，
+Choose a region and a language
+选择地区及语言，
+The category “All”
+类别：全选
+and the desired type of accounting "Income and Expense Accounting" or "Income and Expense Accounting with VAT"
+在类型中选择：收益 & 费用核算，或者收益 & 费用核算含增值税
+Finally, choose the template that best suits your activity 
+最后，选择适合您的模板。
+In the popped out window change the name, the opening and closing date, and the basic currency
+在跳出的窗口中编辑名称，开账日期和结账日期，以及记账本位币。
+
+Adapt the accounts table 
+编辑账户表
+The Accounts table shows the asset accounts, which can be customized according to your needs
+账户表内包含资产帐户，您可以根据需求对其进行编辑。
+For example, you can change the account numbers, or the description
+例如，您可以修改账号或摘要。 
+You can enter the initial balance in the "Opening" column 
+您可以在期初列内输入初始余额。
+You can add accounts 
+您可以添加账户
+And eliminate the ones you don't need
+删除不需要的账户
+
+Adapt the categories table 
+编辑科目表格
+The Categories table includes the revenue and expenses accounts 
+科目表格中包含收入和费用的账户
+you can also change the numbers and the category descriptions 
+您可以更改科目号码和摘要
+you can add data that relevant to your business
+您可以添加与您业务相关的数据
+and eliminate the ones you don't need
+删除不需要的
+
+Create your budget
+创建预算
+In the Budget table, you can insert the estimated income and expenses for the indicated year.
+在预算表格中，您可以输入指定年份的预估收入额和支出额。
+Start by listing your monthly expenses:
+首先列出您的每月支出:
+For example, insert the office rent with date, the repeat, the description, the expenses, the account and the category
+例如，输入含日期的办公室租金，重复性的费用，摘要，费用，账户和科目
+Same operation for your employees' salaries
+对于员工工资使用相同的操作
+You can use the same procedure for the monthly revenue, for example, enter one of the estimated income of the indicated date.
+您可以对月收入进行相同的操作，例如，输入一个指定日期的预估收入。
+
+Enter the transactions 
+输入发生业务
+In the Transactions table enter the actual accounting movements.
+在发生业务表格内输入实际的会计业务往来
+The procedure is immediate and very similar to the budget table:
+与预算表格内的操作高度相似：
+Enter the date, the description, the incoming or outgoing amount, the account and the category to which the income or expense is attributed
+输入日期，摘要，收入或支出的金额，账户以及收入或费用所归属的科目
+Repeat this operation for all movements
+对所有的会计业务往来重复此操作
+In this table, you can also import bank transactions data and link to digital receipts. Select Account1 -> Import to accounting.
+在此表格中，您还可以导入银行对账单的数据并链接到数字收据。从报表(1)菜单中，选择导入到账套的命令。
+As you can see, here is also the column for cost centers.
+您可以看见这里也有成本中心列。
+The cost centers are defined in the accounts table with descriptions.
+账户表格中包含成本中心及摘要。
+You can use them for certain movements to a specific customer.
+您可以将它们用于特定客户的某些业务往来。
+After entering the accounting transactions, the program will automatically update the accounts and categories balances, and you can immediately make a comparison to the budget balances.
+在输入会计发生业务后，程序将自动更新账户和科目的余额，您可以立即将其与预算余额进行比较。
+
+Reports and budget comparison
+财务报表和预算的比较
+Print your reports including past, present and future data of your accounting.
+打印报告，包括会计账套的过去，现在和将来的数据。
+You can compare the estimated data with the actual data at any time.
+您可以随时将预估数据与实际数据进行比较。
+From the menu, select Account1 -> Enhanced statement with group, and choose the type of report that is most suitable for you.
+从报表(1)菜单中，选择按组生成报表的命令，再从中选择最符合您所需的报告类型。
+
+By following this step, you can control if the actual business is in line with your budget plan.
+通过执行此步骤，您可以监控实际业务是否符合预算计划。
+For more information please visit www.banana.ch
+了解更多的信息，请访问：www.banana.ch

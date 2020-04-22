@@ -1,0 +1,129 @@
+Financial planning with double-entry accounting
+使用复式记账的财务计划
+
+Welcome to Banana Accounting!
+欢迎使用Banana财务会计软件！
+This video shows you how to create a financial planning with a Double-entry accounting.
+该视频将向您展示如何使用复式记账法来创建财务计划。
+
+Start with the creation of a new file
+从创建一个新的文件开始
+
+Click on the "New" icon
+点击工具栏内的新建图标，
+Choose a region and a language, 
+选择地区及语言，
+The category,
+类别，
+and the desired type of accounting
+然后在类型下选择您所需的记账类型，
+Finally, choose the template that best suits your activity 
+最后，选择适合您的模板。
+In the popped out window change the name, the opening and closing date, and the basic currency
+在跳出的窗口中编辑名称，开账日期和结账日期，以及记账本位币。
+
+Adapt the accounts table
+编辑账户表
+
+The Accounts table shows the Balance sheet accounts and the Profit & Loss statement accounts. 
+账户表格内显示有资产负债表及损益表的账户。
+
+All these accounts  can be customized according to your needs.
+所有的账户都可根据您的要求进行客制化的编辑。
+
+For example, you can change the account numbers and the descriptions,
+例如，您可以更改账号和摘要，
+You can enter the initial balance in the "Opening" column,
+在初期列内输入初始的余额，
+You can add accounts,
+您可以添加账户，
+And eliminate the ones you don't need
+及删除不需要的账户。
+
+
+Create your budget
+创建您的预算
+
+In the budget table, you can now start creating your financial planning by inserting your budget transactions.
+在预算表格内，您现在就可以通过输入预算的发生业务来创建财务计划。
+
+First, enter the starting transactions under “start activity”.
+首先，在开始经营活动下输入第一笔发生业务。
+
+insert the foundation capital deposit on the bank account, specifying the date, the description, the debit account (the one that will be charged), the credit account (the one that will be credited) and the amount. 
+在银行帐户内输入实收资本，指定日期，摘要，借方账户，贷方账户和金额。
+repeat the same operation for the received loan
+对收到的贷款重复相同的操作。
+the machinery payment
+机器付款
+and the furniture payment
+家具付款
+
+Next you can enter the “monthly expenses”, specifying in the repeat column the desired repetition, in this case M.
+接下来，您可以输入“每月费用”，在重复列中指定所需的重复次数，在这种情况下为：M，M代表的是英文单词“每月”的首字母。
+
+insert the office rent
+输入办公室租金
+the purchase of raw material 
+原材料的采购
+and the employees’ salaries
+以及员工的工资
+You can apply the same procedure for the “monthly revenues” and enter the estimated incomes.
+您可以对“每月收入”进行相同的操作，然后输入预估的收入。
+
+As you can see, in the total column the annual total is automatically calculated and displayed.
+您可以看到，在总金额列中，将自动计算并显示年度的总计。
+If you click on the bank account icon, you can view all the automatically generated recurring movements, and thanks to the progressive balance you can also see the exact liquidity evolution.
+单击银行账户的图标，可以查看所有自动生成的定期变动，通过累进余额，您还可以查看确切的流动性演变。
+
+
+Enter the transactions
+输入发生业务
+
+In the Transactions table enter your actual accounting movements.
+在发生业务表格内输入您真实发生的会计业务。
+
+You can do this by importing the bank transactions datas or by entering them manually.
+可以通过导入银行交易数据或手动输入来执行此操作。
+
+After entering the accounting transactions, you can check the updated accounts balances, and you can immediately make a comparison to the budget balances.
+输入会计发生业务后，可以检查更新的账户余额，并且可立即与预算余额进行比较。
+
+Reports and budget comparison
+报告和预算的比较
+
+The most important thing for any business is that it is profitable and that it has enough liquidity to meet the costs and to pay the salaries at the end of the month.
+对于任何商业活动而言，最重要的事情是：可盈利，并且具有足够的流动性资金来支付成本，并在月底支付工资。
+You can check this by selecting from the Account1 menu, Enhanced balance sheet with groups > Monthly budget 1st year
+您可以通过以下操作进行检查：在报表(1)菜单中，选择按组生成报表的命令，再从中选择第一年月度预算。
+
+
+Under Balance sheet, you can see the assets forecast and the liabilities forecast, 
+在资产负债表下，您可以看到资产预测和负债预测，
+Under Profit and loss statement, you can find the forecast of your incomes, as well as the evolution of your expenses.
+在损益表下，您可以找到收入的预测以及费用的演变。
+
+And in this row below you can check if your business is profitable, namely if you’re generating profit or loss.
+在下面的这一行中，您可以查看商业活动是否盈利，正在产生盈利或亏损的结果。
+
+Of course you can also create reports for more years and divide them by the period you prefer.
+当然，您也可以创建更多年的报告，并选择您所需的时间段。
+
+You can also check the liquidity and the evolution of your cash flow by viewing the bank account table.
+您还可以通过查看银行账户表来检查流动性资金和现金流量的演变。
+With the help of the progressive balance, you can easily predict in which period you might have some liquidity problems.
+借助渐进式余额，您可以轻松地预测：在哪个时期内可能会遇到的一些流动性资金问题。
+
+If you prefer a visual help, you can generate the related chart instead.
+可以通过生成相关的图表，在视觉上产生更加直观的帮助。
+
+Of course you can also compare your financial planning with your actual accounting by selecting from the Account1 menu,  Enhanced balance sheet with groups > Comparison Effective and Budget.
+当然，您也可以从报表(1)菜单中，选择按组生成报表的命令，再从中选择实际发生与预算对比的选项。
+将财务计划与实际发生的会计业务进行比较。
+
+By following this step, you can check anytime, if the actual business is in line with your budget plan.
+通过此步骤，您可以随时检查实际业务是否符合您的预算计划。
+
+For more information please visit banana.ch
+了解更多的信息，请访问 banana.ch
+
