@@ -1,0 +1,66 @@
+Previsão financeira contabilidade partidas dobradas
+
+Bem-vindos ao Banana Contabilidade!
+Este vídeo mostra como criar uma previsão financeira com a contabilidade de partidas dobradas.
+
+
+Comece com a criação de um novo ficheiro
+
+Clique no ícone "Novo"
+Selecione a região e a língua
+A categoria e o tipo de contabilidade
+Finalmente, escolha o modelo que mais convém à sua atividade
+Na janela seguinte modifique o nome, a data de abertura e de fecho e a moeda de base
+
+
+Adapte a tabela contas
+
+Na tabela Contas encontrará as contas de Balanço e de Conta Económica
+Estas contas podem ser personalizadas dependendo das suas exigências:
+Pode, por exemplo, mudar os números da conta e a descrição
+Pode inserir na coluna Abertura o saldo inicial
+Pode juntar contas e eliminar aquelas de que não precisa
+
+
+Crie a sua previsão
+
+Na tabela Orçamento pode começar a criar a sua previsão financeira inserindo os registros previstos.
+Comece primeiro com as "operações iniciais".
+Insira o depósito de capital na conta bancária indicando a data, a descrição, a conta dar (ou seja, a conta que será debitada), a conta ter (ou seja, a conta que será creditada) e, no fim, o montante
+Repita a mesma operação para o empréstimo recebido
+Para o pagamento de máquinas
+E para o pagamento de móveis
+
+Insira sucessivamente as "despesas mensais", especificando na coluna Repetir a repetição desejada, neste caso M para frequência mensal
+Insira a renda do escritório
+A compra de materiais
+e o salário dos seus empregados
+
+Pode adotar o mesmo procedimento para as entradas mensais inserindo a venda dos seus produtos com os relativos montantes de entrada.
+
+Como pode ver, a coluna "Total" mostra o total anual dos repetivos movimentos.
+Se clica no ícone da conta bancária pode ver todos os registros recorrentes que foram gerados automaticamente pelo sistema.
+Graças ao saldo progressivo, pode ver a evolução exata da liquidez.
+
+
+Insira os registros de contabilidade
+
+Na tabela Lançamentos insira os movimentos efetivos da sua contabilidade.
+Pode importar as transações bancárias ou pode inserir os dados manualmente.
+Depois de ter inserido todos os registros pode verificar os saldos atualizados das suas contas e pode imediatamente fazer uma comparação com o seu orçamento.
+
+
+Relatório anual e comparação do orçamento
+
+O mais importante para cada atividade é que seja rentável e que disponha de bens liquidos suficientes para lidar com os custos e para pagar os salários ao fim do mês.
+Para controlar estes aspetos selecione no menu Conta1, balanço patrimonial por grupos, Orçamento mensal 1° ano
+Em Balanço pode ver a previsão dos ativos e dos passivos, enquanto que em Conta económica pode encontrar a previsão dos seus ganhos e dos seus custos.
+E na última linha no fundo pode verificar se a sua atividade é rentável, portanto se está a gerar úteis ou se está a perder.
+Naturalmente pode gerar outros relatórios ao longo de vários anos e escolher a subdivisão que preferir.
+Pode também controlar a liquidez e a evolução do seu cash flow visualizando a tabela da conta bancária.
+Com a ajuda do saldo progressivo poderá prever facilmente em que período poderia ter problemas de liquidez.
+Se preferir uma representação visual, pode gerar o gráfico associado à tabela.
+Obviamente pode também comparar a sua previsão e a sua contabilidade efetiva. Selecione Conta1, relatório patrimonial por grupo, Balanço efetivo e budget.
+Fazendo assim pode sempre verificar que a sua atividade está a seguir os seus planos.
+
+Para mais informações visite banana.ch
