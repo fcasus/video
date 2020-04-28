@@ -1,0 +1,62 @@
+Cover and titles
+================
+
+Leer hoe u eenvoudig een gezinsbudget kunt opstellen om uw geld beter te beheren, waardevolle besparingen te bereiken en uw schuldenlast te verminderen.
+• Maak een nieuw boekhoudbestand aan
+• Pas de rekeningentabel aan
+• Pas de categorieëntabel aan
+• Maak uw budget aan
+• Vergelijk de gebudgetteerde uitgaven en ontvangsten
+• Voer transacties in
+• Vergelijk het jaaroverzicht met het budget
+
+Voice
+=====
+Welkom bij Banana Boekhouding.
+Deze korte video legt u uit hoe u een huishoudbudget creëert met behulp van het kasboek.
+
+Begin met het aanmaken van een nieuw bestand.
+Klik op het icoon Nieuw in de knoppenbalk.
+Kies een gebied en een taal, Nederlands- Nederlands.
+Ga verder door de categorie Privé te kiezen.
+Kies het type Cash Manager.
+Kies tenslotte het model "Gezinsbegroting en huishoudboekhouding” (kasboek).
+Kies in het volgende scherm enkele eigenschappen van het boekhoudbestand.
+Verander de naam, de begindatum, de einddatum en de basis munteenheid.
+
+Pas de rekeningentabel aan.
+De rekening voor kasbeheer wordt ingevoerd in de rekeningentabel.
+U kunt één rekening invoeren.
+Verander het rekeningnummer, de beschrijving en het beginsaldo naar uw wensen.
+
+Pas de categorieëntabel aan.
+De rekeningen voor inkomsten en uitgaven worden in de categorieëntabel ingevoerd.
+Over het algemeen worden ze onderverdeeld in inkomsten, vaste kosten, variabele kosten en kostenplaatsen.
+
+Maak uw begroting aan.
+In deze tabel worden de verschillende inkomsten en uitgaven ingevoerd waarmee u gedurende het jaar rekening moet houden.
+Begin met de inkomsten.
+Onder de kop vaste inkomsten voert u bijvoorbeeld uw maandsalaris in..
+Ga nu verder met de uitgaven.
+Onder de kop vaste uitgaven voert u bijvoorbeeld de maandelijkse rente in.
+Doe hetzelfde voor extra uitgaven.
+Onder de kop extra uitgaven voert u bijvoorbeeld de maandelijkse kosten voor restaurants in.
+
+Vergelijk de begrote uitgaven en inkomsten.
+Om de begroting compleet te maken moet u nu de begrote uitgaven en inkomsten vergelijken door de jaarbegroting af te drukken.
+Kies in het menu Rapporten, Uitgebreide rekening op groepen, jaarbudget.
+Controleer het eindresultaat om er zeker van te zijn dat dit positief is wat betekent dat u goed met uw geld omgaat.
+
+Voer de boekingen in.
+U kunt nu starten met het boeken van de echte veranderingen van uw geldmiddelen en deze van tijd tot tijd vergelijken met de bedragen in de begroting.
+
+Vergelijking van jaaroverzicht en begroting.
+Aan het einde van het jaar kunt u de definitieve vergelijking maken tussen het huidige verslag en de oorspronkelijke begroting.
+Op deze manier kunt u zien of het u gelukt is om de besparingen te bereiken die u had begroot.
+Maak het controle overzicht aan vanuit het menu Rapporten, Uitgebreide rekening op groepen, jaaroverzicht vergeleken met budget.
+Controleer ook hier of het eindresultaat positief is.
+
+Gefeliciteerd!
+U heeft uw huishoudbegroting gemaakt met het kasboek.
+
+Voor meer informatie bezoekt u banana.ch.
