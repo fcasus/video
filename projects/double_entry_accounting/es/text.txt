@@ -1,0 +1,79 @@
+Contabilidad de partida doble
+
+
+¡Bienvenido a Banana Contabilidad!
+Este video te mostrará cómo crear una contabilidad de Partida doble y cómo preparar el Balance general y el Estado de resultados.
+
+
+Comienza con la creación de un nuevo archivo.
+
+Haz clic en la barra de herramientas sobre el icono “Nuevo”
+Selecciona la región y el idioma
+La categoría “Todos”
+Y el tipo de contabilidad deseada, “Partida doble” o “Partida doble con IVA”
+Por último, selecciona la plantilla que mejor se adapte a tu actividad
+En la siguiente ventana modifica el nombre, la fecha de apertura y cierre, y la moneda base
+
+
+Ajustar la tabla Cuentas
+
+En la tabla Cuentas se enumeran las cuentas del Balance (activo y pasivo) y de la Cuenta de Resultados.
+
+El Balance te muestra los saldos de las cuentas patrimoniales, es decir, el Activo y el Pasivo.
+La diferencia entre el Activo y el Pasivo determina el Capital personal.
+
+La Cuenta de Pérdidas y Ganancias, por otro lado, muestra las cuentas de Gastos e Ingresos, y su diferencia determina la Ganancia o Pérdida del ejercicio.
+
+Todas estas cuentas pueden ser personalizadas de acuerdo a tus necesidades.
+
+Por ejemplo, puedes modificar el número de cuenta o la descripción
+Puedes insertar en la columna “Apertura” el saldo inicial
+Puedes añadir cuentas
+Y eliminar aquellas que no te sirven
+
+
+
+Crea tu presupuesto
+
+En la tabla Presupuesto, puedes introducir las entradas y salidas previstas para el año indicado
+Comienza por hacer una lista de tus gastos mensuales:
+
+Introduce, por ejemplo, el alquiler de la oficina indicando la fecha, la repetición, la descripción, la cuenta deber (es decir, la cuenta que se debita) la cuenta haber (la cuenta que se acredita) y el importe
+Repite la operación con los salarios de tus empleados
+
+
+Puedes emplear el mismo procedimiento para los ingresos mensuales, por ejemplo, introduciendo la venta de un servicio a tus clientes registrando los ingresos.
+
+
+Introduce los registros contables
+
+En la tabla Registros introduce los movimientos concretos, que constituyen el Diario
+
+En las correspondientes columnas:
+
+Introduce la fecha,
+La descripción,
+En la cuenta Deber introduce la cuenta de destino
+En la cuenta Haber introduce la cuenta de origen
+Y el importe
+
+
+A continuación, repite este procedimiento para todos los movimientos
+
+Para agilizar estas operaciones, también es posible importar las transacciones bancarias y vincularlas a recibos digitales. Para realizar esta operación selecciona Cuenta1-> Importar a la contabilidad
+
+Después de introducir tus registros, el programa actualizará automáticamente los saldos de tus cuentas y podrás compararlo de inmediato con tu presupuesto.
+
+
+Informe anual y comparación de presupuesto
+
+Puedes consultar y comparar los datos pasados, presentes y futuros de tu contabilidad en cualquier momento
+
+Para generar el informe selecciona Cuenta1 -> Balance general con grupos avanzado -> Comparación Efectivo y Presupuesto.
+
+Para tener una mejor visión general de tu flujo de caja y asegurarte de que tienes suficiente liquidez para pagar los salarios a fin de mes, puedes crear un informe con una subdivisión mensual, o puedes consultar los gráficos de tu cuenta bancaria.
+
+Siguiendo estos pasos, podrás verificar siempre si tu negocio marcha según tus planes.
+
+
+Para más información visita banana.ch
