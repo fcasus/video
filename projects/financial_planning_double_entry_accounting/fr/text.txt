@@ -1,0 +1,77 @@
+Prévisions financières de la comptabilité en partie double
+
+Bienvenue à Banana Comptabilité !
+Cette vidéo vous montre comment créer une prévision financière avec la comptabilité en partie double.
+
+Commencez par créer un nouveau dossier
+
+- Cliquez sur l'icône "Nouveau".
+- Sélectionnez une région et une langue
+- La catégorie et le type de comptabilité
+- Enfin, choisissez le modèle qui convient le mieux à votre entreprise
+- Sur l'écran suivant, modifiez le nom, la date d'ouverture et de clôture et la monnaie de base
+
+Adaptez le tableau des comptes
+
+Le tableau Comptes présente les comptes du bilan et du compte de résultat
+Ces comptes peuvent être personnalisés en fonction de vos besoins :
+- Vous pouvez par exemple modifier les numéros de compte et les descriptions
+- Vous pouvez saisir le solde initial dans la colonne Ouverture
+- Vous pouvez ajouter des comptes et supprimer ceux dont vous n'avez pas besoin.
+
+Créez votre prévision
+
+Dans le tableau Budget, vous pouvez maintenant commencer à créer vos prévisions financières en saisissant les entrées prévues.
+
+Commencez d'abord par les "opérations initiales".
+
+- Saisissez le versement du capital sur le compte bancaire, en indiquant la date, la description, le compte Débit (c'est-à-dire le compte qui est débité), les comptes Crédit (c'est-à-dire le compte qui est crédité) et enfin le montant
+- répétez la même opération pour le prêt reçu
+- pour le paiement des machines
+- et pour le paiement du mobilier
+
+Saisissez ensuite les "sorties mensuelles", en précisant dans la colonne répéter la répétition souhaitée, dans ce cas M pour la fréquence mensuelle.
+
+- Indiquez la location du bureau
+- l'achat de matériel
+- et le salaire de vos employés
+
+Vous pouvez adopter la même procédure pour les revenus mensuels en inscrivant la vente de vos produits avec les montants de revenus correspondants.
+
+Comme vous pouvez le voir, la colonne "Total" indique le total annuel des mouvements respectifs.
+Si vous cliquez sur l'icône du compte bancaire, vous pouvez voir toutes les écritures récurrentes générées automatiquement par le programme.
+
+Grâce au solde progressif, vous pouvez également voir l'évolution exacte de votre liquidité.
+
+Saisissez les écritures comptables
+
+Dans le tableau Écritures, saisissez les mouvements réels de votre comptabilité.
+
+Vous pouvez importer des transactions bancaires ou vous pouvez saisir les données manuellement.
+
+Après avoir saisi toutes les écritures, vous pouvez vérifier les soldes actualisés de vos comptes et immédiatement faire une comparaison avec votre budget.
+
+Rapport annuel et comparaison avec le budget
+
+Le plus important pour toute entreprise est qu'elle soit rentable et qu'elle dispose de liquidités suffisantes pour faire face aux coûts et payer les salaires à la fin du mois.
+
+Pour vérifier ces aspects, sélectionnez dans le menu Compta1, Bilan formaté par groupes, Prévision mensuel 1ère année
+
+Sous la rubrique Bilan, vous pouvez voir les budgets de votre actif et de votre passif, tandis que sous la rubrique Compte de résultat, vous pouvez trouver les budgets de vos revenus et de vos coûts.
+
+Et dans la dernière ligne du bas, vous pouvez voir si votre entreprise est rentable, donc si elle génère des profits ou si elle fait une perte.
+
+Bien entendu, vous pouvez générer d'autres relevés sur plusieurs années et choisir la ventilation que vous préférez.
+
+Vous pouvez également vérifier l'évolution de vos liquidités et de vos flux de trésorerie en consultant le tableau des comptes bancaires.
+
+Grâce au solde progressif, vous pouvez facilement prévoir quand vous pourriez avoir des problèmes de liquidité.
+
+Si vous préférez une représentation visuelle, vous pouvez générer le graphique associé au tableau.
+
+Bien entendu, vous pouvez également comparer vos prévisions et vos comptes réels. Pour cela, sélectionnez Compta1, Bilan formaté par groupes, Bilan effectif et Budget.
+Vous pouvez ainsi toujours vérifier que votre entreprise suit son chemin conformément à vos plans.
+
+Pour plus d'informations, consultez le site banana.ch
+
+

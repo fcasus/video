@@ -1,4 +1,4 @@
-Contabilità doppia
+Contabilità in partita doppia
 
 
 Benvenuti in Banana contabilità
@@ -64,7 +64,7 @@ Rendiconto annuale e confronto preventivo
 
 Puoi consultare e confrontare i tuoi dati passati, presenti e futuri della tua contabilità in ogni momento 
 
-Per generare i rendiconti seleziona Conta1 -> Rendiconto abbellito con gruppi -> Bilancio effettivo e budget.
+Per generare i rendiconti seleziona Conta1 -> Bilancio abbellito con gruppi -> Bilancio effettivo e budget.
 Facendo così potrai sempre verificare che la tua attività stia andando secondo i tuoi piani.
 
 
