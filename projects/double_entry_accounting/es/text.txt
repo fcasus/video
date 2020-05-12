@@ -5,7 +5,7 @@ Contabilidad de partida doble
 Este video te mostrará cómo crear una contabilidad de Partida doble y cómo preparar el Balance general y el Estado de resultados.
 
 
-Comienza con la creación de un nuevo archivo.
+Comienza con la creación de un archivo nuevo.
 
 Haz clic en la barra de herramientas sobre el icono “Nuevo”
 Selecciona la región y el idioma
