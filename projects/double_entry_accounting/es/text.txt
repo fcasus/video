@@ -26,8 +26,8 @@ La Cuenta de Pérdidas y Ganancias, por otro lado, muestra las cuentas de Gastos
 
 Todas estas cuentas pueden ser personalizadas de acuerdo a tus necesidades.
 
-Por ejemplo, puedes modificar el número de cuenta o la descripción
-Puedes insertar en la columna “Apertura” el saldo inicial
+Por ejemplo, puedes modificar los números de cuenta, o la descripción
+Puedes introducir en la columna “Apertura” el saldo inicial
 Puedes añadir cuentas
 Y eliminar aquellas que no te sirven
 
