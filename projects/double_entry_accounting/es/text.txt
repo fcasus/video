@@ -15,7 +15,7 @@ Por último, selecciona la plantilla que mejor se adapte a tu actividad
 En la siguiente ventana modifica el nombre, la fecha de apertura y cierre, y la moneda base
 
 
-Ajustar la tabla Cuentas
+Ajusta la tabla Cuentas
 
 En la tabla Cuentas se enumeran las cuentas del Balance (activo y pasivo) y de la Cuenta de Resultados.
 
