@@ -1,0 +1,72 @@
+Bienvenue à Banana Comptabilité
+Cette vidéo vous montre comment créer une comptabilité en partie double et comment préparer le bilan et le compte de résultat.
+Commencez par créer un nouveau dossier
+Cliquez sur l'icône "Nouveau" dans la barre d'outils
+Sélectionnez la région, (je sélectionne Suisse - Français)
+Catégorie TOUS
+et le type de comptabilité souhaité, "Comptabilité en partie double" ou "Comptabilité en partie double avec TVA" (sélectionnez Comptabilité en partie double). 
+Enfin, choisissez le modèle qui convient le mieux à votre entreprise (je sélectionne la comptabilité en partie double – entreprise individuelle)
+Sur l'écran suivant, modifiez le nom, la date d'ouverture et de clôture et la monnaie de base
+
+
+Adapter le tableau des comptes
+
+Le tableau des comptes répertorie les comptes du bilan (actif et passif) et du compte de résultat. 
+
+Le bilan vous montre les soldes des comptes de bilans, puis l'Actif et le Passif. 
+La différence entre l'actif et le passif détermine le Capital Propre.
+
+Le compte de résultat, en revanche, vous présente les comptes des charges et des produits, et la différence entre détermine le bénéfice ou la perte de l'exercice.
+
+Ces comptes peuvent être personnalisés en fonction de vos besoins.
+
+Vous pouvez par exemple modifier les numéros de compte, ou la description
+Vous pouvez saisir le solde initial dans la colonne "Ouverture »
+Vous pouvez ajouter des comptes 
+et éliminer ceux dont vous n'avez pas besoin 
+
+
+Créez votre Budget
+Dans le tableau Budget, vous pouvez inscrire vos prévisions de dépenses et de recettes pour l'année indiquée.
+Commencez par dresser la liste des dépenses mensuelles :
+Par exemple, entrez le loyer du bureau avec la date, la répétition, la description, le compte Débit (c'est-à-dire le compte qui sera débité), le compte Crédit (c'est-à-dire le compte qui sera crédité) et le montant.
+faites la même chose pour les salaires de vos employés.
+
+Vous pouvez utiliser la même procédure pour les recettes mensuelles, par exemple, saisir la vente d'un service à vos clients en enregistrant les montants entrants.
+
+
+Saisir les écritures comptables
+
+Dans le tableau Écritures, saisissez les mouvements réels qui constituent le Journal.
+
+Dans les colonnes prévues à cet effet :
+Saisissez la date, 
+le libellé.  
+Dans le compte Débit, entrez le compte de destination
+Dans le compte Crédit, inscrivez le compte d'origine
+et le montant
+Répétez cette procédure plus tard pour tous les mouvements
+
+Vous pouvez accélérer ces opérations, en important également des transactions bancaires et les relier à des reçus numériques. Pour ce faire, sélectionnez Compta1 -> Importer en comptabilité 
+
+Après avoir saisi vos données, le programme mettra automatiquement à jour le solde de vos comptes et vous pourrez immédiatement faire une comparaison avec votre budget.
+
+
+Rapport annuel et comparaison des Budget
+
+Vous pouvez à tout moment consulter et comparer vos données comptables passées, présentes et futures 
+
+Pour générer les rapports, sélectionnez Compta1 -> Rapports formatés par groupes -> Bilan effectif et budget.
+Vous pouvez ainsi toujours vérifier que votre entreprise se développe conformément à vos plans.
+
+
+ENEA ::::
+A PARTIRE DEL MINUTO 3.10 CA, NON C’ERA IL TESTO IN ITALIANO. Se l’hai bisogno, te lo do in francese qui sotto.
+
+Pour obtenir une meilleure vision de vos liquidités
+Et vous assurez que vous possédez suffisamment de liquidité pour payer vos salaires à la fin du mois,
+Vous pouvez créer un rapport avec une subdivision mensuelle.
+Ou vous pouvez voir les tableaux de votre compte en banque
+En suivant ces étapes, vous pourrez vérifier si votre entreprise se comporte en conformité à vos prévisions budgétaires.
+
+Pour plus d'informations, consultez le site banana.ch
