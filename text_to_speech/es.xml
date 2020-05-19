@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <speak xmlns="https://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="en-US">
-   <voice name="Microsoft Server Speech Text to Speech Voice (es-ES, HelenaRUS)">
+   <voice name="Microsoft Server Speech Text to Speech Voice (es-ES, ElviraNeural)">
 
 	Extensa documentación, una gran cantidad de tutoriales en línea y explicaciones de cada una de las funciones del programa
 
