@@ -1,0 +1,41 @@
+Portada y títulos
+================
+•	Cómo empezar
+•	Crear el archivo contable
+•	Personalizar el plan contable
+•	Introducir registros
+•	… ¡y tu contabilidad está lista!
+•	¡Enhorabuena! Has creado tu primer archivo de Banana Contabilidad
+•	Para más información visita nuestra web
+
+Voz
+=====
+¡Bienvenido a Banana Contabilidad!
+Este breve video te explicará cómo comenzar una contabilidad nueva.
+
+Primer paso: crear un archivo de contabilidad.
+Haz clic en el icono Nuevo en la barra de herramientas.
+Selecciona una región e idioma, por ejemplo Universal-Spanish.
+Prosigue eligiendo la categoría Business.
+Selecciona el tipo de contabilidad por partida doble.
+Y finalmente, del listado de plantillas selecciona la que mejor se adapte a tus necesidades.
+
+En la siguiente ventana, introduce algunas propiedades sobre el archivo de contabilidad.
+Modifica el nombre, la fecha de apertura, la fecha de cierre y la moneda base.
+
+Segundo paso: ajusta el plan contable.
+Edita las filas existentes de la tabla: Modifica los números de cuentas, descripciones, grupos y más.
+O simplemente añade nuevas cuentas de acuerdo con tus necesidades particulares.
+
+Tercer paso: introduce los registros contables.
+Añade tus propios registros y mantén tus movimientos contables bajo control.
+
+… ¡y tu contabilidad está lista!
+
+¡Resultados profesionales en un solo clic!
+Los informes como el balance, la cuenta de pérdidas y ganancias, las tarjetas de cuenta, el cash manager, el resumen y el informe del IVA sólo necesitan un instante para generarse.
+
+¡Enhorabuena!
+Has creado tu primer archivo de Banana Contabilidad.
+
+Para más información, visita banana.ch.
