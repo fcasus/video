@@ -65,7 +65,7 @@ Para agilizar estas operaciones, también es posible importar las transacciones 
 Después de introducir tus registros, el programa actualizará automáticamente los saldos de tus cuentas y podrás compararlo de inmediato con tu presupuesto.
 
 
-Informe anual y comparación de presupuesto
+Informe anual y comparación del presupuesto
 
 Puedes consultar y comparar los datos pasados, presentes y futuros de tu contabilidad en cualquier momento
 
