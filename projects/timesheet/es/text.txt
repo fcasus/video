@@ -1,0 +1,71 @@
+HOJA DE TIEMPO – VOZ
+==================
+
+Bienvenido a Banana Contabilidad.
+
+Este video te mostrará cómo utilizar la aplicación gratuita Hoja de Tiempo.
+
+Puedes elaborar cómodamente informes mensuales de las horas laborables para ti y tu empleador.
+
+Comienza creando un nuevo archivo de Hoja de Tiempo.
+Desde el Menú, selecciona Nuevo.
+Selecciona la región Universal Spanish, la Categoría Todo y el Tipo Hoja de Tiempo.
+Por último, a la derecha, selecciona la plantilla y haz clic en Crear.
+
+Aquí podrás planear tus horas de trabajo.
+Llevar un seguimiento de las horas trabajadas no remuneradas y los días de vacaciones pendientes del año anterior.
+Luego define las horas de trabajo debidas.
+
+Por ejemplo, puedes fijar los tres primeros días de la semana como días laborables, 8 horas diarias.
+Jueves y Sábado son no laborables, y Domingo es festivo.
+Haz clic en Ok y confirma el período seleccionado para completar la configuración de la hoja de tiempo.
+
+Personaliza la tabla Diario.
+En la tabla Diario deberás introducir los datos diarios de la hoja de tiempo.
+Las filas de la tabla son creadas automáticamente por el programa.
+Los días festivos y no laborables figuran en rojo y azul.
+
+Configura y personaliza los días festivos.
+Por ejemplo, selecciona el primer día de enero;
+Haz doble clic en la celda Festivo y selecciona el valor 0 de la lista.
+Para el programa este es ahora un Festivo.
+También puedes personalizar el texto en la columna Descripción Día:
+Haz doble clic en la celda e introduce el hashtag con el texto.
+De esta manera puedes definir y personalizar todas las vacaciones.
+
+Introduce las horas trabajadas.
+Ahora estás listo para empezar a utilizar la hoja de tiempo de manera efectiva.
+El programa señalará el día en curso en una fila amarilla.
+En las columnas Inicio1 y Final1, introduce la hora de inicio y finalización de la mañana de trabajo.
+En las columnas Inicio2 y Final2, introduce la hora de inicio y finalización de la tarde de trabajo.
+La columna Total muestra automáticamente las horas de trabajo por día.
+Introduce las horas de baja por enfermedad y planifica tus vacaciones indicando las horas en las columnas correspondientes.
+
+Revisa tus datos
+Continúa introduciendo tus horas de trabajo y el programa actualizará automáticamente los valores de las columnas Diferencia y Progresivo.
+La columna Diferencia indica la diferencia diaria entre las horas debidas y las horas trabajadas.
+La columna Progresivo tiene en cuenta todas estas diferencias diarias y las resume.
+A final de mes, se puede visualizar el total de horas reales trabajadas, las horas debidas y la diferencia.
+
+Crea informes mensuales.
+Genera informes mensuales para ti y para tu empleador.
+En el menú Utilidades1, selecciona el comando Informe por mes.
+Introduce el periodo y haz clic en OK.
+El programa crea un informe resumido del período seleccionado.
+
+Descarga Banana Contabilidad ahora, y ¡prueba la aplicación de la hoja de tiempo de forma gratuita!
+
+Para más información, por favor visita banana.ch.
+
+
+HOJA DE TIEMPO – DIAPOSITIVAS
+===================
+
+Hoja de Tiempo
+Informes mensuales para tí y para tu empleador
+Crea y configura el archivo
+Personaliza la tabla Diario
+Introduce las horas laborables
+Comprueba tus datos
+Crea informes mensuales
+Para más información visita www.banana.ch
