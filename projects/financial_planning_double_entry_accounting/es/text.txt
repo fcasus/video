@@ -1,0 +1,86 @@
+Previsión financiera con contabilidad por partida doble
+
+
+¡Bienvenido a Banana Contabilidad!
+Este video te mostrará cómo crear una previsión financiera con contabilidad por partida doble.
+
+Comienza con la creación de un archivo nuevo
+
+Haz clic sobre el icono "Nuevo"
+Selecciona la región e idioma,
+La categoría,
+y el tipo de contabilidad que deseas
+Por último, selecciona la plantilla que mejor se adapte a tu actividad
+En la ventana emergente modifica el nombre, la fecha de apertura y cierre, y la moneda base
+
+
+Ajusta la tabla Cuentas 
+
+La tabla Cuentas muestra las cuentas del Balance general y las cuentas de Pérdidas y Ganancias. 
+
+Todas estas cuentas pueden ser personalizadas de acuerdo a tus necesidades.
+
+Por ejemplo, puedes modificar los números de cuenta, o la descripción
+Puedes introducir en la columna “Apertura” el saldo inicial
+Puedes añadir cuentas
+Y eliminar aquellas que no necesitas
+
+Crea tu presupuesto
+
+En la tabla presupuesto, puedes empezar ya a elaborar tu previsión financiera introduciendo tus transacciones de presupuesto.
+
+Primero, introduce las transacciones iniciales bajo "actividad inicial".
+
+introduce el depósito del capital base en la cuenta bancaria, especificando la fecha, la descripción, la cuenta de débito (la que se cargará), la cuenta de crédito (la que se abonará) y la cantidad. 
+repite la misma operación para un préstamo obtenido
+el pago de la maquinaria
+y el pago de los muebles
+
+
+A continuación puedes introducir los "gastos mensuales", especificando en la columna Repetir, la repetición deseada, en este caso M.
+
+introduce el alquiler de la oficina
+la compra de materiales básicos 
+y los salarios de los empleados
+
+Puede aplicar el mismo procedimiento para los "ingresos mensuales" e introducir los ingresos estimados.
+
+Como puedes ver, en la columna Total, el total anual se calcula y se muestra automáticamente.
+Si pinchas sobre el icono de la cuenta bancaria, podrás visualizar todos los movimientos recurrentes generados automáticamente, y gracias al balance progresivo podrás ver también la evolución exacta de la liquidez.
+
+
+
+Introduce las transacciones
+
+En la tabla Registros introduce tus movimientos contables.
+
+Lo puedes hacer importando los datos de tus transacciones bancarias o introduciéndolas manualmente.
+
+Después de introducir los registros contables, puedes verificar los saldos de cuentas actualizados, e inmediatamente puedes hacer una comparación con los balances de presupuesto.
+
+
+Informes y comparación del presupuesto
+
+Lo más importante para cualquier negocio es que sea rentable y que tenga suficiente liquidez para cubrir los costes y pagar los salarios a fin de mes.
+
+Puedes comprobarlo seleccionando en el menú Cuenta1, Balance general avanzado con grupos  > Presupuesto mensual 1er año
+
+Bajo el Balance, se puede ver la previsión de activos y la previsión de pasivos,  
+Bajo el apartado de pérdidas y ganancias, puedes consultar la previsión de tus ingresos, así como la evolución de tus gastos.
+
+Y en la siguiente fila puedes comprobar si tu negocio es rentable, es decir, si estás generando ganancias o pérdidas.
+
+Por supuesto, también puedes generar informes de más años y dividirlos por el período que prefieras.
+
+
+También puedes comprobar la liquidez y la evolución de su flujo de caja consultando la tabla de cuentas bancarias.
+Con la ayuda del balance progresivo, puedes predecir fácilmente en qué período puedes tener algunos problemas de liquidez.
+
+Si prefieres tener soporte visual, en su lugar, puedes generar el gráfico correspondiente.
+
+Por supuesto, también puedes comparar tu previsión financiera con tu contabilidad real seleccionando en el menú Cuenta1, Balance general avanzado con grupos > Comparación Efectiva y de Presupuesto.
+
+Siguiendo estos pasos, puedes comprobar en cualquier momento si el negocio está en línea con tu plan de presupuesto.
+
+
+Para más información visita banana.ch
