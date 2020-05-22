@@ -38,9 +38,6 @@ The procedure is immediate and very similar to the budget table:
 Enter the date, the description, the incoming or outgoing amount, the account and the category to which the income or expense is attributed
 Repeat this operation for all movements
 In this table, you can also import bank transactions data and link to digital receipts. Select Account1 -> Import to accounting.
-As you can see, here is also the column for cost centers.
-The cost centers are defined in the accounts table with descriptions.
-You can use them for certain movements to a specific customer.
 After entering the accounting transactions, the program will automatically update the accounts and categories balances, and you can immediately make a comparison to the budget balances.
 
 Reports and budget comparison
