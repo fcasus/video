@@ -1,0 +1,63 @@
+Portada y títulos
+================
+Aprende a elaborar fácilmente un presupuesto familiar para administrar mejor tu dinero, lograr ahorrar de manera significativa y reducir las deudas.
+•	Crea un nuevo archivo contable
+•	Ajusta la tabla Cuentas
+•	Ajusta la tabla Categorías
+•	Crea tu presupuesto
+•	Compara los gastos e ingresos presupuestados
+•	Introduce transacciones
+•	Compara el informe anual con el presupuesto
+
+Voz
+=====
+Bienvenido a Banana Contabilidad.
+Este breve video te explicará cómo crear un presupuesto familiar utilizando el cash manager.
+
+Comienza con la creación de un nuevo archivo.
+Haz clic en Nuevo desde la barra de herramientas.
+Elige la región y el idioma seleccionando Universal-Spanish.
+Prosigue seleccionando la categoría Privado.
+
+Selecciona el Tipo Cash Manager.
+Por último, selecciona la plantilla "Presupuesto familiar y cuentas del hogar".
+
+En la siguiente ventana, introduce algunas propiedades del archivo contable.
+Modifica el nombre, la fecha de apertura, la fecha de cierre y la moneda base.
+
+Ajusta la tabla Cuentas
+La cuenta para la gestión de la liquidez se introduce en la tabla Cuentas.
+Puedes introducir una cuenta solamente.
+Modifica el número de cuenta, la descripción y el importe de apertura según tus necesidades.
+
+Ajusta la tabla Categorías.
+Las cuentas de Gastos e Ingresos se introducen en la tabla Categorías.
+Generalmente, se dividen en Ingresos, Gastos fijos, Gastos variables y centros de costes.
+
+Crea tu presupuesto.
+En esta tabla se registran los distintos ingresos y gastos en los que tendrás que incurrir durante el año.
+Comienza con los ingresos.
+Bajo el encabezado ingresos fijos, introduce por ejemplo tu salario mensual.
+Pasa ahora a los gastos.
+Bajo el encabezado de gastos fijos, introduce, por ejemplo, el alquiler mensual.
+Haz lo mismo para los gastos extras.
+Bajo el encabezado gastos extras, introduce por ejemplo el gasto mensual de ir al restaurante.
+
+Compara los gastos e ingresos presupuestados.
+Para completar el presupuesto, ahora necesitas comparar los ingresos y gastos estimados imprimiendo el Presupuesto Anual.
+Desde el menú, selecciona Cuenta1, Balance general con grupos avanzado, y Presupuesto anual.
+Comprueba el resultado final para asegurarte de que es positivo, lo que significa que estás administrando tu dinero correctamente.
+
+Introduce las transacciones contables.
+Ahora puedes empezar a registrar los movimientos reales de tu liquidez, y compararlos periódicamente con los valores del presupuesto.
+
+Informe anual y comparación de presupuesto.
+A final de año puedes hacer una comparación definitiva entre el informe actual y el presupuesto inicial.
+De esta manera tendrás la oportunidad de comprobar si has conseguido ahorrar lo que habías presupuestado.
+Genera el informe de control desde el menú Cuenta1, Balance general con grupos avanzado, Comparación informe anual con presupuesto.
+Además, comprueba el resultado final para asegurarte de que es positivo.
+
+¡Enhorabuena!
+Has creado tu presupuesto familiar con el cash manager.
+
+Para más información, visita banana.ch.
