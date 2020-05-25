@@ -2,7 +2,6 @@ HOJA DE TIEMPO – VOZ
 ==================
 
 Bienvenido a Banana Contabilidad.
-
 Este video te mostrará cómo utilizar la aplicación gratuita Hoja de Tiempo.
 
 Puedes elaborar cómodamente informes mensuales de las horas laborables para ti y tu empleador.
@@ -12,10 +11,15 @@ Desde el Menú, selecciona Nuevo.
 Selecciona la región Universal Spanish, la Categoría Todo y el Tipo Hoja de Tiempo.
 Por último, a la derecha, selecciona la plantilla y haz clic en Crear.
 
+Ahora configura la información en la Hoja de tiempo:
+Introduce tu nombre y apellidos, y el nombre de la compañía para la que trabajas.
+Establece la fecha de inicio y de fin de tu período de trabajo.
+Y luego introduce el porcentaje correspondiente a tu trabajo.
+
+Ahora dirígete a la sección Inicio.
 Aquí podrás planear tus horas de trabajo.
 Llevar un seguimiento de las horas trabajadas no remuneradas y los días de vacaciones pendientes del año anterior.
 Luego define las horas de trabajo debidas.
-
 Por ejemplo, puedes fijar los tres primeros días de la semana como días laborables, 8 horas diarias.
 Jueves y Sábado son no laborables, y Domingo es festivo.
 Haz clic en Ok y confirma el período seleccionado para completar la configuración de la hoja de tiempo.
