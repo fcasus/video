@@ -43,7 +43,7 @@ Tras introducir los registros contables, el programa actualizará automáticamen
 Informes y comparación de presupuesto
 Imprime informes incluyendo los datos pasados, presentes y futuros de tu contabilidad.
 Puedes comparar los datos estimados con los datos actuales en cualquier momento.
-Desde el menú, selecciona Cuenta 1 -> Balance general con grupos avanzado, y selecciona el tipo de informe más adeacuado para ti.
+Desde el menú, selecciona Cuenta1 -> Balance general avanzado con grupos, y selecciona el tipo de informe más adeacuado para ti.
 Siguiendo estos pasos, podrás comprobar si tu negocio se ajusta a tu plan de presupuesto.
 
 Para más información visita banana.ch
