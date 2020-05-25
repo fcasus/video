@@ -73,10 +73,10 @@ Y en la siguiente fila puedes comprobar si tu negocio es rentable, es decir, si 
 Por supuesto, también puedes generar informes de más años y dividirlos por el período que prefieras.
 
 
-También puedes comprobar la liquidez y la evolución de su flujo de caja consultando la tabla de cuentas bancarias.
-Con la ayuda del balance progresivo, puedes predecir fácilmente en qué período puedes tener algunos problemas de liquidez.
+También puedes comprobar la liquidez y la evolución del flujo de caja consultando la tabla de cuentas bancarias.
+Con la ayuda del balance progresivo, puedes predecir fácilmente en qué período podrías tener algunos problemas de liquidez.
 
-Si prefieres tener soporte visual, en su lugar, puedes generar el gráfico correspondiente.
+Si prefieres soporte visual, puedes generar el gráfico correspondiente.
 
 Por supuesto, también puedes comparar tu previsión financiera con tu contabilidad real seleccionando en el menú Cuenta1, Balance general avanzado con grupos > Comparación Efectiva y de Presupuesto.
 
