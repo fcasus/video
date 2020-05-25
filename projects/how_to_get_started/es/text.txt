@@ -13,7 +13,7 @@ Voz
 ¡Bienvenido a Banana Contabilidad!
 Este breve video te explicará cómo comenzar una contabilidad nueva.
 
-Primer paso: crear un archivo de contabilidad.
+Primer paso: crea un archivo de contabilidad.
 Haz clic en el icono Nuevo en la barra de herramientas.
 Selecciona una región e idioma, por ejemplo Universal-Spanish.
 Prosigue eligiendo la categoría Business.
