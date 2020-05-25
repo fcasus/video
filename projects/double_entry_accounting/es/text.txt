@@ -69,7 +69,7 @@ Informe anual y comparación del presupuesto
 
 Puedes consultar y comparar los datos pasados, presentes y futuros de tu contabilidad en cualquier momento
 
-Para generar el informe selecciona Cuenta1 -> Balance general con grupos avanzado -> Comparación Efectivo y Presupuesto.
+Para generar el informe selecciona Cuenta1 -> Balance general avanzado con grupos -> Comparación Efectivo y Presupuesto.
 
 Para tener una mejor visión general de tu flujo de caja y asegurarte de que tienes suficiente liquidez para pagar los salarios a fin de mes, puedes crear un informe con una subdivisión mensual, o puedes consultar los gráficos de tu cuenta bancaria.
 
