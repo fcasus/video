@@ -54,7 +54,7 @@ Ahora puedes empezar a registrar los movimientos reales de tu liquidez, y compar
 Informe anual y comparación de presupuesto.
 A final de año puedes hacer una comparación definitiva entre el informe actual y el presupuesto inicial.
 De esta manera tendrás la oportunidad de comprobar si has conseguido ahorrar lo que habías presupuestado.
-Genera el informe de control desde el menú Cuenta1, Balance general con grupos avanzado, Comparación informe anual con presupuesto.
+Genera el informe de control desde el menú Cuenta1, Balance general avanzado con grupos, Comparación informe anual con presupuesto.
 Además, comprueba el resultado final para asegurarte de que es positivo.
 
 ¡Enhorabuena!
