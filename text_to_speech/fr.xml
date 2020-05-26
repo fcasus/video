@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <speak xmlns="https://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="en-US">
-   <voice name="Microsoft Server Speech Text to Speech Voice (fr-FR, HortenseRUS)">
+   <voice name="Microsoft Server Speech Text to Speech Voice (fr-FR, DeniseNeural)">
       <prosody rate="+0.00%" pitch="0.0%">
 
          <!-- ENTER FRENCH TEXT HERE -->
