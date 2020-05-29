@@ -31,7 +31,7 @@ En la tabla presupuesto, puedes empezar ya a elaborar tu previsión financiera i
 
 Primero, introduce las transacciones iniciales bajo "actividad inicial".
 
-introduce el depósito del capital base en la cuenta bancaria, especificando la fecha, la descripción, la cuenta de débito (la que se cargará), la cuenta de crédito (la que se abonará) y la cantidad. 
+introduce el depósito del capital base en la cuenta bancaria, especificando la fecha, la descripción, la cuenta de débito (a la que se cargará), la cuenta de crédito (a la que se abonará) y la cantidad. 
 repite la misma operación para un préstamo obtenido
 el pago de la maquinaria
 y el pago de los muebles
