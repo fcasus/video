@@ -2,7 +2,7 @@ Contabilidad de partida doble
 
 
 ¡Bienvenido a Banana Contabilidad!
-Este video te mostrará cómo crear una contabilidad de Partida doble y cómo preparar el Balance general y el Estado de resultados.
+Este video te mostrará cómo crear una contabilidad de Partida doble, y cómo preparar el Balance general y el Estado de resultados.
 
 
 Comienza con la creación de un archivo nuevo.
@@ -17,7 +17,7 @@ En la siguiente ventana modifica el nombre, la fecha de apertura y cierre, y la 
 
 Ajusta la tabla Cuentas
 
-En la tabla Cuentas se enumeran las cuentas del Balance (activo y pasivo) y de la Cuenta de Resultados.
+En la tabla Cuentas se enumeran las cuentas del Balance, (activo y pasivo) y de la Cuenta de Resultados.
 
 El Balance te muestra los saldos de las cuentas patrimoniales, es decir, el Activo y el Pasivo.
 La diferencia entre el Activo y el Pasivo determina el Capital personal.
@@ -38,11 +38,11 @@ Crea tu presupuesto
 En la tabla Presupuesto, puedes introducir las entradas y salidas previstas para el año indicado
 Comienza por hacer una lista de tus gastos mensuales:
 
-Introduce, por ejemplo, el alquiler de la oficina indicando la fecha, la repetición, la descripción, la cuenta deber (es decir, la cuenta que se debita) la cuenta haber (la cuenta que se acredita) y el importe
+Introduce, por ejemplo, el alquiler de la oficina indicando la fecha, la repetición, la descripción, la cuenta deber, que es la cuenta que se debita, también la cuenta haber, (que es la cuenta que se acredita), y el importe.
 Repite la operación con los salarios de tus empleados
 
 
-Puedes emplear el mismo procedimiento para los ingresos mensuales, por ejemplo, introduciendo la venta de un servicio a tus clientes registrando los ingresos.
+Puedes emplear el mismo procedimiento para los ingresos mensuales, por ejemplo; introduciendo la venta de un servicio a tus clientes registrando los ingresos.
 
 
 Introduce los registros contables
@@ -71,9 +71,9 @@ Puedes consultar y comparar los datos pasados, presentes y futuros de tu contabi
 
 Para generar el informe selecciona Cuenta1 -> Balance general avanzado con grupos -> Comparación Efectivo y Presupuesto.
 
-Para tener una mejor visión general de tu flujo de caja y asegurarte de que tienes suficiente liquidez para pagar los salarios a fin de mes, puedes crear un informe con una subdivisión mensual, o puedes consultar los gráficos de tu cuenta bancaria.
+Para tener una mejor visión general de tu flujo de caja y asegurarte de que tienes suficiente liquidez para pagar los salarios, puedes crear un informe con una subdivisión mensual, o puedes consultar los gráficos de tu cuenta bancaria.
 
 Siguiendo estos pasos, podrás verificar siempre si tu negocio marcha según tus planes.
 
 
-Para más información visita banana.ch
+Para más información visita nuestra web
