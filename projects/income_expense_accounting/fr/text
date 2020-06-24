@@ -1,0 +1,57 @@
+Comptes Dépenses/Recettes
+
+Bienvenue à Banana Comptabilité ! 
+Cette vidéo vous montrera comment créer une comptabilité dépenses et recettes.
+Comparé à la comptabilité en partie double, c'est la méthode la plus facile et la plus intuitive à utiliser, mais elle donne tout de même des résultats complets et professionnels.
+
+Commencez par créer un nouveau fichier
+
+Cliquez sur l'icône "Nouveau" dans la barre d'outils 
+Sélectionnez une région
+La catégorie TOUS
+et le type de comptabilité souhaité, "Comptabilité dépenses/recettes" ou "Comptabilité dépenses/recettes avec TVA".
+Enfin, choisissez le modèle qui convient le mieux à votre activité
+Sur l'écran suivant, modifiez le nom, la date d'ouverture et de clôture et la monnaie de base 
+
+Adapter le tableau Comptes 
+
+Le tableau Comptes répertorie les comptes de patrimoine, qui peuvent être personnalisés en fonction de vos besoins. 
+Vous pouvez par exemple modifier les numéros de compte, ou la description 
+Vous pouvez saisir le solde initial dans la colonne "Ouverture" 
+Vous pouvez ajouter des comptes
+et éliminer ceux dont vous n'avez pas besoin
+
+Adapter le tableau Catégories 
+
+Le tableau Catégories contient les comptes dépenses et recettes.
+Dans ce cas également, vous pouvez modifier les numéros et les descriptions des catégories 
+vous pouvez ajouter ceux qui sont pertinents pour votre entreprise
+et éliminer ceux dont vous n'avez pas besoin
+
+Créez votre Budget 
+
+Dans le tableau budget, vous pouvez inscrire vos prévisions de dépenses et recettes pour l'année indiquée.
+Commencez par dresser la liste de vos dépenses mensuelles :
+Par exemple, saisissez le loyer du bureau en indiquant la date, la répétition, la description, le montant sortant, le compte et la catégorie.
+Faites la même chose pour le salaire de vos employés
+
+Vous pouvez utiliser la même procédure pour les recettes mensuelles, par exemple, saisir la vente d'un service à vos clients en écrivant les montants entrants.
+
+Saisir les écritures
+
+Dans le tableau Écritures, saisissez les mouvements comptables réels.
+La procédure est immédiate et très similaire à celle du tableau Budget :
+Indiquez la date, la description, le montant entrant ou sortant, le compte sur lequel le mouvement a été effectué et la catégorie à laquelle l'entrée ou la sortie est attribuée.
+Répétez cette opération plus tard pour tous les mouvements
+
+Dans le tableau Écritures, vous pouvez également importer des données de transactions bancaires et relier les écritures à des reçus numériques. Sélectionnez le menu Compta1 -> Importer en Comptabilité.
+Après avoir saisi les données, vous verrez que le programme met automatiquement à jour les soldes des comptes et des catégories que vous pouvez comparer avec les soldes budgétaires.
+
+Rapport et comparaison avec le Budget
+
+Imprimez vos rapports comprenant les données comptables passées, présentes et futures.
+Vous pouvez à tout moment comparer votre devis avec vos données réelles : 
+Dans le menu, sélectionnez Compta1-> Bilan formaté par groupe ->Bilan effectif et Budget
+Ce faisant, vous pouvez toujours vérifier que votre entreprise se déroule conformément à vos plans. 
+
+Pour plus d'informations, consultez le site banana.ch 
