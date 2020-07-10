@@ -3,7 +3,7 @@ Multi-currency accounting
 Welcome to Banana!
 An easy-to-use accounting software that works like Excel.
 This video shows you how to create a multi-currency Double-entry accounting and a ﬁnancial - and a cash ﬂow planning. 
-Watch it to the end to see how to quickly enter data and get instant results.
+Watch it to the end to learn how to quickly enter data and get instant results.
 
 Start with the creation of a new ﬁle 
 
@@ -12,15 +12,15 @@ Choose a region and a language,
 the category,
 and the desired type of accounting.
 Finally, choose the template that best suits your activity. 
-In the popped out window change the name, the opening and closing date, and the basic currency.
+In the popped out window change the name, the opening and closing date, and the base currency.
 
 Enter the exchange rates 
 
-In the "Exchange" table you can set all the currencies used in your accounting and you can enter the corresponding exchange rate.
-For each currency there must be an exchange line without date.
+In the "Exchange rates" table you can set all the currencies used in your accounting and you can enter the corresponding exchange rate.
+For each currency there must be an exchange row without date.
 The exchange rate in this row is used as the closing exchange rate and as the current exchange rate, if no changes are made.
 The opening change rate can also be entered in the row without date.
-In this table you can of course add the coins that you will use or eliminate those that you do not need.
+In this table you can of course add the coins that you will be using or eliminate those that you do not need.
 
 Adapt the accounts table
 
@@ -36,12 +36,12 @@ And eliminate the ones you don't need.
 Create your budget 
 
 In the Budget table, you can insert the estimated income and expenses for the indicated year.
-For example, insert the rent with the date, the repetition, the description, the debit account (the one that will be charged), the credit account (the one that will be credited), and the amount. 
-Enter now the transfer to your Euro account.
-As you can see, the system automatically complete the currency column and, if it is diﬀerent from the base currency, it automatically calculates the corresponding amount.
+For example, insert the rent with the date, the repetition, the description, the debit account (the one that will be debited), the credit account (the one that will be credited), and the amount. 
+Enter now the transfer amount to your Euro account.
+As you can see, the system automatically completes the currency column and, if it is diﬀerent from the base currency, it automatically calculates the corresponding amount.
 Repeat the same operation for your employees' salaries, for your incomes, and for your expenses.
 
-By ﬁlling in this table, you will get both your ﬁnancial - and your cash ﬂow plan, without further additional actions.
+By ﬁlling in this table, you will get both your ﬁnancial - and your cash ﬂow plan, without further additional actions required.
 In fact, since each movement is associated with a date, the cash ﬂow plan will be automatically generated.
 
 Enter the transactions 
@@ -58,7 +58,7 @@ and the amount.
 
 The currency and the exchange rate columns are automatically ﬁlled in by the system.
 Repeat this operation for all movements.
-As you can see, the foreign currency transactions made before the rate update, display the normal exchange rate, while following transactions display the updated exchange rate.
+As you can see, the foreign currency transactions made before the exchange rate update, display the previous exchange rate, while following transactions display the updated exchange rate.
 
 After entering the accounting transactions, the program will automatically update the accounts balances, and you can immediately make a comparison to the budget balances. 
 
@@ -74,6 +74,6 @@ You can create your ﬁnancial planning report by selecting from the Account1 me
 
 To have a better overview of your cash ﬂow and to make sure you have enough liquidity to pay your salaries at the end of the month, you can create a report of your budget with a monthly subdivision, or you can view the charts of your bank account.
 
-By following this step, you can control if the actual business is in line with your budget plan.
+By following this step, you can control if the actual financial situation of your business is in line with your budget plan.
 
 For more information please visit www.banana.ch
