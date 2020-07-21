@@ -37,11 +37,11 @@ Crea tu presupuesto
 
 En la tabla Presupuesto, puedes introducir los ingresos y gastos estimados para el año indicado.
 Por ejemplo, introduce el alquiler con la fecha, la repetición, la descripción, la cuenta de débito (a la que se cargará), la cuenta de crédito (a la que se abonará) y la cantidad.
-Introduce ahora la transferencia a tu cuenta en Euros.
-como se puede apreciar, el sistema completa automáticamente la columna de la divisa y, si es diferente de la divisa base, calcula automáticamente la cantidad correspondiente
+Introduce ahora la cantidad de la transferencia en tu cuenta en Euros.
+como se puede apreciar, el sistema autocompleta la columna de la divisa y, si es diferente de la divisa base, calcula automáticamente la cantidad correspondiente
 Repite la misma operación para los sueldos de tus empleados, para tus ingresos y para tus gastos.
 
-Rellenando esta tabla, obtendrás tanto tu planificación financiera como la del flujo de caja sin acciones adicionales.
+Rellenando esta tabla, obtendrás tanto tu planificación financiera como la del flujo de caja sin necesidad de acciones adicionales.
 De hecho, como cada movimiento está asociado a una fecha, el plan del flujo de caja se generará automáticamente.
 
 Introduce las transacciones
@@ -59,7 +59,7 @@ y la cantidad.
 
 El sistema rellena automáticamente las columnas de la divisa y del tipo de cambio.
 Repite esta operación para todos los movimientos.
-Como se puede observar, las transacciones en moneda extranjera realizadas antes de la actualización del tipo de cambio, muestran el tipo de cambio habitual, mientras que las transacciones posteriores muestran el tipo de cambio actualizado.
+Como se puede observar, las transacciones en moneda extranjera realizadas antes de la actualización del tipo de cambio, muestran el tipo de cambio previo, mientras que las transacciones posteriores muestran el tipo de cambio actualizado.
 
 Después de introducir los registros contables, el programa actualizará automáticamente los saldos de las cuentas, e inmediatamente podrás hacer una comparación con los balances del presupuesto.
 
@@ -75,7 +75,7 @@ Puedes crear tu informe de planificación financiera seleccionando en el menú C
 
 Para tener una mejor visión general del flujo de caja y asegurarte de que tienes suficiente liquidez para pagar tus salarios a fin de mes, puedes crear un informe de tu presupuesto con una subdivisión mensual, o puedes ver los gráficos de tu cuenta bancaria.
 
-Siguiendo estos pasos, puedes comprobar en cualquier momento si el negocio está en línea con tu plan de presupuesto.
+Siguiendo estos pasos, puedes comprobar en cualquier momento si la situación financiera de tu negocio está en línea con tu plan de presupuesto.
 
 
 Para más información visita nuestra web
