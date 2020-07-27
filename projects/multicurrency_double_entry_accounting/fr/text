@@ -1,0 +1,71 @@
+Comptabilité multidevise 
+Bienvenue à Banana !
+
+Un logiciel de comptabilité facile à utiliser qui fonctionne comme Excel.
+Cette vidéo vous montre comment créer une comptabilité multidevise en partie double et un planning ﬁnancier et de liquidité. 
+Regardez-la jusqu'à la fin pour voir comment saisir rapidement les données et obtenir des résultats instantanés.
+
+Commencez par la création d'un nouveau ﬁchier
+
+Cliquez sur l'icône "Nouveau".
+Choisissez une région et une langue, 
+la catégorie,
+et le type de comptabilité souhaité.
+Enfin, choisissez le modèle qui convient le mieux à votre entreprise. 
+Dans la fenêtre qui s'ouvre, changez le nom, la date d'ouverture et de clôture et la devise de base.
+Entrez les taux de change 
+
+Dans le tableau "Change", vous pouvez définir toutes les devises utilisées dans votre comptabilité et vous pouvez saisir le taux de change correspondant.
+•	Pour chaque devise, il doit y avoir une ligne de change sans date.
+•	Le taux de change de cette ligne est utilisé comme taux de change de clôture et comme taux de change courant si aucun changement n'est effectué.
+•	Le taux de change d'ouverture peut également être inscrit dans la ligne sans date.
+•	Dans ce tableau, vous pouvez bien sûr ajouter les devises que vous utiliserez ou éliminer celles dont vous n'avez pas besoin.
+
+Adaptez le tableau des comptes
+•	Le tableau Comptes présente les comptes de bilan et le compte de Résultat. 
+•	Tous ces comptes peuvent être personnalisés en fonction de vos besoins, par exemple :
+•	Modifier les numéros de compte et les descriptions,
+•	Saisir le solde initial,
+•	Ajouter ou modifier des comptes avec la devise correspondante,
+•	Et éliminer ceux dont vous n'avez pas besoin.
+
+Créez votre budget 
+
+Dans le tableau Budget, vous pouvez insérer les recettes et les dépenses estimées pour l'année indiquée.
+•	Par exemple, insérez le loyer avec la date, la répétition, la description, le compte de débit (celui qui sera débité), le compte de crédit (celui qui sera crédité) et le montant. 
+•	Saisissez maintenant le montant à transférer sur votre compte en euros.
+•	Comme vous pouvez le constater, le système remplit automatiquement la colonne des devises et, si elle est différente de la devise de base, il calcule automatiquement le montant correspondant.
+•	Répétez la même opération pour les salaires de vos employés, pour vos revenus et pour vos dépenses.
+
+En remplissant ce tableau, vous obtiendrez à la fois votre plan financier - et votre plan de liquidités, sans autres actions supplémentaires.
+En fait, puisque chaque mouvement est associé à une date, le plan de liquidités sera généré automatiquement.
+Saisir les écritures
+Dans le tableau Écritures, saisissez les mouvements comptables réels de votre comptabilité.
+Vous pouvez soit importer des opérations bancaires et les relier à des reçus numériques, soit saisir les données manuellement.
+
+Saisissez dans les colonnes appropriées :
+•	la date,
+•	la description, 
+•	Dans la colonne Débit, indiquez le compte qui sera débité,
+•	Dans la colonne Crédit, le compte qui sera crédité,
+•	et le montant.
+
+Les colonnes de la devise et du taux de change sont automatiquement remplies par le système.
+•	Répétez cette opération pour tous les mouvements.
+
+Comme vous pouvez le constater, les transactions en devises étrangères saisies avant la mise à jour du taux de change affichent le taux de change précédent, tandis que les transactions insérées après la mise à jour affichent le taux de change actualisé.
+Après avoir saisi les opérations comptables, le programme met automatiquement à jour les soldes des comptes et vous pouvez immédiatement effectuer une comparaison avec les soldes budgétaires. 
+Rapports et comparaison des budgets 
+
+Vous pouvez à tout moment examiner et comparer les données passées, présentes et futures de votre comptabilité.
+
+Vous pouvez également vérifier :
+•	Les données de votre budget, c'est-à-dire les dépenses et les recettes prévues sur une année,
+•	et ceux de votre plan de liquidités, c'est-à-dire votre liquidité pour des jours spécifiques.
+
+Vous pouvez créer votre rapport de planification ﬁnancière en sélectionnant dans le menu Compta1, Bilan formaté par groupes > Bilan Effectif et Budget.
+Pour obtenir un meilleur aperçu de votre liquidité et vous assurer que vous possédez suffisamment de liquidités pour payer vos salaires à la fin du mois, vous pouvez créer un rapport de votre budget avec une subdivision mensuelle, ou consulter les graphiques de votre compte bancaire.
+
+En suivant cette étape, vous pouvez contrôler si l'activité réelle de votre entreprise est conforme à votre plan budgétaire.
+
+Pour de plus amples informations, veuillez consulter le site www.banana.ch
