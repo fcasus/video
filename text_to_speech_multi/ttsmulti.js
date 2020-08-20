@@ -25,20 +25,48 @@ function getAccessToken(subscriptionKey) {
 }
 
 function textToSpeech_SetVoices(audioObjects) {
-    if (audioObjects.lang === 'Lang_es' ) {
+    if (audioObjects.lang === 'Lang_es') {
         audioObjects.langCognitiveServices = 'es-ES';
         audioObjects.voiceCognitiveServices = 'ElviraNeural';
     }
-    else if (audioObjects.lang === 'Lang_en' ) {
-        audioObjects.langCognitiveServices = 'es-ES';
-        audioObjects.voiceCognitiveServices = 'ElviraNeural';
+    else if (audioObjects.lang === 'Lang_en') {
+        audioObjects.langCognitiveServices = 'en-US';
+        audioObjects.voiceCognitiveServices = 'AriaNeural';
     }
-
+    else if (audioObjects.lang === 'Lang_de') {
+        audioObjects.langCognitiveServices = 'de-DE';
+        audioObjects.voiceCognitiveServices = 'KatjaNeural';
+    }
+    else if (audioObjects.lang === 'Lang_fr') {
+        audioObjects.langCognitiveServices = 'fr-FR';
+        audioObjects.voiceCognitiveServices = 'HortenseRUS';
+    }
+    else if (audioObjects.lang === 'Lang_fr') {
+        audioObjects.langCognitiveServices = 'fr-FR';
+        audioObjects.voiceCognitiveServices = 'HortenseRUS';
+    }
+    else if (audioObjects.lang === 'Lang_it') {
+        audioObjects.langCognitiveServices = 'it-IT';
+        audioObjects.voiceCognitiveServices = 'ElsaNeural';
+    }
+    else if (audioObjects.lang === 'Lang_nl') {
+        audioObjects.langCognitiveServices = 'nl-NL';
+        audioObjects.voiceCognitiveServices = 'HannaRUS';
+    }
+    else if (audioObjects.lang === 'Lang_zh') {
+        audioObjects.langCognitiveServices = 'zh-CN';
+        audioObjects.voiceCognitiveServices = 'XiaoxiaoNeural';
+    }
+    else if (audioObjects.lang === 'Lang_pt') {
+        audioObjects.langCognitiveServices = 'pt-BR';
+        audioObjects.voiceCognitiveServices = 'FranciscaNeural';
+    }
 }
 
 function textToSpeech(accessToken, rowNumber, audioObjects) {
 
     // https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-text-to-speech
+    // https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-synthesis-markup
 
     // Get the SSML file contents.
     //var contents = fs.readFileSync(xmlFileName, 'utf8');
@@ -50,7 +78,19 @@ function textToSpeech(accessToken, rowNumber, audioObjects) {
     xmlRequest += '<voice name="Microsoft Server Speech Text to Speech Voice (';
     xmlRequest += audioObjects.langCognitiveServices + ', ';
     xmlRequest += audioObjects.voiceCognitiveServices + ')">';
-    xmlRequest += audioObjects[rowNumber].Text;
+    if (audioObjects[rowNumber].Audio === 'Duration') {
+        xmlRequest += '<prosody duration="' + Math.round(audioObjects[rowNumber].MaxDuration * 1000) + 'ms">';
+        xmlRequest += audioObjects[rowNumber].Text;
+        xmlRequest += '</prosody>';
+    }
+    else if (audioObjects[rowNumber].Audio === 'Rfast') {
+        xmlRequest += '<prosody rate="+10.00%">';
+        xmlRequest += audioObjects[rowNumber].Text;
+        xmlRequest += '</prosody>';
+    }
+    else {
+        xmlRequest += audioObjects[rowNumber].Text;
+    }
     xmlRequest += '</voice></speak>';
 
     let options = {
@@ -66,6 +106,7 @@ function textToSpeech(accessToken, rowNumber, audioObjects) {
         },
         body: xmlRequest
     }
+    console.log('xmlRequest: ' + xmlRequest);
     var fileName = audioObjects[rowNumber].FileName;
     console.log('Create audio  file: ' + fileName);
     let request = rp(options)
@@ -90,7 +131,7 @@ async function create_audio_files(audioObjects, statisticsObjects) {
     };
 
     const accessToken = await getAccessToken(subscriptionKey);
-    
+
     textToSpeech_SetVoices(audioObjects);
 
     for (var i = 1; i <= audioObjects.RowCount; i++) {
@@ -107,11 +148,12 @@ async function create_audio_files(audioObjects, statisticsObjects) {
             }
         }
         if (createAudio) {
-            try {
-                await textToSpeech(accessToken, i, audioObjects);
-            } catch (err) {
-                //console.log(`Something went wrong: ${err}`);
-            }
+            await textToSpeech(accessToken, i, audioObjects);
+
+            // try {
+            // } catch (err) {
+            //     //console.log(`Something went wrong: ${err}`);
+            // }
             // perché non crea tutti i file
             //await new Promise(resolve => setTimeout(resolve, 3000));
         }
@@ -330,11 +372,27 @@ async function init() {
     }
 }
 
+async function calculate_times(audioObjects) {
+    for (var i = 1; i <= audioObjects.RowCount; i++) {
+        audioObjects[i].AudioDuration = 0;
+        audioObjects[i].StartTimeSeconds = parseTimeToSeconds(audioObjects[i].StartTime);
+        audioObjects[i].EndTimeSeconds = parseTimeToSeconds(audioObjects[i].EndTime);
+        // Massimo quando inizia il prossimo
+        audioObjects[i].MaxTimeSeconds = audioObjects[i].EndTimeSeconds;
+        if (audioObjects[i + 1]) {
+            audioObjects[i].MaxTimeSeconds = parseTimeToSeconds(audioObjects[i + 1].StartTime);;
+        }
+        audioObjects[i].MaxDuration = audioObjects[i].MaxTimeSeconds - audioObjects[i].StartTimeSeconds;
+    }
+}
+
 async function calculate_audio_times(audioObjects) {
     for (var i = 1; i <= audioObjects.RowCount; i++) {
         audioObjects[i].AudioDuration = 0;
         if (audioObjects[i].FileName) {
             audioObjects[i].AudioDuration = await get_audiofile_duration_seconds(audioObjects[i].FileName);
+            // Audio file has a 800ms empty time at the end
+            audioObjects[i].AudioDuration = Number(audioObjects[i].AudioDuration) - 0.8;
         }
         audioObjects[i].StartTimeSeconds = parseTimeToSeconds(audioObjects[i].StartTime);
         audioObjects[i].EndTimeSeconds = parseTimeToSeconds(audioObjects[i].EndTime);
@@ -369,6 +427,34 @@ async function calculate_audio_times(audioObjects) {
     }
 }
 
+function write_text_times(allObjects) {
+    var text = '';
+    text += allObjects.Audio.lang + '\n';
+    text += 'Line\tRemain\t\Starts\tDuration\tText\n';
+    for (var i = 1; i <= allObjects.Audio.RowCount; i++) {
+        var duration = '';
+        var remaining = '';
+        var starts = '';
+        if (allObjects.Audio[i].Audio !== '0') {
+            duration += Math.round(allObjects.Audio[i].AudioDuration * 1000) / 1000;
+            remaining += Math.round(allObjects.Audio[i].SecondsRemaining * 1000) / 1000;
+            starts += Math.round(allObjects.Audio[i].StartTimeSeconds * 1000) / 1000;
+        }
+
+        text += i + '\t'
+        if (!remaining.startsWith('-')) {
+            text += ' ';
+        }
+        text += remaining + '\t';
+        text += starts + '\t';
+        text += duration + '\t';
+        text += allObjects.Audio[i].Text + '\t';
+        text += '\n';
+    }
+    fs.writeFileSync('times.txt', text);
+
+}
+
 function fileExists(fileName) {
     if (!fileName) {
         return false;
@@ -385,7 +471,9 @@ async function
     main() {
     var contents = fs.readFileSync('Export.json', 'utf8');
     var allObjects = JSON.parse(contents);
-    allObjects.Audio.lang = "Lang_es";
+    
+    //INSERIRE QUI LA LINGUA
+    allObjects.Audio.lang = "Lang_fr";
     for (var i = 1; i <= allObjects.Audio.RowCount; i++) {
         allObjects.Audio[i].Text = allObjects.Audio[i][allObjects.Audio.lang];
         if (allObjects.Audio[i].Text != ''
@@ -395,7 +483,9 @@ async function
             }
         }
     }
-    var videoFileInput = 'family-budget';
+    calculate_times(allObjects.Audio);
+
+    var videoFileInput = 'multicurrency-base';
     var videoFileExtension = '.mp4';
 
     allObjects.Video = {};
@@ -406,6 +496,7 @@ async function
     allObjects.Video.Duration = await get_audiofile_duration_seconds(allObjects.Video.FileInput);
     allObjects.Video.Volume = 10;
 
+    // command: node ttsmulti.js
     var createAudio = true;
     var createVideo = true;
     var execTest = true;
@@ -431,6 +522,10 @@ async function
     await create_subtitles_srt(allObjects.Audio);
     await create_subtitles_ass(allObjects.Audio);
 
+    fs.writeFileSync('statistics.json', JSON.stringify(allObjects));
+    write_text_times(allObjects);
+
+
     if (createVideo) {
         await add_audio_to_video(allObjects);
     }
@@ -439,11 +534,6 @@ async function
         await add_subtitles_to_video(allObjects);
     }
 
-    if (execTest) {
-        get_audiofile_duration_seconds(get_audio_filename(1));
-    }
-    fs.writeFileSync('statistics.json', JSON.stringify(allObjects));
-
     console.log(`-----------------------------------------`);
     console.log(`------------ All Finished ---------------`);
     console.log(`-----------------------------------------`);
@@ -451,6 +541,4 @@ async function
 
 // Run the application
 main();
-
-
 
