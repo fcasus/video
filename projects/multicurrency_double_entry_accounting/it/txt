@@ -1,0 +1,80 @@
+Contabilità e Pianificazione finanziaria Multi-moneta
+
+Benvenuti a Banana!
+Un software contabile semplice da usare simile a Excel
+Questo video mostra come creare una contabilità in partita doppia multimoneta e una pianificazione finanziaria
+Guarda il video fino alla fine per capire come inserire dati e ottenere subito risultati
+
+
+
+Crea un nuovo archivio
+
+Clicca sull'icona "Nuovo"
+Scegli la regione e la lingua
+La categoria, e il tipo di Contabilità che desideri
+Scegli il modello contabile piu' affine alla tua attività
+Nella finestra modifica il nome, la data di apertura e chiusura, e la moneta base
+
+
+
+Inserisci i tassi di cambio
+
+Nella tabella "Cambi" puoi gestire tutte le valute utilizzate nella contabilità e puoi introdurre il cambio corrispondente
+Per ogni valuta deve esserci una linea di cambio senza data
+In questa riga il tasso di cambio è utilizzato come cambio di chiusura
+Anche il cambio di apertura puo' essere inserito nella riga senza data
+In questa tabella puoi aggiungere le monete che utilizzi
+o eliminare quelle che non servono
+
+
+
+Adatta la tabella conti
+
+La tabella conti mostra i conti di bilancio
+e quelli del conto economico
+Tutti questi conti possono essere personalizzati secondo le tue necessità
+per esempio: cambia il numero di conto e la descrizione
+Inserisci il bilancio iniziale
+aggiungi o modifica i conti con la valuta corrispondente
+ed elimina quelli che non servono
+
+
+
+Crea il tuo Budget
+
+Nella tabella Budget, puoi inserire le stime delle entrate e delle uscite per un dato periodo di tempo
+Per esempio: inserisci l'affitto con una data, la ripetizione, la descrizione, il conto addebitato
+il conto accreditato e l'importo
+Inserisci ora il trasferimento sul conto Euro
+e, se è differente dalla valuta di base, verrà automanticamente calcolato l'importo corrispondente
+Ripeti la stessa operazione per i salari degli impiegati
+per le tue entrate e uscite
+
+
+
+Inserisci le registrazioni
+
+Nella tabella Registrazioni inserisci i movimenti contabili
+Puoi inoltre importare le transazioni bancarie e collegarle a ricevute digitali, puoi anche inserire le registrazioni manualmente
+Nell'appropriata colonna inserisci:
+nella colonna Avere, inserisci il conto che verrà addebitato
+nella colonna Dare, inserisci il conto che verrà accreditato
+Le colonne per la valuta e il tasso di cambio verranno automaticamente completate dal sistema
+Ripeti l'operazione per ogni movimento
+Come si puo' vedere, la registrazione con valuta estera fatta prima dell'aggiornamento del tasso di cambio
+visualizza il cambio precedente, mentre le registrazioni successive mostrano il tasso di cambio aggiornato
+Dopo aver inserito le registrazioni, il programma aggiornerà automaticamente il saldo dei conti
+e si può immediatamente fare un confronto con i saldi di bilancio
+
+
+
+Rapporti e confronto del bilancio
+
+Potete rivedere e confrontare i dati passati, presenti e futuri della vostra contabilità in qualsiasi momento
+Potete creare il vostro rapporto selezionando dal menu Conta1, Bilancio abbellito con gruppi > Confronto Effettivo e Budget
+Per avere una migliore visione d'insieme del vostro flusso di cassa e per essere sicuri di avere abbastanza liquidità per pagare i vostri stipendi alla fine del mese
+puoi creare un Report per il tuo Budget con una suddivisione mensile
+oppure potete visualizzare i grafici del vostro conto bancario
+Seguendo questi passaggi, è possibile controllare se il tuo business è in linea con le previsioni
+
+Per ulteriori informazioni visitare www.banana.ch
