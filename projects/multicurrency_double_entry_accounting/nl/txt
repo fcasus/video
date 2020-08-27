@@ -1,0 +1,75 @@
+Buchhaltung und Finanzplanung in mehreren Währungen
+Willkommen bei Banana Buchhaltung!
+Eine einfach zu verwendende Buchhaltungssoftware, welche in der Bedienung ähnlich ist wie Excel
+Dieses Video zeigt Ihnen, wie Sie eine doppelte Buchhaltung und eine Finanzplanung mit Fremdwährungen
+erstellen können
+Sehen Sie sich das Video bis zum Ende an, um zu verstehen, wie man Daten eingibt und sofort Ergebnisse
+erhält
+
+Erstellen Sie eine neue Datei
+Klicken Sie auf die Ikone “Neu”
+Wählen Sie die Region und die Sprache aus
+Die Kategorie, und den gewünschten Dateityp
+Wählen Sie die für Sie passende Buchhaltungsvorlage aus
+Ändern Sie im Dialogfenster den Namen, das Anfangs-und Enddatum und geben Sie die Basiswährung ein
+
+Geben Sie die Wechselkurse ein
+In der Tabelle "Wechselkurse" können Sie alle Währungen verwalten, die in der Buchhaltung verwendet
+werden und die entsprechenden Wechselkurse eingeben
+Für jede Währung muss es eine Wechselkurszeile ohne Datum haben
+In dieser Zeile wird der eingegebene Wechselkurs als Abschlusswechselkurs verwendet
+Der Eröffnungswechselkurs kann ebenfalls in der Zeile ohne Datum eingegeben werden
+In dieser Tabelle können Sie die von Ihnen verwendeten Währungen hinzufügen
+oder die nicht benötigten löschen
+
+Passen Sie die Tabelle Konten an
+Die Tabelle Konten zeigt die Bilanzkonten
+und die Konten der Erfolgsrechnung an
+All diese Konten können entsprechend Ihren Bedürfnissen angepasst werden
+Zum Beispiel: die Kontonummer und die Beschreibung ändern
+
+Geben Sie die Eröffnungssaldi ein 
+Fügen Sie Konten mit der entsprechenden Währung hinzu oder ändern
+und löschen Sie Konten die Sie nicht benötigen
+
+Erstellen Sie Ihr Budget
+In der Tabelle Budget können Sie die Schätzungen der Einnahmen und Ausgaben für einen bestimmten
+Zeitraum eingeben.
+Zum Beispiel: Geben Sie die Miete mit Datum, Wiederholung, Beschreibung, zu belastenden Konto
+gutzuschreibenden Konto und Betrag ein
+Geben Sie nun die Überweisung auf das Euro-Konto ein
+und, falls er sich von der Basiswährung unterscheidet, wird der entsprechende Betrag automatisch
+berechnet
+Wiederholen Sie den selben Vorgang für die Gehälter der Mitarbeiter
+
+Für Ihre Ein- und Ausgaben
+Geben Sie die Buchungen ein
+In der Tabelle Buchungen geben Sie die buchhalterischen Bewegungen ein
+Sie können auch Banktransaktionen importieren und sie mit digitalen Quittungen verknüpfen, Buchungen
+können auch manuell eingegeben werden.
+
+Geben Sie folgendes in der entsprechenden Spalte ein:
+In der Spalte Haben geben Sie das Konto ein, das belastet wird
+In der Spalte Soll geben Sie das Konto ein, das gutgeschrieben werden soll
+Die Spalten für Währung und Wechselkurs werden vom System automatisch ausgefüllt.
+
+Wiederholen Sie den Vorgang für jede Bewegung
+Wie Sie sehen können, zeigt die Buchung mit Fremdwährung vor der Aktualisierung des Wechselkurses
+den vorherigen Wechselkurs an, während die nachfolgenden Buchungen den aktualisierten Wechselkurs
+anzeigen
+Nachdem die Buchungen eingegeben worden sind, aktualisiert das Programm automatisch den Saldo der
+Konten
+Und Sie können sofort einen Vergleich mit den Salden der Bilanz machen
+Berichte und Vergleich der Bilanz
+Sie können jederzeit vergangene, gegenwärtige und zukünftige Daten in Ihrer Buchhaltung einsehen und
+vergleichen
+
+Sie können Ihren Bericht erstellen, indem Sie aus dem Menü Buch1, Formatierte Bilanz nach Gruppen >
+Jährlicher Ausdruck mit Budgetvergleich ausführen
+Um einen besseren Überblick über Ihren Geldfluss zu erhalten und sicherzustellen, dass Sie am
+Monatsende über genügend Bargeld verfügen, um Ihre Gehälter auszuzahlen
+können Sie einen Bericht für Ihr Budget mit einer monatlichen Unterteilung erstellen
+oder Sie können Diagramme Ihres Bankkontos anzeigen
+Wenn Sie diese Schritte befolgen, können Sie überprüfen, ob Ihr Unternehmen den Prognosen entspricht
+
+Weitere Informationen finden Sie unter www.banana.ch
