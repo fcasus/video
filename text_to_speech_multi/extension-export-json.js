@@ -35,10 +35,9 @@ function addTable(exportObject, tableName)
         line.EndTime = formatTime( tRow.value("EndTime"));
         for (var c = 0; c < columnNames.length; c++) {
             var columnName = columnNames[c];
-            if (columnName.startsWith('Lang_')
-            || columnName === "Style"
-            || columnName === "Audio") {
-                line[columnName] = tRow.value(columnName);
+            line[columnName] = tRow.value(columnName);
+            if (columnName.startsWith('Adjust_')) {
+                line[columnName] = formatTime( tRow.value( columnName));
             }
         }
         obj[i + 1] = line;

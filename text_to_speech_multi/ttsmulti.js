@@ -25,39 +25,39 @@ function getAccessToken(subscriptionKey) {
 }
 
 function textToSpeech_SetVoices(audioObjects) {
-    if (audioObjects.lang === 'Lang_es') {
+    if (audioObjects.lang === 'es') {
         audioObjects.langCognitiveServices = 'es-ES';
         audioObjects.voiceCognitiveServices = 'ElviraNeural';
     }
-    else if (audioObjects.lang === 'Lang_en') {
+    else if (audioObjects.lang === 'en') {
         audioObjects.langCognitiveServices = 'en-US';
         audioObjects.voiceCognitiveServices = 'AriaNeural';
     }
-    else if (audioObjects.lang === 'Lang_de') {
+    else if (audioObjects.lang === 'de') {
         audioObjects.langCognitiveServices = 'de-DE';
         audioObjects.voiceCognitiveServices = 'KatjaNeural';
     }
-    else if (audioObjects.lang === 'Lang_fr') {
+    else if (audioObjects.lang === 'fr') {
         audioObjects.langCognitiveServices = 'fr-FR';
         audioObjects.voiceCognitiveServices = 'HortenseRUS';
     }
-    else if (audioObjects.lang === 'Lang_fr') {
+    else if (audioObjects.lang === 'fr') {
         audioObjects.langCognitiveServices = 'fr-FR';
         audioObjects.voiceCognitiveServices = 'HortenseRUS';
     }
-    else if (audioObjects.lang === 'Lang_it') {
+    else if (audioObjects.lang === 'it') {
         audioObjects.langCognitiveServices = 'it-IT';
         audioObjects.voiceCognitiveServices = 'ElsaNeural';
     }
-    else if (audioObjects.lang === 'Lang_nl') {
+    else if (audioObjects.lang === 'nl') {
         audioObjects.langCognitiveServices = 'nl-NL';
         audioObjects.voiceCognitiveServices = 'HannaRUS';
     }
-    else if (audioObjects.lang === 'Lang_zh') {
+    else if (audioObjects.lang === 'zh') {
         audioObjects.langCognitiveServices = 'zh-CN';
         audioObjects.voiceCognitiveServices = 'XiaoxiaoNeural';
     }
-    else if (audioObjects.lang === 'Lang_pt') {
+    else if (audioObjects.lang === 'pt') {
         audioObjects.langCognitiveServices = 'pt-BR';
         audioObjects.voiceCognitiveServices = 'FranciscaNeural';
     }
@@ -166,15 +166,16 @@ async function create_subtitles_srt(audioObjects) {
     for (var i = 1; i <= audioObjects.RowCount; i++) {
         if (audioObjects[i].FileName) {
             output += i + '\n';
-            var startTime = audioObjects[i].StartTime;
+            var startTime = audioObjects[i].AdjustedStartTime;
             startTime = startTime.replace('.', ',');
-            var endTime = audioObjects[i].EndTime;
+            var endTime = audioObjects[i].AdjustedEndTime;
             endTime = endTime.replace('.', ',');
             output += startTime + ' --> ' + endTime + '\n';
             output += audioObjects[i].Text + '\n\n';
         }
     }
-    fs.writeFileSync('subtitles.srt', output);
+    var subtitlesFiles = audioObjects.lang + '\\subtitles-' + audioObjects.lang + '.srt';
+    fs.writeFileSync(subtitlesFiles, output);
 
 }
 
@@ -246,8 +247,8 @@ async function create_subtitles_ass(audioObjects) {
             // comments
             && audioObjects[i].Style != '//') {
             output += 'Dialogue: 0,';
-            output += audioObjects[i].StartTime.substring(1, 11) + ',';
-            output += audioObjects[i].EndTime.substring(1, 11) + ',';
+            output += audioObjects[i].AdjustedStartTime.substring(1, 11) + ',';
+            output += audioObjects[i].AdjustedEndTime.substring(1, 11) + ',';
             output += style;
             output += ',,0,0,0,,';
             output += audioObjects[i].Text + '\n';
@@ -295,18 +296,38 @@ async function executeCommand(command) {
 function parseTimeToMillSeconds(timeText) {
     // parse time "00:00:03.436"
     var mseconds = 0.0;
+    if (!timeText) {
+        return mseconds;
+    }
+    if (timeText.startsWith('-')) {
+        timeText = timeText.substring(1);
+    }
     mseconds += parseFloat(timeText.substring(0, 2)) * 60 * 60 * 1000;
     mseconds += parseFloat(timeText.substring(3, 5)) * 60 * 1000;
     mseconds += parseFloat(timeText.substring(6, 12)) * 1000;
     mseconds = Math.round(mseconds);
+    if (negative) {
+        mseconds *= (-1);
+    }
     return mseconds;
 }
 function parseTimeToSeconds(timeText) {
     // parse time "00:00:03.436"
+    // parse time "-00:00:03.436"
     var seconds = 0.0;
+    if (!timeText) {
+        return seconds;
+    }
+    var negative = false;
+    if (timeText.startsWith('-')) {
+        timeText = timeText.substring(1);
+    }
     seconds += parseFloat(timeText.substring(0, 2)) * 60 * 60;
     seconds += parseFloat(timeText.substring(3, 5)) * 60;
     seconds += parseFloat(timeText.substring(6, 12));
+    if (negative) {
+        seconds *= (-1);
+    }
     return seconds;
 }
 
@@ -337,9 +358,9 @@ async function add_audio_to_video(allObjects) {
             countFiles++;
             ffcommand = ffcommand + '-i ' + audioObjects[i].FileName + ' ';
             // "[1]adelay=500[s1];[2]adelay=3000[s2];[s1][s2]amix=2[mixout]"
-            var startTime = audioObjects[i].StartTime;
+            //var startTime = audioObjects[i].StartTime;
             //var delay = Math.round(audioObjects[i].EffectiveStartTimeSeconds * 1000);
-            var delay = Math.round(audioObjects[i].StartTimeSeconds * 1000);
+            var delay = Math.round(audioObjects[i].AdjustedStartTimeSeconds * 1000);
             //console.log((i) + ' Delay : ' + delay + ' Duration max:' + duration);
             filter1 += '[' + String(countFiles) + ']adelay=';
             filter1 += Math.round(delay) + '[a' + String(countFiles) + '];'
@@ -356,8 +377,8 @@ async function add_audio_to_video(allObjects) {
     await executeCommand(ffcommand);
 }
 
-function get_audio_filename(nrline) {
-    return 'a' + nrline + '.wav';
+function get_audio_filename(lang, nrline) {
+    return lang + '\\a' + nrline + '.wav';
 }
 async function init() {
 
@@ -372,11 +393,31 @@ async function init() {
     }
 }
 
-async function calculate_times(audioObjects) {
+function secondsToTime(timeInSeconds) {
+    var pad = function (num, size) { return ('000' + num).slice(size * -1); },
+        time = parseFloat(timeInSeconds).toFixed(3),
+        hours = Math.floor(time / 60 / 60),
+        minutes = Math.floor(time / 60) % 60,
+        seconds = Math.floor(time - minutes * 60),
+        milliseconds = time.slice(-3);
+    return pad(hours, 2) + ':' + pad(minutes, 2) + ':' + pad(seconds, 2) + '.' + pad(milliseconds, 3);
+}
+
+async function calculate_times_begin(audioObjects) {
+    var colAdjust = 'Adjust_' + audioObjects.lang;
     for (var i = 1; i <= audioObjects.RowCount; i++) {
         audioObjects[i].AudioDuration = 0;
         audioObjects[i].StartTimeSeconds = parseTimeToSeconds(audioObjects[i].StartTime);
         audioObjects[i].EndTimeSeconds = parseTimeToSeconds(audioObjects[i].EndTime);
+        audioObjects[i].AdjustSeconds = 0;
+        if (audioObjects[i][colAdjust]) {
+            audioObjects[i].AdjustSeconds = parseTimeToSeconds(audioObjects[i][colAdjust]);
+        }
+        // Time inizio dopo 
+        audioObjects[i].AdjustedStartTimeSeconds = audioObjects[i].StartTimeSeconds + audioObjects[i].AdjustSeconds;
+        audioObjects[i].AdjustedStartTime = secondsToTime(audioObjects[i].AdjustedStartTimeSeconds);
+        audioObjects[i].AdjustedEndTimeSeconds = audioObjects[i].EndTimeSeconds + audioObjects[i].AdjustSeconds;
+        audioObjects[i].AdjustedEndTime = secondsToTime(audioObjects[i].AdjustedEndTimeSeconds);
         // Massimo quando inizia il prossimo
         audioObjects[i].MaxTimeSeconds = audioObjects[i].EndTimeSeconds;
         if (audioObjects[i + 1]) {
@@ -386,7 +427,7 @@ async function calculate_times(audioObjects) {
     }
 }
 
-async function calculate_audio_times(audioObjects) {
+async function calculate_times_end(audioObjects) {
     for (var i = 1; i <= audioObjects.RowCount; i++) {
         audioObjects[i].AudioDuration = 0;
         if (audioObjects[i].FileName) {
@@ -394,20 +435,11 @@ async function calculate_audio_times(audioObjects) {
             // Audio file has a 800ms empty time at the end
             audioObjects[i].AudioDuration = Number(audioObjects[i].AudioDuration) - 0.8;
         }
-        audioObjects[i].StartTimeSeconds = parseTimeToSeconds(audioObjects[i].StartTime);
-        audioObjects[i].EndTimeSeconds = parseTimeToSeconds(audioObjects[i].EndTime);
         // tenendo conto dell'adjustment precedente
         audioObjects[i].EffectiveStartTimeSeconds = audioObjects[i].StartTimeSeconds;
         if (audioObjects[i - 1] && audioObjects[i - 1].AdjustedSeconds < 0) {
             audioObjects[i].EffectiveStartTimeSeconds += audioObjects[i - 1].AdjustedSeconds;
         }
-        // Massimo quando inizia il prossimo
-        audioObjects[i].MaxTimeSeconds = audioObjects[i].EndTimeSeconds;
-        if (audioObjects[i + 1]) {
-            audioObjects[i].MaxTimeSeconds = parseTimeToSeconds(audioObjects[i + 1].StartTime);;
-        }
-
-        audioObjects[i].MaxDuration = audioObjects[i].MaxTimeSeconds - audioObjects[i].StartTimeSeconds;
         audioObjects[i].SecondsRemaining = audioObjects[i].MaxDuration - audioObjects[i].AudioDuration;
         audioObjects[i].EffectiveMaxDuration = audioObjects[i].MaxTimeSeconds - audioObjects[i].EffectiveStartTimeSeconds;
         audioObjects[i].EffectiveSecondsRemaining = audioObjects[i].EffectiveMaxDuration - audioObjects[i].AudioDuration;
@@ -438,7 +470,7 @@ function write_text_times(allObjects) {
         if (allObjects.Audio[i].Audio !== '0') {
             duration += Math.round(allObjects.Audio[i].AudioDuration * 1000) / 1000;
             remaining += Math.round(allObjects.Audio[i].SecondsRemaining * 1000) / 1000;
-            starts += Math.round(allObjects.Audio[i].StartTimeSeconds * 1000) / 1000;
+            starts += Math.round(allObjects.Audio[i].AdjustedStartTimeSeconds * 1000) / 1000;
         }
 
         text += i + '\t'
@@ -451,8 +483,16 @@ function write_text_times(allObjects) {
         text += allObjects.Audio[i].Text + '\t';
         text += '\n';
     }
-    fs.writeFileSync('times.txt', text);
+    var fileTimes = allObjects.Audio.lang + '\\times-' + allObjects.Audio.lang + '.txt';
+    fs.writeFileSync(fileTimes, text);
 
+}
+
+async function dirCreate(dir) {
+
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir);
+    }
 }
 
 function fileExists(fileName) {
@@ -469,30 +509,37 @@ function fileExists(fileName) {
 }
 async function
     main() {
+
+    //INSERIRE QUI LE VARIABILI
+    var videoFileInput = 'family-budget';
+    var videoFileExtension = '.mp4';
+    var outputLang = 'en';
+
+    // read ac2 export
     var contents = fs.readFileSync('Export.json', 'utf8');
     var allObjects = JSON.parse(contents);
-    
-    //INSERIRE QUI LA LINGUA
-    allObjects.Audio.lang = "Lang_fr";
+
+    allObjects.Audio.lang = outputLang;
+    allObjects.Audio.columnLang = "Lang_" + allObjects.Audio.lang;
     for (var i = 1; i <= allObjects.Audio.RowCount; i++) {
-        allObjects.Audio[i].Text = allObjects.Audio[i][allObjects.Audio.lang];
+        allObjects.Audio[i].Text = allObjects.Audio[i][allObjects.Audio.columnLang];
         if (allObjects.Audio[i].Text != ''
             && !allObjects.Audio[i].Style.startsWith('//')) {
             if (allObjects.Audio[i].Audio !== '0') {
-                allObjects.Audio[i].FileName = get_audio_filename(i);
+                allObjects.Audio[i].FileName = get_audio_filename(allObjects.Audio.lang, i);
             }
         }
     }
-    calculate_times(allObjects.Audio);
 
-    var videoFileInput = 'multicurrency-base';
-    var videoFileExtension = '.mp4';
+    dirCreate(outputLang);
+
+    calculate_times_begin(allObjects.Audio);
 
     allObjects.Video = {};
     allObjects.Video.FileInput = videoFileInput + videoFileExtension;
-    allObjects.Video.FileOutputBase = videoFileInput + '-' + allObjects.Audio.lang + videoFileExtension;
-    allObjects.Video.FileOutputAss = videoFileInput + '-ass-' + allObjects.Audio.lang + videoFileExtension;
-    allObjects.Video.FileOutputSrt = videoFileInput + '-srt-' + allObjects.Audio.lang + videoFileExtension;
+    allObjects.Video.FileOutputBase = allObjects.Audio.lang + '\\' + videoFileInput + '-' + allObjects.Audio.lang + videoFileExtension;
+    allObjects.Video.FileOutputAss = allObjects.Audio.lang + '\\' + videoFileInput + '-ass-' + allObjects.Audio.lang + videoFileExtension;
+    allObjects.Video.FileOutputSrt = allObjects.Audio.lang + '\\' + videoFileInput + '-srt-' + allObjects.Audio.lang + videoFileExtension;
     allObjects.Video.Duration = await get_audiofile_duration_seconds(allObjects.Video.FileInput);
     allObjects.Video.Volume = 10;
 
@@ -509,20 +556,20 @@ async function
 
     //await init();
 
-
+    var statFile = allObjects.Audio.lang + '\\statistics-' + allObjects.Audio.lang + '.json';
     if (createAudio) {
         var statisticsObjects;
-        if (fileExists('statistics.json')) {
-            var statistics = fs.readFileSync('statistics.json', 'utf8');
+        if (fileExists(statFile)) {
+            var statistics = fs.readFileSync(statFile, 'utf8');
             statisticsObjects = JSON.parse(statistics);
         }
         await create_audio_files(allObjects.Audio, statisticsObjects);
     }
-    await calculate_audio_times(allObjects.Audio);
+    await calculate_times_end(allObjects.Audio);
     await create_subtitles_srt(allObjects.Audio);
     await create_subtitles_ass(allObjects.Audio);
 
-    fs.writeFileSync('statistics.json', JSON.stringify(allObjects));
+    fs.writeFileSync(statFile, JSON.stringify(allObjects));
     write_text_times(allObjects);
 
 
