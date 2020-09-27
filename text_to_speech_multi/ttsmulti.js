@@ -127,7 +127,7 @@ function textToSpeech(accessToken, rowNumber, audioObjects) {
 async function create_audio_files(allObjects, statisticsObjects) {
 
     var audioObjects = allObjects.Audio;
-    
+
     var subscriptionKey = String(fs.readFileSync('../../subscription.key')).trim();
     if (!subscriptionKey) {
         throw new Error('Subscription key not found')
@@ -266,8 +266,8 @@ async function add_subtitles_to_video(allObjects) {
 
     //var ffcommand = 'ffmpeg -y -hide_banner -i result.mp4 -i subtitles.srt -c copy -c:s mov_text language=esp result-srt.mp4';
     var ffcommand = 'ffmpeg -y -hide_banner -i ' + allObjects.Video.FileOutputBase;
-    
-    ffcommand += ' -i ' + allObjects.Video.FileSubtitestSrt; 
+
+    ffcommand += ' -i ' + allObjects.Video.FileSubtitestSrt;
     ffcommand += ' -c:a copy -c:v copy -c:s mov_text -metadata:s:s:0 language=esp ';
     ffcommand += allObjects.Video.FileOutputSrt;
 
@@ -385,17 +385,29 @@ async function add_audio_to_video(allObjects) {
 function get_audio_filename(lang, nrline) {
     return lang + '/a' + nrline + '.wav';
 }
-async function init() {
+async function init(allObjects) {
 
-    if (fs.statSync('result.mp4')) {
-        fs.unlinkSync('result.mp4');
+    
+
+    if (fs.existsSync(allObjects.Video.FileSubtitestSrt)) {
+        fs.unlinkSync(allObjects.Video.FileSubtitestSrt);
     }
-    if (fs.statSync('result-subtitles.mp4')) {
-        fs.unlinkSync('result-subtitles.mp4');
+    if (fs.existsSync(allObjects.Video.FileSubtitestAss)) {
+        fs.unlinkSync(allObjects.Video.FileSubtitestAss);
     }
-    if (fs.statSync('subtitles.srt')) {
-        fs.unlinkSync('subtitles.srt');
+    if (fs.existsSync(allObjects.Video.FileOutputBase)) {
+        fs.unlinkSync(allObjects.Video.FileOutputBase);
     }
+    if (fs.existsSync(allObjects.Video.FileOutputAss)) {
+        fs.unlinkSync(allObjects.Video.FileOutputAss);
+    }
+    if (fs.existsSync(allObjects.Video.FileOutputSrt)) {
+        fs.unlinkSync(allObjects.Video.FileOutputSrt);
+    }
+    if (fs.existsSync(allObjects.Video.FileTimes)) {
+        fs.unlinkSync(allObjects.Video.FileTimes);
+    }
+    
 }
 
 function secondsToTime(timeInSeconds) {
@@ -490,8 +502,7 @@ function write_text_times(allObjects) {
         text += allObjects.Audio[i].Text + '\t';
         text += '\n';
     }
-    var fileTimes = allObjects.Audio.lang + '\\times-' + allObjects.Audio.lang + '.txt';
-    fs.writeFileSync(fileTimes, text);
+    fs.writeFileSync(allObjects.Video.FileTimes, text);
 
 }
 
@@ -514,26 +525,29 @@ function fileExists(fileName) {
         return false;
     }
 }
-async function
-    main() {
 
-    //INSERIRE QUI LE VARIABILI
-    var subDirectory = 'budget';
-    var videoFileInput = 'family-budget';
-    var videoFileExtension = '.mp4';
-    var outputLang = 'en';
-
-    // Change directory
-    process.chdir(subDirectory);
+async function create_language(param) {
     // create language dir
-    dirCreate(outputLang);
+    dirCreate(param.outputLang);
 
     // read ac2 export
     var contents = fs.readFileSync('Export.json', 'utf8');
     var allObjects = JSON.parse(contents);
 
-    allObjects.Audio.lang = outputLang;
+    allObjects.Audio.lang = param.outputLang;
     allObjects.Audio.columnLang = "Lang_" + allObjects.Audio.lang;
+
+    allObjects.Video = {};
+    allObjects.Video.FileInput = param.videoFileInput + param.videoFileExtension;
+    allObjects.Video.FileOutputBase = allObjects.Audio.lang + '/' + param.videoFileInput + '-' + allObjects.Audio.lang + param.videoFileExtension;
+    allObjects.Video.FileOutputAss = allObjects.Audio.lang + '/' + param.videoFileInput + '-ass-' + allObjects.Audio.lang + param.videoFileExtension;
+    allObjects.Video.FileOutputSrt = allObjects.Audio.lang + '/' + param.videoFileInput + '-srt-' + allObjects.Audio.lang + param.videoFileExtension;
+    allObjects.Video.Duration = await get_audiofile_duration_seconds(allObjects.Video.FileInput);
+    allObjects.Video.Volume = 10;
+    allObjects.Video.FileSubtitestSrt = allObjects.Audio.lang + '/subtitles-' + allObjects.Audio.lang + '.srt';
+    allObjects.Video.FileSubtitestAss = allObjects.Audio.lang + '/subtitles-' + allObjects.Audio.lang + '.ass';
+    allObjects.Video.FileTimes = allObjects.Audio.lang + '\\times-' + allObjects.Audio.lang + '.txt';
+
     for (var i = 1; i <= allObjects.Audio.RowCount; i++) {
         allObjects.Audio[i].Text = allObjects.Audio[i][allObjects.Audio.columnLang];
         if (allObjects.Audio[i].Text != ''
@@ -547,31 +561,12 @@ async function
 
     calculate_times_begin(allObjects);
 
-    allObjects.Video = {};
-    allObjects.Video.FileInput = videoFileInput + videoFileExtension;
-    allObjects.Video.FileOutputBase = allObjects.Audio.lang + '/' + videoFileInput + '-' + allObjects.Audio.lang + videoFileExtension;
-    allObjects.Video.FileOutputAss = allObjects.Audio.lang + '/' + videoFileInput + '-ass-' + allObjects.Audio.lang + videoFileExtension;
-    allObjects.Video.FileOutputSrt = allObjects.Audio.lang + '/' + videoFileInput + '-srt-' + allObjects.Audio.lang + videoFileExtension;
-    allObjects.Video.Duration = await get_audiofile_duration_seconds(allObjects.Video.FileInput);
-    allObjects.Video.Volume = 10;
-    allObjects.Video.FileSubtitestSrt = allObjects.Audio.lang + '/subtitles-' + allObjects.Audio.lang + '.srt';
-    allObjects.Video.FileSubtitestAss = allObjects.Audio.lang + '/subtitles-' + allObjects.Audio.lang + '.ass';
 
-    // command: node ttsmulti.js
-    var createAudio = true;
-    var createVideo = true;
-    var execTest = true;
-    var createSubtitles = true;
-    // disable
-    //createAudio = false;
-    //createVideo = false;
-    //createSubtitles = false;
-    execTest = false;
 
-    //await init();
+    await init(allObjects);
 
     var statFile = allObjects.Audio.lang + '\\statistics-' + allObjects.Audio.lang + '.json';
-    if (createAudio) {
+    if (param.createAudio) {
         var statisticsObjects;
         if (fileExists(statFile)) {
             var statistics = fs.readFileSync(statFile, 'utf8');
@@ -587,17 +582,51 @@ async function
     write_text_times(allObjects);
 
 
-    if (createVideo) {
+    if (param.createVideo) {
         await add_audio_to_video(allObjects);
     }
 
-    if (createSubtitles) {
+    if (param.createSubtitles) {
         await add_subtitles_to_video(allObjects);
     }
 
     console.log(`-----------------------------------------`);
     console.log(`------------ All Finished ---------------`);
     console.log(`-----------------------------------------`);
+    return true;
+}
+
+async function main() {
+
+    //INSERIRE QUI LE VARIABILI
+    var param = {};
+    param.projectSubDirectory = 'budget';
+    param.videoFileInput = 'family-budget';
+    param.videoFileExtension = '.mp4';
+    // Insert the language code
+    param.outputLanguages = 'en';
+    // multiple languages separated by ';'
+    //param.outputLanguages = 'en;es';
+
+    // creation parameters
+    param.createAudio = true;
+    param.createVideo = true;
+    param.execTest = true;
+    param.createSubtitles = true;
+    // disable
+    //param.createAudio = false;
+    //param.createVideo = false;
+    //param.createSubtitles = false;
+    param.execTest = false;
+
+    // Change directory
+    process.chdir(param.projectSubDirectory);
+
+    var languages = param.outputLanguages.split(';');
+    for (let i = 0; i < languages.length; i++) {
+        param.outputLang = languages[i];
+        await create_language(param);
+    }
 }
 
 // Run the application
