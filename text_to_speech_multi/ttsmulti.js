@@ -24,7 +24,8 @@ function getAccessToken(subscriptionKey) {
     return rp(options);
 }
 
-function textToSpeech_SetVoices(audioObjects) {
+function textToSpeech_SetVoices(allObjects) {
+    var audioObjects = allObjects.Audio;
     if (audioObjects.lang === 'es') {
         audioObjects.langCognitiveServices = 'es-ES';
         audioObjects.voiceCognitiveServices = 'ElviraNeural';
@@ -123,16 +124,18 @@ function textToSpeech(accessToken, rowNumber, audioObjects) {
 }
 
 // Use async and await to get the token before attempting to convert text to speech.
-async function create_audio_files(audioObjects, statisticsObjects) {
+async function create_audio_files(allObjects, statisticsObjects) {
 
-    var subscriptionKey = String(fs.readFileSync('../subscription.key')).trim();
+    var audioObjects = allObjects.Audio;
+    
+    var subscriptionKey = String(fs.readFileSync('../../subscription.key')).trim();
     if (!subscriptionKey) {
         throw new Error('Subscription key not found')
     };
 
     const accessToken = await getAccessToken(subscriptionKey);
 
-    textToSpeech_SetVoices(audioObjects);
+    textToSpeech_SetVoices(allObjects);
 
     for (var i = 1; i <= audioObjects.RowCount; i++) {
         var createAudio = false;
@@ -160,26 +163,25 @@ async function create_audio_files(audioObjects, statisticsObjects) {
     }
 }
 
-async function create_subtitles_srt(audioObjects) {
+async function create_subtitles_srt(allObjects) {
 
     var output = '';
-    for (var i = 1; i <= audioObjects.RowCount; i++) {
-        if (audioObjects[i].FileName) {
+    for (var i = 1; i <= allObjects.Audio.RowCount; i++) {
+        if (allObjects.Audio[i].FileName) {
             output += i + '\n';
-            var startTime = audioObjects[i].AdjustedStartTime;
+            var startTime = allObjects.Audio[i].AdjustedStartTime;
             startTime = startTime.replace('.', ',');
-            var endTime = audioObjects[i].AdjustedEndTime;
+            var endTime = allObjects.Audio[i].AdjustedEndTime;
             endTime = endTime.replace('.', ',');
             output += startTime + ' --> ' + endTime + '\n';
-            output += audioObjects[i].Text + '\n\n';
+            output += allObjects.Audio[i].Text + '\n\n';
         }
     }
-    var subtitlesFiles = audioObjects.lang + '\\subtitles-' + audioObjects.lang + '.srt';
-    fs.writeFileSync(subtitlesFiles, output);
+    fs.writeFileSync(allObjects.Video.FileSubtitestSrt, output);
 
 }
 
-async function create_subtitles_ass(audioObjects) {
+async function create_subtitles_ass(allObjects) {
 
     // References
     // see https://fileformats.fandom.com/wiki/SubStation_Alpha
@@ -236,6 +238,7 @@ async function create_subtitles_ass(audioObjects) {
     output += '[Events]\n';
     output += 'Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n';
 
+    var audioObjects = allObjects.Audio;
     for (var i = 1; i <= audioObjects.RowCount; i++) {
         //Dialogue: 0,0:00:03.44,0:00:08.28,Default,,0,0,0,,Este breve video te explicará cómo crear un presupuesto familiar utilizando el cash manager
         var style = 'Subtitles';
@@ -254,7 +257,7 @@ async function create_subtitles_ass(audioObjects) {
             output += audioObjects[i].Text + '\n';
         }
     }
-    fs.writeFileSync('subtitles.ass', output);
+    fs.writeFileSync(allObjects.Video.FileSubtitestAss, output);
 
 }
 
@@ -263,7 +266,9 @@ async function add_subtitles_to_video(allObjects) {
 
     //var ffcommand = 'ffmpeg -y -hide_banner -i result.mp4 -i subtitles.srt -c copy -c:s mov_text language=esp result-srt.mp4';
     var ffcommand = 'ffmpeg -y -hide_banner -i ' + allObjects.Video.FileOutputBase;
-    ffcommand += ' -i subtitles.srt -c:a copy -c:v copy -c:s mov_text -metadata:s:s:0 language=esp ';
+    
+    ffcommand += ' -i ' + allObjects.Video.FileSubtitestSrt; 
+    ffcommand += ' -c:a copy -c:v copy -c:s mov_text -metadata:s:s:0 language=esp ';
     ffcommand += allObjects.Video.FileOutputSrt;
 
     await executeCommand(ffcommand);
@@ -272,7 +277,7 @@ async function add_subtitles_to_video(allObjects) {
     //await executeCommand(ffcommand);
 
     ffcommand = 'ffmpeg -y -hide_banner -i ' + allObjects.Video.FileOutputBase;
-    ffcommand += ' -vf ass=subtitles.ass ' + allObjects.Video.FileOutputAss;
+    ffcommand += ' -vf ass=' + allObjects.Video.FileSubtitestAss + ' ' + allObjects.Video.FileOutputAss;
     await executeCommand(ffcommand);
 
 }
@@ -378,7 +383,7 @@ async function add_audio_to_video(allObjects) {
 }
 
 function get_audio_filename(lang, nrline) {
-    return lang + '\\a' + nrline + '.wav';
+    return lang + '/a' + nrline + '.wav';
 }
 async function init() {
 
@@ -403,7 +408,8 @@ function secondsToTime(timeInSeconds) {
     return pad(hours, 2) + ':' + pad(minutes, 2) + ':' + pad(seconds, 2) + '.' + pad(milliseconds, 3);
 }
 
-async function calculate_times_begin(audioObjects) {
+async function calculate_times_begin(allObjects) {
+    var audioObjects = allObjects.Audio;
     var colAdjust = 'Adjust_' + audioObjects.lang;
     for (var i = 1; i <= audioObjects.RowCount; i++) {
         audioObjects[i].AudioDuration = 0;
@@ -427,7 +433,8 @@ async function calculate_times_begin(audioObjects) {
     }
 }
 
-async function calculate_times_end(audioObjects) {
+async function calculate_times_end(allObjects) {
+    var audioObjects = allObjects.Audio;
     for (var i = 1; i <= audioObjects.RowCount; i++) {
         audioObjects[i].AudioDuration = 0;
         if (audioObjects[i].FileName) {
@@ -511,9 +518,15 @@ async function
     main() {
 
     //INSERIRE QUI LE VARIABILI
+    var subDirectory = 'budget';
     var videoFileInput = 'family-budget';
     var videoFileExtension = '.mp4';
     var outputLang = 'en';
+
+    // Change directory
+    process.chdir(subDirectory);
+    // create language dir
+    dirCreate(outputLang);
 
     // read ac2 export
     var contents = fs.readFileSync('Export.json', 'utf8');
@@ -531,17 +544,18 @@ async function
         }
     }
 
-    dirCreate(outputLang);
 
-    calculate_times_begin(allObjects.Audio);
+    calculate_times_begin(allObjects);
 
     allObjects.Video = {};
     allObjects.Video.FileInput = videoFileInput + videoFileExtension;
-    allObjects.Video.FileOutputBase = allObjects.Audio.lang + '\\' + videoFileInput + '-' + allObjects.Audio.lang + videoFileExtension;
-    allObjects.Video.FileOutputAss = allObjects.Audio.lang + '\\' + videoFileInput + '-ass-' + allObjects.Audio.lang + videoFileExtension;
-    allObjects.Video.FileOutputSrt = allObjects.Audio.lang + '\\' + videoFileInput + '-srt-' + allObjects.Audio.lang + videoFileExtension;
+    allObjects.Video.FileOutputBase = allObjects.Audio.lang + '/' + videoFileInput + '-' + allObjects.Audio.lang + videoFileExtension;
+    allObjects.Video.FileOutputAss = allObjects.Audio.lang + '/' + videoFileInput + '-ass-' + allObjects.Audio.lang + videoFileExtension;
+    allObjects.Video.FileOutputSrt = allObjects.Audio.lang + '/' + videoFileInput + '-srt-' + allObjects.Audio.lang + videoFileExtension;
     allObjects.Video.Duration = await get_audiofile_duration_seconds(allObjects.Video.FileInput);
     allObjects.Video.Volume = 10;
+    allObjects.Video.FileSubtitestSrt = allObjects.Audio.lang + '/subtitles-' + allObjects.Audio.lang + '.srt';
+    allObjects.Video.FileSubtitestAss = allObjects.Audio.lang + '/subtitles-' + allObjects.Audio.lang + '.ass';
 
     // command: node ttsmulti.js
     var createAudio = true;
@@ -563,11 +577,11 @@ async function
             var statistics = fs.readFileSync(statFile, 'utf8');
             statisticsObjects = JSON.parse(statistics);
         }
-        await create_audio_files(allObjects.Audio, statisticsObjects);
+        await create_audio_files(allObjects, statisticsObjects);
     }
-    await calculate_times_end(allObjects.Audio);
-    await create_subtitles_srt(allObjects.Audio);
-    await create_subtitles_ass(allObjects.Audio);
+    await calculate_times_end(allObjects);
+    await create_subtitles_srt(allObjects);
+    await create_subtitles_ass(allObjects);
 
     fs.writeFileSync(statFile, JSON.stringify(allObjects));
     write_text_times(allObjects);
