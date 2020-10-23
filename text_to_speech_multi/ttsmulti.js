@@ -598,13 +598,14 @@ async function create_language(param) {
 
 async function main() {
 
+    var paramText = fs.readFileSync('param.json', 'utf8');
+    var param = JSON.parse(paramText);
     //INSERIRE QUI LE VARIABILI
-    var param = {};
-    param.projectSubDirectory = 'budget';
-    param.videoFileInput = 'family-budget';
-    param.videoFileExtension = '.mp4';
+    //param.projectSubDirectory = 'budget';
+    //param.videoFileInput = 'family-budget';
+    //param.videoFileExtension = '.mp4';
     // Insert the language code
-    param.outputLanguages = 'en';
+    //param.outputLanguages = 'en';
     // multiple languages separated by ';'
     //param.outputLanguages = 'en;es';
 
@@ -618,7 +619,7 @@ async function main() {
     //param.createVideo = false;
     //param.createSubtitles = false;
     param.execTest = false;
-
+    
     // Change directory
     process.chdir(param.projectSubDirectory);
 

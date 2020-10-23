@@ -1,0 +1,10 @@
+{
+    "projectSubDirectory": "budget",
+    "videoFileInput": "family-budget",
+    "videoFileExtension": ".mp4",
+    "outputLanguages": "en",
+    "createAudio": true,
+    "createVideo": true,
+    "execTest": false,
+    "createSubtitles": true
+}
