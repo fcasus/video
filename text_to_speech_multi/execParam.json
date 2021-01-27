@@ -1,8 +1,8 @@
 {
-    "projectSubDirectory": "family-budget",
-    "videoFileInput": "family-budget",
+    "projectSubDirectory": "u_how_to_get_started",
+    "videoFileInput": "u_how_to_get_started",
     "videoFileExtension": ".mp4",
-    "outputLanguages": "en",
+    "outputLanguages": "it",
     "createAudio": true,
     "createVideo": true,
     "execTest": false,

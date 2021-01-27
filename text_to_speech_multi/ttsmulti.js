@@ -27,38 +27,52 @@ function getAccessToken(subscriptionKey) {
 function textToSpeech_SetVoices(allObjects) {
     var audioObjects = allObjects.Audio;
     if (audioObjects.lang === 'es') {
+        // female voice 'es-ES-ElviraNeural' Spanish(Spain)
+        // NEW male voice 'es-ES-AlvaroNeural' Spanish(Spain)
         audioObjects.langCognitiveServices = 'es-ES';
         audioObjects.voiceCognitiveServices = 'ElviraNeural';
     }
     else if (audioObjects.lang === 'en') {
+        // female voice 'en-US-AriaNeural' English (United States)
+        // NEW female voice 'en-US-JennyNeural' English (United States)
         audioObjects.langCognitiveServices = 'en-US';
         audioObjects.voiceCognitiveServices = 'AriaNeural';
     }
     else if (audioObjects.lang === 'de') {
+        // NEW male voice 'de-DE-ConradNeural' German(Germany)
+        // NEW female voice 'de-CH-LeniNeural' German(Switzerland)
         audioObjects.langCognitiveServices = 'de-DE';
         audioObjects.voiceCognitiveServices = 'KatjaNeural';
     }
     else if (audioObjects.lang === 'fr') {
-        audioObjects.langCognitiveServices = 'fr-FR';
-        audioObjects.voiceCognitiveServices = 'HortenseRUS';
-    }
-    else if (audioObjects.lang === 'fr') {
-        audioObjects.langCognitiveServices = 'fr-FR';
-        audioObjects.voiceCognitiveServices = 'HortenseRUS';
+        //NEW female voice 'fr-CH-ArianeNeural' French(Switzerland)
+        //NEW male voice 'fr-FR-HenriNeural' French(France)
+        audioObjects.langCognitiveServices = 'fr-CH';
+        audioObjects.voiceCognitiveServices = 'ArianeNeural';
     }
     else if (audioObjects.lang === 'it') {
+        // female voice 'it-IT-ElsaNeural' Italian(Italy)
+        // NEW female voice 'it-IT-IsabellaNeural' Italian(Italy)
+        // NEW male voice 'it-IT-DiegoNeural' Italian(Italy)
         audioObjects.langCognitiveServices = 'it-IT';
-        audioObjects.voiceCognitiveServices = 'ElsaNeural';
+        audioObjects.voiceCognitiveServices = 'DiegoNeural';
     }
     else if (audioObjects.lang === 'nl') {
+        // female voice 'nl-NL-HannaRUS' Dutch (Netherlands)
+        // NEW female voice 'nl-NL-ColetteNeural' Dutch (Netherlands)
         audioObjects.langCognitiveServices = 'nl-NL';
-        audioObjects.voiceCognitiveServices = 'HannaRUS';
+        audioObjects.voiceCognitiveServices = 'ColetteNeural';
     }
     else if (audioObjects.lang === 'zh') {
+        // female voice 'zh-CN-XiaoxiaoNeural' Chinese (Mandarin, Simplified)
+        // NEW male voice 'zh-CN-YunyangNeural' Chinese(Mandarin, Simplified)
         audioObjects.langCognitiveServices = 'zh-CN';
         audioObjects.voiceCognitiveServices = 'XiaoxiaoNeural';
     }
     else if (audioObjects.lang === 'pt') {
+        // female voice 'pt-BR-FranciscaNeural' Portuguese (Brazil)
+        // NEW male voice 'pt-BR-AntonioNeural' Portuguese (Brazil)
+        // female voice 'pt-PT-FernandaNeural' Portuguese (Portugal) 
         audioObjects.langCognitiveServices = 'pt-BR';
         audioObjects.voiceCognitiveServices = 'FranciscaNeural';
     }
@@ -234,6 +248,7 @@ async function create_subtitles_ass(allObjects) {
     output += 'Style: TextMiddle,Source Sans Pro,32,&H9e4835,&H9e4835,&H9e4835,&H9e4835,1,0,0,0,100,100,0,0,0,0,0,5,10,10,0,0\n';
     // Margin 25, Bold
     output += 'Style: TextTop,Source Sans Pro,23,&H9e4835,&H9e4835,&H9e4835,&H9e4835,1,0,0,0,100,100,0,0,0,0,0,8,10,10,20,0\n';
+    output += 'Style: TextGratis,Source Sans Pro,10,&H9e4835,&H9e4835,&H3BE4FF,&H3BE4FF,1,0,0,0,100,100,0,0,3,4,0,8,0,0,56,0\n'; //56 margin-top
     output += '\n';
     output += '[Events]\n';
     output += 'Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n';
@@ -407,7 +422,9 @@ async function init(allObjects) {
     if (fs.existsSync(allObjects.Video.FileTimes)) {
         fs.unlinkSync(allObjects.Video.FileTimes);
     }
-    
+    if (fs.existsSync(allObjects.Video.FileTotalDuration)) {
+        fs.unlinkSync(allObjects.Video.FileTotalDuration);
+    }    
 }
 
 function secondsToTime(timeInSeconds) {
@@ -506,6 +523,31 @@ function write_text_times(allObjects) {
 
 }
 
+function write_text_durations(allObjects) {
+    var totalduration = Number(0);
+    var text = '';
+    text += allObjects.Audio.lang + '\n';
+    text += 'Line\tDuration\tTotDuration\tText\n';
+    for (var i = 1; i <= allObjects.Audio.RowCount; i++) {
+        var duration = '';
+        var tmpduration = Number(0);
+        if (allObjects.Audio[i].Audio !== '0') {
+            duration += Math.round(allObjects.Audio[i].AudioDuration * 1000) / 1000;
+            tmpduration = Number(Math.round(allObjects.Audio[i].AudioDuration * 1000));
+            totalduration += tmpduration;
+        }
+        text += i + '\t'
+        text += duration + '\t';
+        text += Math.round(totalduration)/1000 + '\t';
+        text += allObjects.Audio[i].Text + '\t';
+        text += '\n';
+    }
+    text += 'Total duration time: ' + Math.round(totalduration)/1000;
+
+    fs.writeFileSync(allObjects.Video.FileTotalDuration, text);
+}
+
+
 async function dirCreate(dir) {
 
     if (!fs.existsSync(dir)) {
@@ -526,27 +568,28 @@ function fileExists(fileName) {
     }
 }
 
-async function create_language(param) {
+async function create_language(execParam) {
     // create language dir
-    dirCreate(param.outputLang);
+    dirCreate(execParam.outputLang);
 
     // read ac2 export
     var contents = fs.readFileSync('Export.json', 'utf8');
     var allObjects = JSON.parse(contents);
 
-    allObjects.Audio.lang = param.outputLang;
+    allObjects.Audio.lang = execParam.outputLang;
     allObjects.Audio.columnLang = "Lang_" + allObjects.Audio.lang;
 
     allObjects.Video = {};
-    allObjects.Video.FileInput = param.videoFileInput + param.videoFileExtension;
-    allObjects.Video.FileOutputBase = allObjects.Audio.lang + '/' + param.videoFileInput + '-' + allObjects.Audio.lang + param.videoFileExtension;
-    allObjects.Video.FileOutputAss = allObjects.Audio.lang + '/' + param.videoFileInput + '-ass-' + allObjects.Audio.lang + param.videoFileExtension;
-    allObjects.Video.FileOutputSrt = allObjects.Audio.lang + '/' + param.videoFileInput + '-srt-' + allObjects.Audio.lang + param.videoFileExtension;
+    allObjects.Video.FileInput = execParam.videoFileInput + execParam.videoFileExtension;
+    allObjects.Video.FileOutputBase = allObjects.Audio.lang + '/' + execParam.videoFileInput + '-' + allObjects.Audio.lang + execParam.videoFileExtension;
+    allObjects.Video.FileOutputAss = allObjects.Audio.lang + '/' + execParam.videoFileInput + '-ass-' + allObjects.Audio.lang + execParam.videoFileExtension;
+    allObjects.Video.FileOutputSrt = allObjects.Audio.lang + '/' + execParam.videoFileInput + '-srt-' + allObjects.Audio.lang + execParam.videoFileExtension;
     allObjects.Video.Duration = await get_audiofile_duration_seconds(allObjects.Video.FileInput);
     allObjects.Video.Volume = 10;
     allObjects.Video.FileSubtitestSrt = allObjects.Audio.lang + '/subtitles-' + allObjects.Audio.lang + '.srt';
     allObjects.Video.FileSubtitestAss = allObjects.Audio.lang + '/subtitles-' + allObjects.Audio.lang + '.ass';
     allObjects.Video.FileTimes = allObjects.Audio.lang + '\\times-' + allObjects.Audio.lang + '.txt';
+    allObjects.Video.FileTotalDuration = allObjects.Audio.lang + '\\duration-' + allObjects.Audio.lang + '.txt';
 
     for (var i = 1; i <= allObjects.Audio.RowCount; i++) {
         allObjects.Audio[i].Text = allObjects.Audio[i][allObjects.Audio.columnLang];
@@ -566,7 +609,7 @@ async function create_language(param) {
     await init(allObjects);
 
     var statFile = allObjects.Audio.lang + '\\statistics-' + allObjects.Audio.lang + '.json';
-    if (param.createAudio) {
+    if (execParam.createAudio) {
         var statisticsObjects;
         if (fileExists(statFile)) {
             var statistics = fs.readFileSync(statFile, 'utf8');
@@ -580,13 +623,14 @@ async function create_language(param) {
 
     fs.writeFileSync(statFile, JSON.stringify(allObjects));
     write_text_times(allObjects);
+    write_text_durations(allObjects);
 
 
-    if (param.createVideo) {
+    if (execParam.createVideo) {
         await add_audio_to_video(allObjects);
     }
 
-    if (param.createSubtitles) {
+    if (execParam.createSubtitles) {
         await add_subtitles_to_video(allObjects);
     }
 
@@ -598,35 +642,35 @@ async function create_language(param) {
 
 async function main() {
 
-    var paramText = fs.readFileSync('param.json', 'utf8');
-    var param = JSON.parse(paramText);
+    var paramText = fs.readFileSync('execParam.json', 'utf8');
+    var execParam = JSON.parse(paramText);
     //INSERIRE QUI LE VARIABILI
-    //param.projectSubDirectory = 'budget';
-    //param.videoFileInput = 'family-budget';
-    //param.videoFileExtension = '.mp4';
+    //execParam.projectSubDirectory = 'budget';
+    //execParam.videoFileInput = 'family-budget';
+    //execParam.videoFileExtension = '.mp4';
     // Insert the language code
-    //param.outputLanguages = 'en';
+    //execParam.outputLanguages = 'en';
     // multiple languages separated by ';'
-    //param.outputLanguages = 'en;es';
+    //execParam.outputLanguages = 'en;es';
 
     // creation parameters
-    param.createAudio = true;
-    param.createVideo = true;
-    param.execTest = true;
-    param.createSubtitles = true;
+    execParam.createAudio = true;
+    execParam.createVideo = true;
+    execParam.execTest = true;
+    execParam.createSubtitles = true;
     // disable
-    //param.createAudio = false;
-    //param.createVideo = false;
-    //param.createSubtitles = false;
-    param.execTest = false;
+    //execParam.createAudio = false;
+    //execParam.createVideo = false;
+    //execParam.createSubtitles = false;
+    execParam.execTest = false;
     
     // Change directory
-    process.chdir(param.projectSubDirectory);
+    process.chdir(execParam.projectSubDirectory);
 
-    var languages = param.outputLanguages.split(';');
+    var languages = execParam.outputLanguages.split(';');
     for (let i = 0; i < languages.length; i++) {
-        param.outputLang = languages[i];
-        await create_language(param);
+        execParam.outputLang = languages[i];
+        await create_language(execParam);
     }
 }
 

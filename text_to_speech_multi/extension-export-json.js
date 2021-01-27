@@ -1,7 +1,9 @@
 // @id = export.ffmpeg.text
 // @description = Export for audio
 // @doctype = *
+// @docproperties = ttsmulti
 // @task = export.file
+// @exportfilename = Export
 // @exportfiletype = json
 // @inputdatasource = none
 // @timeout = -1
