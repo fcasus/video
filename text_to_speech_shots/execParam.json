@@ -1,7 +1,8 @@
 {
     "projectSubDirectory": "get_started",
     "videoFileInput": "get_started",
-    "videoMidPage": "banana.background.mp4",
+    "videoStartPage": "slide_start.png",
+    "videoMidPage": "slide_empty.png",
     "videoFileExtension": ".mp4",
     "outputLanguages": "it",
     "createAudio": true,

@@ -318,7 +318,7 @@ async function executeCommand(command) {
         }
         console.log(`stdout: ${stdout}`);
     });
-    await new Promise(resolve => setTimeout(resolve, 500));
+    //await new Promise(resolve => setTimeout(resolve, 500));
 }
 
 function time_parseTimeToMillSeconds(timeText) {
@@ -359,11 +359,6 @@ function time_parseTimeToSeconds(timeText) {
     return seconds;
 }
 
-const sleep = (milliseconds) => {
-    return new Promise(resolve => setTimeout(resolve, milliseconds))
-}
-
-
 // Use async and await to get the token before attempting to convert text to speech.
 async function get_file_duration_seconds(fileName) {
     if (!fs.existsSync(fileName)) {
@@ -374,10 +369,10 @@ async function get_file_duration_seconds(fileName) {
     var ffcommand = 'ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 ';
     ffcommand += fileName + ' > ' + tempfile + ' 2>&1';
     await executeCommand(ffcommand);
-    await sleep(1000);
+    //await new Promise(resolve => setTimeout(resolve, 1000));
     var contents = String(fs.readFileSync(tempfile));
     var duration = parseFloat(contents.trim());
-    fs.unlinkSync(tempfile);
+    //fs.unlinkSync(tempfile);
     return duration;
 }
 
@@ -412,7 +407,7 @@ async function add_audio_to_video(project, shot) {
     ffcommand += '-filter_complex "';
     ffcommand += filter1 + filter2;
     ffcommand += 'amix=inputs=' + countFiles;
-    ffcommand += ':dropout_transition=' + Math.round(project.Shots[shot].CalculatedDuration);
+    ffcommand += ':dropout_transition=' + Math.round(project.Shots[shot].AdjustedEndTimeSeconds);
     ffcommand += ',volume=' + project.Video.Volume;
     ffcommand += '[mixout]"';
     ffcommand += ' -map 0:v -map [mixout] -c:v copy ' + resultFile;
@@ -466,56 +461,66 @@ function calculate_shots_times(project) {
         for (var i = 1; i <= rows.RowCount; i++) {
             if (rows[i].CreateAudio) {
                 adjustedStartTimeSeconds = rows[i].StartTimeSeconds;
+                // Calcoliamo l'inizio successivo se minore
                 if (adjustedStartTimeSeconds < lastFinishTimeSeconds) {
                     adjustedStartTimeSeconds = lastFinishTimeSeconds;
                     // aggiungiamo un leggero intervallo
-                    adjustedStartTimeSeconds += 0.1;
+                    adjustedStartTimeSeconds += 0.2;
                 }
                 rows[i].AdjustedStartTimeSeconds = adjustedStartTimeSeconds;
                 rows[i].AdjustedStartTime = time_SecondsToTime(adjustedStartTimeSeconds);
                 lastFinishTimeSeconds = adjustedStartTimeSeconds + rows[i].MaxDuration;
+                rows[i].AdjustedEndTimeSeconds = lastFinishTimeSeconds;
                 rows[i].AdjustedEndTime = time_SecondsToTime(lastFinishTimeSeconds);
             }
         }
-        project.Shots[shot].CalculatedDuration = lastFinishTimeSeconds;
-        //console.log(`rows.CalculatedDuration ` + rows.CalculatedDuration );
+        project.Shots[shot].AdjustedEndTimeSeconds = lastFinishTimeSeconds;
+        project.Shots[shot].AdjustedEndTime = time_SecondsToTime(lastFinishTimeSeconds);
     }
 }
 
 async function create_shots_videoduration(project) {
 
+    project.Shots.TotalVideoDuration = 0;
+
     for (var shot = 1; shot <= project.Shots.ShotCount; shot++) {
         if (!project.Shots[shot].InputVideoFile.startsWith('#')) {
             project.Shots[shot].InputVideoDuration = await get_file_duration_seconds(project.Shots[shot].InputVideoFile);
+            project.Shots[shot].UsedVideoDuration = project.Shots[shot].InputVideoDuration;
             var expandDuration = false;
             var cutDuration = false;
-            if (project.Shots[shot].CalculatedDuration > project.Shots[shot].InputVideoDuration) {
+            if (project.Shots[shot].AdjustedEndTimeSeconds > project.Shots[shot].InputVideoDuration) {
                 expandDuration = true;
             }
             // dobbiamo mettere il tempo
             if (!expandDuration && project.Shots[shot].VideoFile.startsWith('#')) {
-                if (project.Shots[shot].CalculatedDuration < project.Shots[shot].InputVideoDuration) {
+                if (project.Shots[shot].AdjustedEndTimeSeconds < project.Shots[shot].InputVideoDuration) {
                     var cutDuration = true;
                 }
             }
             if (expandDuration) {
+                project.Shots[shot].AdjustedVideoDuration = project.Shots[shot].AdjustedEndTimeSeconds;
+                project.Shots[shot].UsedVideoDuration = project.Shots[shot].AdjustedVideoDuration;
                 var newInputVideoFile = project.execParam.lang + '/shot' + shot + '-videoinput' + project.execParam.videoFileExtension;
                 // usa solo centesimi 
                 var ffcommand = 'ffmpeg -y -i ' + project.Shots[shot].InputVideoFile;
-                ffcommand += ' -t ' + time_SecondsToTime(project.Shots[shot].CalculatedDuration).slice(0, -1);
+                ffcommand += ' -t ' + time_SecondsToTime(project.Shots[shot].AdjustedEndTimeSeconds).slice(0, -1);
                 ffcommand += ' -c copy  ' + newInputVideoFile;
                 project.Shots[shot].InputVideoFile = newInputVideoFile;
                 await executeCommand(ffcommand);
             }
             if (cutDuration) {
+                project.Shots[shot].AdjustedVideoDuration = project.Shots[shot].AdjustedEndTimeSeconds;
+                project.Shots[shot].UsedVideoDuration = project.Shots[shot].AdjustedVideoDuration;
                 var newInputVideoFile = project.execParam.lang + '/shot' + shot + '-videoinput' + project.execParam.videoFileExtension;
                 // usa solo centesimi 
                 var ffcommand = 'ffmpeg -y -ss 00:00:00 -i ' + project.Shots[shot].InputVideoFile;
-                ffcommand += ' -to ' + time_SecondsToTime(project.Shots[shot].CalculatedDuration).slice(0, -1);
+                ffcommand += ' -to ' + time_SecondsToTime(project.Shots[shot].AdjustedEndTimeSeconds).slice(0, -1);
                 ffcommand += ' -c copy  ' + newInputVideoFile;
                 project.Shots[shot].InputVideoFile = newInputVideoFile;
                 await executeCommand(ffcommand);
             }
+            project.Shots.TotalVideoDuration += project.Shots[shot].UsedVideoDuration;
         }
     }
 }
@@ -657,13 +662,15 @@ async function create_video_language(execParam) {
         rows[i].ExpectedDuration = rows[i].EndTimeSeconds - rows[i].StartTimeSeconds;
         rows[i].MaxDuration = rows[i].ExpectedDuration;
         if (rows[i].CreateAudio) {
-            if (rows[i].MaxDuration < rows[i].totalAudioDuration) {
-                rows[i].MaxDuration = rows[i].MaxDuration;
+            if (rows[i].MaxDuration < rows[i].AudioDuration) {
+                rows[i].MaxDuration = rows[i].AudioDuration;
             }
         }
-        // Viene usato per mettere audio e sottotitoli 
+        // Mettiamolo qui perché serve anche per quelli che non hanno audio
+        rows[i].AdjustedStartTimeSeconds = rows[i].StartTimeSeconds;
         rows[i].AdjustedStartTime = time_SecondsToTime(rows[i].StartTimeSeconds);
-        rows[i].AdjustedEndTime = time_SecondsToTime(rows[i].StartTimeSeconds + rows[i].MaxDuration);
+        rows[i].AdjustedEndTimeSeconds = rows[i].StartTimeSeconds+ rows[i].MaxDuration;
+        rows[i].AdjustedEndTime = time_SecondsToTime(rows[i].AdjustedEndTimeSeconds);        
     }
     // salviamo una prima volta per evitare di rifare l'audio, nel caso che si blocca dopo
     fs.writeFileSync(project.settings.lastDoneFile, JSON.stringify(project));
@@ -675,6 +682,20 @@ async function create_video_language(execParam) {
 
 
     return true;
+}
+async function create_video_fromimages(project) {
+
+    for (var shot = 1; shot <= project.Shots.ShotCount; shot++) {
+        var inputVideo = project.Shots[shot].InputVideoFile;
+        if (inputVideo.endsWith('.png')) {
+            var outputVideo = project.execParam.lang + '/shot' + shot + '-inputvideo.mp4';
+            var ffcommand = 'ffmpeg -loop 1 -i ' + inputVideo;
+            ffcommand += ' -framerate 25 -c:v libx264 -t ' +  Math.round(project.Shots[shot].AdjustedEndTimeSeconds);
+            ffcommand += ' -pix_fmt yuv420p -vf scale=1920:1080  ' + outputVideo;
+            await executeCommand(ffcommand);
+            project.Shots[shot].InputVideoFile = outputVideo;
+        }
+    }
 }
 
 async function create_shots(project) {
@@ -696,7 +717,7 @@ async function create_shots(project) {
                 inputVideoFile = '../' + project.execParam.videoMidPage;
             }
             else if (inputVideoFile === '#start-page') {
-                inputVideoFile = '../' + project.execParam.videoMidPage;
+                inputVideoFile = '../' + project.execParam.videoStartPage;
             }
             project.Shots[shot].InputVideoFile = inputVideoFile;
 
@@ -719,6 +740,8 @@ async function create_shots(project) {
     project.Shots.ShotCount = shot;
 
     calculate_shots_times(project);
+
+    create_video_fromimages(project);
 
     await create_shots_videoduration(project);
 
@@ -762,21 +785,22 @@ async function create_shots_concatenate(project) {
     }
     //ffmpeg -safe 0 -f concat -segment_time_metadata 1 -i file.txt -vf select=concatdec_select -af aselect=concatdec_select,aresample=async=1 out.mp4
     fs.writeFileSync(inputFile, output_base);
-    console.log(output_base);
+    console.log('\nLog input.txt: \n' + output_base);
     //var ffcommand = 'ffmpeg -f concat -safe 0 -i ' + inputFile + ' -c copy ' + project.Video.FileOutputBase;
     var ffcommand = 'ffmpeg -f concat -safe 0 -i ' + inputFile + ' ' + project.Video.FileOutputBase;
     //await executeCommand(ffcommand);
     //fs.unlinkSync(inputFile);
 
     fs.writeFileSync(inputFile, output_srt);
-    var ffcommand = 'ffmpeg -f concat -safe 0 -i  ' + inputFile + ' -c copy ' + project.Video.FileOutputSrt;
+    //console.log('\nLog input.txt: \n' + output_base);    
+    var ffcommand = 'ffmpeg -f concat -safe 0 -i  ' + inputFile + ' -framerate 25 -c copy ' + project.Video.FileOutputSrt;
     //await executeCommand(ffcommand);
     //fs.unlinkSync(inputFile);
 
     fs.writeFileSync(inputFile, output_ass);
-    var ffcommand = 'ffmpeg -f concat -safe 0 -i  ' + inputFile + ' -c copy ' + project.Video.FileOutputAss;
-    //var ffcommand = 'ffmpeg -f concat -safe 0 concat -segment_time_metadata 1 -i ' + inputFile;
-    //ffcommand += ' -vf select=concatdec_select -af aselect=concatdec_select,aresample=async=1 ' + project.Video.FileOutputAss;
+    console.log('\nLog input.txt: \n' + output_ass);
+    //var ffcommand = 'ffmpeg -f concat -safe 0 -i  ' + inputFile + ' -framerate 25 -c copy ' + project.Video.FileOutputAss;
+    var ffcommand = 'ffmpeg -f concat -safe 0 -i  ' + inputFile + ' -r 25 ' + project.Video.FileOutputAss;
 
     await executeCommand(ffcommand);
     //fs.unlinkSync(inputFile);
@@ -800,11 +824,17 @@ async function main() {
     // 5. Crea i file audio (speech)
     // 6. Sequenza le scene Json
     //    - calcola durata massima scena
-    // 7. Crea i file video per le separazion
+    // 7. Crea i file video per le separazione
     // 7. Adatta durata file scene
     // 8. Aggiunge audio ai file scene  
     // 9. Aggiunge sottotitoli alle scene
     // 10. Monta assieme tutte le scene e crea file video finale
+
+    // Per funzionare i file video devono essere formato mp4
+    // Devono avere un framerate di 25. Se non lo si fa le durate non sono corrette
+    // Usare il comando qui sotto per settare il framerate a 25
+    // ffmpeg -i input.mp4 -filter:v fps=fps=25 output.mp4
+
 
     console.log(`-----------------------------------------`);
     console.log(`------------  START ---------------------`);
