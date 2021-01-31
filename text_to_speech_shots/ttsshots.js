@@ -474,7 +474,7 @@ function calculate_shots_times(project) {
                 rows[i].AdjustedEndTime = time_SecondsToTime(lastFinishTimeSeconds);
             }
         }
-        project.Shots[shot].AdjustedEndTimeSeconds = lastFinishTimeSeconds;
+        project.Shots[shot].AdjustedEndTimeSeconds = Math.ceil(lastFinishTimeSeconds);
         project.Shots[shot].AdjustedEndTime = time_SecondsToTime(lastFinishTimeSeconds);
     }
 }
@@ -489,7 +489,7 @@ async function create_shots_videoduration(project) {
             project.Shots[shot].UsedVideoDuration = project.Shots[shot].InputVideoDuration;
             var expandDuration = false;
             var cutDuration = false;
-            if (project.Shots[shot].AdjustedEndTimeSeconds > project.Shots[shot].InputVideoDuration) {
+            if (Math.ceil(project.Shots[shot].AdjustedEndTimeSeconds) > Math.ceil(project.Shots[shot].InputVideoDuration)) {
                 expandDuration = true;
             }
             // dobbiamo mettere il tempo
@@ -669,8 +669,8 @@ async function create_video_language(execParam) {
         // Mettiamolo qui perché serve anche per quelli che non hanno audio
         rows[i].AdjustedStartTimeSeconds = rows[i].StartTimeSeconds;
         rows[i].AdjustedStartTime = time_SecondsToTime(rows[i].StartTimeSeconds);
-        rows[i].AdjustedEndTimeSeconds = rows[i].StartTimeSeconds+ rows[i].MaxDuration;
-        rows[i].AdjustedEndTime = time_SecondsToTime(rows[i].AdjustedEndTimeSeconds);        
+        rows[i].AdjustedEndTimeSeconds = rows[i].StartTimeSeconds + rows[i].MaxDuration;
+        rows[i].AdjustedEndTime = time_SecondsToTime(rows[i].AdjustedEndTimeSeconds);
     }
     // salviamo una prima volta per evitare di rifare l'audio, nel caso che si blocca dopo
     fs.writeFileSync(project.settings.lastDoneFile, JSON.stringify(project));
@@ -690,7 +690,7 @@ async function create_video_fromimages(project) {
         if (inputVideo.endsWith('.png')) {
             var outputVideo = project.execParam.lang + '/shot' + shot + '-inputvideo.mp4';
             var ffcommand = 'ffmpeg -loop 1 -i ' + inputVideo;
-            ffcommand += ' -framerate 25 -c:v libx264 -t ' +  Math.round(project.Shots[shot].AdjustedEndTimeSeconds);
+            ffcommand += ' -framerate 25 -c:v libx264 -t ' + Math.ceil(project.Shots[shot].AdjustedEndTimeSeconds);
             ffcommand += ' -pix_fmt yuv420p -vf scale=1920:1080  ' + outputVideo;
             await executeCommand(ffcommand);
             project.Shots[shot].InputVideoFile = outputVideo;
