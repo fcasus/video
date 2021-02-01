@@ -496,7 +496,7 @@ function calculate_scenes_times(project) {
             if (!rows[i].CreateAudio && rows[i].SetDuration === 'MaxSceneTime') {
                 rows[i].AdjustedEndTimeSeconds = project.Scenes[scene].AdjustedEndTimeSeconds - rows[i].AdjustedStartTimeSeconds;
                 rows[i].AdjustedEndTime = time_SecondsToTime(rows[i].AdjustedEndTimeSeconds);
-                console.log(`MaxSceneTime :${scene} ${rows[i].AdjustedEndTime}`);
+                //console.log(`MaxSceneTime :${scene} ${rows[i].AdjustedEndTime}`);
             }
         }
     }
@@ -508,6 +508,7 @@ async function create_scenes_videoduration(project) {
 
     for (let scene = 1; scene <= project.Scenes.ScemeCount; scene++) {
         let adijustedDuration = project.Scenes[scene].AdjustedEndTimeSeconds;
+        project.Scenes[scene].UsedVideoDuration = 0;
         if (adijustedDuration > 0 && !project.Scenes[scene].InputVideoFile.startsWith('#')) {
             project.Scenes[scene].InputVideoDuration = await get_file_duration_seconds(project.Scenes[scene].InputVideoFile);
             project.Scenes[scene].UsedVideoDuration = project.Scenes[scene].InputVideoDuration;
@@ -524,8 +525,9 @@ async function create_scenes_videoduration(project) {
                 project.Scenes[scene].InputVideoFile = newInputVideoFile;
                 await executeCommand(ffcommand);
             }
-
-            project.Scenes.TotalVideoDuration += project.Scenes[scene].UsedVideoDuration;
+        }
+        if (project.Scenes[scene].UsedVideoDuration) {
+            project.Scenes.TotalVideoDuration += Number(project.Scenes[scene].UsedVideoDuration);
         }
     }
 }
@@ -636,7 +638,7 @@ async function create_video_language(execParam) {
 
     // Legge il file con i tempi
     project.settings = {};
-    project.settings.lastDoneFile = lang + '\\last-done-' + lang + '.json';
+    project.settings.lastDoneFile = lang + '\\project-last-done-' + lang + '.json';
 
 
     // Sceglie quello che è audio 
@@ -704,7 +706,7 @@ async function create_video_fromimages(project) {
     for (let scene = 1; scene <= project.Scenes.ScemeCount; scene++) {
         let inputVideo = project.Scenes[scene].InputVideoFile;
         if (inputVideo.endsWith('.png')) {
-            let outputVideo = project.execParam.lang + '/scene' + scene + '-inputvideo.mp4';
+            let outputVideo = project.execParam.lang + '/scene' + scene + '-video-no-audio.mp4';
             let ffcommand = 'ffmpeg -loop 1 -i ' + inputVideo;
             ffcommand += ' -framerate 25 -c:v libx264 -t ' + Math.ceil(project.Scenes[scene].AdjustedEndTimeSeconds);
             ffcommand += ' -pix_fmt yuv420p -vf scale=1920:1080  ' + outputVideo;
@@ -740,7 +742,7 @@ async function create_scenes(project) {
             // quello che impostato la duration
             project.Scenes[scene].FileSubtitestSrt = project.execParam.lang + '/scene' + scene + '-subtitles.srt';
             project.Scenes[scene].FileSubtitestAss = project.execParam.lang + '/scene' + scene + '-subtitles.ass';
-            project.Scenes[scene].FileOutputBase = project.execParam.lang + '/scene' + scene + '-video-base' + project.execParam.videoFileExtension;
+            project.Scenes[scene].FileOutputBase = project.execParam.lang + '/scene' + scene + '-video-audio' + project.execParam.videoFileExtension;
             project.Scenes[scene].FileOutputAss = project.execParam.lang + '/scene' + scene + '-video-ass' + project.execParam.videoFileExtension;
             project.Scenes[scene].FileOutputSrt = project.execParam.lang + '/scene' + scene + '-video-srt' + project.execParam.videoFileExtension;
 
@@ -835,21 +837,28 @@ async function main() {
     // 1. Legge i parametri di esecuzione dal file
     //   - Si sposta nelle directory progetto video
     //   - Crea le directory della lingua
-    // 2. Avvia la sequenza per creare il video specifico alla lingua
+    // 2. Avvia la sequenza per creare l'audio specifico alla lingua
     //    create_lang_video(lang)
     // 3. Legge il file Project.json
     // 4. Crea la struttura project
     // 5. Crea i file audio (speech)
     // 6. Sequenza le scene Json
     //    - calcola durata massima scena
+    // 6.1 Crea il file video partendo dalle immagini   
     // 7. Crea i file video per le separazione
-    // 7. Adatta durata file scene
+    // 7. Adatta durata file scene alla durata audio
     // 8. Aggiunge audio ai file scene  
     // 9. Aggiunge sottotitoli alle scene
     // 10. Monta assieme tutte le scene e crea file video finale
 
+    // Informazioni per l'AC2
     // Nel file ac2 se è una riga non audio e si mette EndTime 24:00:00 
     // mette il tempo della scena
+    // videoFile #mid-page sostiusce file con slide_empty.png
+
+    // Scene, numerico iniziona da 1 
+    // Se non c'é nulla all'inizio mette #none scena 1
+    // Dove c'é un VideoFile inizia una nuova scena
 
     // Per funzionare i file video devono essere formato mp4
     // Devono avere un framerate di 25. Se non lo si fa le durate non sono corrette
