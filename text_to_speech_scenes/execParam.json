@@ -4,7 +4,7 @@
     "videoStartPage": "slide_start.png",
     "videoMidPage": "slide_empty.png",
     "videoFileExtension": ".mp4",
-    "outputLanguages": "it",
+    "outputLanguages": "fr",
     "createAudio": true,
     "createVideo": true,
     "execTest": false,
