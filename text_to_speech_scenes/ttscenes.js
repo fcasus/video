@@ -111,7 +111,7 @@ async function create_audio_file(accessToken, rowNumber, project) {
         xmlRequest += '</prosody>';
     }
     else if (project.execParam.CognitiveServicesStyle) {
-        xmlRequest += '<mstts:express-as style="' + project.execParam.CognitiveServicesStyle + '"></mstts>\n';
+        xmlRequest += '<mstts:express-as style="' + project.execParam.CognitiveServicesStyle + '">\n';
         xmlRequest += rows[rowNumber].Text;
         xmlRequest += '\n</mstts:express-as>\n';
     }
@@ -297,7 +297,9 @@ async function create_subtitles_ass_file(project, scene) {
 
 async function add_subtitles_to_video(project, scene) {
 
-
+    if (!project.Scenes[scene].IncludeScene) {
+        return;
+    }
     //let ffcommand = 'ffmpeg -y -hide_banner -i result.mp4 -i subtitles.srt -c copy -c:s mov_text language=esp result-srt.mp4';
     let ffcommand = 'ffmpeg -y -hide_banner -i ' + project.Scenes[scene].FileOutputBase;
 
@@ -390,6 +392,10 @@ async function get_file_duration_seconds(fileName) {
 // Use async and await to get the token before attempting to convert text to speech.
 async function add_audio_to_video(project, scene) {
 
+    if (!project.Scenes[scene].IncludeScene) {
+        return;
+    }
+
     console.log('\nAdd audio to Video Scene : ' + scene);
     const resultFile = project.Scenes[scene].FileOutputBase;
     const inputVideoFile = project.Scenes[scene].InputVideoFile;
@@ -419,7 +425,7 @@ async function add_audio_to_video(project, scene) {
     ffcommand += '-filter_complex "';
     ffcommand += filter1 + filter2;
     ffcommand += 'amix=inputs=' + countFiles;
-    ffcommand += ':dropout_transition=' + Math.round(project.Scenes[scene].AdjustedEndTimeSeconds);
+    ffcommand += ':dropout_transition=' + project.Scenes[scene].AdjustedEndTimeSeconds;
     ffcommand += ',volume=' + project.Video.Volume;
     ffcommand += '[mixout]"';
     ffcommand += ' -map 0:v -map [mixout] -c:v copy ' + resultFile;
@@ -463,7 +469,8 @@ function time_SecondsToTime(timeInSeconds) {
 
 function calculate_scenes_times(project) {
 
-    for (let scene = 1; scene <= project.Scenes.ScemeCount; scene++) {
+    for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
+        project.Scenes[scene].IncludeScene = false;
         let rows = project.Scenes[scene].Rows;
         //let colAdjust = 'Adjust_' + rows.lang;
         let totalAudioDuration = 0;
@@ -488,9 +495,12 @@ function calculate_scenes_times(project) {
         }
         project.Scenes[scene].AdjustedEndTimeSeconds = Math.ceil(lastFinishTimeSeconds);
         project.Scenes[scene].AdjustedEndTime = time_SecondsToTime(lastFinishTimeSeconds);
+        if (project.Scenes[scene].AdjustedEndTimeSeconds) {
+            project.Scenes[scene].IncludeScene = true;
+        }
     }
     // Mettiamo durata massima
-    for (let scene = 1; scene <= project.Scenes.ScemeCount; scene++) {
+    for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
         let rows = project.Scenes[scene].Rows;
         for (let i = 1; i <= rows.RowCount; i++) {
             if (!rows[i].CreateAudio && rows[i].SetDuration === 'MaxSceneTime') {
@@ -506,7 +516,7 @@ async function create_scenes_videoduration(project) {
 
     project.Scenes.TotalVideoDuration = 0;
 
-    for (let scene = 1; scene <= project.Scenes.ScemeCount; scene++) {
+    for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
         let adijustedDuration = project.Scenes[scene].AdjustedEndTimeSeconds;
         project.Scenes[scene].UsedVideoDuration = 0;
         if (adijustedDuration > 0 && !project.Scenes[scene].InputVideoFile.startsWith('#')) {
@@ -703,7 +713,7 @@ async function create_video_language(execParam) {
 }
 async function create_video_fromimages(project) {
 
-    for (let scene = 1; scene <= project.Scenes.ScemeCount; scene++) {
+    for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
         let inputVideo = project.Scenes[scene].InputVideoFile;
         if (inputVideo.endsWith('.png')) {
             let outputVideo = project.execParam.lang + '/scene' + scene + '-video-no-audio.mp4';
@@ -755,7 +765,7 @@ async function create_scenes(project) {
         project.Scenes[scene].Rows[rowCount].RowOrigin = i;
         rowCount++;
     }
-    project.Scenes.ScemeCount = scene;
+    project.Scenes.SceneCount = scene;
 
     calculate_scenes_times(project);
 
@@ -765,7 +775,7 @@ async function create_scenes(project) {
 
     await create_scenes_videoduration(project);
 
-    for (let scene = 1; scene <= project.Scenes.ScemeCount; scene++) {
+    for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
 
         if (!project.Scenes[scene].InputVideoFile.startsWith('#')) {
             //await create_subtitles_srt_file(project, scene);
@@ -795,9 +805,10 @@ async function create_scenes_concatenate(project) {
     // creiamo nel directory corrente perché la lingua è già nel file 
     // e prende relativi al file di input
     let inputFile = 'input.txt';
-    for (let scene = 1; scene <= project.Scenes.ScemeCount; scene++) {
+    for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
 
-        if (!project.Scenes[scene].InputVideoFile.startsWith('#')) {
+        if (!project.Scenes[scene].InputVideoFile.startsWith('#')
+            && project.Scenes[scene].IncludeScene) {
             output_base += 'file ' + "'" + project.Scenes[scene].FileOutputBase + "'" + '\n';
             output_srt += 'file ' + "'" + project.Scenes[scene].FileOutputSrt + "'" + '\n';
             output_ass += 'file ' + "'" + project.Scenes[scene].FileOutputAss + "'" + '\n';
