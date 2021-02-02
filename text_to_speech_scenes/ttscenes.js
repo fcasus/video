@@ -202,9 +202,9 @@ async function create_subtitles_srt_file(project, scene) {
     for (let i = 1; i <= rows.RowCount; i++) {
         if (rows[i].CreateAudio) {
             output += i + '\n';
-            let startTime = rows[i].AdjustedStartTime;
+            let startTime = rows[i].AdjustedSceneStartTime;
             startTime = startTime.replace('.', ',');
-            let endTime = rows[i].AdjustedEndTime;
+            let endTime = rows[i].AdjustedSceneEndTime;
             endTime = endTime.replace('.', ',');
             output += startTime + ' --> ' + endTime + '\n';
             output += rows[i].Text + '\n\n';
@@ -284,8 +284,8 @@ async function create_subtitles_ass_file(project, scene) {
             // comments
             && rows[i].Style != '//') {
             output += 'Dialogue: 0,';
-            output += rows[i].AdjustedStartTime.substring(1, 11) + ',';
-            output += rows[i].AdjustedEndTime.substring(1, 11) + ',';
+            output += rows[i].AdjustedSceneStartTime.substring(1, 11) + ',';
+            output += rows[i].AdjustedSceneEndTime.substring(1, 11) + ',';
             output += style;
             output += ',,0,0,0,,';
             output += rows[i].Text + '\n';
@@ -301,7 +301,7 @@ async function add_subtitles_to_video(project, scene) {
         return;
     }
     //let ffcommand = 'ffmpeg -y -hide_banner -i result.mp4 -i subtitles.srt -c copy -c:s mov_text language=esp result-srt.mp4';
-    let ffcommand = 'ffmpeg -y -hide_banner -i ' + project.Scenes[scene].FileOutputBase;
+    let ffcommand = 'ffmpeg -y -hide_banner -i ' + project.Scenes[scene].FileOutputNoAudio;
 
     ffcommand += ' -i ' + project.Scenes[scene].FileSubtitestSrt;
     ffcommand += ' -c:a copy -c:v copy -c:s mov_text -metadata:s:s:0 language=esp ';
@@ -312,7 +312,7 @@ async function add_subtitles_to_video(project, scene) {
     //ffcommand = 'ffmpeg -y -hide_banner -i subtitles.srt subtitles.ass';
     //await executeCommand(ffcommand);
 
-    ffcommand = 'ffmpeg -y -hide_banner -i ' + project.Scenes[scene].FileOutputBase;
+    ffcommand = 'ffmpeg -y -hide_banner -i ' + project.Scenes[scene].FileOutputNoAudio;
     ffcommand += ' -vf ass=' + project.Scenes[scene].FileSubtitestAss + ' ' + project.Scenes[scene].FileOutputAss;
     await executeCommand(ffcommand);
 
@@ -397,7 +397,7 @@ async function add_audio_to_video(project, scene) {
     }
 
     console.log('\nAdd audio to Video Scene : ' + scene);
-    const resultFile = project.Scenes[scene].FileOutputBase;
+    const resultFile = project.Scenes[scene].FileOutputAudio;
     const inputVideoFile = project.Scenes[scene].InputVideoFile;
     if (!fs.existsSync(inputVideoFile)) {
         console.log('Video file does not exists : ' + inputVideoFile);
@@ -415,7 +415,7 @@ async function add_audio_to_video(project, scene) {
             // "[1]adelay=500[s1];[2]adelay=3000[s2];[s1][s2]amix=2[mixout]"
             //let startTime = audioObjects[i].StartTime;
             //let delay = Math.round(audioObjects[i].EffectiveStartTimeSeconds * 1000);
-            let delay = Math.round(rows[i].AdjustedStartTimeSeconds * 1000);
+            let delay = Math.round(rows[i].AdjustedSceneStartTimeSeconds * 1000);
             //console.log((i) + ' Delay : ' + delay + ' Duration max:' + duration);
             filter1 += '[' + String(countFiles) + ']adelay=';
             filter1 += Math.round(delay) + '[a' + String(countFiles) + '];'
@@ -432,6 +432,49 @@ async function add_audio_to_video(project, scene) {
     await executeCommand(ffcommand);
 }
 
+async function add_audio_to_video_end(project) {
+
+    const fileInput =project.Video.FileOutputAss;
+    if (!fs.existsSync(fileInput)) {
+        console.log('Video file does not exists : ' + fileInput);
+        return;
+    }
+    let ffcommand = 'ffmpeg -y -hide_banner -i ' + fileInput + ' ';
+    let countFiles = 0;
+    let filter1 = '';
+    let filter2 = '';
+    for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
+        if (project.Scenes[scene].IncludeScene) {
+
+            console.log('\nAdd audio to Video Scene : ' + scene);
+            let rows = project.Scenes[scene].Rows;
+            for (let i = 1; i <= rows.RowCount; i++) {
+                if (rows[i].CreateAudio) {
+                    countFiles++;
+                    // aggiunge in input i file audio
+                    ffcommand = ffcommand + '-i ' + rows[i].AudioFileName + ' ';
+                    // "[1]adelay=500[s1];[2]adelay=3000[s2];[s1][s2]amix=2[mixout]"
+                    //let startTime = audioObjects[i].StartTime;
+                    //let delay = Math.round(audioObjects[i].EffectiveStartTimeSeconds * 1000);
+                    let delay = Math.round(rows[i].AdjustedVideoStartTimeSeconds * 1000);
+                    //console.log((i) + ' Delay : ' + delay + ' Duration max:' + duration);
+                    filter1 += '[' + String(countFiles) + ']adelay=';
+                    filter1 += Math.round(delay) + '[a' + String(countFiles) + '];'
+                    filter2 += '[a' + String(countFiles) + ']'
+                }
+            }
+        }
+    }
+    ffcommand += '-filter_complex "';
+    ffcommand += filter1 + filter2;
+    ffcommand += 'amix=inputs=' + countFiles;
+    ffcommand += ':dropout_transition=' + Math.ceil(project.Scenes.AdjustedVideoEndTimeSeconds);
+    ffcommand += ',volume=' + project.Video.Volume;
+    ffcommand += '[mixout]"';
+    ffcommand += ' -map 0:v -map [mixout] -c:v copy ' + project.Video.FileOutputAudio;
+    await executeCommand(ffcommand);
+}
+
 async function deletefiles(project) {
 
 
@@ -444,7 +487,8 @@ async function deletefiles(project) {
     });
     files.push(project.Video.FileSubtitestSrt);
     files.push(project.Video.FileSubtitestAss);
-    files.push(project.Video.FileOutputBase);
+    files.push(project.Video.FileOutputAudio);
+    files.push(project.Video.FileOutputNoAudio);
     files.push(project.Video.FileOutputAss);
     files.push(project.Video.FileOutputSrt);
     files.push(project.Video.FileTimes);
@@ -468,48 +512,78 @@ function time_SecondsToTime(timeInSeconds) {
 }
 
 function calculate_scenes_times(project) {
-
+    let lastSceneFinishTimeSeconds = 0;
+    let adjustedSceneStartTimeSeconds = 0;
+    project.Scenes.AdjustedVideoEndTimeSeconds = 0;
     for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
         project.Scenes[scene].IncludeScene = false;
         let rows = project.Scenes[scene].Rows;
-        //let colAdjust = 'Adjust_' + rows.lang;
-        let totalAudioDuration = 0;
-        let nextStartTimeSeconds = 0;
-        let lastFinishTimeSeconds = 0;
+        project.Scenes[scene].AdjustedSceneStartTimeSeconds = adjustedSceneStartTimeSeconds;
+        project.Scenes[scene].AdjustedSceneStartTime = time_SecondsToTime(project.Scenes[scene].AdjustedSceneStartTimeSeconds);
+        lastSceneFinishTimeSeconds = 0;
         //console.log(`rows.RowCount ` + rows.RowCount);
         for (let i = 1; i <= rows.RowCount; i++) {
             if (rows[i].CreateAudio) {
-                adjustedStartTimeSeconds = rows[i].StartTimeSeconds;
+                adjustedSceneStartTimeSeconds = rows[i].StartTimeSeconds;
                 // Calcoliamo l'inizio successivo se minore
-                if (adjustedStartTimeSeconds < lastFinishTimeSeconds) {
-                    adjustedStartTimeSeconds = lastFinishTimeSeconds;
+                if (adjustedSceneStartTimeSeconds < lastSceneFinishTimeSeconds) {
+                    adjustedSceneStartTimeSeconds = lastSceneFinishTimeSeconds;
                     // aggiungiamo un leggero intervallo
-                    adjustedStartTimeSeconds += 0.2;
+                    adjustedSceneStartTimeSeconds += 0.2;
                 }
-                rows[i].AdjustedStartTimeSeconds = adjustedStartTimeSeconds;
-                rows[i].AdjustedStartTime = time_SecondsToTime(adjustedStartTimeSeconds);
-                lastFinishTimeSeconds = adjustedStartTimeSeconds + rows[i].MaxDuration;
-                rows[i].AdjustedEndTimeSeconds = lastFinishTimeSeconds;
-                rows[i].AdjustedEndTime = time_SecondsToTime(lastFinishTimeSeconds);
+                rows[i].AdjustedSceneStartTimeSeconds = adjustedSceneStartTimeSeconds;
+                rows[i].AdjustedSceneStartTime = time_SecondsToTime(adjustedSceneStartTimeSeconds);
+                lastSceneFinishTimeSeconds = adjustedSceneStartTimeSeconds + rows[i].MaxDuration;
+                rows[i].AdjustedSceneEndTimeSeconds = lastSceneFinishTimeSeconds;
+                rows[i].AdjustedSceneEndTime = time_SecondsToTime(lastSceneFinishTimeSeconds);
             }
         }
-        project.Scenes[scene].AdjustedEndTimeSeconds = Math.ceil(lastFinishTimeSeconds);
-        project.Scenes[scene].AdjustedEndTime = time_SecondsToTime(lastFinishTimeSeconds);
-        if (project.Scenes[scene].AdjustedEndTimeSeconds) {
+        project.Scenes[scene].AdjustedSceneEndTimeSeconds = lastSceneFinishTimeSeconds;
+        project.Scenes[scene].AdjustedSceneEndTime = time_SecondsToTime(lastSceneFinishTimeSeconds);
+        if (project.Scenes[scene].AdjustedSceneEndTimeSeconds) {
             project.Scenes[scene].IncludeScene = true;
         }
+        adjustedSceneStartTimeSeconds += lastSceneFinishTimeSeconds + 0.2;
     }
+    project.Scenes.AdjustedVideoEndTimeSeconds = adjustedSceneStartTimeSeconds - 0.2;
+    project.Scenes.AdjustedVideoEndTime = time_SecondsToTime(project.Scenes.AdjustedVideoEndTimeSeconds);
     // Mettiamo durata massima
     for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
         let rows = project.Scenes[scene].Rows;
         for (let i = 1; i <= rows.RowCount; i++) {
             if (!rows[i].CreateAudio && rows[i].SetDuration === 'MaxSceneTime') {
-                rows[i].AdjustedEndTimeSeconds = project.Scenes[scene].AdjustedEndTimeSeconds - rows[i].AdjustedStartTimeSeconds;
-                rows[i].AdjustedEndTime = time_SecondsToTime(rows[i].AdjustedEndTimeSeconds);
-                //console.log(`MaxSceneTime :${scene} ${rows[i].AdjustedEndTime}`);
+                rows[i].AdjustedSceneEndTimeSeconds = project.Scenes[scene].AdjustedSceneEndTimeSeconds - rows[i].AdjustedSceneStartTimeSeconds;
+                rows[i].AdjustedSceneEndTime = time_SecondsToTime(rows[i].AdjustedSceneEndTimeSeconds);
             }
         }
     }
+    // Mettiamo la durata relativa al video
+    let lastVideoFinishTimeSeconds = 0;
+    for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
+        let rows = project.Scenes[scene].Rows;
+        if (lastVideoFinishTimeSeconds > 0) {
+            // aggiungiamo un attimo fra le scene
+            lastVideoFinishTimeSeconds += 0.2;
+        }
+        let videoStartTimeSeconds = lastVideoFinishTimeSeconds;
+        project.Scenes[scene].AdjustedVideoStartTimeTimeSeconds = videoStartTimeSeconds;
+        project.Scenes[scene].AdjustedVideoStartTime = time_SecondsToTime(project.Scenes[scene].AdjustedVideoStartTimeSeconds);
+        for (let i = 1; i <= rows.RowCount; i++) {
+            rows[i].AdjustedVideoStartTimeSeconds = videoStartTimeSeconds + rows[i].AdjustedSceneStartTimeSeconds;
+            rows[i].AdjustedVideoSceneStartTime = time_SecondsToTime(rows[i].AdjustedVideoStartTimeSeconds);
+            rows[i].AdjustedVideoEndTimeSeconds = videoStartTimeSeconds + rows[i].AdjustedSceneEndTimeSeconds;;
+            rows[i].AdjustedVideoEndTime = time_SecondsToTime(rows[i].AdjustedVideoEndTimeSeconds);
+            // la prossima sce
+            if (rows[i].AdjustedVideoEndTimeSeconds > lastVideoFinishTimeSeconds) {
+                lastVideoFinishTimeSeconds = rows[i].AdjustedVideoEndTimeSeconds;
+            }
+        }
+        project.Scenes[scene].AdjustedVideoEndTimeSeconds = lastVideoFinishTimeSeconds;
+        project.Scenes[scene].AdjustedVideoEndTime = time_SecondsToTime(lastVideoFinishTimeSeconds);
+    }
+    project.Scenes.AdjustedVideoEndTimeSeconds = lastVideoFinishTimeSeconds;
+    project.Scenes.AdjustedVideoEndTime = time_SecondsToTime(lastVideoFinishTimeSeconds);
+
 }
 
 async function create_scenes_videoduration(project) {
@@ -517,10 +591,10 @@ async function create_scenes_videoduration(project) {
     project.Scenes.TotalVideoDuration = 0;
 
     for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
-        let adijustedDuration = project.Scenes[scene].AdjustedEndTimeSeconds;
+        let adijustedDuration = project.Scenes[scene].AdjustedSceneEndTimeSeconds;
         project.Scenes[scene].UsedVideoDuration = 0;
         if (adijustedDuration > 0 && !project.Scenes[scene].InputVideoFile.startsWith('#')) {
-            project.Scenes[scene].InputVideoDuration = await get_file_duration_seconds(project.Scenes[scene].InputVideoFile);
+            project.Scenes[scene].InputVideoDuration = await get_file_duration_seconds(project.Scenes[scene].FileOutputNoAudio);
             project.Scenes[scene].UsedVideoDuration = project.Scenes[scene].InputVideoDuration;
             // speed up ffmpeg -i input.mkv -filter:v "setpts=0.5*PTS" output.mkv
             // slow down ffmpeg -i input.mkv -filter:v "setpts=2.0*PTS" output.mkv
@@ -528,16 +602,14 @@ async function create_scenes_videoduration(project) {
             let PTS = Number(adijustedDuration) / Number(project.Scenes[scene].InputVideoDuration);
             project.Scenes[scene].PTS = PTS;
             if (PTS && PTS > 0 && PTS != 1) {
-                let newInputVideoFile = project.execParam.lang + '/scene' + scene + '-videoinput' + project.execParam.videoFileExtension;
-                project.Scenes[scene].UsedVideoDuration = project.Scenes[scene].AdjustedEndTimeSeconds;
-                let ffcommand = 'ffmpeg -y -i ' + project.Scenes[scene].InputVideoFile;
-                ffcommand += ' -filter:v "setpts=' + PTS + '*PTS" ' + newInputVideoFile;
-                project.Scenes[scene].InputVideoFile = newInputVideoFile;
+                project.Scenes[scene].UsedVideoDuration = project.Scenes[scene].AdjustedSceneEndTimeSeconds;
+                let ffcommand = 'ffmpeg -y -i ' + project.Scenes[scene].FileOutputNoAudio;
+                ffcommand += ' -filter:v "setpts=' + PTS + '*PTS" ' + project.Scenes[scene].FileOutputChangedDuration;
                 await executeCommand(ffcommand);
             }
-        }
-        if (project.Scenes[scene].UsedVideoDuration) {
-            project.Scenes.TotalVideoDuration += Number(project.Scenes[scene].UsedVideoDuration);
+            else {
+                fs.copyFile(project.Scenes[scene].FileOutputChangedDuration);
+            }
         }
     }
 }
@@ -553,7 +625,7 @@ function write_text_times(project) {
         if (project.Rows[i].Rows !== '0') {
             duration += Math.round(project.Rows[i].AudioDuration * 1000) / 1000;
             remaining += Math.round(project.Rows[i].SecondsRemaining * 1000) / 1000;
-            starts += Math.round(project.Rows[i].AdjustedStartTimeSeconds * 1000) / 1000;
+            starts += Math.round(project.Rows[i].AdjustedSceneStartTimeSeconds * 1000) / 1000;
         }
 
         text += i + '\t'
@@ -631,7 +703,8 @@ async function create_video_language(execParam) {
 
     project.Video = {};
     project.Video.FileInput = execParam.videoFileInput + execParam.videoFileExtension;
-    project.Video.FileOutputBase = lang + '/' + execParam.videoFileInput + '-' + lang + execParam.videoFileExtension;
+    project.Video.FileOutputAudio = lang + '/' + execParam.videoFileInput + '-audio-' + lang + execParam.videoFileExtension;
+    project.Video.FileOutputNoAudio = lang + '/' + execParam.videoFileInput + '-no-audio-' + lang + execParam.videoFileExtension;
     project.Video.FileOutputAss = lang + '/' + execParam.videoFileInput + '-ass-' + lang + execParam.videoFileExtension;
     project.Video.FileOutputSrt = lang + '/' + execParam.videoFileInput + '-srt-' + lang + execParam.videoFileExtension;
     // durata del file video
@@ -695,10 +768,10 @@ async function create_video_language(execParam) {
             }
         }
         // Mettiamolo qui perché serve anche per quelli che non hanno audio
-        rows[i].AdjustedStartTimeSeconds = rows[i].StartTimeSeconds;
-        rows[i].AdjustedStartTime = time_SecondsToTime(rows[i].StartTimeSeconds);
-        rows[i].AdjustedEndTimeSeconds = rows[i].StartTimeSeconds + rows[i].MaxDuration;
-        rows[i].AdjustedEndTime = time_SecondsToTime(rows[i].AdjustedEndTimeSeconds);
+        rows[i].AdjustedSceneStartTimeSeconds = rows[i].StartTimeSeconds;
+        rows[i].AdjustedSceneStartTime = time_SecondsToTime(rows[i].StartTimeSeconds);
+        rows[i].AdjustedSceneEndTimeSeconds = rows[i].StartTimeSeconds + rows[i].MaxDuration;
+        rows[i].AdjustedSceneEndTime = time_SecondsToTime(rows[i].AdjustedEndTimeSeconds);
     }
     // salviamo una prima volta per evitare di rifare l'audio, nel caso che si blocca dopo
     fs.writeFileSync(project.settings.lastDoneFile, JSON.stringify(project));
@@ -716,12 +789,15 @@ async function create_video_fromimages(project) {
     for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
         let inputVideo = project.Scenes[scene].InputVideoFile;
         if (inputVideo.endsWith('.png')) {
-            let outputVideo = project.execParam.lang + '/scene' + scene + '-video-no-audio.mp4';
             let ffcommand = 'ffmpeg -loop 1 -i ' + inputVideo;
-            ffcommand += ' -framerate 25 -c:v libx264 -t ' + Math.ceil(project.Scenes[scene].AdjustedEndTimeSeconds);
-            ffcommand += ' -pix_fmt yuv420p -vf scale=1920:1080  ' + outputVideo;
+            ffcommand += ' -framerate 25 -c:v libx264 -t ' + Math.ceil(project.Scenes[scene].AdjustedSceneEndTimeSeconds);
+            ffcommand += ' -pix_fmt yuv420p -vf scale=1920:1080  ' + project.Scenes[scene].FileOutputNoAudio;
             await executeCommand(ffcommand);
-            project.Scenes[scene].InputVideoFile = outputVideo;
+        }
+        else if (inputVideo.endsWith('.mp4')) {
+            let ffcommand = 'ffmpeg -i ' + inputVideo;
+            ffcommand += ' -filter:v fps=fps=25 ' + project.Scenes[scene].FileOutputNoAudio;
+            await executeCommand(ffcommand);
         }
     }
 }
@@ -752,7 +828,9 @@ async function create_scenes(project) {
             // quello che impostato la duration
             project.Scenes[scene].FileSubtitestSrt = project.execParam.lang + '/scene' + scene + '-subtitles.srt';
             project.Scenes[scene].FileSubtitestAss = project.execParam.lang + '/scene' + scene + '-subtitles.ass';
-            project.Scenes[scene].FileOutputBase = project.execParam.lang + '/scene' + scene + '-video-audio' + project.execParam.videoFileExtension;
+            project.Scenes[scene].FileOutputAudio = project.execParam.lang + '/scene' + scene + '-video-audio' + project.execParam.videoFileExtension;
+            project.Scenes[scene].FileOutputNoAudio = project.execParam.lang + '/scene' + scene + '-video-no-audio' + project.execParam.videoFileExtension;
+            project.Scenes[scene].FileOutputChangedDuration = project.execParam.lang + '/scene' + scene + '-video-changed-duration' + project.execParam.videoFileExtension;
             project.Scenes[scene].FileOutputAss = project.execParam.lang + '/scene' + scene + '-video-ass' + project.execParam.videoFileExtension;
             project.Scenes[scene].FileOutputSrt = project.execParam.lang + '/scene' + scene + '-video-srt' + project.execParam.videoFileExtension;
 
@@ -785,7 +863,7 @@ async function create_scenes(project) {
             // write_text_durations(project);
 
             if (project.execParam.createVideo) {
-                await add_audio_to_video(project, scene);
+                //await add_audio_to_video(project, scene);
             }
 
             if (project.execParam.createSubtitles) {
@@ -794,48 +872,35 @@ async function create_scenes(project) {
         }
     }
     await create_scenes_concatenate(project);
+    await add_audio_to_video_end(project);
     return true;
 }
 
 async function create_scenes_concatenate(project) {
 
-    let output_base = '';
-    let output_srt = '';
-    let output_ass = '';
+    let outputFiles = [];
+    //outputFiles.push('FileOutputAudio');
+    outputFiles.push('FileOutputNoAudio');
+    //outputFiles.push('FileOutputSrt');
+    outputFiles.push('FileOutputAss');
     // creiamo nel directory corrente perché la lingua è già nel file 
     // e prende relativi al file di input
-    let inputFile = 'input.txt';
-    for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
-
-        if (!project.Scenes[scene].InputVideoFile.startsWith('#')
-            && project.Scenes[scene].IncludeScene) {
-            output_base += 'file ' + "'" + project.Scenes[scene].FileOutputBase + "'" + '\n';
-            output_srt += 'file ' + "'" + project.Scenes[scene].FileOutputSrt + "'" + '\n';
-            output_ass += 'file ' + "'" + project.Scenes[scene].FileOutputAss + "'" + '\n';
+    for (let i = 0; i < outputFiles.length; i++) {
+        let inputFile = 'input.txt';
+        let output_text = '';
+        for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
+            if (project.Scenes[scene].IncludeScene) {
+                output_text += 'file ' + "'" + project.Scenes[scene][outputFiles[i]] + "'" + '\n';
+            }
         }
+        //ffmpeg -safe 0 -f concat -segment_time_metadata 1 -i file.txt -vf select=concatdec_select -af aselect=concatdec_select,aresample=async=1 out.mp4
+        fs.writeFileSync(inputFile, output_text);
+        console.log('\nLog input.txt: \n' + output_text);
+        //let ffcommand = 'ffmpeg -f concat -safe 0 -i ' + inputFile + ' -c copy ' + project.Video.FileOutputAudio;
+        let ffcommand = 'ffmpeg -f concat -safe 0 -i ' + inputFile + ' ' + project.Video[outputFiles[i]];
+        await executeCommand(ffcommand);
+        //fs.unlinkSync(inputFile);
     }
-    //ffmpeg -safe 0 -f concat -segment_time_metadata 1 -i file.txt -vf select=concatdec_select -af aselect=concatdec_select,aresample=async=1 out.mp4
-    fs.writeFileSync(inputFile, output_base);
-    console.log('\nLog input.txt: \n' + output_base);
-    //let ffcommand = 'ffmpeg -f concat -safe 0 -i ' + inputFile + ' -c copy ' + project.Video.FileOutputBase;
-    let ffcommand = 'ffmpeg -f concat -safe 0 -i ' + inputFile + ' ' + project.Video.FileOutputBase;
-    //await executeCommand(ffcommand);
-    //fs.unlinkSync(inputFile);
-
-    fs.writeFileSync(inputFile, output_srt);
-    //console.log('\nLog input.txt: \n' + output_base);    
-    ffcommand = 'ffmpeg -f concat -safe 0 -i  ' + inputFile + ' -framerate 25 -c copy ' + project.Video.FileOutputSrt;
-    //await executeCommand(ffcommand);
-    //fs.unlinkSync(inputFile);
-
-    fs.writeFileSync(inputFile, output_ass);
-    console.log('\nLog input.txt: \n' + output_ass);
-    //let ffcommand = 'ffmpeg -f concat -safe 0 -i  ' + inputFile + ' -framerate 25 -c copy ' + project.Video.FileOutputAss;
-    ffcommand = 'ffmpeg -f concat -safe 0 -i  ' + inputFile + ' -r 25 ' + project.Video.FileOutputAss;
-
-    await executeCommand(ffcommand);
-    //fs.unlinkSync(inputFile);
-
     return true;
 }
 async function main() {
