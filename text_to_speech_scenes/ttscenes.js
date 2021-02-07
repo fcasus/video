@@ -160,7 +160,8 @@ async function create_audio_files(project, lastDoneData) {
     };
 
     const accessToken = await azure_get_accessToken(subscriptionKey);
-
+    //console.log("access token: " + JSON.stringify(accessToken));
+    
     azure_set_voices(project);
 
     for (let i = 1; i <= rows.RowCount; i++) {
@@ -724,7 +725,6 @@ async function create_video_language(execParam) {
     project.Video.FileOutputAss = lang + '/' + execParam.videoFileInput + '-ass-' + lang + execParam.videoFileExtension;
     project.Video.FileOutputSrt = lang + '/' + execParam.videoFileInput + '-srt-' + lang + execParam.videoFileExtension;
     // durata del file video
-    project.Video.Duration = await get_file_duration_seconds(project.Video.FileInput);
     project.Video.Volume = 10;
     project.Video.FileSubtitestSrt = lang + '/subtitles-' + lang + '.srt';
     project.Video.FileSubtitestAss = lang + '/subtitles-' + lang + '.ass';
@@ -976,6 +976,8 @@ async function main() {
     // Devono avere un framerate di 25. Se non lo si fa le durate non sono corrette
     // Usare il comando qui sotto per settare il framerate a 25
     // ffmpeg -i input.mp4 -filter:v fps=fps=25 output.mp4
+
+    // vedere anche https://www.narakeet.com/
 
 
     console.log(`-----------------------------------------`);
