@@ -182,7 +182,7 @@ async function create_speech_files(project, projectlastDone) {
         if (rows[i].AddSpeech) {
             let createSpeechFile = false;
             // vedere quando genereare il file audio
-            console.log(projectlastDone.Rows[i].Text + ' / ' + rows[i].Text);
+            //console.log(projectlastDone.Rows[i].Text + ' / ' + rows[i].Text);
             if (!projectlastDone || !projectlastDone.Rows[i]) {
                 createSpeechFile = true;
             }
