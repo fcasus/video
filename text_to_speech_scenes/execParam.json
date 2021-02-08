@@ -4,10 +4,11 @@
     "videoMidPage": "slide_empty.png",
     "videoFileExtension": ".mp4",
     "outputLanguages": "en",
-    "createAudio": true,
+    "AddSpeech": true,
     "createVideo": true,
     "execTest": false,
     "createSubtitlesAss": true,
     "createSubtitlesSrt": false,
-    "addControlTimes": true
+    "addControlTimes": false,
+    "recreateSpeechFiles": false
 }

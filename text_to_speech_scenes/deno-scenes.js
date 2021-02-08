@@ -88,7 +88,7 @@ function azure_set_voices(project) {
     }
 }
 
-async function azure_create_audio_file(accessToken, project, rowNumber) {
+async function azure_create_speech_file(accessToken, project, rowNumber) {
 
     // https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-text-to-speech
     // https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-synthesis-markup
@@ -111,12 +111,12 @@ async function azure_create_audio_file(accessToken, project, rowNumber) {
     xmlRequest = '<speak version="1.0" xmlns="https://www.w3.org/2001/10/synthesis" \n';
     xmlRequest += 'xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="' + project.execParam.CognitiveServicesLang + '">\n';
     xmlRequest += '<voice name="' + project.execParam.CognitiveServicesLang + '-' + project.execParam.CognitiveServicesVoice + '">\n';
-    if (rows[rowNumber].Audio === 'Duration') {
+    if (rows[rowNumber].Speech === 'Duration') {
         xmlRequest += '<prosody duration="' + Math.round(audioObjects[rowNumber].AdjustedDuration * 1000) + 'ms">';
         xmlRequest += rows[rowNumber].Text;
         xmlRequest += '</prosody>';
     }
-    else if (rows[rowNumber].Audio === 'Rfast') {
+    else if (rows[rowNumber].Speech === 'Rfast') {
         xmlRequest += '<prosody rate="+10.00%">';
         xmlRequest += rows[rowNumber].Text;
         xmlRequest += '</prosody>';
@@ -147,18 +147,19 @@ async function azure_create_audio_file(accessToken, project, rowNumber) {
     }
     console.log('xmlRequest: ' + xmlRequest);
 
-    const fileName = rows[rowNumber].AzureAudioFileName;
+    const fileName = rows[rowNumber].AzureSpeechFileName;
     console.log('Creating audio file: ' + fileName);
 
     const response = await fetch(baseUrl + url, options);
     Deno.writeFileSync(fileName, new Uint8Array(await response.arrayBuffer()));
     console.log('Azure response: ' + JSON.stringify(response));
+    await new Promise(resolve => setTimeout(resolve, 500));
 
 }
 
 // I file audio vengono creati solo se i testi sono diversi
 // I testi precedenti sono nel  statisticsObjects
-async function create_audio_files(project, projectlastDone) {
+async function create_speech_files(project, projectlastDone) {
 
     let rows = project.Rows;
 
@@ -174,45 +175,54 @@ async function create_audio_files(project, projectlastDone) {
     azure_set_voices(project);
 
     for (let i = 1; i <= rows.RowCount; i++) {
-        let createAudio = false;
-        if (rows[i].CreateAudio) {
+        if (rows[i].AddSpeech) {
+            let createSpeechFile = false;
             // vedere quando genereare il file audio
             if (!projectlastDone || !projectlastDone.Rows[i]) {
-                createAudio = true;
+                createSpeechFile = true;
             }
             else if (projectlastDone.Rows[i].Text != rows[i].Text) {
-                createAudio = true;
+                createSpeechFile = true;
             }
-            if (!existsSync(rows[i].AudioFileName) || !existsSync(rows[i].AzureAudioFileName)) {
-                createAudio = true;
+            if (!existsSync(rows[i].SpeechFileName) || !existsSync(rows[i].AzureSpeechFileName)) {
+                createSpeechFile = true;
             }
-            //console.log('create azure audio: ' + rows[i].AzureAudioFileName + ' ' + createAudio);
-        }
-        if (createAudio) {
-            //console.log('create azure audio: ' + rows[i].AzureAudioFileName);
-            if (existsSync(rows[i].AzureAudioFileName)) {
-                Deno.removeSync(rows[i].AzureAudioFileName);
+            //console.log('create azure audio: ' + rows[i].AzureSpeechFileName + ' ' + createSpeechFile);
+            if (!createSpeechFile) {
+                // file non valido 
+                rows[i].AudioFileDuration = await get_file_duration_seconds(rows[i].SpeechFileName);                
+                if (!rows[i].AudioFileDuration) {
+                    createSpeechFile = true;
+                }
+                rows[i].AudioFileDuration = Number(rows[i].AudioFileDuration.toFixed(3));
+            }    
+            if (createSpeechFile) {
+                //console.log('create azure speech file: ' + rows[i].AzureSpeechFileName);
+                if (existsSync(rows[i].AzureSpeechFileName)) {
+                    Deno.removeSync(rows[i].AzureSpeechFileName);
+                }
+                if (existsSync(rows[i].SpeechFileName)) {
+                    Deno.removeSync(rows[i].SpeechFileName);
+                }
+                await azure_create_speech_file(accessToken, project, i);
             }
-            if (existsSync(rows[i].AudioFileName)) {
-                Deno.removeSync(rows[i].AudioFileName);
+            if (createSpeechFile || !existsSync(rows[i].SpeechFileName)) {
+                console.log('create  speech file: ' + rows[i].SpeechFileName);
+                // alla fine vengono messi 800 millisecondi, ne tagliamo 600
+                const audioDuration = await get_file_duration_seconds(rows[i].AzureSpeechFileName);
+                let commands = ['ffmpeg', '-y', '-hide_banner', '-i', rows[i].AzureSpeechFileName];
+                commands.push('-t');
+                commands.push(String(audioDuration - 0.600));
+                commands.push(rows[i].SpeechFileName);
+                await executeCommandArray(commands);
+                //await new Promise(resolve => setTimeout(resolve, 500));
             }
-            await azure_create_audio_file(accessToken, project, i);
-        }
-        if (rows[i].CreateAudio && (createAudio || (!existsSync(rows[i].AudioFileName)))) {
-            console.log('create  audio: ' + rows[i].AudioFileName);
-            // alla fine vengono messi 800 millisecondi, ne tagliamo 600
-            const audioDuration = await get_file_duration_seconds(rows[i].AzureAudioFileName);
-            let commands = ['ffmpeg', '-y', '-hide_banner', '-i', rows[i].AzureAudioFileName];
-            commands.push('-t');
-            commands.push(String(audioDuration - 0.600));
-            commands.push(rows[i].AudioFileName);
-            await executeCommandArray(commands);
-            //await new Promise(resolve => setTimeout(resolve, 500));
-        }
-        if (rows[i].AudioFileName) {
-            rows[i].AudioFileDuration = await get_file_duration_seconds(rows[i].AudioFileName);
+            if (!rows[i].AudioFileDuration) {
+            // Get file duration
+            rows[i].AudioFileDuration = await get_file_duration_seconds(rows[i].SpeechFileName);
             // Audio file has a 800ms empty time at the end
             rows[i].AudioFileDuration = Number(rows[i].AudioFileDuration.toFixed(3));
+            }
         }
     }
 }
@@ -224,21 +234,21 @@ async function create_scenes(project) {
     project.Scenes = {};
     let rowCount = 0;
     for (let i = 1; i <= rows.RowCount; i++) {
-        let inputFile = rows[i].VideoFile;
-        if (i == 1 && !inputFile) {
-            inputFile = "#none";
+        let sceneFile = rows[i].SceneFile;
+        if (i == 1 && !sceneFile) {
+            sceneFile = "#none";
         }
-        if (inputFile.length > 0) {
+        if (sceneFile.length > 0) {
             scene++;
             project.Scenes[scene] = {};
-            project.Scenes[scene].VideoFile = inputFile;
-            if (inputFile === '#mid-page') {
-                inputFile = '../' + project.execParam.videoMidPage;
+            project.Scenes[scene].SceneFile = sceneFile;
+            if (sceneFile === '#mid-page') {
+                sceneFile = '../' + project.execParam.videoMidPage;
             }
-            else if (inputFile === '#start-page') {
-                inputFile = '../' + project.execParam.videoStartPage;
+            else if (sceneFile === '#start-page') {
+                sceneFile = '../' + project.execParam.videoStartPage;
             }
-            project.Scenes[scene].InputFile = inputFile;
+            project.Scenes[scene].InputFile = sceneFile;
 
             // quello che impostato la duration
             project.Scenes[scene].FileSubtitestSrt = project.execParam.lang + '/scene' + scene + '-subtitles.srt';
@@ -271,7 +281,7 @@ async function create_scenes(project) {
     await create_scenes_generate_video(project);
 
     await create_scenes_adjust_videoduration(project);
-
+    
     for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
 
         if (!project.Scenes[scene].InputFile.startsWith('#')) {
@@ -287,11 +297,11 @@ async function create_scenes(project) {
             if (project.execParam.createVideo) {
                 let inputVideoFile = project.Scenes[scene].FileVideoChangedDuration;
                 let outputVideoFile = project.Scenes[scene].FileVideoAudio;
-                await create_scene_add_audio(project, scene, inputVideoFile, outputVideoFile);
+                await create_scene_add_speech(project, scene, inputVideoFile, outputVideoFile);
                 inputVideoFile = project.Scenes[scene].FileVideoAss;
                 outputVideoFile = project.Scenes[scene].FileVideoAssAudio;
-                await create_scene_add_audio(project, scene, inputVideoFile, outputVideoFile);
-            
+                await create_scene_add_speech(project, scene, inputVideoFile, outputVideoFile);
+
             }
 
         }
@@ -302,13 +312,13 @@ async function create_scenes(project) {
 }
 
 // Use async and await to get the token before attempting to convert text to speech.
-async function create_scene_add_audio(project, scene, inputVideoFile, outputVideoFile) {
+async function create_scene_add_speech(project, scene, inputVideoFile, outputVideoFile) {
 
     if (!project.Scenes[scene].IncludeScene) {
         return;
     }
 
-    console.log('\nAdd audio to Video Scene : ' + scene);
+    console.log('\nAdd speech to Video Scene : ' + scene);
     if (!existsSync(inputVideoFile)) {
         console.log('Video file does not exists : ' + inputVideoFile);
         return;
@@ -320,10 +330,10 @@ async function create_scene_add_audio(project, scene, inputVideoFile, outputVide
     let filter2 = '';
     let countFiles = 0;
     for (let i = 1; i <= rows.RowCount; i++) {
-        if (rows[i].CreateAudio) {
+        if (rows[i].AddSpeech) {
             countFiles++;
-            ffcommand += '-i ' + rows[i].AudioFileName + ' ';
-            commands.push('-i', rows[i].AudioFileName);
+            ffcommand += '-i ' + rows[i].SpeechFileName + ' ';
+            commands.push('-i', rows[i].SpeechFileName);
             // "[1]adelay=500[s1];[2]adelay=3000[s2];[s1][s2]amix=2[mixout]"
             //let startTime = audioObjects[i].StartTime;
             //let delay = Math.round(audioObjects[i].EffectiveStartTimeSeconds * 1000);
@@ -397,6 +407,7 @@ async function create_scenes_adjust_videoduration(project) {
 
 function create_scenes_calculate_times(project) {
     project.Scenes.AdjustedVideoEndTimeSeconds = 0;
+    // Calculate first the time sequence
     for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
         project.Scenes[scene].IncludeScene = false;
         let rows = project.Scenes[scene].Rows;
@@ -405,26 +416,23 @@ function create_scenes_calculate_times(project) {
         let lastSceneFinishTimeSeconds = 0;
         //console.log(`rows.RowCount ` + rows.RowCount);
         for (let i = 1; i <= rows.RowCount; i++) {
-            if (rows[i].CreateAudio) {
+            if (rows[i].AddSpeech) {
                 let adjustedSceneStartTimeSeconds = rows[i].StartTimeSeconds;
-                // Calcoliamo l'inizio successivo se minore
+                // Set next time if less then previous end
                 if (adjustedSceneStartTimeSeconds < lastSceneFinishTimeSeconds) {
                     adjustedSceneStartTimeSeconds = lastSceneFinishTimeSeconds;
-                    // aggiungiamo un leggero intervallo
+                    // add a small pause between seguence
                     adjustedSceneStartTimeSeconds += 0.2;
                 }
                 rows[i].AdjustedSceneStartTimeSeconds = adjustedSceneStartTimeSeconds;
-                rows[i].AdjustedSceneStartTime = time_SecondsToTime(adjustedSceneStartTimeSeconds);
                 lastSceneFinishTimeSeconds = adjustedSceneStartTimeSeconds + rows[i].AdjustedDuration;
                 rows[i].AdjustedSceneEndTimeSeconds = lastSceneFinishTimeSeconds;
-                rows[i].AdjustedSceneEndTime = time_SecondsToTime(lastSceneFinishTimeSeconds);
             }
             else if (rows[i].Pause) {
+                // If it is a pause add it
                 rows[i].AdjustedSceneStartTimeSeconds = lastSceneFinishTimeSeconds;
-                rows[i].AdjustedSceneStartTime = time_SecondsToTime(lastSceneFinishTimeSeconds);
                 lastSceneFinishTimeSeconds += rows[i].Pause;
                 rows[i].AdjustedSceneEndTimeSeconds = lastSceneFinishTimeSeconds;
-                rows[i].AdjustedSceneEndTime = time_SecondsToTime(lastSceneFinishTimeSeconds);
             }
         }
         // scene arrotonda al secondo
@@ -439,28 +447,29 @@ function create_scenes_calculate_times(project) {
     for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
         let rows = project.Scenes[scene].Rows;
         for (let i = 1; i <= rows.RowCount; i++) {
-            if (!rows[i].CreateAudio && rows[i].SetDuration === 'MaxSceneTime') {
+            if (!rows[i].AddSpeech && rows[i].SetDuration === 'MaxSceneTime') {
                 rows[i].AdjustedSceneEndTimeSeconds = project.Scenes[scene].AdjustedSceneEndTimeSeconds - rows[i].AdjustedSceneStartTimeSeconds;
                 rows[i].AdjustedSceneEndTime = time_SecondsToTime(rows[i].AdjustedSceneEndTimeSeconds);
             }
-            if (!rows[i].CreateAudio && rows[i].SetDuration === 'NextRow' && (i + 1) < rows.length) {
+            if (!rows[i].AddSpeech && rows[i].SetDuration === 'NextRow' && (i + 1) < rows.length) {
                 rows[i].AdjustedSceneStartTimeSeconds = rows[i + 1].AdjustedSceneStartTimeSeconds;
                 rows[i].AdjustedSceneEndTimeSeconds = rows[i + 1].AdjustedSceneEndTimeSeconds;
             }
-            if (!rows[i].CreateAudio && rows[i].SetDuration === 'PrevRow' && i > 0) {
+            if (!rows[i].AddSpeech && rows[i].SetDuration === 'PrevRow' && i > 0) {
                 rows[i].AdjustedSceneStartTimeSeconds = rows[i - 1].AdjustedSceneStartTimeSeconds;
                 rows[i].AdjustedSceneEndTimeSeconds = rows[i - 1].AdjustedSceneEndTimeSeconds;
             }
+            // Convertiamo il time
             rows[i].AdjustedSceneStartTime = time_SecondsToTime(rows[i].AdjustedSceneStartTimeSeconds);
             rows[i].AdjustedSceneEndTime = time_SecondsToTime(rows[i].AdjustedSceneEndTimeSeconds);
         }
     }
-    // Mettiamo la durata relativa al video
+    // Set the time relative to the whole video 
     let lastVideoFinishTimeSeconds = 0;
     for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
         let rows = project.Scenes[scene].Rows;
         if (lastVideoFinishTimeSeconds > 0) {
-            // aggiungiamo un attimo fra le scene
+            // add a small pause between scene
             lastVideoFinishTimeSeconds += 0.2;
         }
         let videoStartTimeSeconds = lastVideoFinishTimeSeconds;
@@ -488,7 +497,9 @@ async function create_scenes_generate_video(project) {
 
     for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
         let inputFile = project.Scenes[scene].InputFile;
+        console.log("Input file: " + inputFile);
         if (inputFile.endsWith('.png')) {
+            console.log("Generate video from PNG: " + project.Scenes[scene].FileVideoNoAudio)
             let ffparam = '-hide_banner -loop 1 -i ' + inputFile;
             ffparam += ' -framerate 25 -c:v libx264 -t ' + project.Scenes[scene].AdjustedSceneEndTimeSeconds;
             ffparam += ' -pix_fmt yuv420p -vf scale=1920:1080  ' + project.Scenes[scene].FileVideoNoAudio;
@@ -508,6 +519,7 @@ async function create_scenes_generate_video(project) {
             await executeCommandArray(commands);
         }
         else if (inputFile.endsWith('.mp4')) {
+            console.log("Video with fps 25: " + project.Scenes[scene].FileVideoNoAudio)            
             let ffparam = '-i ' + inputFile;
             ffparam += ' -filter:v fps=fps=25 ' + project.Scenes[scene].FileVideoNoAudio;
             //await executeCommand('ffmpeg', ffparam);
@@ -530,7 +542,7 @@ async function create_scene_subtitles_srt(project, scene) {
     let output = '';
     let rows = project.Scenes[scene].Rows;
     for (let i = 1; i <= rows.RowCount; i++) {
-        if (rows[i].CreateAudio) {
+        if (rows[i].AddSpeech) {
             output += i + '\n';
             let startTime = rows[i].AdjustedSceneStartTime;
             startTime = startTime.replace('.', ',');
@@ -603,21 +615,21 @@ async function create_scene_subtitles_ass(project, scene) {
 
     output += 'Style: ControlTimesScene,Source Sans Pro,12,&H9e4835,&H9e4835,&H9e4835,&H9e4835,1,0,0,0,100,100,0,0,0,0,0,8,10,10,80,0\n';
     output += 'Style: ControlTimesRow,Source Sans Pro,12,&H9e4835,&H9e4835,&H9e4835,&H9e4835,1,0,0,0,100,100,0,0,0,0,0,8,10,10,120,0\n';
-    
+
     output += '\n';
     output += '[Events]\n';
     output += 'Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n';
 
     let rows = project.Scenes[scene].Rows;
-    if (project.execParam.addControlTimes ) {
-        //  Info Scene
+    //  Time inforamtion for scene 
+    if (project.execParam.addControlTimes) {
         output += 'Dialogue: 0,';
         output += project.Scenes[scene].AdjustedSceneStartTime.substring(1, 11) + ',';
         output += project.Scenes[scene].AdjustedSceneEndTime.substring(1, 11) + ',';
         output += 'ControlTimesScene,,0,0,0,,';
-        output += ' Scene: '  + scene + ' ';
+        output += ' Scene: ' + scene + ' ';
         output += project.Scenes[scene].AdjustedVideoStartTime + ' / ' + project.Scenes[scene].AdjustedVideoEndTime;
-        output += ' / ' +project.Scenes[scene].UsedVideoDuration;
+        output += ' / ' + project.Scenes[scene].UsedVideoDuration;
         output += '\n';
     }
 
@@ -627,8 +639,8 @@ async function create_scene_subtitles_ass(project, scene) {
         if (rows[i].TextStyle.length > 0) {
             style = rows[i].TextStyle;
         }
-        if (!rows[i].RowExclude && rows[i].TextStyle
-            ) {
+        // Add the text
+        if (rows[i].AddText) {
             output += 'Dialogue: 0,';
             output += rows[i].AdjustedSceneStartTime.substring(1, 11) + ',';
             output += rows[i].AdjustedSceneEndTime.substring(1, 11) + ',';
@@ -636,13 +648,13 @@ async function create_scene_subtitles_ass(project, scene) {
             output += ',,0,0,0,,';
             output += rows[i].Text + '\n';
         }
-        if (project.execParam.addControlTimes && !rows[i].RowExclude ) {
+        if (project.execParam.addControlTimes && !rows[i].IsComment) {
             // Info Row
             output += 'Dialogue: 0,';
             output += rows[i].AdjustedSceneStartTime.substring(1, 11) + ',';
             output += rows[i].AdjustedSceneEndTime.substring(1, 11) + ',';
             output += 'ControlTimesRow,,0,0,0,,';
-            output += ' Row: '  + scene + '/' + i + '/'+rows[i].RowOrigin;
+            output += ' Row: ' + scene + '/' + i + '/' + rows[i].RowOrigin;
             output += ' Style: ' + rows[i].TextStyle + ' ';
             output += rows[i].AdjustedVideoStartTime + ' / ' + rows[i].AdjustedVideoEndTime;
             output += ' / ' + rows[i].AdjustedDuration;
@@ -685,7 +697,7 @@ async function create_scene_add_subtitles_srt(project, scene) {
     if (!project.Scenes[scene].IncludeScene) {
         return;
     }
-    let lang =project.execParam.lang;
+    let lang = project.execParam.lang;
     if (lang === 'en') {
         lang = 'eng';
     }
@@ -707,7 +719,7 @@ async function create_scene_add_subtitles_srt(project, scene) {
     else if (lang === 'zh') {
         lang = 'zho';
     }
-    if (lang.length <= 2 ) {
+    if (lang.length <= 2) {
         console.log('Error SRT need language 3 chars: ' + lang);
     }
 
@@ -716,7 +728,7 @@ async function create_scene_add_subtitles_srt(project, scene) {
     let ffcommand = 'ffmpeg -y -hide_banner -i ' + project.Scenes[scene].FileVideoChangedDuration;
 
     ffcommand += ' -i ' + project.Scenes[scene].FileSubtitestSrt;
-    ffcommand += ' -c:a copy -c:v copy -c:s mov_text -metadata:s:s:0 language=' + lang +' ';
+    ffcommand += ' -c:a copy -c:v copy -c:s mov_text -metadata:s:s:0 language=' + lang + ' ';
     ffcommand += project.Scenes[scene].FileVideoSrt;
     console.log('ffcommand subtitiles srt' + ffcommand);
 
@@ -724,7 +736,7 @@ async function create_scene_add_subtitles_srt(project, scene) {
     let commands = ['ffmpeg', '-y', '-hide_banner', '-i', project.Scenes[scene].FileVideoChangedDuration];
 
     commands.push('-i', project.Scenes[scene].FileSubtitestSrt);
-    commands.push('-c:a', 'copy', '-c:v', 'copy', '-c:s' , 'mov_text', '-metadata:s:s:0');
+    commands.push('-c:a', 'copy', '-c:v', 'copy', '-c:s', 'mov_text', '-metadata:s:s:0');
     commands.push('language=' + lang);
     commands.push(project.Scenes[scene].FileVideoSrt);
     await executeCommandArray(commands);
@@ -772,26 +784,50 @@ async function create_video(execParam) {
 
     // Sceglie quello che è audio 
     for (let i = 1; i <= project.Rows.RowCount; i++) {
-        project.Rows[i].CreateAudio = false;
-        project.Rows[i].RowExclude = false;
+        // Row add speech
+        project.Rows[i].AddSpeech = false;
+        // Speech and pause commands 
+        project.Rows[i].IncludeInTimeCount = false;
+        project.Rows[i].IsComment = false;
+        // Row is for text
+        project.Rows[i].AddText = true;
         project.Rows[i].Text = project.Rows[i][project.execParam.columnLang];
         project.Rows[i].TextStyle = project.Rows[i].Style;
-        if(project.Rows[i].Style.startsWith('pause:')) {
-            // if pause don't care at text
+
+
+        // Comment we do not use 
+        if (project.Rows[i].Style.startsWith('//')) {
+            project.Rows[i].TextStyle = '';
             project.Rows[i].Text = '';
-            project.Rows[i].Pause = parseFloat(project.Rows[i].Style.slice(6));
-            project.Rows[i].TextStyle = '';
+            project.Rows[i].IsComment = true;
+            project.Rows[i].AddText = false;
         }
-        if(project.Rows[i].Style.startsWith('none')) {
-            // if pause don't care at text
-            project.Rows[i].TextStyle = '';
+        else {
+            if (rows[i].Speech !== '0' && project.Rows[i].Text) {
+                project.Rows[i].AddSpeech = true;
+                // Speech and pause commands 
+                project.Rows[i].IncludeInTimeCount = true;
+            }
+            if (project.Rows[i].Style.toLowerCase().startsWith('pause:')) {
+                // if pause don't care at text
+                project.Rows[i].Text = '';
+                project.Rows[i].Pause = parseFloat(project.Rows[i].Style.slice(6));
+                project.Rows[i].TextStyle = '';
+                project.Rows[i].IncludeInTimeCount = true;
+                project.Rows[i].AddText = false;
+            }
+            if (project.Rows[i].Style.toLowerCase().startsWith('none') || !project.Rows[i].Text) {
+                // if pause don't care at text
+                project.Rows[i].TextStyle = '';
+                project.Rows[i].AddText = false;
+            }
         }
-        if ((!project.Rows[i].Text)
-            || project.Rows[i].Style.startsWith('//')) {
-            project.Rows[i].RowExclude = true;
-            project.Rows[i].TextStyle = '';
+        if (!project.Rows[i].AddText) {
+            if (!project.Rows[i].Style.trim()) {
+                project.Rows[i].TextStyle = 'Subtitles';
+            }
         }
-        else if (rows[i].Audio === '0') {
+        if (!rows[i].IsComment) {
             if (rows[i].EndTime == '24:00:00') {
                 rows[i].EndTime = '';
                 rows[i].EndTimeSeconds = 0;
@@ -807,29 +843,22 @@ async function create_video(execParam) {
                 rows[i].EndTimeSeconds = 0;
                 rows[i].SetDuration = 'PrevRow';
             }
-        }
-        else {
-            project.Rows[i].CreateAudio = true;
-            project.Rows[i].AzureAudioFileName = lang + '/aa' + i + '.wav';
-            project.Rows[i].AudioFileName = lang + '/a' + i + '.wav';
-        }
-        if (!project.Rows[i].RowExclude) {
-            if (!project.Rows[i].Style.trim()) {
-                project.Rows[i].TextStyle = 'Subtitles';
-            }
+            project.Rows[i].AzureSpeechFileName = lang + '/aa' + i + '.wav';
+            project.Rows[i].SpeechFileName = lang + '/a' + i + '.wav';
         }
     }
+
     await write_project_last_done(project);
 
     // Crea i file audio solo se il testo è cambiato   
-    if (execParam.createAudio) {
+    if (execParam.AddSpeech) {
         let projectLast;
         if (existsSync(project.settings.FileProjectLastDone)) {
             const decoder = new TextDecoder('utf-8');
             const lastDone = Deno.readFileSync(project.settings.FileProjectLastDone);
             projectLast = JSON.parse(decoder.decode(lastDone));
         }
-        await create_audio_files(project, projectLast);
+        await create_speech_files(project, projectLast);
     }
 
     // Calcola i tempi
@@ -839,7 +868,7 @@ async function create_video(execParam) {
         rows[i].EndTimeSeconds = time_parseTimeToSeconds(rows[i].EndTime);
         rows[i].CalculatedDuration = rows[i].EndTimeSeconds - rows[i].StartTimeSeconds;
         rows[i].AdjustedDuration = rows[i].CalculatedDuration;
-        if (rows[i].CreateAudio) {
+        if (rows[i].AddSpeech) {
             if (rows[i].AdjustedDuration < rows[i].AudioFileDuration) {
                 rows[i].AdjustedDuration = rows[i].AudioFileDuration;
             }
@@ -876,18 +905,18 @@ async function create_video_add_audio(project) {
     let countFiles = 0;
     let filter1 = '';
     let filter2 = '';
-    let commands = ['ffmpeg','-y', '-hide_banner','-i' , fileInput];
+    let commands = ['ffmpeg', '-y', '-hide_banner', '-i', fileInput];
     for (let scene = 1; scene <= project.Scenes.SceneCount; scene++) {
         if (project.Scenes[scene].IncludeScene) {
 
             console.log('\nAdd audio to Video Scene : ' + scene);
             let rows = project.Scenes[scene].Rows;
             for (let i = 1; i <= rows.RowCount; i++) {
-                if (rows[i].CreateAudio) {
+                if (rows[i].AddSpeech) {
                     countFiles++;
                     // aggiunge in input i file audio
-                    ffparam +=  '-i ' + rows[i].AudioFileName + ' ';
-                    commands.push('-i' , rows[i].AudioFileName );
+                    ffparam += '-i ' + rows[i].SpeechFileName + ' ';
+                    commands.push('-i', rows[i].SpeechFileName);
                     // "[1]adelay=500[s1];[2]adelay=3000[s2];[s1][s2]amix=2[mixout]"
                     //let startTime = audioObjects[i].StartTime;
                     //let delay = Math.round(audioObjects[i].EffectiveStartTimeSeconds * 1000);
@@ -916,7 +945,7 @@ async function create_video_add_audio(project) {
     filter += ',volume=' + project.Video.Volume;
     filter += '[mixout]';
     commands.push(filter);
-    commands.push('-map','0:v','-map' ,'[mixout]', '-c:v','copy' , project.Video.FileOutputAssAudioOnePass);
+    commands.push('-map', '0:v', '-map', '[mixout]', '-c:v', 'copy', project.Video.FileOutputAssAudioOnePass);
     await executeCommandArray(commands);
 
 }
@@ -1170,7 +1199,7 @@ async function main() {
 
     // Scene, numerico iniziona da 1 
     // Se non c'é nulla all'inizio mette #none scena 1
-    // Dove c'é un VideoFile inizia una nuova scena
+    // Dove c'é un SceneFile inizia una nuova scena
 
     // Per funzionare i file video devono essere formato mp4
     // Devono avere un framerate di 25. Se non lo si fa le durate non sono corrette
