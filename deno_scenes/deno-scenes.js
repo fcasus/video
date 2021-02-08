@@ -195,11 +195,11 @@ async function create_speech_files(project, projectlastDone) {
             //console.log('create azure audio: ' + rows[i].AzureSpeechFileName + ' ' + createSpeechFile);
             if (!createSpeechFile && rows[i].SpeechFileName) {
                 // file non valido 
-                rows[i].AudioFileDuration = await get_file_duration_seconds(project, rows[i].SpeechFileName);
-                if (!rows[i].AudioFileDuration) {
+                rows[i].SpeechFileDuration = await get_file_duration_seconds(project, rows[i].SpeechFileName);
+                if (!rows[i].SpeechFileDuration) {
                     createSpeechFile = true;
                 }
-                rows[i].AudioFileDuration = Number(rows[i].AudioFileDuration.toFixed(3));
+                rows[i].SpeechFileDuration = Number(rows[i].SpeechFileDuration.toFixed(3));
             }
             if (createSpeechFile) {
                 //console.log('create azure speech file: ' + rows[i].AzureSpeechFileName);
@@ -222,11 +222,11 @@ async function create_speech_files(project, projectlastDone) {
                 await executeCommandArray(commands);
                 //await new Promise(resolve => setTimeout(resolve, 500));
             }
-            if (!rows[i].AudioFileDuration) {
+            if (!rows[i].SpeechFileDuration) {
                 // Get file duration
-                rows[i].AudioFileDuration = await get_file_duration_seconds(project, rows[i].SpeechFileName);
+                rows[i].SpeechFileDuration = await get_file_duration_seconds(project, rows[i].SpeechFileName);
                 // Audio file has a 800ms empty time at the end
-                rows[i].AudioFileDuration = Number(rows[i].AudioFileDuration.toFixed(3));
+                rows[i].SpeechFileDuration = Number(rows[i].SpeechFileDuration.toFixed(3));
             }
         }
     }
@@ -262,10 +262,10 @@ async function create_scenes(project) {
             project.Scenes[scene].FileVideoGenerated = project.execParam.lang + '/scene' + scene + '-video-generated' + project.execParam.videoFileExtension;
             // mettiamo la durata giusta
             project.Scenes[scene].FileVideoChangedDuration = project.execParam.lang + '/scene' + scene + '-video-changed-duration' + project.execParam.videoFileExtension;
-            project.Scenes[scene].FileVideoAudio = project.execParam.lang + '/scene' + scene + '-video-audio' + project.execParam.videoFileExtension;
-            project.Scenes[scene].FileVideoNoAudio = project.execParam.lang + '/scene' + scene + '-video-no-audio' + project.execParam.videoFileExtension;
+            project.Scenes[scene].FileVideoSpeech = project.execParam.lang + '/scene' + scene + '-video-speech' + project.execParam.videoFileExtension;
+            project.Scenes[scene].FileVideoNoSpeech = project.execParam.lang + '/scene' + scene + '-video-no-speech' + project.execParam.videoFileExtension;
             project.Scenes[scene].FileVideoAss = project.execParam.lang + '/scene' + scene + '-video-ass' + project.execParam.videoFileExtension;
-            project.Scenes[scene].FileVideoAssAudio = project.execParam.lang + '/scene' + scene + '-video-ass-audio' + project.execParam.videoFileExtension;
+            project.Scenes[scene].FileVideoAssSpeech = project.execParam.lang + '/scene' + scene + '-video-ass-speech' + project.execParam.videoFileExtension;
             project.Scenes[scene].FileVideoSrt = project.execParam.lang + '/scene' + scene + '-video-srt' + project.execParam.videoFileExtension;
 
             project.Scenes[scene].Rows = {};
@@ -301,10 +301,10 @@ async function create_scenes(project) {
 
             if (project.execParam.createVideo) {
                 let inputVideoFile = project.Scenes[scene].FileVideoChangedDuration;
-                let outputVideoFile = project.Scenes[scene].FileVideoAudio;
+                let outputVideoFile = project.Scenes[scene].FileVideoSpeech;
                 await create_scene_add_speech(project, scene, inputVideoFile, outputVideoFile);
                 inputVideoFile = project.Scenes[scene].FileVideoAss;
-                outputVideoFile = project.Scenes[scene].FileVideoAssAudio;
+                outputVideoFile = project.Scenes[scene].FileVideoAssSpeech;
                 await create_scene_add_speech(project, scene, inputVideoFile, outputVideoFile);
 
             }
@@ -503,10 +503,10 @@ async function create_scenes_generate_video(project) {
         let inputFile = project.Scenes[scene].InputFile;
         console.log("Input file: " + inputFile);
         if (inputFile.endsWith('.png')) {
-            console.log("Generate video from PNG: " + project.Scenes[scene].FileVideoNoAudio)
+            console.log("Generate video from PNG: " + project.Scenes[scene].FileVideoNoSpeech)
             let ffparam = '-hide_banner -loop 1 -i ' + inputFile;
             ffparam += ' -framerate 25 -c:v libx264 -t ' + project.Scenes[scene].AdjustedSceneEndTimeSeconds;
-            ffparam += ' -pix_fmt yuv420p -vf scale=1920:1080  ' + project.Scenes[scene].FileVideoNoAudio;
+            ffparam += ' -pix_fmt yuv420p -vf scale=1920:1080  ' + project.Scenes[scene].FileVideoNoSpeech;
             //await executeCommand('ffmpeg', ffparam);
             let commands = [project.execParam.ffmpegExecutable, '-y', '-hide_banner', '-loop', '1', '-i', inputFile];
             commands.push('-framerate');
@@ -523,9 +523,9 @@ async function create_scenes_generate_video(project) {
             await executeCommandArray(commands);
         }
         else if (inputFile.endsWith('.mp4')) {
-            console.log("Video with fps 25: " + project.Scenes[scene].FileVideoNoAudio)
+            console.log("Video with fps 25: " + project.Scenes[scene].FileVideoNoSpeech)
             let ffparam = '-i ' + inputFile;
-            ffparam += ' -filter:v fps=fps=25 ' + project.Scenes[scene].FileVideoNoAudio;
+            ffparam += ' -filter:v fps=fps=25 ' + project.Scenes[scene].FileVideoNoSpeech;
             //await executeCommand('ffmpeg', ffparam);
             let commands = [project.execParam.ffmpegExecutable, '-y', '-hide_banner', '-i', inputFile];
             commands.push('-filter:v');
@@ -763,12 +763,12 @@ async function create_video(execParam) {
     project.execParam.VideoName = videoName;
 
     project.Video = {};
-    project.Video.FileVideoAudio = lang + '/' + videoName + '-audio-' + lang + execParam.videoFileExtension;
-    project.Video.FileVideoNoAudio = lang + '/' + videoName + '-no-audio-' + lang + execParam.videoFileExtension;
+    project.Video.FileVideoSpeech = lang + '/' + videoName + '-sppech-' + lang + execParam.videoFileExtension;
+    project.Video.FileVideoNoSpeech = lang + '/' + videoName + '-no-speech-' + lang + execParam.videoFileExtension;
     project.Video.FileVideoAss = lang + '/' + videoName + '-ass-' + lang + execParam.videoFileExtension;
-    project.Video.FileVideoAssAudio = lang + '/' + videoName + '-ass-audio-' + lang + execParam.videoFileExtension;
+    project.Video.FileVideoAssSpeech = lang + '/' + videoName + '-ass-speech-' + lang + execParam.videoFileExtension;
     // Video messo alla fine
-    project.Video.FileOutputAssAudioOnePass = lang + '/' + videoName + '-ass-audio-onepass-' + lang + execParam.videoFileExtension;
+    project.Video.FileOutputAssSpeechOnePass = lang + '/' + videoName + '-ass-speech-onepass-' + lang + execParam.videoFileExtension;
     project.Video.FileVideoSrt = lang + '/' + videoName + '-srt-' + lang + execParam.videoFileExtension;
     // durata del file video
     project.Video.Volume = 10;
@@ -875,8 +875,8 @@ async function create_video(execParam) {
         rows[i].CalculatedDuration = rows[i].EndTimeSeconds - rows[i].StartTimeSeconds;
         rows[i].AdjustedDuration = rows[i].CalculatedDuration;
         if (rows[i].AddSpeech) {
-            if (rows[i].AdjustedDuration < rows[i].AudioFileDuration) {
-                rows[i].AdjustedDuration = rows[i].AudioFileDuration;
+            if (rows[i].AdjustedDuration < rows[i].SpeechFileDuration) {
+                rows[i].AdjustedDuration = rows[i].SpeechFileDuration;
             }
         }
         // Mettiamolo qui perché serve anche per quelli che non hanno audio
@@ -890,7 +890,7 @@ async function create_video(execParam) {
 
     await create_scenes(project);
 
-    await create_video_add_audio(project);
+    await create_video_add_speech(project);
 
     // rifacciamolo con tutti i dati
     await write_project_last_done(project);
@@ -900,7 +900,7 @@ async function create_video(execParam) {
 }
 
 // Add audio in a signle pass to the whole video
-async function create_video_add_audio(project) {
+async function create_video_add_speech(project) {
 
     const fileInput = project.Video.FileVideoAss;
     if (!existsSync(fileInput)) {
@@ -941,7 +941,7 @@ async function create_video_add_audio(project) {
     ffparam += ':dropout_transition=' + Math.ceil(project.Scenes.AdjustedVideoEndTimeSeconds);
     ffparam += ',volume=' + project.Video.Volume;
     ffparam += '[mixout]"';
-    ffparam += ' -map 0:v -map [mixout] -c:v copy ' + project.Video.FileOutputAssAudioOnePass;
+    ffparam += ' -map 0:v -map [mixout] -c:v copy ' + project.Video.FileOutputAssSpeechOnePass;
     console.log('Video add audio single pass: ', ffparam);
 
     commands.push('-filter_complex');
@@ -951,7 +951,7 @@ async function create_video_add_audio(project) {
     filter += ',volume=' + project.Video.Volume;
     filter += '[mixout]';
     commands.push(filter);
-    commands.push('-map', '0:v', '-map', '[mixout]', '-c:v', 'copy', project.Video.FileOutputAssAudioOnePass);
+    commands.push('-map', '0:v', '-map', '[mixout]', '-c:v', 'copy', project.Video.FileOutputAssSpeechOnePass);
     await executeCommandArray(commands);
 
 }
@@ -959,11 +959,11 @@ async function create_video_add_audio(project) {
 async function create_video_concat_scene(project) {
 
     let outputFiles = [];
-    outputFiles.push('FileVideoAudio');
-    outputFiles.push('FileVideoNoAudio');
+    outputFiles.push('FileVideoSpeech');
+    outputFiles.push('FileVideoNoSpeech');
     if (project.execParam.createSubtitlesAss) {
         outputFiles.push('FileVideoAss');
-        outputFiles.push('FileVideoAssAudio');
+        outputFiles.push('FileVideoAssSpeech');
     }
     if (project.execParam.createSubtitlesSrt) {
         outputFiles.push('FileVideoSrt');
@@ -981,7 +981,7 @@ async function create_video_concat_scene(project) {
         //ffmpeg -safe 0 -f concat -segment_time_metadata 1 -i file.txt -vf select=concatdec_select -af aselect=concatdec_select,aresample=async=1 out.mp4
         Deno.writeTextFileSync(inputFile, output_text);
         console.log('\nLog input.txt: \n' + output_text);
-        //let ffparam = 'ffmpeg -f concat -safe 0 -i ' + inputFile + ' -c copy ' + project.Video.FileVideoAudio;
+        //let ffparam = 'ffmpeg -f concat -safe 0 -i ' + inputFile + ' -c copy ' + project.Video.FileVideoSpeech;
         let ffparam = '-hide_banner -fflags +genpts -async 1 -f concat -safe 0 -i ' + inputFile + ' ' + project.Video[outputFiles[i]];
         //await executeCommand('ffmpeg', ffparam);
         let commands = [project.execParam.ffmpegExecutable, '-y', '-hide_banner', '-fflags', '+genpts', '-async', '1', '-f', 'concat', '-safe', '0', '-i'];
@@ -1007,11 +1007,11 @@ async function create_video_deletefiles(project) {
     }
     files.push(project.Video.FileSubtitestSrt);
     files.push(project.Video.FileSubtitestAss);
-    files.push(project.Video.FileVideoAudio);
-    files.push(project.Video.FileVideoNoAudio);
+    files.push(project.Video.FileVideoSpeech);
+    files.push(project.Video.FileVideoNoSpeech);
     files.push(project.Video.FileVideoAss);
-    files.push(project.Video.FileVideoAssAudio);
-    files.push(project.Video.FileOutputAssAudioOnePass);
+    files.push(project.Video.FileVideoAssSpeech);
+    files.push(project.Video.FileOutputAssSpeechOnePass);
     files.push(project.Video.FileVideoSrt);
     files.push(project.Video.FileTimes);
     files.push(project.Video.FileTotalDuration);
@@ -1179,13 +1179,13 @@ async function main() {
     //    create_lang_video(lang)
     // 3. Legge il file Project.json
     // 4. Crea la struttura project
-    // 5. Crea i file audio (speech)
+    // 5. Crea i file speech 
     // 6. Sequenza le scene Json
     //    - calcola durata massima scena
     // 6.1 Crea il file video partendo dalle immagini   
     // 7. Crea i file video per le separazione
-    // 7. Adatta durata file scene alla durata audio
-    // 8. Aggiunge audio ai file scene  
+    // 7. Adatta durata file scene alla durata speech
+    // 8. Aggiunge speech ai file scene  
     // 9. Aggiunge sottotitoli alle scene
     // 10. Monta assieme tutte le scene e crea file video finale
 
