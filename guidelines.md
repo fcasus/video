@@ -3,7 +3,7 @@
 * I video servono per dare una visione d'insieme di una funzione, che è molto difficile dare con la documentazione.
   Per esempio per i centri di costo, fanno vedere l'impostazione nella tabella conti, poi la tabella registrazione, inserimento con il meno, la scheda conto. 
 * Fare un video per argomento. 
-  Ogni video tratta solo un unico argomento. Evitare se possibile di "complicare" il video iserendo informazioni superflue e non inerenti al tema trattato. Questo allunga inutilmente il video e distrae dall'obiettivo finale.
+  Ogni video tratta solo un unico argomento. Evitare se possibile di "complicare" il video inserendo informazioni superflue e non inerenti al tema trattato. Questo allunga inutilmente il video e distrae dall'obiettivo finale.
 * I video devono, se possibile, essere basati sulla contabilità doppia, sempre.
   Centri di costo, importazione e altro usano la doppia.
 * I video devono seguire un flow "naturale". 
@@ -38,11 +38,6 @@ Quando si creano video e viene registrato quello che succede a schermo in Banana
 
 * Quando si registra un dialogo, possibilmente ingrandire in modo che il dialogo si veda bene.
   Specialmente il dialogo impostazioni iniziale. Fare in modo che non risulti troppo piccolo.
-
-
-# Text to speach
-
-[Text to speach](https://github.com/BananaInternal/video/blob/master/text_to_speech/text-to-speech.md)
 
 # Multi-lingue
 
