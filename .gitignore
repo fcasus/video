@@ -3,4 +3,4 @@
 *.pro.user
 build-*
 subscription.key
-
+out/*
