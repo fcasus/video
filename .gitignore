@@ -4,3 +4,4 @@
 build-*
 subscription.key
 **/out/
+**/build/
