@@ -1,4 +1,7 @@
 {
+   "FileInfo": {
+      "FileName": "C:/Users/rima/Desktop/video/video-projects/balance-column-tr-table/balance-column-tr-table.ac2"
+   },
    "Rows": {
       "1": {
          "StartTime": "",
@@ -26,7 +29,7 @@
          "Links": "",
          "SceneFile": "slide_start.png",
          "Style": "TextTop",
-         "Speech": "",
+         "Speech": "0",
          "TimeCommand": "SceneTime",
          "Lang_it": "La colonna Saldo nella tabella Registrazioni",
          "Lang_en": "",
@@ -45,7 +48,7 @@
          "Links": "",
          "SceneFile": "",
          "Style": "TextTopBackground",
-         "Speech": "",
+         "Speech": "0",
          "TimeCommand": "SceneTime",
          "Lang_it": "Una piccola grande innovazione per velocizzare il tuo lavoro!",
          "Lang_en": "",
@@ -58,6 +61,25 @@
          "Notes": ""
       },
       "4": {
+         "StartTime": "",
+         "EndTime": "00:00:05",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "5": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -76,7 +98,7 @@
          "Description": "",
          "Notes": ""
       },
-      "5": {
+      "6": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -95,7 +117,7 @@
          "Description": "",
          "Notes": ""
       },
-      "6": {
+      "7": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -114,7 +136,7 @@
          "Description": "",
          "Notes": ""
       },
-      "7": {
+      "8": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -133,7 +155,7 @@
          "Description": "",
          "Notes": ""
       },
-      "8": {
+      "9": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -152,7 +174,7 @@
          "Description": "",
          "Notes": ""
       },
-      "9": {
+      "10": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -171,7 +193,7 @@
          "Description": "",
          "Notes": ""
       },
-      "10": {
+      "11": {
          "StartTime": "",
          "EndTime": "00:00:01",
          "SysCod": "",
@@ -190,7 +212,7 @@
          "Description": "",
          "Notes": ""
       },
-      "11": {
+      "12": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -209,7 +231,7 @@
          "Description": "",
          "Notes": ""
       },
-      "12": {
+      "13": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -228,7 +250,7 @@
          "Description": "",
          "Notes": ""
       },
-      "13": {
+      "14": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -247,7 +269,7 @@
          "Description": "",
          "Notes": ""
       },
-      "14": {
+      "15": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -266,7 +288,7 @@
          "Description": "",
          "Notes": ""
       },
-      "15": {
+      "16": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -285,7 +307,7 @@
          "Description": "",
          "Notes": ""
       },
-      "16": {
+      "17": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -295,25 +317,6 @@
          "Speech": "",
          "TimeCommand": "",
          "Lang_it": "",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "17": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "slide_empty.png",
-         "Style": "TextMiddle",
-         "Speech": "",
-         "TimeCommand": "SceneTime",
-         "Lang_it": "La colonna Saldo è un ottimo strumento per vedere subito eventuali errori.",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -328,11 +331,11 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "",
-         "Style": "",
+         "SceneFile": "slide_empty.png",
+         "Style": "TextMiddle",
          "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "",
+         "TimeCommand": "SceneTime",
+         "Lang_it": "La colonna Saldo è un ottimo strumento per vedere subito eventuali errori.",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -627,6 +630,25 @@
          "Description": "",
          "Notes": ""
       },
-      "RowCount": 33
+      "34": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "RowCount": 34
    }
 }
