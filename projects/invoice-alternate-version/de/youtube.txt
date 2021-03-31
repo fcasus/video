@@ -4,14 +4,10 @@ Siehe die vollständige Dokumentation: https://www.banana.ch/doc/de/node/8294.
 
 Banana Buchhaltung Plus ist die professionelle Buchhaltungssoftware, die wie Excel verwendet wird, für diejenigen, die nicht viel Buchhaltungswissen haben oder für Experten, die eine einfache und schnelle Lösung wünschen. 
 
+%timestamps%
+
 ----------------------------------------------------------
-JETZT STARTEN
-Völlig kostenlos bis zu 70 Registrierungen.
-https://www.banana.ch/de/download
+%download%
 
 ---------------------------------------------------------- 
-Unsere SOCIALS
-Facebook - https://www.facebook.com/bananaaccounting
-Instagram - https://www.instagram.com/banana.accounting
-Linkedin - https://www.linkedin.com/company/banana-accounting
-Twitter - https://twitter.com/BananaSoftware
+%socials%

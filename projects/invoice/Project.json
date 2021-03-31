@@ -1623,25 +1623,6 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "350_settings_layout_print_customer_address.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Eventualmente inserisci l'indirizzo di spedizione",
-         "Lang_en": "Optionally enter the shipping address",
-         "Lang_fr": "Vous pouvez également saisir l'adresse de livraison",
-         "Lang_de": "Geben Sie optional die Lieferadresse ein",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "87": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
          "SceneFile": "360_settings_layout_print_information.png",
          "Style": "",
          "Speech": "",
@@ -1656,7 +1637,7 @@
          "Description": "",
          "Notes": ""
       },
-      "88": {
+      "87": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1675,7 +1656,7 @@
          "Description": "",
          "Notes": ""
       },
-      "89": {
+      "88": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1694,7 +1675,7 @@
          "Description": "",
          "Notes": ""
       },
-      "90": {
+      "89": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1713,7 +1694,7 @@
          "Description": "",
          "Notes": ""
       },
-      "91": {
+      "90": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1732,7 +1713,7 @@
          "Description": "",
          "Notes": ""
       },
-      "92": {
+      "91": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1751,7 +1732,7 @@
          "Description": "",
          "Notes": ""
       },
-      "93": {
+      "92": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1770,7 +1751,7 @@
          "Description": "",
          "Notes": ""
       },
-      "94": {
+      "93": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1789,7 +1770,7 @@
          "Description": "",
          "Notes": ""
       },
-      "95": {
+      "94": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1808,7 +1789,7 @@
          "Description": "",
          "Notes": ""
       },
-      "96": {
+      "95": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1827,7 +1808,7 @@
          "Description": "",
          "Notes": ""
       },
-      "97": {
+      "96": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1846,7 +1827,7 @@
          "Description": "",
          "Notes": ""
       },
-      "98": {
+      "97": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1865,7 +1846,7 @@
          "Description": "",
          "Notes": ""
       },
-      "99": {
+      "98": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1884,7 +1865,7 @@
          "Description": "",
          "Notes": ""
       },
-      "100": {
+      "99": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1903,7 +1884,7 @@
          "Description": "",
          "Notes": ""
       },
-      "101": {
+      "100": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1922,7 +1903,7 @@
          "Description": "",
          "Notes": ""
       },
-      "102": {
+      "101": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1941,7 +1922,7 @@
          "Description": "",
          "Notes": ""
       },
-      "103": {
+      "102": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1960,7 +1941,7 @@
          "Description": "",
          "Notes": ""
       },
-      "104": {
+      "103": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1979,7 +1960,7 @@
          "Description": "",
          "Notes": ""
       },
-      "105": {
+      "104": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1998,7 +1979,7 @@
          "Description": "",
          "Notes": ""
       },
-      "106": {
+      "105": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2017,7 +1998,7 @@
          "Description": "",
          "Notes": ""
       },
-      "107": {
+      "106": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2036,7 +2017,7 @@
          "Description": "",
          "Notes": ""
       },
-      "108": {
+      "107": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2055,7 +2036,7 @@
          "Description": "",
          "Notes": ""
       },
-      "109": {
+      "108": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2074,7 +2055,7 @@
          "Description": "",
          "Notes": ""
       },
-      "110": {
+      "109": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2093,7 +2074,7 @@
          "Description": "",
          "Notes": ""
       },
-      "111": {
+      "110": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2112,7 +2093,7 @@
          "Description": "",
          "Notes": ""
       },
-      "112": {
+      "111": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2131,7 +2112,7 @@
          "Description": "",
          "Notes": ""
       },
-      "113": {
+      "112": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2150,7 +2131,7 @@
          "Description": "",
          "Notes": ""
       },
-      "114": {
+      "113": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2169,7 +2150,7 @@
          "Description": "",
          "Notes": ""
       },
-      "115": {
+      "114": {
          "StartTime": "",
          "EndTime": "00:00:03",
          "SysCod": "",
@@ -2188,7 +2169,7 @@
          "Description": "",
          "Notes": ""
       },
-      "116": {
+      "115": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2207,7 +2188,7 @@
          "Description": "",
          "Notes": ""
       },
-      "117": {
+      "116": {
          "StartTime": "",
          "EndTime": "00:00:01.500",
          "SysCod": "",
@@ -2226,7 +2207,7 @@
          "Description": "",
          "Notes": ""
       },
-      "118": {
+      "117": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2245,7 +2226,7 @@
          "Description": "",
          "Notes": ""
       },
-      "119": {
+      "118": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2264,7 +2245,7 @@
          "Description": "",
          "Notes": ""
       },
-      "120": {
+      "119": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2283,7 +2264,7 @@
          "Description": "",
          "Notes": ""
       },
-      "121": {
+      "120": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2302,7 +2283,7 @@
          "Description": "",
          "Notes": ""
       },
-      "122": {
+      "121": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2321,7 +2302,7 @@
          "Description": "",
          "Notes": ""
       },
-      "123": {
+      "122": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2340,7 +2321,7 @@
          "Description": "",
          "Notes": ""
       },
-      "124": {
+      "123": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2359,7 +2340,7 @@
          "Description": "",
          "Notes": ""
       },
-      "125": {
+      "124": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2378,6 +2359,6 @@
          "Description": "",
          "Notes": ""
       },
-      "RowCount": 125
+      "RowCount": 124
    }
 }

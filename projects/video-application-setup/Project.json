@@ -8,7 +8,7 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "slide_empty.png",
+         "SceneFile": "slide_start.png",
          "Style": "TextTop",
          "Speech": "0",
          "TimeCommand": "SceneTime",
@@ -236,7 +236,7 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "16.png",
+         "SceneFile": "85.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
@@ -255,11 +255,11 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "18.png",
+         "SceneFile": "80.png",
          "Style": "",
-         "Speech": "0",
+         "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Clicca sulla cartella \"ffmpeg\"",
+         "Lang_it": "Inizia dalla prima",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -274,11 +274,11 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "",
-         "Style": "None",
+         "SceneFile": "81.png",
+         "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Clicca sulla cartella ff m peg",
+         "Lang_it": "Seleziona la cartella \"win\"",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -293,11 +293,11 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "19.png",
+         "SceneFile": "82.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Apri poi la cartella win e scarica i due eseguibili",
+         "Lang_it": "e scarica i due eseguibili",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -312,11 +312,11 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "25.png",
+         "SceneFile": "83.png",
          "Style": "",
-         "Speech": "0",
+         "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "ffmpeg.exe",
+         "Lang_it": "Poi vai nella cartella \"video-app\"",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -331,11 +331,11 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "",
-         "Style": "None",
+         "SceneFile": "79.png",
+         "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "ff m peg punto exe",
+         "Lang_it": "e scarica i File evidenziati",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -350,11 +350,11 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "26.png",
+         "SceneFile": "31.png",
          "Style": "",
-         "Speech": "0",
+         "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "ffprobe.exe",
+         "Lang_it": "Prendi tutti questi File che hai scaricato e mettili nella cartella \"video-app\"",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -365,234 +365,6 @@
          "Notes": ""
       },
       "20": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "None",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "ff probe punto exe",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "21": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "17.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Apri la cartella \"video-app\" e scarica i seguenti File",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "22": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "20.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "env",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "23": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "21.png",
-         "Style": "",
-         "Speech": "0",
-         "TimeCommand": "",
-         "Lang_it": "env.example",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "24": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "None",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "env example",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "25": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "22.png",
-         "Style": "",
-         "Speech": "0",
-         "TimeCommand": "",
-         "Lang_it": "execParam.json",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "26": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "None",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "execParam",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "27": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "23.png",
-         "Style": "",
-         "Speech": "0",
-         "TimeCommand": "",
-         "Lang_it": "extension-video-project-export.js",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "28": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "None",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "extension video project export",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "29": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "24.png",
-         "Style": "",
-         "Speech": "0",
-         "TimeCommand": "",
-         "Lang_it": "video-create-win.exe",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "30": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "None",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "video create win punto exe",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "31": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "31.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Prendi tutti i File che hai scaricato e inseriscili nella cartella \"video-app\"",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "32": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -611,26 +383,7 @@
          "Description": "",
          "Notes": ""
       },
-      "33": {
-         "StartTime": "",
-         "EndTime": "00:00:01",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "CompensatePlus",
-         "Lang_it": "",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "34": {
+      "21": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -639,7 +392,7 @@
          "Style": "TextMiddle",
          "Speech": "0",
          "TimeCommand": "SceneTime",
-         "Lang_it": "2. Preparazione cartella progetti",
+         "Lang_it": "2. Preparazione cartella progetti video",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -649,7 +402,7 @@
          "Description": "",
          "Notes": ""
       },
-      "35": {
+      "22": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -668,35 +421,35 @@
          "Description": "",
          "Notes": ""
       },
-      "36": {
+      "23": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "86.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Se non l'hai ancora fatto, innanzitutto devi clonare il repository \"Video\" di Github sul tuo pc",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "24": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
          "Links": "",
          "SceneFile": "75.png",
          "Style": "",
-         "Speech": "0",
-         "TimeCommand": "",
-         "Lang_it": "I progetti video vanno caricati nel repository Video di GitHub, nella cartella projects",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "37": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "None",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "I progetti video vanno caricati nel repository Video di ghitab, nella cartella projects",
+         "Lang_it": "Tutti i progetti video vanno caricati in questo repository, sotto la cartella \"projects\"",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -706,26 +459,7 @@
          "Description": "",
          "Notes": ""
       },
-      "38": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Se non lo hai ancora fatto, clona il repository",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "39": {
+      "25": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -734,7 +468,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "In questo modo sei pronto per iniziare a creare i tuoi progetti video",
+         "Lang_it": "Ora sei pronto ad aggiungere i tuoi progetti",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -744,26 +478,7 @@
          "Description": "",
          "Notes": ""
       },
-      "40": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "41": {
+      "26": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -772,7 +487,7 @@
          "Style": "TextMiddle",
          "Speech": "0",
          "TimeCommand": "SceneTime",
-         "Lang_it": "3. Configura i parametri",
+         "Lang_it": "3. Configura i parametri iniziali",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -782,7 +497,7 @@
          "Description": "",
          "Notes": ""
       },
-      "42": {
+      "27": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -801,16 +516,16 @@
          "Description": "",
          "Notes": ""
       },
-      "43": {
+      "28": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "33.png",
+         "SceneFile": "",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Vai nella cartella dei progetti video",
+         "Lang_it": "Devi farlo solo la prima volta. Dopo che li hai impostati non dovrai più fare niente",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -820,7 +535,7 @@
          "Description": "",
          "Notes": ""
       },
-      "44": {
+      "29": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -829,7 +544,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Copia il percorso della cartella sul tuo pc",
+         "Lang_it": "Copia il percorso della cartella dei progetti video sul tuo pc",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -839,7 +554,7 @@
          "Description": "",
          "Notes": ""
       },
-      "45": {
+      "30": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -858,7 +573,7 @@
          "Description": "",
          "Notes": ""
       },
-      "46": {
+      "31": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -877,7 +592,7 @@
          "Description": "",
          "Notes": ""
       },
-      "47": {
+      "32": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -896,14 +611,14 @@
          "Description": "",
          "Notes": ""
       },
-      "48": {
+      "33": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
          "Links": "",
          "SceneFile": "36.png",
          "Style": "",
-         "Speech": "0",
+         "Speech": "",
          "TimeCommand": "",
          "Lang_it": "Sostituisci tutti i separatori con il simbolo \"/\"",
          "Lang_en": "",
@@ -915,16 +630,16 @@
          "Description": "",
          "Notes": ""
       },
-      "49": {
+      "34": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
          "Links": "",
          "SceneFile": "",
-         "Style": "None",
+         "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Sostituisci tutti i separatori con il simbolo slash",
+         "Lang_it": "Quando fai la copia i separatori sono nell'altro senso. È necessario cambiarli",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -934,7 +649,7 @@
          "Description": "",
          "Notes": ""
       },
-      "50": {
+      "35": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -953,7 +668,7 @@
          "Description": "",
          "Notes": ""
       },
-      "51": {
+      "36": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -962,7 +677,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Vai nella cartella \"video-app\" e copia il percorso della cartella",
+         "Lang_it": "Copia il percorso della cartella \"video-app\"",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -972,35 +687,16 @@
          "Description": "",
          "Notes": ""
       },
-      "52": {
+      "37": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
          "Links": "",
          "SceneFile": "38.png",
          "Style": "",
-         "Speech": "0",
-         "TimeCommand": "",
-         "Lang_it": "Davanti a \"ffmpeg\"",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "53": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "None",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Davanti a ff m peg",
+         "Lang_it": "Nella riga evidenziata, davanti al nome",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1010,35 +706,16 @@
          "Description": "",
          "Notes": ""
       },
-      "54": {
+      "38": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
          "Links": "",
          "SceneFile": "40.png",
          "Style": "",
-         "Speech": "0",
-         "TimeCommand": "",
-         "Lang_it": "inserisci il percorso che hai copiato, e sostituisci tutti i separatori con il simbolo \"/\"",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "55": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "None",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "inserisci il percorso che hai copiato, e sostituisci tutti i separatori con il simbolo slash",
+         "Lang_it": "inserisci il percorso che hai copiato. Sostituisci tutti i separatori con il simbolo \"/\"",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1048,7 +725,7 @@
          "Description": "",
          "Notes": ""
       },
-      "56": {
+      "39": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1067,35 +744,16 @@
          "Description": "",
          "Notes": ""
       },
-      "57": {
+      "40": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
          "Links": "",
          "SceneFile": "42.png",
          "Style": "",
-         "Speech": "0",
-         "TimeCommand": "",
-         "Lang_it": "inserisci il percorso che hai copiato, e sostituisci tutti i separatori con il simbolo \"/\"",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "58": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "None",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "inserisci il percorso che hai copiato, e sostituisci tutti i separatori con il simbolo slash",
+         "Lang_it": "inserisci il percorso, e sostituisci tutti i separatori con il simbolo \"/\"",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1105,7 +763,7 @@
          "Description": "",
          "Notes": ""
       },
-      "59": {
+      "41": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1124,26 +782,7 @@
          "Description": "",
          "Notes": ""
       },
-      "60": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "61": {
+      "42": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1162,7 +801,7 @@
          "Description": "",
          "Notes": ""
       },
-      "62": {
+      "43": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1181,7 +820,7 @@
          "Description": "",
          "Notes": ""
       },
-      "63": {
+      "44": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1200,7 +839,7 @@
          "Description": "",
          "Notes": ""
       },
-      "64": {
+      "45": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1219,45 +858,7 @@
          "Description": "",
          "Notes": ""
       },
-      "65": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "77.png",
-         "Style": "",
-         "Speech": "0",
-         "TimeCommand": "",
-         "Lang_it": "Per iniziare, copia un progetto esistente da Teams o direttamente da GitHub",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "66": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "None",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Per iniziare, copia un progetto esistente da Teams o direttamente da ghitab",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "67": {
+      "46": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1266,7 +867,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Scarica ad esempio i File del progetto \"short\" presente in Teams",
+         "Lang_it": "Per comodità ora puoi scaricare File di esempio del progetto \"short\", presente in Teams",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1276,45 +877,7 @@
          "Description": "",
          "Notes": ""
       },
-      "68": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "28.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Ti serve il File Banana",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "69": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "29.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "e l'immagine \"slide empty\"",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "70": {
+      "47": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1323,7 +886,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Inseriscili nella tua cartella del progetto",
+         "Lang_it": "Scarica ad esempio il File Banana e l'immagine che vedi a schermo, e mettili nella cartella del tuo progetto",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1333,26 +896,7 @@
          "Description": "",
          "Notes": ""
       },
-      "71": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "47.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Rinomina il File Banana",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "72": {
+      "48": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1361,7 +905,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Inserisci lo stesso nome della cartella del progetto",
+         "Lang_it": "Rinomina il File Banana e inserisci lo stesso nome della cartella del progetto",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1371,64 +915,7 @@
          "Description": "",
          "Notes": ""
       },
-      "73": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "49.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Apri il File",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "74": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "52.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "e installa l'estensione che hai scaricato in precedenza",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "75": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "76": {
+      "49": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1447,7 +934,7 @@
          "Description": "",
          "Notes": ""
       },
-      "77": {
+      "50": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1466,16 +953,35 @@
          "Description": "",
          "Notes": ""
       },
-      "78": {
+      "51": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Ora puoi tranquillamente lavorare sul tuo progetto video",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "52": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
          "Links": "",
          "SceneFile": "56.png",
          "Style": "",
-         "Speech": "0",
+         "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Tutte le immagini e le registrazioni video che intendi utilizzare, devono essere salvate nella cartella del progetto",
+         "Lang_it": "Salva tutte le immagini e le registrazioni video che intendi utilizzare nella cartella del progetto",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1485,16 +991,16 @@
          "Description": "",
          "Notes": ""
       },
-      "79": {
+      "53": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "",
-         "Style": "None",
+         "SceneFile": "52.png",
+         "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Tutte le immàgini e le registrazioni video che intendi utilizzare, devono essere salvate nella cartella del progetto",
+         "Lang_it": "Apri Banana e installa l'estensione che hai scaricato in precedenza",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1504,35 +1010,16 @@
          "Description": "",
          "Notes": ""
       },
-      "80": {
+      "54": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
          "Links": "",
          "SceneFile": "53.png",
          "Style": "",
-         "Speech": "0",
-         "TimeCommand": "",
-         "Lang_it": "Modifica il File Banana inserendo immagini, video e i testi nelle varie lingue",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "81": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "None",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Modifica il File Banana inserendo immàgini, video e i testi nelle varie lingue",
+         "Lang_it": "Modifica il File Banana del progetto creando piano piano il tuo video",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1542,7 +1029,7 @@
          "Description": "",
          "Notes": ""
       },
-      "82": {
+      "55": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1551,7 +1038,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Quando hai finito l'inserimento dei dati, salva, e poi esporta i dati tramite l'estensione",
+         "Lang_it": "Quando hai finito l'inserimento dei dati, tramite l'estensione esporta i dati del video",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1561,7 +1048,7 @@
          "Description": "",
          "Notes": ""
       },
-      "83": {
+      "56": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1580,45 +1067,7 @@
          "Description": "",
          "Notes": ""
       },
-      "84": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Ricorda: ogni volta che fai modifiche in Banana, devi esportare nuovamente i dati tramite l'estensione",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "85": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Altrimenti continuerai a utilizzare i dati vecchi",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "86": {
+      "57": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1637,7 +1086,7 @@
          "Description": "",
          "Notes": ""
       },
-      "87": {
+      "58": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1656,7 +1105,7 @@
          "Description": "",
          "Notes": ""
       },
-      "88": {
+      "59": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1665,7 +1114,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "",
+         "Lang_it": "Ricorda: ogni volta che fai modifiche in Banana, devi esportare nuovamente i dati tramite l'estensione",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1675,7 +1124,7 @@
          "Description": "",
          "Notes": ""
       },
-      "89": {
+      "60": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1694,7 +1143,7 @@
          "Description": "",
          "Notes": ""
       },
-      "90": {
+      "61": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1713,7 +1162,7 @@
          "Description": "",
          "Notes": ""
       },
-      "91": {
+      "62": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1732,7 +1181,7 @@
          "Description": "",
          "Notes": ""
       },
-      "92": {
+      "63": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1751,7 +1200,7 @@
          "Description": "",
          "Notes": ""
       },
-      "93": {
+      "64": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1770,7 +1219,7 @@
          "Description": "",
          "Notes": ""
       },
-      "94": {
+      "65": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1789,7 +1238,7 @@
          "Description": "",
          "Notes": ""
       },
-      "95": {
+      "66": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1808,7 +1257,7 @@
          "Description": "",
          "Notes": ""
       },
-      "96": {
+      "67": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1827,7 +1276,7 @@
          "Description": "",
          "Notes": ""
       },
-      "97": {
+      "68": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1846,7 +1295,7 @@
          "Description": "",
          "Notes": ""
       },
-      "98": {
+      "69": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1865,7 +1314,7 @@
          "Description": "",
          "Notes": ""
       },
-      "99": {
+      "70": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1884,7 +1333,7 @@
          "Description": "",
          "Notes": ""
       },
-      "100": {
+      "71": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1903,7 +1352,7 @@
          "Description": "",
          "Notes": ""
       },
-      "101": {
+      "72": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1922,7 +1371,7 @@
          "Description": "",
          "Notes": ""
       },
-      "102": {
+      "73": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1941,7 +1390,7 @@
          "Description": "",
          "Notes": ""
       },
-      "103": {
+      "74": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1960,7 +1409,7 @@
          "Description": "",
          "Notes": ""
       },
-      "104": {
+      "75": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1979,7 +1428,7 @@
          "Description": "",
          "Notes": ""
       },
-      "105": {
+      "76": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1998,7 +1447,7 @@
          "Description": "",
          "Notes": ""
       },
-      "106": {
+      "77": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2017,7 +1466,7 @@
          "Description": "",
          "Notes": ""
       },
-      "107": {
+      "78": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2036,7 +1485,7 @@
          "Description": "",
          "Notes": ""
       },
-      "108": {
+      "79": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2045,7 +1494,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Il file \"one pass\" è il video completo, quello con audio e sottotitoli",
+         "Lang_it": "Il File \"one pass\" è il video completo, quello con audio e sottotitoli",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -2055,7 +1504,7 @@
          "Description": "",
          "Notes": ""
       },
-      "109": {
+      "80": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2074,26 +1523,7 @@
          "Description": "",
          "Notes": ""
       },
-      "110": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "111": {
+      "81": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2112,6 +1542,25 @@
          "Description": "",
          "Notes": ""
       },
-      "RowCount": 111
+      "82": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "None",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Buon lavoro",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "RowCount": 82
    }
 }

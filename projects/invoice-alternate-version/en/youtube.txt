@@ -4,14 +4,10 @@ See the complete documentation: https://www.banana.ch/doc/en/node/8294.
 
 Banana Accounting Plus is the professional accounting software, which is used like Excel, for those who do not have much accounting knowledge or for experts who want a simple and fast solution. 
 
+%timestamps%
+
 ----------------------------------------------------------
-START NOW
-Completely free up to 70 registrations.
-https://www.banana.ch/en/download
+%download%
 
 ---------------------------------------------------------- 
-Our SOCIALS
-Facebook - https://www.facebook.com/bananaaccounting
-Instagram - https://www.instagram.com/banana.accounting
-Linkedin - https://www.linkedin.com/company/banana-accounting
-Twitter - https://twitter.com/BananaSoftware
+%socials%

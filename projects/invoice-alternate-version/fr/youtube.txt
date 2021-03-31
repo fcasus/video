@@ -4,14 +4,10 @@ Voir la documentation complète : https://www.banana.ch/doc/fr/node/8294.
 
 Banana Comptabilité Plus est le logiciel de comptabilité professionnel, qui s'utilise comme Excel, pour ceux qui n'ont pas beaucoup de connaissances en comptabilité ou pour les experts qui veulent une solution simple et rapide. 
 
+%timestamps%
+
 ----------------------------------------------------------
-COMMENCEZ MAINTENANT
-Entièrement gratuit jusqu'à 70 enregistrements.
-https://www.banana.ch/fr/download
+%download%
 
 ---------------------------------------------------------- 
-Nos activités sociales
-Facebook - https://www.facebook.com/bananaaccounting
-Instagram - https://www.instagram.com/banana.accounting
-Linkedin - https://www.linkedin.com/company/banana-accounting
-Twitter - https://twitter.com/BananaSoftware
+%socials%
