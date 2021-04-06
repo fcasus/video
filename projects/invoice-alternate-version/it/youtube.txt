@@ -6,6 +6,8 @@ Banana Contabilità Plus è il software di contabilità professionale, che si us
 
 %timestamps%
 
+%speech%
+
 ----------------------------------------------------------
 %download%
 
