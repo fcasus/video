@@ -84,6 +84,82 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
+         "SceneFile": "004.png",
+         "Style": "TextBottomBackground",
+         "Speech": "",
+         "TimeCommand": "SceneTime",
+         "Lang_it": "",
+         "Lang_en": "In this video we're going to present you Banana Accounting Web",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "6": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "TextBottomBackground",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "",
+         "Lang_en": "which is a financial accounting software written in C++ and running on webassembly inside web browsers.",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "7": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "8": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "9": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
          "SceneFile": "002.png",
          "Style": "TextMiddle",
          "Speech": "",
@@ -98,7 +174,7 @@
          "Description": "",
          "Notes": ""
       },
-      "6": {
+      "10": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -117,7 +193,7 @@
          "Description": "",
          "Notes": ""
       },
-      "7": {
+      "11": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -136,7 +212,7 @@
          "Description": "",
          "Notes": ""
       },
-      "8": {
+      "12": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -155,7 +231,7 @@
          "Description": "",
          "Notes": ""
       },
-      "9": {
+      "13": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -164,7 +240,7 @@
          "Style": "None",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "e clicca su 'Avvia Banana Contabilità Web con modello'",
+         "Lang_it": "",
          "Lang_en": "and click to 'Start Banana Web with template'",
          "Lang_fr": "",
          "Lang_de": "",
@@ -174,7 +250,7 @@
          "Description": "",
          "Notes": ""
       },
-      "10": {
+      "14": {
          "StartTime": "",
          "EndTime": "00:00:02",
          "SysCod": "",
@@ -193,7 +269,7 @@
          "Description": "",
          "Notes": ""
       },
-      "11": {
+      "15": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -212,7 +288,7 @@
          "Description": "",
          "Notes": ""
       },
-      "12": {
+      "16": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -231,7 +307,7 @@
          "Description": "",
          "Notes": ""
       },
-      "13": {
+      "17": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -250,7 +326,7 @@
          "Description": "",
          "Notes": ""
       },
-      "14": {
+      "18": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -269,7 +345,7 @@
          "Description": "",
          "Notes": ""
       },
-      "15": {
+      "19": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -288,7 +364,7 @@
          "Description": "",
          "Notes": ""
       },
-      "16": {
+      "20": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -307,7 +383,7 @@
          "Description": "",
          "Notes": ""
       },
-      "17": {
+      "21": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -326,7 +402,7 @@
          "Description": "",
          "Notes": ""
       },
-      "18": {
+      "22": {
          "StartTime": "",
          "EndTime": "00:00:02",
          "SysCod": "",
@@ -345,7 +421,7 @@
          "Description": "",
          "Notes": ""
       },
-      "19": {
+      "23": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -364,7 +440,7 @@
          "Description": "",
          "Notes": ""
       },
-      "20": {
+      "24": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -383,7 +459,7 @@
          "Description": "",
          "Notes": ""
       },
-      "21": {
+      "25": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -402,7 +478,7 @@
          "Description": "",
          "Notes": ""
       },
-      "22": {
+      "26": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -421,7 +497,7 @@
          "Description": "",
          "Notes": ""
       },
-      "23": {
+      "27": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -440,7 +516,7 @@
          "Description": "",
          "Notes": ""
       },
-      "24": {
+      "28": {
          "StartTime": "",
          "EndTime": "00:00:02",
          "SysCod": "",
@@ -459,7 +535,7 @@
          "Description": "",
          "Notes": ""
       },
-      "25": {
+      "29": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -478,7 +554,7 @@
          "Description": "",
          "Notes": ""
       },
-      "26": {
+      "30": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -497,7 +573,7 @@
          "Description": "",
          "Notes": ""
       },
-      "27": {
+      "31": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -516,7 +592,7 @@
          "Description": "",
          "Notes": ""
       },
-      "28": {
+      "32": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -535,7 +611,7 @@
          "Description": "",
          "Notes": ""
       },
-      "29": {
+      "33": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -554,7 +630,7 @@
          "Description": "",
          "Notes": ""
       },
-      "30": {
+      "34": {
          "StartTime": "",
          "EndTime": "00:00:02",
          "SysCod": "",
@@ -573,6 +649,6 @@
          "Description": "",
          "Notes": ""
       },
-      "RowCount": 30
+      "RowCount": 34
    }
 }
