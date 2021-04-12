@@ -12,7 +12,7 @@
          "Style": "TextTop",
          "Speech": "0",
          "TimeCommand": "SceneTime",
-         "Lang_it": "Fatturazione distinta dalla contabilità",
+         "Lang_it": "Offerte e fatture separate dalla contabilità",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -88,7 +88,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Crea e stampa fatture personalizzate con codice QR Svizzero con l'applicativo offerte e fatture",
+         "Lang_it": "Crea offerte e fatture personalizzate con codice QR Svizzero",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -107,7 +107,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Questo video è stato registrato in inglese",
+         "Lang_it": "Con l'applicativo Offerte e Fatture tieni tutto separato dalla contabilità",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -126,7 +126,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Il programma però lo vedrai nella tua lingua",
+         "Lang_it": "Questo video è stato registrato in inglese",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -137,6 +137,44 @@
          "Notes": ""
       },
       "8": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Il programma però lo vedrai nella tua lingua",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "9": {
+         "StartTime": "",
+         "EndTime": "00:00:01",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "10": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -155,7 +193,7 @@
          "Description": "",
          "Notes": ""
       },
-      "9": {
+      "11": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -174,7 +212,7 @@
          "Description": "",
          "Notes": ""
       },
-      "10": {
+      "12": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -183,7 +221,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Inizia con un nuovo File",
+         "Lang_it": "Inizia con un nuovo File di tipo Offerte e Fatture",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -193,7 +231,7 @@
          "Description": "",
          "Notes": ""
       },
-      "11": {
+      "13": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -202,7 +240,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Parti ad esempio da un modello di esempio predefinito",
+         "Lang_it": "Per iniziare puoi partire da un modello di esempio predefinito",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -212,7 +250,26 @@
          "Description": "",
          "Notes": ""
       },
-      "12": {
+      "14": {
+         "StartTime": "",
+         "EndTime": "00:00:01",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "15": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -231,7 +288,7 @@
          "Description": "",
          "Notes": ""
       },
-      "13": {
+      "16": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -250,7 +307,7 @@
          "Description": "",
          "Notes": ""
       },
-      "14": {
+      "17": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -269,7 +326,7 @@
          "Description": "",
          "Notes": ""
       },
-      "15": {
+      "18": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -288,7 +345,7 @@
          "Description": "",
          "Notes": ""
       },
-      "16": {
+      "19": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -307,7 +364,7 @@
          "Description": "",
          "Notes": ""
       },
-      "17": {
+      "20": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -326,7 +383,7 @@
          "Description": "",
          "Notes": ""
       },
-      "18": {
+      "21": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -345,7 +402,26 @@
          "Description": "",
          "Notes": ""
       },
-      "19": {
+      "22": {
+         "StartTime": "",
+         "EndTime": "00:00:01",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "23": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -364,7 +440,7 @@
          "Description": "",
          "Notes": ""
       },
-      "20": {
+      "24": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -383,7 +459,7 @@
          "Description": "",
          "Notes": ""
       },
-      "21": {
+      "25": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -402,7 +478,7 @@
          "Description": "",
          "Notes": ""
       },
-      "22": {
+      "26": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -421,7 +497,7 @@
          "Description": "",
          "Notes": ""
       },
-      "23": {
+      "27": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -440,7 +516,7 @@
          "Description": "",
          "Notes": ""
       },
-      "24": {
+      "28": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -459,7 +535,7 @@
          "Description": "",
          "Notes": ""
       },
-      "25": {
+      "29": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -478,7 +554,26 @@
          "Description": "",
          "Notes": ""
       },
-      "26": {
+      "30": {
+         "StartTime": "",
+         "EndTime": "00:00:01",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "31": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -497,7 +592,7 @@
          "Description": "",
          "Notes": ""
       },
-      "27": {
+      "32": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -516,7 +611,7 @@
          "Description": "",
          "Notes": ""
       },
-      "28": {
+      "33": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -535,7 +630,7 @@
          "Description": "",
          "Notes": ""
       },
-      "29": {
+      "34": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -554,7 +649,7 @@
          "Description": "",
          "Notes": ""
       },
-      "30": {
+      "35": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -573,7 +668,7 @@
          "Description": "",
          "Notes": ""
       },
-      "31": {
+      "36": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -592,7 +687,26 @@
          "Description": "",
          "Notes": ""
       },
-      "32": {
+      "37": {
+         "StartTime": "",
+         "EndTime": "00:00:01",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "38": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -611,7 +725,7 @@
          "Description": "",
          "Notes": ""
       },
-      "33": {
+      "39": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -630,7 +744,7 @@
          "Description": "",
          "Notes": ""
       },
-      "34": {
+      "40": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -649,26 +763,7 @@
          "Description": "",
          "Notes": ""
       },
-      "35": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Tramite l'assegnazione di un numero identificativo è possibile raggruppare le varie categorie di articoli o servizi",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "36": {
+      "41": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -687,7 +782,7 @@
          "Description": "",
          "Notes": ""
       },
-      "37": {
+      "42": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -706,7 +801,7 @@
          "Description": "",
          "Notes": ""
       },
-      "38": {
+      "43": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -725,7 +820,7 @@
          "Description": "",
          "Notes": ""
       },
-      "39": {
+      "44": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -744,7 +839,7 @@
          "Description": "",
          "Notes": ""
       },
-      "40": {
+      "45": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -763,7 +858,7 @@
          "Description": "",
          "Notes": ""
       },
-      "41": {
+      "46": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -782,7 +877,7 @@
          "Description": "",
          "Notes": ""
       },
-      "42": {
+      "47": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -791,7 +886,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Gli articoli saranno disponibili al momento della creazione della fattura, semplificando l'immissione dei dati",
+         "Lang_it": "Gli articoli che hai inserito saranno disponibili quando crei la fattura, semplificando l'immissione dei dati",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -801,7 +896,26 @@
          "Description": "",
          "Notes": ""
       },
-      "43": {
+      "48": {
+         "StartTime": "",
+         "EndTime": "00:00:01",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "49": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -820,7 +934,7 @@
          "Description": "",
          "Notes": ""
       },
-      "44": {
+      "50": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -839,7 +953,7 @@
          "Description": "",
          "Notes": ""
       },
-      "45": {
+      "51": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -848,7 +962,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "La tabella Fatture presenta le colonne dove inserire tutti i dati relativi alle fatture",
+         "Lang_it": "La tabella Fatture presenta le colonne dove vengono inseriti tutti i dati relativi alle fatture",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -858,26 +972,7 @@
          "Description": "",
          "Notes": ""
       },
-      "46": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "I dati vengono inseriti in automatico dal programma dopo che hai creato una fattura",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "47": {
+      "52": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -896,7 +991,7 @@
          "Description": "",
          "Notes": ""
       },
-      "48": {
+      "53": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -915,7 +1010,7 @@
          "Description": "",
          "Notes": ""
       },
-      "49": {
+      "54": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -934,7 +1029,7 @@
          "Description": "",
          "Notes": ""
       },
-      "50": {
+      "55": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -953,7 +1048,7 @@
          "Description": "",
          "Notes": ""
       },
-      "51": {
+      "56": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -972,7 +1067,7 @@
          "Description": "",
          "Notes": ""
       },
-      "52": {
+      "57": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -981,7 +1076,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "il numero di decimali dopo la virgola",
+         "Lang_it": "il numero di decimali",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -991,7 +1086,7 @@
          "Description": "",
          "Notes": ""
       },
-      "53": {
+      "58": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1010,7 +1105,7 @@
          "Description": "",
          "Notes": ""
       },
-      "54": {
+      "59": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1029,7 +1124,7 @@
          "Description": "",
          "Notes": ""
       },
-      "55": {
+      "60": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1048,7 +1143,7 @@
          "Description": "",
          "Notes": ""
       },
-      "56": {
+      "61": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1067,7 +1162,7 @@
          "Description": "",
          "Notes": ""
       },
-      "57": {
+      "62": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1086,7 +1181,7 @@
          "Description": "",
          "Notes": ""
       },
-      "58": {
+      "63": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1105,7 +1200,7 @@
          "Description": "",
          "Notes": ""
       },
-      "59": {
+      "64": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1124,7 +1219,7 @@
          "Description": "",
          "Notes": ""
       },
-      "60": {
+      "65": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1143,7 +1238,7 @@
          "Description": "",
          "Notes": ""
       },
-      "61": {
+      "66": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1162,7 +1257,7 @@
          "Description": "",
          "Notes": ""
       },
-      "62": {
+      "67": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1181,7 +1276,7 @@
          "Description": "",
          "Notes": ""
       },
-      "63": {
+      "68": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1190,7 +1285,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Seleziona la lingua nella quale creare la fattura",
+         "Lang_it": "Puoi selezionare la lingua nella quale creare la fattura",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1200,7 +1295,7 @@
          "Description": "",
          "Notes": ""
       },
-      "64": {
+      "69": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1219,7 +1314,7 @@
          "Description": "",
          "Notes": ""
       },
-      "65": {
+      "70": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1228,7 +1323,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Puoi anche inserire un testo iniziale che sarà inserito prima dei dettagli della fattura",
+         "Lang_it": "Puoi anche inserire un testo iniziale che sarà inserito subito prima dei dettagli della fattura",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1238,7 +1333,7 @@
          "Description": "",
          "Notes": ""
       },
-      "66": {
+      "71": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1247,7 +1342,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "E delle note finali, inserite subito dopo i dettagli della fattura",
+         "Lang_it": "Aggiungi anche delle note finali alla fine della fattura",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1257,7 +1352,7 @@
          "Description": "",
          "Notes": ""
       },
-      "67": {
+      "72": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1276,7 +1371,7 @@
          "Description": "",
          "Notes": ""
       },
-      "68": {
+      "73": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1295,7 +1390,7 @@
          "Description": "",
          "Notes": ""
       },
-      "69": {
+      "74": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1314,7 +1409,7 @@
          "Description": "",
          "Notes": ""
       },
-      "70": {
+      "75": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1333,7 +1428,7 @@
          "Description": "",
          "Notes": ""
       },
-      "71": {
+      "76": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1352,7 +1447,7 @@
          "Description": "",
          "Notes": ""
       },
-      "72": {
+      "77": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1371,7 +1466,7 @@
          "Description": "",
          "Notes": ""
       },
-      "73": {
+      "78": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1380,7 +1475,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Quì puoi inserire tutte le voci che dovranno apparire sulla fattura",
+         "Lang_it": "Inserisci tutte le voci che dovranno apparire sulla fattura",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1390,7 +1485,7 @@
          "Description": "",
          "Notes": ""
       },
-      "74": {
+      "79": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1409,7 +1504,7 @@
          "Description": "",
          "Notes": ""
       },
-      "75": {
+      "80": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1418,7 +1513,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Se hai utilizzato la tabella Articoli, puoi selezionare un articolo direttamente dalla lista",
+         "Lang_it": "Se utilizzi la tabella Articoli, puoi selezionare un articolo o un servizio direttamente dalla lista",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1428,7 +1523,7 @@
          "Description": "",
          "Notes": ""
       },
-      "76": {
+      "81": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1437,7 +1532,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "I campi delle colonne Descrizione, Quantità, Unità, Prezzo unità vengono completate in automatico dal programma",
+         "Lang_it": "I campi Descrizione, Quantità, Unità e Prezzo unità vengono completate in automatico dal programma",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1447,7 +1542,7 @@
          "Description": "",
          "Notes": ""
       },
-      "77": {
+      "82": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1466,7 +1561,7 @@
          "Description": "",
          "Notes": ""
       },
-      "78": {
+      "83": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1475,7 +1570,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Se invece non utilizzi la tabella Articoli, inserisci manualmente i dati in queste colonne",
+         "Lang_it": "Se vuoi inserire un articolo o un servizio che non è presente nella tabella Articoli, non selezionare niente dalla lista e inserisci i dati nei vari campi",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1485,7 +1580,7 @@
          "Description": "",
          "Notes": ""
       },
-      "79": {
+      "84": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1494,7 +1589,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Il programma calcola e inserisce il totale nell'apposita colonna",
+         "Lang_it": "Il programma calcola e inserisce il totale nell'apposito campo",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1504,7 +1599,7 @@
          "Description": "",
          "Notes": ""
       },
-      "80": {
+      "85": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1523,7 +1618,7 @@
          "Description": "",
          "Notes": ""
       },
-      "81": {
+      "86": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1542,7 +1637,7 @@
          "Description": "",
          "Notes": ""
       },
-      "82": {
+      "87": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1551,7 +1646,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Aggiungi ad esempio una riga per creare una fattura con più voci",
+         "Lang_it": "Aggiungi ad esempio una nuova riga per creare una fattura con più voci",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1561,7 +1656,7 @@
          "Description": "",
          "Notes": ""
       },
-      "83": {
+      "88": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1580,7 +1675,7 @@
          "Description": "",
          "Notes": ""
       },
-      "84": {
+      "89": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1599,7 +1694,7 @@
          "Description": "",
          "Notes": ""
       },
-      "85": {
+      "90": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1608,102 +1703,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Se hai uno sconto che vuoi applicare alla fattura, puoi farlo utilizzando l'apposita riga",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "86": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Indica il testo e la percentuale o l'importo dello sconto",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "87": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "217.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Puoi anche aggiungere l'importo di un eventuale acconto da scalare al totale della fattura",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "88": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "slide_empty.png",
-         "Style": "TextMiddle",
-         "Speech": "0",
-         "TimeCommand": "SceneTime",
-         "Lang_it": "7. Tabella Offerte",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "89": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "None",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Tabella Offerte",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "90": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "800.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "La tabella Offerte presenta le colonne dove inserire tutti i dati relativi alle offerte",
+         "Lang_it": "Se hai uno sconto che vuoi applicare alla fattura, puoi farlo utilizzando l'apposito campo",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1722,7 +1722,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "I dati vengono inseriti in automatico dal programma dopo che hai creato un'offerta",
+         "Lang_it": "Indica il testo e la percentuale o l'importo dello sconto",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1737,11 +1737,11 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "810.png",
+         "SceneFile": "217.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Crea una nuova offerta dal menu File -> Fatture -> Nuova offerta",
+         "Lang_it": "Puoi anche aggiungere l'importo di un eventuale acconto da scalare al totale della fattura",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1756,11 +1756,11 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "820.png",
-         "Style": "",
+         "SceneFile": "900.png",
+         "Style": "SubtitlesTop",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "La creazione e l'elaborazione delle offerte è molto simile alle fatture",
+         "Lang_it": "Quando hai finito, salva la fattura cliccando su Salva",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1775,11 +1775,11 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "",
+         "SceneFile": "901.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Nel dialogo inserisci tutte le informazioni della tua offerta",
+         "Lang_it": "Il programma aggiungerà in automatico una riga alla tabella con le informazioni della fattura appena creata:",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1794,11 +1794,11 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "",
+         "SceneFile": "902.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Le offerte possono essere in qualsiasi momento convertite in fatture",
+         "Lang_it": "il numero della fattura",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1813,11 +1813,11 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "830.png",
+         "SceneFile": "903.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Seleziona l'offerta e convertila con il comando Fatture -> Crea fattura come da offerta",
+         "Lang_it": "la data",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1832,11 +1832,11 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "831.png",
+         "SceneFile": "904.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "oppure tramite il bottone \"Crea fattura\" dal dialogo della creazione o modifica di un'offerta",
+         "Lang_it": "la descrizione",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1847,6 +1847,367 @@
          "Notes": ""
       },
       "98": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "905.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "il numero identificativo del cliente della tabella Contatti",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "99": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "906.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "l'indirizzo del cliente",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "100": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "907.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "l'importo dello sconto",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "101": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "908.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "l'importo totale della fattura",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "102": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "909.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "il termine di pagamento",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "103": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "911.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "le note finali",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "104": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "910.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Quando una fattura è stata pagata, puoi inserire la data del pagamento direttamente nella relativa colonna della tabella",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "105": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "920.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Puoi creare tutte le fatture che vuoi",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "106": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Ogni fattura è registrata in una riga diversa della tabella",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "107": {
+         "StartTime": "",
+         "EndTime": "00:00:01",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "108": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "slide_empty.png",
+         "Style": "TextMiddle",
+         "Speech": "0",
+         "TimeCommand": "SceneTime",
+         "Lang_it": "7. Tabella Offerte",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "109": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "None",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Tabella Offerte",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "110": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "800.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "In questa tabella vengono inseriti tutti i dati relativi alle offerte",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "111": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "810.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Crea una nuova offerta dal menu Fatture -> Nuova offerta",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "112": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "820.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Nel dialogo inserisci tutte le informazioni della tua offerta",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "113": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "La creazione e l'elaborazione delle offerte funziona allo stesso modo delle fatture",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "114": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "In qualsiasi momento puoi convertire le tue offerte in fatture",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "115": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "830.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Seleziona un'offerta e convertila con il comando Fatture -> Crea fattura come da offerta",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "116": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "831.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "oppure clicca su \"Crea fattura\" dal dialogo della creazione o modifica di un'offerta",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "117": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1865,7 +2226,7 @@
          "Description": "",
          "Notes": ""
       },
-      "99": {
+      "118": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1874,7 +2235,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Dovrai solo cambiare la dicitura ed eventualmente i testi",
+         "Lang_it": "Dovrai solo cambiare la dicitura e i testi iniziali e finali",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1884,7 +2245,26 @@
          "Description": "",
          "Notes": ""
       },
-      "100": {
+      "119": {
+         "StartTime": "",
+         "EndTime": "00:00:01",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "120": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1893,7 +2273,7 @@
          "Style": "TextMiddle",
          "Speech": "0",
          "TimeCommand": "SceneTime",
-         "Lang_it": "8. Stampa la fattura",
+         "Lang_it": "8. Stampa fatture e offerte",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1903,7 +2283,7 @@
          "Description": "",
          "Notes": ""
       },
-      "101": {
+      "121": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1912,7 +2292,7 @@
          "Style": "None",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Stampa la fattura",
+         "Lang_it": "Stampa le fatture e le offerte",
          "Lang_en": "Print invoice",
          "Lang_fr": "Imprimer la facture",
          "Lang_de": "Rechnung ausdrucken",
@@ -1922,7 +2302,7 @@
          "Description": "",
          "Notes": ""
       },
-      "102": {
+      "122": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1931,7 +2311,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Si accede alla finestra \"Stampa fatture\" con il comando dal menu Fatture -> Stampa fattura",
+         "Lang_it": "Per stampare una fattura, selezionala dalla tabella Fatture e clicca su Stampa fattura",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1941,7 +2321,7 @@
          "Description": "",
          "Notes": ""
       },
-      "103": {
+      "123": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1950,7 +2330,7 @@
          "Style": "SubtitlesTop",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "oppure tramite il bottone Stampa dal dialogo della creazione o modifica di una fattura",
+         "Lang_it": "oppure clicca su Stampa dal dialogo di creazione o modifica di una fattura",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1960,64 +2340,7 @@
          "Description": "",
          "Notes": ""
       },
-      "104": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "222.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Installa il layout della fattura che preferisci",
-         "Lang_en": "Install the invoice layout you prefer",
-         "Lang_fr": "Installez votre modèle de facture préféré",
-         "Lang_de": "Installieren Sie Ihr bevorzugtes Rechnungslayout",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "105": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "226.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Scegli ad esempio il layout per la fattura con codice QR Svizzero e clicca su Installa",
-         "Lang_en": "Choose for example the layout for the invoice with Swiss QR code and click on Install",
-         "Lang_fr": "Par exemple, choisissez la mise en page de la facture avec le code QR suisse et cliquez sur \"Installer\".",
-         "Lang_de": "Wählen Sie zum Beispiel das Layout für die Rechnung mit Schweizer QR-Code und klicken Sie auf Installieren",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "106": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "229.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Clicca su ok per stampare la fattura usando le impostazioni predefinite",
-         "Lang_en": "Click on ok to print the invoice using the default settings",
-         "Lang_fr": "Cliquez sur ok pour imprimer la facture en utilisant les paramètres par défaut.",
-         "Lang_de": "Klicken Sie auf ok, um die Rechnung mit den Standardeinstellungen auszudrucken",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "107": {
+      "124": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2036,7 +2359,121 @@
          "Description": "",
          "Notes": ""
       },
-      "108": {
+      "125": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "860.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Per stampare un'offerta, selezionala dalla tabella Offerte e clicca su Stampa offerta",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "126": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "861.png",
+         "Style": "SubtitlesTop",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "oppure clicca su Stampa dal dialogo della creazione o modifica di un'offerta",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "127": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "862.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Ti apparirà l'offerta in anteprima, potrai stamparla ed esportarla in pdf",
+         "Lang_en": "You will see the invoice in preview, you can print it and export it as a pdf file",
+         "Lang_fr": "Vous verrez la facture dans l'aperçu, vous pouvez l'imprimer et l'exporter en tant que fichier pdf.",
+         "Lang_de": "Sie sehen die Rechnung in der Vorschau, Sie können sie ausdrucken und als pdf-Datei exportieren",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "128": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "226.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Sia per le fatture che per le offerte il programma installa e utilizza in automatico il layout con codice QR Svizzero",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "129": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "222.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Per le fatture puoi anche scegliere altri layout",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "130": {
+         "StartTime": "",
+         "EndTime": "00:00:01",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "131": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2055,7 +2492,7 @@
          "Description": "",
          "Notes": ""
       },
-      "109": {
+      "132": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2074,7 +2511,7 @@
          "Description": "",
          "Notes": ""
       },
-      "110": {
+      "133": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2093,7 +2530,7 @@
          "Description": "",
          "Notes": ""
       },
-      "111": {
+      "134": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2102,7 +2539,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Clicca su Impostazioni",
+         "Lang_it": "Clicca su Impostazioni dal dialogo di stampa",
          "Lang_en": "Click on Settings",
          "Lang_fr": "Cliquez sur Paramètres",
          "Lang_de": "Klicken Sie auf Einstellungen",
@@ -2112,7 +2549,26 @@
          "Description": "",
          "Notes": ""
       },
-      "112": {
+      "135": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "863.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Oppure dall'icona in alto nell'antemprima di stampa",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "136": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2131,7 +2587,7 @@
          "Description": "",
          "Notes": ""
       },
-      "113": {
+      "137": {
          "StartTime": "",
          "EndTime": "00:00:03",
          "SysCod": "",
@@ -2150,7 +2606,7 @@
          "Description": "",
          "Notes": ""
       },
-      "114": {
+      "138": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2169,7 +2625,7 @@
          "Description": "",
          "Notes": ""
       },
-      "115": {
+      "139": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2188,7 +2644,7 @@
          "Description": "",
          "Notes": ""
       },
-      "116": {
+      "140": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2207,7 +2663,7 @@
          "Description": "",
          "Notes": ""
       },
-      "117": {
+      "141": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2226,7 +2682,7 @@
          "Description": "",
          "Notes": ""
       },
-      "118": {
+      "142": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2245,7 +2701,7 @@
          "Description": "",
          "Notes": ""
       },
-      "119": {
+      "143": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2264,7 +2720,7 @@
          "Description": "",
          "Notes": ""
       },
-      "120": {
+      "144": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2283,7 +2739,7 @@
          "Description": "",
          "Notes": ""
       },
-      "121": {
+      "145": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2302,7 +2758,7 @@
          "Description": "",
          "Notes": ""
       },
-      "122": {
+      "146": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2321,7 +2777,7 @@
          "Description": "",
          "Notes": ""
       },
-      "123": {
+      "147": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2340,7 +2796,7 @@
          "Description": "",
          "Notes": ""
       },
-      "124": {
+      "148": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2359,7 +2815,7 @@
          "Description": "",
          "Notes": ""
       },
-      "125": {
+      "149": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2378,7 +2834,7 @@
          "Description": "",
          "Notes": ""
       },
-      "126": {
+      "150": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2397,7 +2853,7 @@
          "Description": "",
          "Notes": ""
       },
-      "127": {
+      "151": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2416,7 +2872,7 @@
          "Description": "",
          "Notes": ""
       },
-      "128": {
+      "152": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2435,7 +2891,7 @@
          "Description": "",
          "Notes": ""
       },
-      "129": {
+      "153": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2454,7 +2910,7 @@
          "Description": "",
          "Notes": ""
       },
-      "130": {
+      "154": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2473,7 +2929,7 @@
          "Description": "",
          "Notes": ""
       },
-      "131": {
+      "155": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2492,7 +2948,7 @@
          "Description": "",
          "Notes": ""
       },
-      "132": {
+      "156": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2511,7 +2967,7 @@
          "Description": "",
          "Notes": ""
       },
-      "133": {
+      "157": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2530,7 +2986,7 @@
          "Description": "",
          "Notes": ""
       },
-      "134": {
+      "158": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2549,7 +3005,7 @@
          "Description": "",
          "Notes": ""
       },
-      "135": {
+      "159": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2568,7 +3024,7 @@
          "Description": "",
          "Notes": ""
       },
-      "136": {
+      "160": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2587,7 +3043,7 @@
          "Description": "",
          "Notes": ""
       },
-      "137": {
+      "161": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2606,7 +3062,7 @@
          "Description": "",
          "Notes": ""
       },
-      "138": {
+      "162": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2625,7 +3081,7 @@
          "Description": "",
          "Notes": ""
       },
-      "139": {
+      "163": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2644,7 +3100,7 @@
          "Description": "",
          "Notes": ""
       },
-      "140": {
+      "164": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2663,7 +3119,7 @@
          "Description": "",
          "Notes": ""
       },
-      "141": {
+      "165": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2682,7 +3138,7 @@
          "Description": "",
          "Notes": ""
       },
-      "142": {
+      "166": {
          "StartTime": "",
          "EndTime": "00:00:03",
          "SysCod": "",
@@ -2701,7 +3157,26 @@
          "Description": "",
          "Notes": ""
       },
-      "143": {
+      "167": {
+         "StartTime": "",
+         "EndTime": "00:00:01",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "168": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2720,7 +3195,7 @@
          "Description": "",
          "Notes": ""
       },
-      "144": {
+      "169": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2739,7 +3214,7 @@
          "Description": "",
          "Notes": ""
       },
-      "145": {
+      "170": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2758,7 +3233,7 @@
          "Description": "",
          "Notes": ""
       },
-      "146": {
+      "171": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2777,7 +3252,7 @@
          "Description": "",
          "Notes": ""
       },
-      "147": {
+      "172": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2796,7 +3271,7 @@
          "Description": "",
          "Notes": ""
       },
-      "148": {
+      "173": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2815,7 +3290,7 @@
          "Description": "",
          "Notes": ""
       },
-      "149": {
+      "174": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2834,7 +3309,7 @@
          "Description": "",
          "Notes": ""
       },
-      "150": {
+      "175": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2853,7 +3328,7 @@
          "Description": "",
          "Notes": ""
       },
-      "151": {
+      "176": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2872,7 +3347,7 @@
          "Description": "",
          "Notes": ""
       },
-      "152": {
+      "177": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2891,7 +3366,7 @@
          "Description": "",
          "Notes": ""
       },
-      "153": {
+      "178": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2910,7 +3385,7 @@
          "Description": "",
          "Notes": ""
       },
-      "154": {
+      "179": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2929,7 +3404,7 @@
          "Description": "",
          "Notes": ""
       },
-      "155": {
+      "180": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2948,7 +3423,7 @@
          "Description": "",
          "Notes": ""
       },
-      "156": {
+      "181": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2967,7 +3442,7 @@
          "Description": "",
          "Notes": ""
       },
-      "157": {
+      "182": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -2986,7 +3461,7 @@
          "Description": "",
          "Notes": ""
       },
-      "158": {
+      "183": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -3005,7 +3480,7 @@
          "Description": "",
          "Notes": ""
       },
-      "159": {
+      "184": {
          "StartTime": "",
          "EndTime": "00:00:03",
          "SysCod": "",
@@ -3024,7 +3499,26 @@
          "Description": "",
          "Notes": ""
       },
-      "160": {
+      "185": {
+         "StartTime": "",
+         "EndTime": "00:00:01",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "186": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -3043,7 +3537,7 @@
          "Description": "",
          "Notes": ""
       },
-      "161": {
+      "187": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -3062,7 +3556,7 @@
          "Description": "",
          "Notes": ""
       },
-      "162": {
+      "188": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -3081,7 +3575,7 @@
          "Description": "",
          "Notes": ""
       },
-      "163": {
+      "189": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -3100,7 +3594,7 @@
          "Description": "",
          "Notes": ""
       },
-      "164": {
+      "190": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -3119,7 +3613,7 @@
          "Description": "",
          "Notes": ""
       },
-      "165": {
+      "191": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -3138,7 +3632,7 @@
          "Description": "",
          "Notes": ""
       },
-      "166": {
+      "192": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -3157,6 +3651,6 @@
          "Description": "",
          "Notes": ""
       },
-      "RowCount": 166
+      "RowCount": 192
    }
 }
