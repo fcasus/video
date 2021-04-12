@@ -1,0 +1,7 @@
+file 'out/it/scene2-video-ass-speech.mp4'
+file 'out/it/scene3-video-ass-speech.mp4'
+file 'out/it/scene4-video-ass-speech.mp4'
+file 'out/it/scene5-video-ass-speech.mp4'
+file 'out/it/scene6-video-ass-speech.mp4'
+file 'out/it/scene7-video-ass-speech.mp4'
+file 'out/it/scene8-video-ass-speech.mp4'
