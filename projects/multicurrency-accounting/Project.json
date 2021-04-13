@@ -1,6 +1,6 @@
 {
    "FileInfo": {
-      "FileName": "/Users/ivan/Documents/GitHub/video/projects/multicurrency-accounting/multicurrency-accounting.ac2"
+      "FileName": "/Users/tiz/Movies/banana/video/projects/multicurrency-accounting/multicurrency-accounting.ac2"
    },
    "Rows": {
       "1": {
@@ -12,8 +12,8 @@
          "Style": "TextTop",
          "Speech": "0",
          "TimeCommand": "SceneTime",
-         "Lang_it": "Contabilità Entrate/Uscite",
-         "Lang_en": "Income & Expense Accounting",
+         "Lang_it": "Contabilità Multi-Moneta",
+         "Lang_en": "Multi-Currency Accounting",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -50,7 +50,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Benvenuti in Banana Contabilità!",
+         "Lang_it": "Benvenuti in Banana Contabilità",
          "Lang_en": "Welcome to Banana Accounting!",
          "Lang_fr": "",
          "Lang_de": "",
@@ -69,8 +69,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Il software professionale simile a Excel.",
-         "Lang_en": "A professional accounting solution similar to Excel.",
+         "Lang_it": "Il software professionale simile a Excel",
+         "Lang_en": "A professional accounting solution similar to Excel",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -108,7 +108,7 @@
          "Speech": "",
          "TimeCommand": "",
          "Lang_it": "Ottieni rapidamente il Bilancio, il Conto Economico, il Budget e il Piano della Liquidità della tua contabilità multimoneta",
-         "Lang_en": "Quickly obtain Balance Sheet, Income Statement, Budget and Liquidity Plan of your multy-currency accounting.",
+         "Lang_en": "Quickly obtain Balance Sheet, Income Statement, Budget and Liquidity Plan of your multy-currency accounting",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -221,8 +221,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "e scegli il modello che meglio si adatta alle tue esigenze.",
-         "Lang_en": "and choose the template that best suits your needs.",
+         "Lang_it": "e scegli il modello che meglio si adatta alle tue esigenze",
+         "Lang_en": "and choose the template that best suits your needs",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -316,7 +316,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "la data di apertura e di chiusura",
+         "Lang_it": "la data di apertura e di chiusura,",
          "Lang_en": "the opening and closing date,",
          "Lang_fr": "",
          "Lang_de": "",
@@ -335,8 +335,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "e la moneta di base.",
-         "Lang_en": "and the basic currency.",
+         "Lang_it": "e la moneta di base",
+         "Lang_en": "and the basic currency",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -366,6 +366,25 @@
       },
       "20": {
          "StartTime": "",
+         "EndTime": "00:00:01",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "CompensatePlus",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "21": {
+         "StartTime": "",
          "EndTime": "",
          "SysCod": "",
          "Links": "",
@@ -383,7 +402,7 @@
          "Description": "",
          "Notes": ""
       },
-      "21": {
+      "22": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -402,7 +421,7 @@
          "Description": "",
          "Notes": ""
       },
-      "22": {
+      "23": {
          "StartTime": "",
          "EndTime": "00:00:02.500",
          "SysCod": "",
@@ -411,27 +430,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Inserisci nella riga senza data il tasso di cambio.",
-         "Lang_en": "Enter the exchange rate in the row without date.",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "23": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Questo tasso di cambio verrà usato come tasso di chiusura e come tasso di cambio attuale se non verranno fatti cambiamenti.",
-         "Lang_en": "This exchance is used as the closing exchange rate and as the current exchange rate, if no changes are made.",
+         "Lang_it": "Inserisci nella riga senza data il tasso di cambio",
+         "Lang_en": "Enter the exchange rate in the row without date",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -441,6 +441,25 @@
          "Notes": ""
       },
       "24": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Questo tasso di cambio verrà usato come tasso di chiusura e come tasso di cambio attuale se non verranno fatti cambiamenti",
+         "Lang_en": "This exchance is used as the closing exchange rate and as the current exchange rate, if no changes are made",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "25": {
          "StartTime": "",
          "EndTime": "00:00:01.500",
          "SysCod": "",
@@ -459,7 +478,7 @@
          "Description": "",
          "Notes": ""
       },
-      "25": {
+      "26": {
          "StartTime": "",
          "EndTime": "00:00:03",
          "SysCod": "",
@@ -468,8 +487,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Sulla stessa riga puoi anche aggiungere il tasso di apertura.",
-         "Lang_en": "On the same row you can add the opening exchange rate.",
+         "Lang_it": "Sulla stessa riga puoi anche aggiungere il tasso di apertura",
+         "Lang_en": "On the same row you can add the opening exchange rate",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -478,7 +497,7 @@
          "Description": "",
          "Notes": ""
       },
-      "26": {
+      "27": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -497,7 +516,7 @@
          "Description": "",
          "Notes": ""
       },
-      "27": {
+      "28": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -506,8 +525,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "e puoi cancellare quelle che non ti servono.",
-         "Lang_en": "or cancel those that you don't need.",
+         "Lang_it": "e puoi cancellare quelle che non ti servono",
+         "Lang_en": "or cancel those that you don't need",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -516,7 +535,7 @@
          "Description": "",
          "Notes": ""
       },
-      "28": {
+      "29": {
          "StartTime": "",
          "EndTime": "00:00:01.500",
          "SysCod": "",
@@ -535,7 +554,7 @@
          "Description": "",
          "Notes": ""
       },
-      "29": {
+      "30": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -554,7 +573,7 @@
          "Description": "",
          "Notes": ""
       },
-      "30": {
+      "31": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -573,7 +592,7 @@
          "Description": "",
          "Notes": ""
       },
-      "31": {
+      "32": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -592,7 +611,7 @@
          "Description": "",
          "Notes": ""
       },
-      "32": {
+      "33": {
          "StartTime": "",
          "EndTime": "00:00:01.500",
          "SysCod": "",
@@ -611,7 +630,7 @@
          "Description": "",
          "Notes": ""
       },
-      "33": {
+      "34": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -630,7 +649,7 @@
          "Description": "",
          "Notes": ""
       },
-      "34": {
+      "35": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -649,7 +668,7 @@
          "Description": "",
          "Notes": ""
       },
-      "35": {
+      "36": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -668,7 +687,7 @@
          "Description": "",
          "Notes": ""
       },
-      "36": {
+      "37": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -687,7 +706,7 @@
          "Description": "",
          "Notes": ""
       },
-      "37": {
+      "38": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -696,27 +715,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "e l'importo.",
-         "Lang_en": "and the amount.",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "38": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "Screenshot15.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Le colonne della valuta e del tasso di cambio sono completate automaticamente dal sistema.",
-         "Lang_en": "The currency and the exchange rate columns are automatically filled in by the system.",
+         "Lang_it": "e l'importo",
+         "Lang_en": "and the amount",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -727,15 +727,15 @@
       },
       "39": {
          "StartTime": "",
-         "EndTime": "00:00:03",
+         "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "Screenshot16.png",
+         "SceneFile": "Screenshot15.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Ripeti questa operazione per tutti i movimenti.",
-         "Lang_en": "Repeat this operation for all movements.",
+         "Lang_it": "Le colonne della valuta e del tasso di cambio sono completate automaticamente dal sistema",
+         "Lang_en": "The currency and the exchange rate columns are automatically filled in by the system",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -746,15 +746,15 @@
       },
       "40": {
          "StartTime": "",
-         "EndTime": "",
+         "EndTime": "00:00:03",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "Screenshot17.png",
+         "SceneFile": "Screenshot16.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Per velocizzare queste operazioni puoi importare direttamente le transazioni bancarie.",
-         "Lang_en": "To speed up these operations you can directly import bank transactions.",
+         "Lang_it": "Ripeti questa operazione per tutti i movimenti",
+         "Lang_en": "Repeat this operation for all movements",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -768,12 +768,12 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "Screenshot18.png",
+         "SceneFile": "Screenshot17.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "e collegando le registrazione al giustificativo digitale e puoi fare a meno della carta.",
-         "Lang_en": "and by linking them to the digital receipts, you don’t need to print them on paper.",
+         "Lang_it": "Per velocizzare queste operazioni puoi importare direttamente le transazioni bancarie",
+         "Lang_en": "To speed up these operations you can directly import bank transactions",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -783,6 +783,25 @@
          "Notes": ""
       },
       "42": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "Screenshot18.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "e collegando le registrazione al giustificativo digitale e puoi fare a meno della carta",
+         "Lang_en": "and by linking them to the digital receipts, you don’t need to print them on paper",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "43": {
          "StartTime": "",
          "EndTime": "00:00:01.500",
          "SysCod": "",
@@ -801,7 +820,7 @@
          "Description": "",
          "Notes": ""
       },
-      "43": {
+      "44": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -820,7 +839,7 @@
          "Description": "",
          "Notes": ""
       },
-      "44": {
+      "45": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -839,7 +858,7 @@
          "Description": "",
          "Notes": ""
       },
-      "45": {
+      "46": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -848,27 +867,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Inserisci le registrazioni che prevedi per l’anno indicato.",
-         "Lang_en": "Enter the estimated income and expenses for the indicated year.",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "46": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Il procedimento è immediato e molto simile alla tabella registrazioni.",
-         "Lang_en": "The procedure is immediate and very similar to the transaction table.",
+         "Lang_it": "Inserisci le registrazioni che prevedi per l’anno indicato",
+         "Lang_en": "Enter the estimated income and expenses for the indicated year",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -882,12 +882,12 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "Screenshot20.png",
+         "SceneFile": "",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Inizia elencando le uscite mensili.",
-         "Lang_en": "Start by listing your monthly expenses.",
+         "Lang_it": "Il procedimento è immediato e molto simile alla tabella registrazioni",
+         "Lang_en": "The procedure is immediate and very similar to the transaction table",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -901,12 +901,12 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "",
+         "SceneFile": "Screenshot20.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Per esempio le spese di hosting, l’affitto dell’ufficio e lo stipendio dei tuoi collaboratori.",
-         "Lang_en": "For example, the hosting expenses, the office rent and your employees' salaries.",
+         "Lang_it": "Inizia elencando le uscite mensili",
+         "Lang_en": "Start by listing your monthly expenses",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -920,12 +920,12 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "Screenshot21.png",
+         "SceneFile": "",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Ricòrdati di inserire la ripetizione.",
-         "Lang_en": "Remember to mention the repetition.",
+         "Lang_it": "Per esempio le spese di hosting, l’affitto dell’ufficio e lo stipendio dei tuoi collaboratori",
+         "Lang_en": "For example, the hosting expenses, the office rent and your employees' salaries",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -939,12 +939,12 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "Screenshot22.png",
+         "SceneFile": "Screenshot21.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Procedi elencando le entrate mensili.",
-         "Lang_en": "Apply the same procedure for the monthly revenues.",
+         "Lang_it": "Ricòrdati di inserire la ripetizione",
+         "Lang_en": "Remember to mention the repetition",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -958,12 +958,12 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "",
+         "SceneFile": "Screenshot22.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Per esempio le associazioni e le donazioni.",
-         "Lang_en": "For example, the membership payments and the donations.",
+         "Lang_it": "Procedi elencando le entrate mensili",
+         "Lang_en": "Apply the same procedure for the monthly revenues",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -981,8 +981,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "",
-         "Lang_en": "",
+         "Lang_it": "Per esempio le associazioni e le donazioni",
+         "Lang_en": "For example, the membership payments and the donations",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1012,6 +1012,25 @@
       },
       "54": {
          "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "55": {
+         "StartTime": "",
          "EndTime": "00:00:01.500",
          "SysCod": "",
          "Links": "",
@@ -1029,7 +1048,26 @@
          "Description": "",
          "Notes": ""
       },
-      "55": {
+      "56": {
+         "StartTime": "",
+         "EndTime": "00:00:01",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "CompensateMinus",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "57": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1048,7 +1086,7 @@
          "Description": "",
          "Notes": ""
       },
-      "56": {
+      "58": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1067,7 +1105,7 @@
          "Description": "",
          "Notes": ""
       },
-      "57": {
+      "59": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1076,8 +1114,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Nella tabella conti i saldi vengono aggiornati automaticamente.",
-         "Lang_en": "In the accounts table, the balances are automatically updated.",
+         "Lang_it": "Nella tabella conti i saldi vengono aggiornati automaticamente",
+         "Lang_en": "In the accounts table, the balances are automatically updated",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1086,7 +1124,7 @@
          "Description": "",
          "Notes": ""
       },
-      "58": {
+      "60": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1095,8 +1133,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Puoi quindi fare immediatamente un confronto tra i dati della contabilità con il tuo preventivo.",
-         "Lang_en": "Therefore you can immediately make a comparison of your accounting data with your budget.",
+         "Lang_it": "Puoi quindi fare immediatamente un confronto tra i dati della contabilità con il tuo preventivo",
+         "Lang_en": "Therefore you can immediately make a comparison of your accounting data with your budget",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1105,7 +1143,7 @@
          "Description": "",
          "Notes": ""
       },
-      "59": {
+      "61": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1124,7 +1162,7 @@
          "Description": "",
          "Notes": ""
       },
-      "60": {
+      "62": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1133,46 +1171,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "e del Conto Economico.",
-         "Lang_en": "and the Profit and Loss statement accounts.",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "61": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "Screenshot24.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Il Bilancio ti mostra i saldi dei conti patrimoniali, quindi degli Attivi e dei Passivi.",
-         "Lang_en": "The Balance sheet shows you the balances of all the estate accounts, that is, Assets and Liabilities.",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "62": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "La differenza tra Attivi e Passivi determina il Capitale proprio.",
-         "Lang_en": "The difference between the Assets and the Liabilities determines the personal capital.",
+         "Lang_it": "e del Conto Economico",
+         "Lang_en": "and the Profit and Loss statement accounts",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1186,12 +1186,12 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "Screenshot25.png",
+         "SceneFile": "Screenshot24.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Il Conto Economico invece ti mostra i conti dei Ricavi e dei Costi, e la loro differenza determina l'Utile o la Perdita d’esercizio.",
-         "Lang_en": "The Profit and Loss statement shows you all the Revenue and Expense accounts, and the difference determines the Profit or Loss of the Accounting year.",
+         "Lang_it": "Il Bilancio ti mostra i saldi dei conti patrimoniali, quindi degli Attivi e dei Passivi",
+         "Lang_en": "The Balance sheet shows you the balances of all the estate accounts, that is, Assets and Liabilities",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1209,8 +1209,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Puoi adattare i conti secondo le tue necessità.",
-         "Lang_en": "You can adapt the accounts according to your needs.",
+         "Lang_it": "La differenza tra Attivi e Passivi determina il Capitale proprio",
+         "Lang_en": "The difference between the Assets and the Liabilities determines the personal capital",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1224,12 +1224,12 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "Screenshot26.png",
+         "SceneFile": "Screenshot25.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Puoi aggiungere conti con la rispettiva valuta,",
-         "Lang_en": "You can add accounts with the corresponding currency,",
+         "Lang_it": "Il Conto Economico invece ti mostra i conti dei Ricavi e dei Costi, e la loro differenza determina l'Utile o la Perdita d’esercizio",
+         "Lang_en": "The Profit and Loss statement shows you all the Revenue and Expense accounts, and the difference determines the Profit or Loss of the Accounting year",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1240,15 +1240,15 @@
       },
       "66": {
          "StartTime": "",
-         "EndTime": "00:00:01.500",
+         "EndTime": "",
          "SysCod": "",
          "Links": "",
          "SceneFile": "",
          "Style": "",
          "Speech": "",
-         "TimeCommand": "FixedTime",
-         "Lang_it": "",
-         "Lang_en": "",
+         "TimeCommand": "",
+         "Lang_it": "Puoi adattare i conti secondo le tue necessità",
+         "Lang_en": "You can adapt the accounts according to your needs",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1262,12 +1262,12 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "Screenshot27.png",
+         "SceneFile": "Screenshot26.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "modificarli o cancellarli.",
-         "Lang_en": "edit or delete them.",
+         "Lang_it": "Puoi aggiungere conti con la rispettiva valuta,",
+         "Lang_en": "You can add accounts with the corresponding currency,",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1300,12 +1300,12 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "Screenshot28.png",
+         "SceneFile": "Screenshot27.png",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "e nella colonna Apertura puoi inserire i saldi iniziali.",
-         "Lang_en": "And you can enter the initial balance in the \"Opening\" column.",
+         "Lang_it": "modificarli o cancellarli",
+         "Lang_en": "edit or delete them",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1338,6 +1338,44 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
+         "SceneFile": "Screenshot28.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "e nella colonna Apertura puoi inserire i saldi iniziali",
+         "Lang_en": "And you can enter the initial balance in the \"Opening\" column",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "72": {
+         "StartTime": "",
+         "EndTime": "00:00:01.500",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "73": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
          "SceneFile": "slide_empty.png",
          "Style": "TextMiddle",
          "Speech": "0",
@@ -1352,7 +1390,7 @@
          "Description": "",
          "Notes": ""
       },
-      "72": {
+      "74": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1371,7 +1409,7 @@
          "Description": "",
          "Notes": ""
       },
-      "73": {
+      "75": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1380,8 +1418,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Tutte le stampe sono a portata di clic.",
-         "Lang_en": "All reports are just a click away.",
+         "Lang_it": "Tutte le stampe sono a portata di clic",
+         "Lang_en": "All reports are just a click away",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1390,7 +1428,7 @@
          "Description": "",
          "Notes": ""
       },
-      "74": {
+      "76": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1399,8 +1437,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Puoi visualizzare il piano della liquidità.",
-         "Lang_en": "You can view the liquidity plan.",
+         "Lang_it": "Puoi visualizzare il piano della liquidità",
+         "Lang_en": "You can view the liquidity plan",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1409,7 +1447,7 @@
          "Description": "",
          "Notes": ""
       },
-      "75": {
+      "77": {
          "StartTime": "",
          "EndTime": "00:00:02",
          "SysCod": "",
@@ -1428,7 +1466,7 @@
          "Description": "",
          "Notes": ""
       },
-      "76": {
+      "78": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1437,8 +1475,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "E puoi consultare il bilancio e confrontare i tuoi dati passati, presenti e futuri della tua contabilità in ogni momento.",
-         "Lang_en": "And you can review your balance sheet and compare your past, present and future data of your accounting at any time.",
+         "Lang_it": "E puoi consultare il bilancio e confrontare i tuoi dati passati, presenti e futuri della tua contabilità in ogni momento",
+         "Lang_en": "And you can review your balance sheet and compare your past, present and future data of your accounting at any time",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1447,7 +1485,7 @@
          "Description": "",
          "Notes": ""
       },
-      "77": {
+      "79": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1456,8 +1494,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Per generare il rendiconto annuale seleziona Report, Rendiconto abbellito con gruppi, Bilancio effettivo e budget.",
-         "Lang_en": "You can create your report by selecting from the Report menu, Enhanced balance sheet with groups, Comparison Effective and Budget.",
+         "Lang_it": "Per generare il rendiconto annuale seleziona Report, Rendiconto abbellito con gruppi, Bilancio effettivo e budget",
+         "Lang_en": "You can create your report by selecting from the Reports menu, Enhanced balance sheet with groups, Comparison Effective and Budget",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1466,7 +1504,7 @@
          "Description": "",
          "Notes": ""
       },
-      "78": {
+      "80": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1485,7 +1523,7 @@
          "Description": "",
          "Notes": ""
       },
-      "79": {
+      "81": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1504,7 +1542,7 @@
          "Description": "",
          "Notes": ""
       },
-      "80": {
+      "82": {
          "StartTime": "",
          "EndTime": "00:00:02.500",
          "SysCod": "",
@@ -1523,7 +1561,7 @@
          "Description": "",
          "Notes": ""
       },
-      "81": {
+      "83": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1532,46 +1570,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "oppure puoi visualizzare il grafico del tuo conto bancario.",
-         "Lang_en": "or you can view the charts of your bank account.",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "82": {
-         "StartTime": "",
-         "EndTime": "00:00:02.500",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "FixedTime",
-         "Lang_it": "",
-         "Lang_en": "",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "83": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Facendo così potrai sempre verificare che la tua attività stia andando secondo i tuoi piani",
-         "Lang_en": "By following this step, you can control if the actual business is in line with your budget plan.",
+         "Lang_it": "oppure puoi visualizzare il grafico del tuo conto bancario",
+         "Lang_en": "or you can view the charts of your bank account",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1582,7 +1582,7 @@
       },
       "84": {
          "StartTime": "",
-         "EndTime": "00:00:01.500",
+         "EndTime": "00:00:02.500",
          "SysCod": "",
          "Links": "",
          "SceneFile": "",
@@ -1604,12 +1604,12 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "slide_empty.png",
-         "Style": "TextMiddle",
-         "Speech": "0",
-         "TimeCommand": "SceneTime",
-         "Lang_it": "Gratis fino a 70 registrazioni Abbonamento annuale",
-         "Lang_en": "Free up to 70 registrations Annual Subscription",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Facendo così potrai sempre verificare che la tua attività stia andando secondo i tuoi piani",
+         "Lang_en": "By following this step, you can control if the actual business is in line with your budget plan",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1619,6 +1619,44 @@
          "Notes": ""
       },
       "86": {
+         "StartTime": "",
+         "EndTime": "00:00:01.500",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "87": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "slide_empty.png",
+         "Style": "TextMiddle",
+         "Speech": "0",
+         "TimeCommand": "SceneTime",
+         "Lang_it": "Gratis fino a 70 registrazioni Abbonamento annuale",
+         "Lang_en": "Free up to 70 transactions Annual Subscription",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "88": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1637,7 +1675,7 @@
          "Description": "",
          "Notes": ""
       },
-      "87": {
+      "89": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1656,7 +1694,7 @@
          "Description": "",
          "Notes": ""
       },
-      "88": {
+      "90": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1675,6 +1713,6 @@
          "Description": "",
          "Notes": ""
       },
-      "RowCount": 88
+      "RowCount": 90
    }
 }
