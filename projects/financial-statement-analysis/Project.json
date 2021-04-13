@@ -6,7 +6,7 @@
       "1": {
          "StartTime": "",
          "EndTime": "",
-         "Notes": "INTRO BANANA",
+         "Notes": "ARGOMENTI PRINCIPALI",
          "SysCod": "",
          "Links": "",
          "SceneFile": "",
@@ -63,7 +63,7 @@
       "4": {
          "StartTime": "",
          "EndTime": "",
-         "Notes": "ESTENSIONE",
+         "Notes": "",
          "SysCod": "",
          "Links": "",
          "SceneFile": "",
@@ -82,15 +82,15 @@
       "5": {
          "StartTime": "",
          "EndTime": "",
-         "Notes": "",
+         "Notes": "INTRO BANANA",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "first_slide_fsa.png",
-         "Style": "TextTop",
-         "Speech": "0",
-         "TimeCommand": "SceneTime",
-         "Lang_it": "Conto dei flussi di Capitale e Analisi di Bilancio",
-         "Lang_en": "Cash Flow and Financial statement Analysis",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "",
+         "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -127,8 +127,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Questa estensione ti permette di ottenere l'Analisi di Bilancio in maniera semplice e veloce",
-         "Lang_en": "This extension allows you to obtain the Financial statement analysis for your company in a simple and automated way.",
+         "Lang_it": "",
+         "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -146,8 +146,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Potrai disporre di elementi come",
-         "Lang_en": "You will have at your disposal elements such as",
+         "Lang_it": "",
+         "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -158,15 +158,15 @@
       "9": {
          "StartTime": "",
          "EndTime": "",
-         "Notes": "",
+         "Notes": "ESTENSIONE",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "financial_report_7.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "il Conto dei flussi",
-         "Lang_en": "the Cash Flow",
+         "SceneFile": "first_slide_fsa.png",
+         "Style": "TextTop",
+         "Speech": "0",
+         "TimeCommand": "SceneTime",
+         "Lang_it": "Conto dei flussi di Capitale e Analisi di Bilancio",
+         "Lang_en": "Cash Flow and Financial statement Analysis",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -180,12 +180,12 @@
          "Notes": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "financial_report_3.png",
+         "SceneFile": "",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "il Bilancio ed il conto economico rilcassificati",
-         "Lang_en": "the reclassified balance sheet and prift and loss statement",
+         "Lang_it": "",
+         "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -199,12 +199,12 @@
          "Notes": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "financial_report_6.png",
+         "SceneFile": "",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "gli indici finanziari",
-         "Lang_en": "financial ratios",
+         "Lang_it": "Questa estensione ti permette di ottenere l'Analisi di Bilancio in maniera semplice e veloce",
+         "Lang_en": "This extension allows you to obtain the Financial statement analysis for your company in a simple and automated way.",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -218,12 +218,12 @@
          "Notes": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "financial_charts_1.png",
+         "SceneFile": "",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "ed i grafici",
-         "Lang_en": "and charts",
+         "Lang_it": "Potrai disporre di elementi come il Conto dei flussi, Bilancio ed il conto economico rilcassificati,  indici finanziari ed i grafici",
+         "Lang_en": "You will have at your disposal elements such as the Cash Flow, the reclassified balance sheet and profit and loss statement, financial ratios and charts",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -279,6 +279,25 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "16": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
          "Lang_it": "Installare un estensione in banana è abbastanza semplice e veloce",
          "Lang_en": "Installing an extension in banana is quite simple and quick",
          "Lang_fr": "",
@@ -288,7 +307,7 @@
          "RowId": "",
          "Description": ""
       },
-      "16": {
+      "17": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -307,7 +326,7 @@
          "RowId": "",
          "Description": ""
       },
-      "17": {
+      "18": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -326,7 +345,7 @@
          "RowId": "",
          "Description": ""
       },
-      "18": {
+      "19": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -345,7 +364,7 @@
          "RowId": "",
          "Description": ""
       },
-      "19": {
+      "20": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -364,7 +383,7 @@
          "RowId": "",
          "Description": ""
       },
-      "20": {
+      "21": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -383,7 +402,7 @@
          "RowId": "",
          "Description": ""
       },
-      "21": {
+      "22": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -402,7 +421,7 @@
          "RowId": "",
          "Description": ""
       },
-      "22": {
+      "23": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -421,7 +440,7 @@
          "RowId": "",
          "Description": ""
       },
-      "23": {
+      "24": {
          "StartTime": "",
          "EndTime": "00:00:01.500",
          "Notes": "",
@@ -440,7 +459,7 @@
          "RowId": "",
          "Description": ""
       },
-      "24": {
+      "25": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "DIALOGO DEI SETTINGS",
@@ -451,7 +470,7 @@
          "Speech": "",
          "TimeCommand": "SceneTime",
          "Lang_it": "Impostare il dialogo",
-         "Lang_en": "Setting the Dialogue",
+         "Lang_en": "Setting the Dialog",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -459,7 +478,26 @@
          "RowId": "",
          "Description": ""
       },
-      "25": {
+      "26": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "27": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -478,7 +516,7 @@
          "RowId": "",
          "Description": ""
       },
-      "26": {
+      "28": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -488,46 +526,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "È possibile aprire il dialogo dei settaggi cliccando su Settings",
-         "Lang_en": "The settings dialogue can be opened by clicking on Settings",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": ""
-      },
-      "27": {
-         "StartTime": "",
-         "EndTime": "",
-         "Notes": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "settings_dialog_2.png",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "Oppure su Financial Reports",
-         "Lang_en": "Or on Financial reports",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": ""
-      },
-      "28": {
-         "StartTime": "",
-         "EndTime": "",
-         "Notes": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "questa variante è molto più comoda, in quanto una volta terminata la modifica si può procedere direttamente alla creazione del report premendo ok",
-         "Lang_en": "this variant is much more convenient, as once you have finished editing you can proceed directly to create the report by pressing ok",
+         "Lang_it": "È possibile aprire il dialogo dei settaggi cliccando su Settings oppure su Financial Reports",
+         "Lang_en": "The settings dialogue can be opened by clicking on Settings or on Financial reports",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -541,12 +541,12 @@
          "Notes": "",
          "SysCod": "",
          "Links": "",
-         "SceneFile": "settings_dialog_3.png",
+         "SceneFile": "",
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Il dialogo si presenta in questo modo, ed è suddiviso in più sezioni",
-         "Lang_en": "The dialogue looks like this, and is divided into several sections",
+         "Lang_it": "Scegliendo Financial Reports, una volta terminata la modifica puoi procedere direttamente alla creazione del report premendo ok",
+         "Lang_en": "By choosing Financial Reports, once you have finished editing you can proceed directly to the creation of the report by pressing ok",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -555,6 +555,44 @@
          "Description": ""
       },
       "30": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "settings_dialog_3.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Il dialogo offre molteplici possibilità di personalizzazione dell'analisi",
+         "Lang_en": "The dialog offers multiple possibilities for customising the analysis",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "31": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Tutti campi personalizzabili sono stati suddivisi in sezioni secondo la loro tipologia",
+         "Lang_en": "All customisable fields have been divided into sections according to their type",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "32": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -573,7 +611,26 @@
          "RowId": "",
          "Description": ""
       },
-      "31": {
+      "33": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "o quali elementi includere nel report",
+         "Lang_en": "or which elements to include in the report",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "34": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -583,8 +640,8 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Le preferenze di stampa invece consentono per esempio di modificare elementi come i colori delle intestazioni, l'intestazione ed il logo",
-         "Lang_en": "The print preferences, on the other hand, allow you, for example, to change the colours of the header",
+         "Lang_it": "Le preferenze di stampa ti consentono per esempio di modificare alcuni elementi graifici nel report",
+         "Lang_en": "The print preferences allow you, for example, to modify certain graphic elements in the report.",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -592,7 +649,26 @@
          "RowId": "",
          "Description": ""
       },
-      "32": {
+      "35": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "come i colori delle intestazioni delle tabelle, l'intestazione del file ed il logo",
+         "Lang_en": "such as the colours of the table headers, the file header and the logo",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "36": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -611,7 +687,7 @@
          "RowId": "",
          "Description": ""
       },
-      "33": {
+      "37": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -630,7 +706,7 @@
          "RowId": "",
          "Description": ""
       },
-      "34": {
+      "38": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -649,7 +725,7 @@
          "RowId": "",
          "Description": ""
       },
-      "35": {
+      "39": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -668,7 +744,7 @@
          "RowId": "",
          "Description": ""
       },
-      "36": {
+      "40": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -687,7 +763,7 @@
          "RowId": "",
          "Description": ""
       },
-      "37": {
+      "41": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -706,7 +782,7 @@
          "RowId": "",
          "Description": ""
       },
-      "38": {
+      "42": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -725,7 +801,7 @@
          "RowId": "",
          "Description": ""
       },
-      "39": {
+      "43": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -744,7 +820,7 @@
          "RowId": "",
          "Description": ""
       },
-      "40": {
+      "44": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -763,7 +839,7 @@
          "RowId": "",
          "Description": ""
       },
-      "41": {
+      "45": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -774,7 +850,7 @@
          "Speech": "",
          "TimeCommand": "",
          "Lang_it": "Puoi definire il valore obiettivo per ogni indice presente nell'analisi",
-         "Lang_en": "You can define the target value for each index in the analysis",
+         "Lang_en": "You can define the target value for each ratio in the analysis",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -782,7 +858,7 @@
          "RowId": "",
          "Description": ""
       },
-      "42": {
+      "46": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -801,7 +877,7 @@
          "RowId": "",
          "Description": ""
       },
-      "43": {
+      "47": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -820,7 +896,7 @@
          "RowId": "",
          "Description": ""
       },
-      "44": {
+      "48": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -839,7 +915,7 @@
          "RowId": "",
          "Description": ""
       },
-      "45": {
+      "49": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -858,7 +934,7 @@
          "RowId": "",
          "Description": ""
       },
-      "46": {
+      "50": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -877,7 +953,7 @@
          "RowId": "",
          "Description": ""
       },
-      "47": {
+      "51": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -896,7 +972,330 @@
          "RowId": "",
          "Description": ""
       },
-      "48": {
+      "52": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "CASH FLOW STATEMENT",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "slide_empty.png",
+         "Style": "TextMiddle",
+         "Speech": "",
+         "TimeCommand": "SceneTime",
+         "Lang_it": "Prepara il/i tuoi file contabili per eseguire l'Analisi del Cash Flow",
+         "Lang_en": "Prepare your accounting file(s) to perform the Cash Flow Statement Analysis",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "53": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "54": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Per poter eseguire un'analisi del Cash Flow corretta è necessario identificare alcuni elementi al'interno delle tue registrazioni contabili.",
+         "Lang_en": "In order to be able to perform a correct Cash Flow analysis, it is necessary to identify certain elements within your accounting records",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "55": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Questo è possibile farlo inserendo nella riga della registrazione il prefisso '#nome_prefisso' all'interno della colonna della descrizione",
+         "Lang_en": "This can be done by inserting the prefix '#prefix_name' in the description column of the entry.",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "56": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "In questo modo l'estensione è in grado di riconoscere e calcolare alcuni valori fondamentali per il calcolo del Cash Flow",
+         "Lang_en": "In this way, the extension is able to recognise and calculate some fundamental values for the Cash Flow statment calculation",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "57": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "I valori da indentificare sono i seguenti:",
+         "Lang_en": "The values to be identified are the following:",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "58": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "DISINVESTMENTS",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "slide_empty.png",
+         "Style": "TextMiddle",
+         "Speech": "",
+         "TimeCommand": "SceneTime",
+         "Lang_it": "Disinvestimenti",
+         "Lang_en": "Disinvestments",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "59": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "cashflow_1.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Così facendo, il programma è in grado per esempio di calcolare in dettaglio l'importo reale degli investimenti che sono stati fatti durante l'anno",
+         "Lang_en": "By doing so, the program is able for example to calculate in detail the real amount of investments that have been made during the year",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "60": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Per una PMI, il numero di disinvestimenti durante il periodo contabile rimane di solito abbastanza piccolo, mentre le attività di investimento sono operazioni molto più frequenti,",
+         "Lang_en": "For an SME, the number of disinvestments during the accounting period usually remains quite small, whereas investment activities are much more frequent operations,",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "61": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "ed è per questo che è molto importante trovare l'importo reale al netto di tutti gli altri movimenti.",
+         "Lang_en": "which is why it is very important to find the real amount net of all other movements.",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "62": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "REVALUATIONS/DEVALUATIONS",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "slide_empty.png",
+         "Style": "TextMiddle",
+         "Speech": "",
+         "TimeCommand": "SceneTime",
+         "Lang_it": "Rivalutazioni o Svalutazioni",
+         "Lang_en": "Revaluations or Devaluations",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "63": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "cashflow_2.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Identifica gli utili o le perdite sulle vendite di attivo fisso nelle tue registrazioni",
+         "Lang_en": "Identify gains or losses on sales of fixed assets in your records",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "64": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "In questo modo è possibile capire qualora dovesse figurare a fine anno un aumento dell'attivo fisso,",
+         "Lang_en": "In this way you can understand if there is an increase in fixed assets at the year end,",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "65": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "se si tratta di una crescita dovuta ad investimenti avvenuti durante l'anno o se invece sono inclusi anche utili o perdite sulla vendita dell'attivo fisso effetuata",
+         "Lang_en": "whether it is a growth due to investments made during the year or whether it also includes gains or losses on the sale of the fixed assets made",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "66": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "DIVIDENDI",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "slide_empty.png",
+         "Style": "TextMiddle",
+         "Speech": "",
+         "TimeCommand": "SceneTime",
+         "Lang_it": "Dividendi",
+         "Lang_en": "Dividends",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "67": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "cashflow_3.png",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "Se hai già registrato in contabilità l'importo destinato ai dividendi, identificane la registrazione",
+         "Lang_en": "If you have already recorded the amount allocated to dividends in your accounts, identify the entry",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "68": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "identificare l'importo destinato ai dividendi permette di capire quale sia l'effettiva liquidità rimasta all'azienda.",
+         "Lang_en": "Identifying the amount earmarked for dividends provides an insight into the actual liquidity left with the company.",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "69": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "FINANCIAL REPORT",
@@ -915,7 +1314,26 @@
          "RowId": "",
          "Description": ""
       },
-      "49": {
+      "70": {
+         "StartTime": "",
+         "EndTime": "",
+         "Notes": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": ""
+      },
+      "71": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "zoom foto report=212%",
@@ -934,7 +1352,7 @@
          "RowId": "",
          "Description": ""
       },
-      "50": {
+      "72": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -953,7 +1371,7 @@
          "RowId": "",
          "Description": ""
       },
-      "51": {
+      "73": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -964,7 +1382,7 @@
          "Speech": "",
          "TimeCommand": "",
          "Lang_it": "Se le modifiche al dialogo sono state fatte sotto Settings, una volta premuto ok e chiuso il dialogo seleziona Financial Reports",
-         "Lang_en": "If changes to the dialogue have been made under Settings, once you have pressed ok and closed the dialogue select Financial Reports",
+         "Lang_en": "If changes to the dialogue have been made under Settings, once you have pressed ok and closed the dialog select Financial Reports",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -972,7 +1390,7 @@
          "RowId": "",
          "Description": ""
       },
-      "52": {
+      "74": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -991,7 +1409,7 @@
          "RowId": "",
          "Description": ""
       },
-      "53": {
+      "75": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1010,7 +1428,7 @@
          "RowId": "",
          "Description": ""
       },
-      "54": {
+      "76": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1029,7 +1447,7 @@
          "RowId": "",
          "Description": ""
       },
-      "55": {
+      "77": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1048,7 +1466,7 @@
          "RowId": "",
          "Description": ""
       },
-      "56": {
+      "78": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1067,7 +1485,7 @@
          "RowId": "",
          "Description": ""
       },
-      "57": {
+      "79": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1086,7 +1504,7 @@
          "RowId": "",
          "Description": ""
       },
-      "58": {
+      "80": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1105,7 +1523,7 @@
          "RowId": "",
          "Description": ""
       },
-      "59": {
+      "81": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1124,7 +1542,7 @@
          "RowId": "",
          "Description": ""
       },
-      "60": {
+      "82": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1143,7 +1561,7 @@
          "RowId": "",
          "Description": ""
       },
-      "61": {
+      "83": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1162,7 +1580,7 @@
          "RowId": "",
          "Description": ""
       },
-      "62": {
+      "84": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1181,7 +1599,7 @@
          "RowId": "",
          "Description": ""
       },
-      "63": {
+      "85": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1200,7 +1618,7 @@
          "RowId": "",
          "Description": ""
       },
-      "64": {
+      "86": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1211,7 +1629,7 @@
          "Speech": "",
          "TimeCommand": "",
          "Lang_it": "Il Cash Flow è uno strumento analitico che aiuta a visualizzare le variazioni positive e negative della liquidità a seguito della gestione,",
-         "Lang_en": "Cash Flow is an analytical tool that helps to visualise positive and negative changes in cash as a result of management,",
+         "Lang_en": "Cash Flow Statement is an analytical tool that helps to visualise positive and negative changes in cash as a result of management,",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1219,7 +1637,7 @@
          "RowId": "",
          "Description": ""
       },
-      "65": {
+      "87": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1238,7 +1656,7 @@
          "RowId": "",
          "Description": ""
       },
-      "66": {
+      "88": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1257,7 +1675,7 @@
          "RowId": "",
          "Description": ""
       },
-      "67": {
+      "89": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1276,7 +1694,7 @@
          "RowId": "",
          "Description": ""
       },
-      "68": {
+      "90": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1295,7 +1713,7 @@
          "RowId": "",
          "Description": ""
       },
-      "69": {
+      "91": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1314,7 +1732,7 @@
          "RowId": "",
          "Description": ""
       },
-      "70": {
+      "92": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1333,7 +1751,7 @@
          "RowId": "",
          "Description": ""
       },
-      "71": {
+      "93": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1352,7 +1770,7 @@
          "RowId": "",
          "Description": ""
       },
-      "72": {
+      "94": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1371,7 +1789,7 @@
          "RowId": "",
          "Description": ""
       },
-      "73": {
+      "95": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1390,7 +1808,7 @@
          "RowId": "",
          "Description": ""
       },
-      "74": {
+      "96": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1409,7 +1827,7 @@
          "RowId": "",
          "Description": ""
       },
-      "75": {
+      "97": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1428,7 +1846,7 @@
          "RowId": "",
          "Description": ""
       },
-      "76": {
+      "98": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1447,16 +1865,16 @@
          "RowId": "",
          "Description": ""
       },
-      "77": {
+      "99": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "FINANCIAL CHARTS",
          "SysCod": "",
          "Links": "",
          "SceneFile": "slide_empty.png",
-         "Style": "",
+         "Style": "TextMiddle",
          "Speech": "",
-         "TimeCommand": "",
+         "TimeCommand": "SceneTime",
          "Lang_it": "Grafici Finanziari",
          "Lang_en": "Financial Charts",
          "Lang_fr": "",
@@ -1466,7 +1884,7 @@
          "RowId": "",
          "Description": ""
       },
-      "78": {
+      "100": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1477,7 +1895,7 @@
          "Speech": "",
          "TimeCommand": "",
          "Lang_it": "Utilizza i grafici per visualizzare i dati in maniera ancora più intuitiva",
-         "Lang_en": "Use graphs to visualise data in an even more intuitive way",
+         "Lang_en": "Use Charts to visualise data in an even more intuitive way",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1485,7 +1903,7 @@
          "RowId": "",
          "Description": ""
       },
-      "79": {
+      "101": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1504,7 +1922,7 @@
          "RowId": "",
          "Description": ""
       },
-      "80": {
+      "102": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1523,7 +1941,7 @@
          "RowId": "",
          "Description": ""
       },
-      "81": {
+      "103": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1542,7 +1960,7 @@
          "RowId": "",
          "Description": ""
       },
-      "82": {
+      "104": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1553,7 +1971,7 @@
          "Speech": "",
          "TimeCommand": "",
          "Lang_it": "Puoi anche visualizzare il grafico con il report aperto",
-         "Lang_en": "You can also view the graph with the report open",
+         "Lang_en": "You can also view the chart with the report open",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1561,7 +1979,7 @@
          "RowId": "",
          "Description": ""
       },
-      "83": {
+      "105": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "",
@@ -1580,7 +1998,7 @@
          "RowId": "",
          "Description": ""
       },
-      "84": {
+      "106": {
          "StartTime": "",
          "EndTime": "",
          "Notes": "SLIDE CONCLUSIVE",
@@ -1599,6 +2017,6 @@
          "RowId": "",
          "Description": ""
       },
-      "RowCount": 84
+      "RowCount": 106
    }
 }
