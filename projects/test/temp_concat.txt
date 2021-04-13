@@ -1,0 +1,7 @@
+file 'build/it/scene001-video-ass.mp4'
+file 'build/it/scene002-video-ass.mp4'
+file 'build/it/scene003-video-ass.mp4'
+file 'build/it/scene004-video-ass.mp4'
+file 'build/it/scene005-video-ass.mp4'
+file 'build/it/scene006-video-ass.mp4'
+file 'build/it/scene007-video-ass.mp4'
