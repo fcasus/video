@@ -126,7 +126,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Le immàgini sono state registrate in inglese, ma nel programma li vedrai nella tua lingua.",
+         "Lang_it": "Le immàgini sono state registrate in inglese, ma nel programma le vedrai nella tua lingua.",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -255,6 +255,25 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "15": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
          "SceneFile": "slide_empty.png",
          "Style": "TextMiddle",
          "Speech": "0",
@@ -269,7 +288,7 @@
          "Description": "",
          "Notes": ""
       },
-      "15": {
+      "16": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -288,7 +307,7 @@
          "Description": "",
          "Notes": ""
       },
-      "16": {
+      "17": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -307,7 +326,7 @@
          "Description": "",
          "Notes": ""
       },
-      "17": {
+      "18": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -326,7 +345,7 @@
          "Description": "",
          "Notes": ""
       },
-      "18": {
+      "19": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -345,7 +364,7 @@
          "Description": "",
          "Notes": ""
       },
-      "19": {
+      "20": {
          "StartTime": "",
          "EndTime": "00:00:01.500",
          "SysCod": "",
@@ -364,9 +383,9 @@
          "Description": "",
          "Notes": ""
       },
-      "20": {
+      "21": {
          "StartTime": "",
-         "EndTime": "00:00:01",
+         "EndTime": "00:00:00.500",
          "SysCod": "",
          "Links": "",
          "SceneFile": "",
@@ -383,7 +402,7 @@
          "Description": "",
          "Notes": ""
       },
-      "21": {
+      "22": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -402,7 +421,7 @@
          "Description": "",
          "Notes": ""
       },
-      "22": {
+      "23": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -421,7 +440,7 @@
          "Description": "",
          "Notes": ""
       },
-      "23": {
+      "24": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -440,7 +459,7 @@
          "Description": "",
          "Notes": ""
       },
-      "24": {
+      "25": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -459,7 +478,7 @@
          "Description": "",
          "Notes": ""
       },
-      "25": {
+      "26": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -478,7 +497,7 @@
          "Description": "",
          "Notes": ""
       },
-      "26": {
+      "27": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -497,7 +516,7 @@
          "Description": "",
          "Notes": ""
       },
-      "27": {
+      "28": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -516,7 +535,7 @@
          "Description": "",
          "Notes": ""
       },
-      "28": {
+      "29": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -535,7 +554,7 @@
          "Description": "",
          "Notes": ""
       },
-      "29": {
+      "30": {
          "StartTime": "",
          "EndTime": "00:00:01.500",
          "SysCod": "",
@@ -554,7 +573,7 @@
          "Description": "",
          "Notes": ""
       },
-      "30": {
+      "31": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -573,7 +592,7 @@
          "Description": "",
          "Notes": ""
       },
-      "31": {
+      "32": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -592,7 +611,7 @@
          "Description": "",
          "Notes": ""
       },
-      "32": {
+      "33": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -611,7 +630,7 @@
          "Description": "",
          "Notes": ""
       },
-      "33": {
+      "34": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -630,7 +649,7 @@
          "Description": "",
          "Notes": ""
       },
-      "34": {
+      "35": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -649,7 +668,7 @@
          "Description": "",
          "Notes": ""
       },
-      "35": {
+      "36": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -668,7 +687,7 @@
          "Description": "",
          "Notes": ""
       },
-      "36": {
+      "37": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -687,7 +706,7 @@
          "Description": "",
          "Notes": ""
       },
-      "37": {
+      "38": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -706,7 +725,7 @@
          "Description": "",
          "Notes": ""
       },
-      "38": {
+      "39": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -717,25 +736,6 @@
          "TimeCommand": "",
          "Lang_it": "e le spese extra.",
          "Lang_en": "and the extra costs.",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "39": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "",
-         "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -768,6 +768,25 @@
          "EndTime": "",
          "SysCod": "",
          "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "42": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
          "SceneFile": "slide_empty.png",
          "Style": "TextMiddle",
          "Speech": "0",
@@ -782,7 +801,7 @@
          "Description": "",
          "Notes": ""
       },
-      "42": {
+      "43": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -801,7 +820,7 @@
          "Description": "",
          "Notes": ""
       },
-      "43": {
+      "44": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -820,7 +839,7 @@
          "Description": "",
          "Notes": ""
       },
-      "44": {
+      "45": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -839,7 +858,7 @@
          "Description": "",
          "Notes": ""
       },
-      "45": {
+      "46": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -858,7 +877,7 @@
          "Description": "",
          "Notes": ""
       },
-      "46": {
+      "47": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -877,7 +896,7 @@
          "Description": "",
          "Notes": ""
       },
-      "47": {
+      "48": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -888,25 +907,6 @@
          "TimeCommand": "",
          "Lang_it": "e nella colonna Apertura puoi inserire il saldo iniziale.",
          "Lang_en": "And you can enter the initial balance in the \"Opening\" column.",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "48": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "",
-         "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -974,6 +974,25 @@
       },
       "52": {
          "StartTime": "",
+         "EndTime": "00:00:00.500",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "CompensatePlus",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "53": {
+         "StartTime": "",
          "EndTime": "",
          "SysCod": "",
          "Links": "",
@@ -991,7 +1010,7 @@
          "Description": "",
          "Notes": ""
       },
-      "53": {
+      "54": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1010,7 +1029,7 @@
          "Description": "",
          "Notes": ""
       },
-      "54": {
+      "55": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1029,7 +1048,7 @@
          "Description": "",
          "Notes": ""
       },
-      "55": {
+      "56": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1048,7 +1067,7 @@
          "Description": "",
          "Notes": ""
       },
-      "56": {
+      "57": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1059,25 +1078,6 @@
          "TimeCommand": "",
          "Lang_it": "modificarle, o cancellarle.",
          "Lang_en": "edit or delete them.",
-         "Lang_fr": "",
-         "Lang_de": "",
-         "Lang_es": "",
-         "Section": "",
-         "RowId": "",
-         "Description": "",
-         "Notes": ""
-      },
-      "57": {
-         "StartTime": "",
-         "EndTime": "",
-         "SysCod": "",
-         "Links": "",
-         "SceneFile": "",
-         "Style": "",
-         "Speech": "",
-         "TimeCommand": "",
-         "Lang_it": "",
-         "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1126,6 +1126,25 @@
       },
       "60": {
          "StartTime": "",
+         "EndTime": "00:00:01",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "CompensatePlus",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "61": {
+         "StartTime": "",
          "EndTime": "",
          "SysCod": "",
          "Links": "",
@@ -1143,7 +1162,7 @@
          "Description": "",
          "Notes": ""
       },
-      "61": {
+      "62": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1162,7 +1181,7 @@
          "Description": "",
          "Notes": ""
       },
-      "62": {
+      "63": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1181,7 +1200,7 @@
          "Description": "",
          "Notes": ""
       },
-      "63": {
+      "64": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1200,7 +1219,7 @@
          "Description": "",
          "Notes": ""
       },
-      "64": {
+      "65": {
          "StartTime": "",
          "EndTime": "00:00:02.500",
          "SysCod": "",
@@ -1219,7 +1238,7 @@
          "Description": "",
          "Notes": ""
       },
-      "65": {
+      "66": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1238,7 +1257,7 @@
          "Description": "",
          "Notes": ""
       },
-      "66": {
+      "67": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1248,7 +1267,7 @@
          "Speech": "",
          "TimeCommand": "",
          "Lang_it": "Per generare il rendiconto annuale seleziona Report, Rendiconto annuale e confronto preventivo",
-         "Lang_en": "You can create your report by selecting from the Report menu, Yearly report compared to budget",
+         "Lang_en": "You can create your report by selecting from the Reports menu, Yearly report compared to budget",
          "Lang_fr": "",
          "Lang_de": "",
          "Lang_es": "",
@@ -1257,7 +1276,7 @@
          "Description": "",
          "Notes": ""
       },
-      "67": {
+      "68": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1276,7 +1295,7 @@
          "Description": "",
          "Notes": ""
       },
-      "68": {
+      "69": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1295,7 +1314,7 @@
          "Description": "",
          "Notes": ""
       },
-      "69": {
+      "70": {
          "StartTime": "",
          "EndTime": "00:00:02.500",
          "SysCod": "",
@@ -1314,7 +1333,7 @@
          "Description": "",
          "Notes": ""
       },
-      "70": {
+      "71": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1333,7 +1352,7 @@
          "Description": "",
          "Notes": ""
       },
-      "71": {
+      "72": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1352,7 +1371,7 @@
          "Description": "",
          "Notes": ""
       },
-      "72": {
+      "73": {
          "StartTime": "",
          "EndTime": "00:00:01.500",
          "SysCod": "",
@@ -1371,7 +1390,7 @@
          "Description": "",
          "Notes": ""
       },
-      "73": {
+      "74": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1390,7 +1409,7 @@
          "Description": "",
          "Notes": ""
       },
-      "74": {
+      "75": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1409,7 +1428,7 @@
          "Description": "",
          "Notes": ""
       },
-      "75": {
+      "76": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1428,7 +1447,7 @@
          "Description": "",
          "Notes": ""
       },
-      "76": {
+      "77": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1447,6 +1466,6 @@
          "Description": "",
          "Notes": ""
       },
-      "RowCount": 76
+      "RowCount": 77
    }
 }
