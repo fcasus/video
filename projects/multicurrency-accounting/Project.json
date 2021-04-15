@@ -1,6 +1,6 @@
 {
    "FileInfo": {
-      "FileName": "/Users/ivan/Documents/GitHub/video/projects/multicurrency-accounting/multicurrency-accounting.ac2"
+      "FileName": "/Users/tiz/Movies/banana/video/projects/multicurrency-accounting/multicurrency-accounting.ac2"
    },
    "Rows": {
       "1": {
@@ -366,13 +366,13 @@
       },
       "20": {
          "StartTime": "",
-         "EndTime": "00:00:01",
+         "EndTime": "",
          "SysCod": "",
          "Links": "",
          "SceneFile": "",
          "Style": "",
          "Speech": "",
-         "TimeCommand": "CompensatePlus",
+         "TimeCommand": "",
          "Lang_it": "",
          "Lang_en": "",
          "Lang_fr": "",
