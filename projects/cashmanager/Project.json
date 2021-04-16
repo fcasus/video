@@ -480,6 +480,25 @@
       },
       "26": {
          "StartTime": "",
+         "EndTime": "00:00:00.500",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "FixedTime",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "27": {
+         "StartTime": "",
          "EndTime": "",
          "SysCod": "",
          "Links": "",
@@ -497,7 +516,7 @@
          "Description": "",
          "Notes": ""
       },
-      "27": {
+      "28": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -516,7 +535,7 @@
          "Description": "",
          "Notes": ""
       },
-      "28": {
+      "29": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -535,7 +554,7 @@
          "Description": "",
          "Notes": ""
       },
-      "29": {
+      "30": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -554,7 +573,7 @@
          "Description": "",
          "Notes": ""
       },
-      "30": {
+      "31": {
          "StartTime": "",
          "EndTime": "00:00:05.200",
          "SysCod": "",
@@ -573,7 +592,7 @@
          "Description": "",
          "Notes": ""
       },
-      "31": {
+      "32": {
          "StartTime": "",
          "EndTime": "00:00:04.300",
          "SysCod": "",
@@ -592,7 +611,7 @@
          "Description": "",
          "Notes": ""
       },
-      "32": {
+      "33": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -611,7 +630,7 @@
          "Description": "",
          "Notes": ""
       },
-      "33": {
+      "34": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -630,7 +649,7 @@
          "Description": "",
          "Notes": ""
       },
-      "34": {
+      "35": {
          "StartTime": "",
          "EndTime": "00:00:00.400",
          "SysCod": "",
@@ -649,7 +668,7 @@
          "Description": "",
          "Notes": ""
       },
-      "35": {
+      "36": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -668,7 +687,7 @@
          "Description": "",
          "Notes": ""
       },
-      "36": {
+      "37": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -687,7 +706,7 @@
          "Description": "",
          "Notes": ""
       },
-      "37": {
+      "38": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -706,7 +725,7 @@
          "Description": "",
          "Notes": ""
       },
-      "38": {
+      "39": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -725,7 +744,7 @@
          "Description": "",
          "Notes": ""
       },
-      "39": {
+      "40": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -744,15 +763,15 @@
          "Description": "",
          "Notes": ""
       },
-      "40": {
+      "41": {
          "StartTime": "",
-         "EndTime": "",
+         "EndTime": "00:00:02",
          "SysCod": "",
          "Links": "",
          "SceneFile": "tabcategorie_003_cashmanager.png",
          "Style": "",
          "Speech": "",
-         "TimeCommand": "",
+         "TimeCommand": "FixedTime",
          "Lang_it": "e Uscite",
          "Lang_en": "",
          "Lang_fr": "",
@@ -763,7 +782,7 @@
          "Description": "",
          "Notes": ""
       },
-      "41": {
+      "42": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -782,7 +801,7 @@
          "Description": "",
          "Notes": ""
       },
-      "42": {
+      "43": {
          "StartTime": "",
          "EndTime": "00:00:00.800",
          "SysCod": "",
@@ -801,7 +820,7 @@
          "Description": "",
          "Notes": ""
       },
-      "43": {
+      "44": {
          "StartTime": "",
          "EndTime": "00:00:00.800",
          "SysCod": "",
@@ -820,9 +839,9 @@
          "Description": "",
          "Notes": ""
       },
-      "44": {
+      "45": {
          "StartTime": "",
-         "EndTime": "00:00:00.800",
+         "EndTime": "00:00:00.400",
          "SysCod": "",
          "Links": "",
          "SceneFile": "tabcategorie_007_cashmanager.png",
@@ -839,7 +858,7 @@
          "Description": "",
          "Notes": ""
       },
-      "45": {
+      "46": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -858,7 +877,7 @@
          "Description": "",
          "Notes": ""
       },
-      "46": {
+      "47": {
          "StartTime": "",
          "EndTime": "00:00:00.300",
          "SysCod": "",
@@ -877,7 +896,7 @@
          "Description": "",
          "Notes": ""
       },
-      "47": {
+      "48": {
          "StartTime": "",
          "EndTime": "00:00:00.300",
          "SysCod": "",
@@ -896,7 +915,7 @@
          "Description": "",
          "Notes": ""
       },
-      "48": {
+      "49": {
          "StartTime": "",
          "EndTime": "00:00:00.300",
          "SysCod": "",
@@ -915,7 +934,7 @@
          "Description": "",
          "Notes": ""
       },
-      "49": {
+      "50": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -934,7 +953,7 @@
          "Description": "",
          "Notes": ""
       },
-      "50": {
+      "51": {
          "StartTime": "",
          "EndTime": "00:00:00.900",
          "SysCod": "",
@@ -953,7 +972,7 @@
          "Description": "",
          "Notes": ""
       },
-      "51": {
+      "52": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -972,7 +991,26 @@
          "Description": "",
          "Notes": ""
       },
-      "52": {
+      "53": {
+         "StartTime": "",
+         "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "",
+         "Style": "",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "54": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -991,7 +1029,7 @@
          "Description": "",
          "Notes": ""
       },
-      "53": {
+      "55": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1010,7 +1048,7 @@
          "Description": "",
          "Notes": ""
       },
-      "54": {
+      "56": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1029,7 +1067,7 @@
          "Description": "",
          "Notes": ""
       },
-      "55": {
+      "57": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1048,7 +1086,7 @@
          "Description": "",
          "Notes": ""
       },
-      "56": {
+      "58": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1067,7 +1105,7 @@
          "Description": "",
          "Notes": ""
       },
-      "57": {
+      "59": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1086,7 +1124,7 @@
          "Description": "",
          "Notes": ""
       },
-      "58": {
+      "60": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1105,7 +1143,7 @@
          "Description": "",
          "Notes": ""
       },
-      "59": {
+      "61": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1124,7 +1162,7 @@
          "Description": "",
          "Notes": ""
       },
-      "60": {
+      "62": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1143,7 +1181,7 @@
          "Description": "",
          "Notes": ""
       },
-      "61": {
+      "63": {
          "StartTime": "",
          "EndTime": "00:00:00.200",
          "SysCod": "",
@@ -1162,7 +1200,7 @@
          "Description": "",
          "Notes": ""
       },
-      "62": {
+      "64": {
          "StartTime": "",
          "EndTime": "00:00:00.200",
          "SysCod": "",
@@ -1181,7 +1219,7 @@
          "Description": "",
          "Notes": ""
       },
-      "63": {
+      "65": {
          "StartTime": "",
          "EndTime": "00:00:00.200",
          "SysCod": "",
@@ -1200,7 +1238,7 @@
          "Description": "",
          "Notes": ""
       },
-      "64": {
+      "66": {
          "StartTime": "",
          "EndTime": "00:00:00.200",
          "SysCod": "",
@@ -1219,7 +1257,7 @@
          "Description": "",
          "Notes": ""
       },
-      "65": {
+      "67": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1228,7 +1266,7 @@
          "Style": "",
          "Speech": "",
          "TimeCommand": "",
-         "Lang_it": "Ogni volta che inserisci una nuova registrazione puoi subito controllare il saldo del conto CASSA nella colonna Saldo",
+         "Lang_it": "Ogni volta che inserisci una nuova registrazione puoi controllare il saldo del conto Cassa nella colonna Saldo",
          "Lang_en": "",
          "Lang_fr": "",
          "Lang_de": "",
@@ -1238,7 +1276,7 @@
          "Description": "",
          "Notes": ""
       },
-      "66": {
+      "68": {
          "StartTime": "",
          "EndTime": "00:00:00.600",
          "SysCod": "",
@@ -1257,7 +1295,7 @@
          "Description": "",
          "Notes": ""
       },
-      "67": {
+      "69": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1276,7 +1314,7 @@
          "Description": "",
          "Notes": ""
       },
-      "68": {
+      "70": {
          "StartTime": "",
          "EndTime": "00:00:00.800",
          "SysCod": "",
@@ -1295,9 +1333,9 @@
          "Description": "",
          "Notes": ""
       },
-      "69": {
+      "71": {
          "StartTime": "",
-         "EndTime": "00:00:00.800",
+         "EndTime": "00:00:01.200",
          "SysCod": "",
          "Links": "",
          "SceneFile": "registrazioni_016_cashmanager.png",
@@ -1314,7 +1352,7 @@
          "Description": "",
          "Notes": ""
       },
-      "70": {
+      "72": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1333,7 +1371,7 @@
          "Description": "",
          "Notes": ""
       },
-      "71": {
+      "73": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1352,7 +1390,7 @@
          "Description": "",
          "Notes": ""
       },
-      "72": {
+      "74": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1371,7 +1409,7 @@
          "Description": "",
          "Notes": ""
       },
-      "73": {
+      "75": {
          "StartTime": "",
          "EndTime": "",
          "SysCod": "",
@@ -1390,15 +1428,34 @@
          "Description": "",
          "Notes": ""
       },
-      "74": {
+      "76": {
          "StartTime": "",
          "EndTime": "",
+         "SysCod": "",
+         "Links": "",
+         "SceneFile": "slide_empty.png",
+         "Style": "TextMiddle",
+         "Speech": "",
+         "TimeCommand": "",
+         "Lang_it": "per ulteriori informazioni visita www.banana.ch",
+         "Lang_en": "",
+         "Lang_fr": "",
+         "Lang_de": "",
+         "Lang_es": "",
+         "Section": "",
+         "RowId": "",
+         "Description": "",
+         "Notes": ""
+      },
+      "77": {
+         "StartTime": "",
+         "EndTime": "00:00:00.800",
          "SysCod": "",
          "Links": "",
          "SceneFile": "",
          "Style": "",
          "Speech": "",
-         "TimeCommand": "",
+         "TimeCommand": "FixedTime",
          "Lang_it": "",
          "Lang_en": "",
          "Lang_fr": "",
@@ -1409,6 +1466,6 @@
          "Description": "",
          "Notes": ""
       },
-      "RowCount": 74
+      "RowCount": 77
    }
 }
