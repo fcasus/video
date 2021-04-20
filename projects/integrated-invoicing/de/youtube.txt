@@ -1,8 +1,7 @@
-Starten Sie einfach und kostenlos mit der integrierten Rechnungsstellung von Banana Buchhaltung.
-Erfassen Sie Rechnungen als einfache Eingaben und erstellen Sie in wenigen Sekunden professionelle Rechnungen, die Sie ausdrucken oder per E-Mail an Ihre Kunden senden können.
-Siehe die vollständige Dokumentation: https://www.banana.ch/doc/de/node/8294.
-
-Banana Buchhaltung Plus ist die professionelle Buchhaltungssoftware, die wie Excel verwendet wird, für diejenigen, die nicht viel Buchhaltungswissen haben oder für Experten, die eine einfache und schnelle Lösung wünschen. 
+Starten Sie schnell und kostenlos mit der integrierten Fakturierung von Banana Buchhaltung.
+Geben Sie Rechnungen als einfache Buchungen ein und erstellen Sie in wenigen Sekunden professionelle Rechnungen, die ausgedruckt oder per E-Mail an Ihre Kunden gesendet werden können.
+Sehen Sie sich unsere vollständige Dokumentation an: https://www.banana.ch/doc/de/node/8294.
+Banana Buchhaltung Plus ist die professionelle Buchhaltungssoftware, ähnlich wie Excel, ideal für diejenigen, die nicht viele Buchhaltungskenntnisse haben oder für Experten, die eine einfache und schnelle Lösung wünschen.
 
 %timestamps%
 

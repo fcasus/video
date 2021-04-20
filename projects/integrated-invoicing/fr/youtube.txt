@@ -1,8 +1,7 @@
-Démarrez facilement et gratuitement avec la facturation intégrée de Banana Comptabilité.
-Saisissez les factures comme de simples entrées et créez en quelques secondes des factures professionnelles, prêtes à être imprimées ou envoyées par e-mail à vos clients.
-Voir la documentation complète : https://www.banana.ch/doc/fr/node/8294.
+Démarrez facilement et gratuitement avec la facturation intégrée de Banana Comptabilité. Saisissez les factures comme de simples écritures et créez en quelques secondes des factures professionnelles, prêtes à être imprimées ou envoyées par e-mail à vos clients.
+Voir la documentation complète : https://www.banana.ch/doc/fr/node/8294​.
 
-Banana Comptabilité Plus est le logiciel de comptabilité professionnel, qui s'utilise comme Excel, pour ceux qui n'ont pas beaucoup de connaissances en comptabilité ou pour les experts qui veulent une solution simple et rapide. 
+Banana Comptabilité+ est le logiciel de comptabilité professionnel, qui peut être utilisé comme Excel, pour ceux qui n'ont pas beaucoup de connaissances en comptabilité ou pour les experts qui veulent une solution simple et rapide.
 
 %timestamps%
 
