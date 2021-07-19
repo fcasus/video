@@ -34,9 +34,11 @@ Financial statement (1:30 max)
 
 
 
+------
+
 Small and medium companies
 
-With financial statement the decision maker can easily manage the financial situtation of the company and make important decisions to make sure the company will have profit
+With financial statement the decision maker can easily manage the financial situation of the company and make important decisions to make sure the company will have profit
 
 you can set your reports monthly, quarterly, yearly
 
@@ -48,6 +50,66 @@ budget planning (cost control)
 balance sheet
 
 profit & loss statement 
+
+
+------
+
+
+inserisci registrazioni contabili (senza spiegare in dettagli conti)
+immediatamente puoi già avere il report che vuoi, il report è automatico
+
+
+benefici
+- tenere sotto controlli i costi
+- panoramica a 360 gradi il controllo dei costi
+
+
+
+
+
+-----
+
+
+Financial statement reporting
+
+
+0. INTRO
+- for small and medium companies, new to Banana
+- spiegazione benefici
+	- With financial statement the decision maker can easily control the financial situation of the company and make important decisions to make sure the company will have profit
+	- scopo: To make sure company will earn money or have profit
+
+- ti facciamo vedere come è facile con banana
+
+
+1. BUDGET
+- inserire registrazioni budget
+- stampa report budget
+	- mensile
+	- trimestrale
+	- annuale
+
+2. BILANCIO E CONTO ECONOMICO
+- inserire registrazioni contabili
+- hai già tutto sotto controllo nella tabella Conti, panoramica a 360 gradi sul controllo dei costi
+- stampa report
+	- bilancio
+	- conto economico
+		- vedi se la tua azienda sta guadagnando o perdendo
+		- tenere sotto controlli i costi
+		- Identify reasons for profits or losses
+	- confronto con budget
+		- vedi come sta andando la ditta
+		- prendere decisioni finanziarie (close unprofitable businesses)
+	
+
+
+
+
+
+
+
+
 
 
 
