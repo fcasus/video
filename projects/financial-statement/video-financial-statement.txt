@@ -94,17 +94,38 @@ Financial statement reporting
 - hai già tutto sotto controllo nella tabella Conti, panoramica a 360 gradi sul controllo dei costi
 - stampa report
 	- bilancio
+		- why is it important?
 	- conto economico
+		- - why is it important?
 		- vedi se la tua azienda sta guadagnando o perdendo
 		- tenere sotto controlli i costi
 		- Identify reasons for profits or losses
 	- confronto con budget
+		- why is it important?
 		- vedi come sta andando la ditta
 		- prendere decisioni finanziarie (close unprofitable businesses)
 	
 
 
+-----
 
+0. Financial statements
+Welcome to Banana Accounting Plus!
+The Banana Financial Statements are tailor-made for small and medium sized companies
+With financial statements the decision maker can easily control the financial situation of the company, make important decisions to ensure the company will have profit and avoid losses
+You can use predefined templates in the software and quickly get the financial statements you need
+
+1. Budget planning
+Create your forecasts in no time by entering the data easily in the Budget table
+With a simple click you can view your financial forecasts monthly, quarterly and yearly
+You can have a realistic view of your future sales volumes, the related costs and understand if your capital will be sufficient
+
+2. Balance Sheet and Profit & Loss Statement
+Enter the movements in the Transactions table 
+and then in the Accounts Table you can have a fully up-to-date overview of the financial and economic situation of your company
+The profit & loss statement gives you a clear idea where to increase your earnings by reducing unnecessary expenses and increasing incomes
+You also have all the information needed for tax reports
+Compare the budgeted and actual amounts is extremely useful for a company to make important decisions of the future
 
 
 
